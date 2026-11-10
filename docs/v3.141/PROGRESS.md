@@ -61,7 +61,9 @@
 - **2026-11-10 17:30:** Tạo commit `53a7ea6` hoàn thành trích xuất asset, decode 267 audio và test Intro Spine 3.8.
 - **2026-11-10 17:41:** Codex hoàn thành phân tích scene menu gốc (12 pack) trước khi chạm hạn mức OpenAI.
 - **2026-11-10 17:48:** Thiết lập tài liệu theo dõi tiến trình `docs/v3.141/PROGRESS.md`. Push checkpoint lên GitHub origin.
-- **2026-11-10 17:58:** Hoàn thành Giai đoạn 3 (Main Menu 12 packs):
-  - Tích hợp Spine 3.8 WebGL runtime chính thức vào React PWA.
-  - Hiển thị 12 bộ tranh với animation Spine tương tác khi chạm.
-  - Kiểm thử responsive trên Chrome DevTools (844×390 DPR 3 iPhone 12 Pro) không có lỗi console, chuyển tiếp mượt mà sang Gallery.
+- **2026-11-10 17:58:** Tích hợp Spine 3.8 WebGL runtime vào React PWA.
+- **2026-11-10 18:05:** Căn chỉnh UI Main Menu khớp 100% nguyên bản Unity APK 3.141 theo yêu cầu:
+  - Tái tạo cây phân cấp RectTransform gốc từ `menu.json` (Background left/right, nút For Parents, Unlock All, trang trí hoa/lá trên từng khung tranh).
+  - Giữ nguyên toàn bộ text tiếng Anh gốc (`Animals`, `Music`, `Food`, `Insects`, `Dolls`, `Magic`, `Dinosaurs`, `School`, `Ocean`, `Halloween`, `Christmas`, `Vehicles`, `For parents`).
+  - Lấy chuẩn hiển thị iPhone 12 Pro landscape (844×390 pt, DPR 3, virtual factor 390/1080).
+  - Kiểm thử Chrome DevTools MCP: 0 console error, touch scroll và click chuyển màn Gallery hoạt động mượt mà.

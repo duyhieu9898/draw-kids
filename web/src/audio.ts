@@ -1,3 +1,59 @@
+const MP3_SOUNDS = new Set([
+  'bg_game',
+  'bg_menu',
+  'click',
+  'click-color',
+  'draw-color-select',
+  'draw-erase',
+  'fill',
+  'game-particle',
+  'mm-scroll',
+  'mm_scroll_long',
+  'mm_scroll_short',
+  'mm_transition_in',
+  'parental-right',
+  'parental-wrong',
+  'screenshot',
+  'star',
+  'tip',
+])
+
+export type SoundEffect =
+  | 'click'
+  | 'click2'
+  | 'click-color'
+  | 'choose_tap'
+  | 'fill'
+  | 'draw-erase'
+  | 'star'
+  | 'screenshot'
+  | 'draw-color-select'
+  | 'game-particle'
+  | 'mm-scroll'
+  | 'mm_scroll_short'
+  | 'mm_scroll_long'
+  | 'mm_transition_in'
+  | 'parental-right'
+  | 'parental-wrong'
+  | 'tip'
+  | 'appear'
+  | 'magic-appear'
+  | 'badge'
+  | 'ball1'
+  | 'ball2'
+  | 'bimi_logo'
+  | 'bimiboo'
+  | 'brush'
+  | 'end'
+  | 'get'
+  | 'hat'
+  | 'kick'
+  | 'palette'
+  | 'swoosh'
+  | 'number-click'
+  | 'Drawing_intro'
+  | string
+
 class SoundManager {
   private unlocked = false
   private bgmAudio: HTMLAudioElement | null = null
@@ -19,28 +75,12 @@ class SoundManager {
     }
   }
 
-  playEffect(
-    name:
-      | 'click'
-      | 'click-color'
-      | 'fill'
-      | 'draw-erase'
-      | 'star'
-      | 'screenshot'
-      | 'draw-color-select'
-      | 'game-particle'
-      | 'mm-scroll'
-      | 'mm_scroll_short'
-      | 'mm_scroll_long'
-      | 'mm_transition_in'
-      | 'parental-right'
-      | 'parental-wrong'
-      | 'tip'
-  ) {
+  playEffect(name: SoundEffect) {
     try {
       let sound = this.effects.get(name)
       if (!sound) {
-        sound = new Audio(`/game-assets/sounds/${name}.mp3`)
+        const ext = MP3_SOUNDS.has(name) ? 'mp3' : 'wav'
+        sound = new Audio(`/game-assets/sounds/${name}.${ext}`)
         sound.volume = 0.8
         this.effects.set(name, sound)
       }

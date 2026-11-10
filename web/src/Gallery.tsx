@@ -43,7 +43,7 @@ export default function Gallery({ packId, onBack, onSelectPicture }: GalleryProp
           setSavedThumbnails(thumbs)
         }
       } catch (err) {
-        console.error('Không tải được ảnh đã tô từ IndexedDB:', err)
+        console.error('Failed to load colored pictures from IndexedDB:', err)
       }
     }
     void loadSavedData()

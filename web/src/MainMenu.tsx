@@ -131,7 +131,8 @@ export default function MainMenu({ onSelectPack, onReplayIntro }: MainMenuProps)
           const button = document.createElement('button')
           button.className = 'unity-pack'
           button.dataset.product = String(pack.product)
-          button.setAttribute('aria-label', pack.label)
+          const packLabel = pack.label === 'Transportasyon' ? 'Vehicles' : pack.label
+          button.setAttribute('aria-label', packLabel)
           Object.assign(button.style, {
             width: `${cw}px`,
             height: `${ch}px`,

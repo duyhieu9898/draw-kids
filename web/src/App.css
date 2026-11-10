@@ -241,7 +241,7 @@
     font-weight: 800;
   }
   .portrait-rotate-notice::after {
-    content: 'Xoay ngang thiết bị';
+    content: 'Please rotate your device';
     position: absolute;
     top: calc(50% + 18vw);
     font-size: 5vw;

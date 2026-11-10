@@ -26,8 +26,8 @@
 | **Giai đoạn 2** | **Intro Animation (Spine 3.8)** | ✅ Hoàn thành | Chạy tốt trên Spine 3.8 WebGL runtime, preview tỉ lệ mobile ngang 844×390. |
 | **Giai đoạn 3** | **Main Menu (12 bộ tranh)** | ✅ Hoàn thành | Đưa thành công 12 bộ tranh và Spine 3.8 WebGL runtime vào `web/src/MainMenu.tsx`. Verified trên Chrome DevTools mobile landscape 844×390 DPR 3. |
 | **Giai đoạn 4** | **Gallery (Chọn tranh theo pack)** | ✅ Hoàn thành | Đưa 160 tranh và preview icons gốc vào Gallery. Căn chỉnh hiển thị chuẩn iPhone 12 Pro, giữ text tiếng Anh, điều hướng 2 chiều mượt mà. |
-| **Giai đoạn 5** | **Drawing Scene (Luồng tô màu)** | ⏳ Chờ làm | Đồng bộ công cụ vẽ, bảng màu và clipping mask cho tập tranh 3.141. |
-| **Giai đoạn 6** | **Audio & Voice System** | ⏳ Chờ làm | Tích hợp 267 file WAV đã decode vào `audio.ts`. |
+| **Giai đoạn 5** | **Drawing Scene (Luồng tô màu)** | ✅ Hoàn thành | Tái hiện hiệu ứng ngôi sao bay bung toả khi nhấc ngón tay (star burst) & đổ màu từ APK gốc (`particle-star.png`, audio `star`), chuyển ngữ 100% tiếng Anh, lưu IndexedDB & preview card. |
+| **Giai đoạn 6** | **Audio & Voice System** | ⏳ Đang làm | Tích hợp 267 file WAV đã decode vào `audio.ts` và mở rộng sound effects. |
 | **Giai đoạn 7** | **PWA, Cache Service Worker & Lưu trữ** | ⏳ Chờ làm | IndexedDB lưu tranh đã tô, service worker precache offline. |
 | **Giai đoạn 8** | **Kiểm thử nghiệm thu (Parity & Responsive)** | ⏳ Chờ làm | Kiểm thử Chrome DevTools kích thước 844×390 / DPR 3, test offline. |
 
@@ -62,9 +62,21 @@
 - [x] Tối ưu giao diện cuộn ngang 2 hàng thẻ tranh chuẩn iPhone 12 Pro landscape (844×390 pt).
 - [x] Kiểm thử điều hướng 2 chiều: Main Menu ↔ Gallery ↔ Drawing Scene trơn tru.
 
+## 5. Checklist chi tiết Giai đoạn 5 (Drawing Scene & Star Burst)
+
+- [x] Trích xuất sprite hạt ngôi sao chuẩn `particle-star.png` (58×58) từ Unity `sharedassets4.assets/106.png`.
+- [x] Trích xuất âm thanh hiệu ứng ngôi sao `star` từ `resources.assets/3546`.
+- [x] Tái tạo logic hiệu ứng ngôi sao bay bung toả (`spawnStarBurst`):
+  - Kích hoạt khi người dùng hoàn thành nét vẽ và **nhấc ngón tay** (`pointerup`).
+  - Kích hoạt khi đổ màu vào một vùng (`tool === 'fill'`).
+  - Vật lý hạt: gia tốc góc toả tròn, lực nổi/trọng trường, xoay tự do và mờ dần tự nhiên theo frame rate 60fps.
+- [x] Toàn bộ nhãn, thông báo và trợ năng đều giữ tiếng Anh gốc (`Drawing screen`, `Pack • Picture`, `Marker`, `Fill`, `Eraser`, `Drawing saved!`, `Screenshot saved!`, `Canvas cleared!`).
+- [x] Tương thích an toàn Synthetic & Native PointerEvent (`try/catch` pointer capture).
+- [x] Lưu tranh vào IndexedDB và tự động cập nhật preview thumbnail + trạng thái `Colored` ở màn Gallery.
+
 ---
 
-## 5. Nhật ký công việc (Worklog)
+## 6. Nhật ký công việc (Worklog)
 
 - **2026-11-10 17:30:** Tạo commit `53a7ea6` hoàn thành trích xuất asset, decode 267 audio và test Intro Spine 3.8.
 - **2026-11-10 17:41:** Codex hoàn thành phân tích scene menu gốc (12 pack) trước khi chạm hạn mức OpenAI.
@@ -79,3 +91,9 @@
   - Đồng bộ 160 preview tranh gốc, bổ sung icons pack 9 & 10.
   - Chuẩn hóa layout Gallery theo iPhone 12 Pro landscape.
   - Kiểm thử chuyển tiếp 2 chiều Menu ↔ Gallery ↔ Drawing thành công.
+- **2026-11-10 18:31:** Hoàn thành Giai đoạn 5 (Drawing Scene & Star Burst):
+  - Tích hợp sprite hạt ngôi sao gốc `particle-star.png` và audio `star`.
+  - Tái tạo logic ngôi sao bay bung toả (`spawnStarBurst`) khi nhấc ngón tay (`pointerup`) và khi chạm đổ màu (`fill`).
+  - Đồng bộ tương thích Spine 3.8 WebGL backward-compatibility cho skins giúp Intro và Menu chạy mượt mà không lỗi console.
+  - Chuẩn hóa toàn bộ text sang tiếng Anh theo đúng bản gốc.
+  - Kiểm thử thành công luồng vẽ -> nhấc tay -> hiệu ứng ngôi sao -> lưu tranh IndexedDB -> cập nhật thẻ tranh đã tô trong Gallery trên Chrome DevTools (iPhone 12 Pro 844×390 DPR 3).

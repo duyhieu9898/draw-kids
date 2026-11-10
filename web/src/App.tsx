@@ -63,7 +63,7 @@ export default function App() {
 
       <div className="portrait-rotate-notice" aria-hidden="true">
         <span>↻</span>
-        <p>Vui lòng xoay ngang màn hình để chơi</p>
+        <p>Please rotate your device to landscape mode</p>
       </div>
     </div>
   )

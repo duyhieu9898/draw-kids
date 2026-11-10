@@ -5698,8 +5698,11 @@ var spine;
 				}
 			}
 			if (root.skins) {
-				for (var i = 0; i < root.skins.length; i++) {
-					var skinMap = root.skins[i];
+				var skinsList = Array.isArray(root.skins)
+					? root.skins
+					: Object.keys(root.skins).map(function(k) { return { name: k, attachments: root.skins[k] }; });
+				for (var i = 0; i < skinsList.length; i++) {
+					var skinMap = skinsList[i];
 					var skin = new spine.Skin(skinMap.name);
 					if (skinMap.bones) {
 						for (var ii = 0; ii < skinMap.bones.length; ii++) {

@@ -102,7 +102,7 @@ export default function OriginalIntro({ onComplete }: Props) {
   }, [])
 
   return (
-    <div className="original-intro" role="region" aria-label="Màn mở đầu Bimi Boo">
+    <div className="original-intro" role="region" aria-label="Bimi Boo Intro">
       <div className="spine-stage" id="bimiboo-original-intro" ref={hostRef} />
     </div>
   )

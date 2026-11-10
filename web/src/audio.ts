@@ -19,7 +19,24 @@ class SoundManager {
     }
   }
 
-  playEffect(name: 'click' | 'click-color' | 'fill' | 'draw-erase' | 'star' | 'screenshot') {
+  playEffect(
+    name:
+      | 'click'
+      | 'click-color'
+      | 'fill'
+      | 'draw-erase'
+      | 'star'
+      | 'screenshot'
+      | 'draw-color-select'
+      | 'game-particle'
+      | 'mm-scroll'
+      | 'mm_scroll_short'
+      | 'mm_scroll_long'
+      | 'mm_transition_in'
+      | 'parental-right'
+      | 'parental-wrong'
+      | 'tip'
+  ) {
     try {
       let sound = this.effects.get(name)
       if (!sound) {

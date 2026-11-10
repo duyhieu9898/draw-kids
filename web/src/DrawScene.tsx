@@ -43,10 +43,14 @@ type StarParticle = {
   x: number
   y: number
   size: number
+  initialSize: number
   opacity: number
   rotation: number
+  vRot: number
   vx: number
   vy: number
+  life: number
+  maxLife: number
 }
 
 function NativeToolIcon({ name, color }: { name: string; color: string }) {
@@ -73,15 +77,16 @@ function loadImage(url: string) {
   return new Promise<HTMLImageElement>((resolve, reject) => {
     const image = new Image()
     image.onload = () => resolve(image)
-    image.onerror = () => reject(new Error(`Không tải được tài nguyên: ${url}`))
+    image.onerror = () => reject(new Error(`Failed to load asset: ${url}`))
     image.src = url
   })
 }
 
 async function loadPicture(pack: number, pictureNumber: number) {
-  const pictureUrl = `/art/pack${pack}/${pictureNumber}`
+  const effectivePack = pack > 8 ? ((pack - 1) % 8) + 1 : pack
+  const pictureUrl = `/art/pack${effectivePack}/${pictureNumber}`
   const response = await fetch(`${pictureUrl}/picture.json`)
-  if (!response.ok) throw new Error('Không tải được dữ liệu tranh.')
+  if (!response.ok) throw new Error('Failed to load picture data.')
   const metadata = (await response.json()) as PictureMeta
   const [outline, ...regions] = await Promise.all([
     loadImage(`${pictureUrl}/outline.png`),
@@ -90,7 +95,7 @@ async function loadPicture(pack: number, pictureNumber: number) {
       const hitCanvas = document.createElement('canvas')
       hitCanvas.width = image.naturalWidth
       hitCanvas.height = image.naturalHeight
-      hitCanvas.getContext('2d')!.drawImage(image, 0, 0)
+      hitCanvas.getContext('2d', { willReadFrequently: true })!.drawImage(image, 0, 0)
       const maskSurface = document.createElement('canvas')
       maskSurface.width = ART_SIZE
       maskSurface.height = ART_SIZE
@@ -207,7 +212,7 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
         }
         setReady(true)
       } catch (error) {
-        setProblem(error instanceof Error ? error.message : 'Không mở được tranh.')
+        setProblem(error instanceof Error ? error.message : 'Unable to open picture.')
       }
     }
     void prepare()
@@ -276,7 +281,7 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
     const starImg = starImgRef.current
     if (starImg && starImg.complete && particlesRef.current.length > 0) {
       for (const p of particlesRef.current) {
-        if (p.opacity <= 0) continue
+        if (p.opacity <= 0 || p.size <= 0) continue
         ctx.save()
         ctx.globalAlpha = p.opacity
         ctx.translate(fit.x + p.x * fit.scale, fit.y + p.y * fit.scale)
@@ -298,19 +303,27 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
     return () => window.removeEventListener('resize', handleResize)
   }, [render])
 
-  // Star particle animation loop
+  // Star particle animation loop with native burst physics
   useEffect(() => {
     const updateParticles = () => {
       if (particlesRef.current.length > 0) {
         particlesRef.current = particlesRef.current
-          .map((p) => ({
-            ...p,
-            x: p.x + p.vx,
-            y: p.y + p.vy,
-            opacity: p.opacity - 0.04,
-            rotation: p.rotation + 0.1,
-          }))
-          .filter((p) => p.opacity > 0)
+          .map((p) => {
+            const life = p.life + 1
+            const progress = life / p.maxLife
+            return {
+              ...p,
+              x: p.x + p.vx,
+              y: p.y + p.vy,
+              vx: p.vx * 0.94,
+              vy: p.vy * 0.94 + 0.15,
+              opacity: Math.max(0, 1 - progress * progress),
+              size: p.initialSize * Math.max(0, 1 - progress * 0.35),
+              rotation: p.rotation + p.vRot,
+              life,
+            }
+          })
+          .filter((p) => p.life < p.maxLife && p.opacity > 0)
         render()
       }
       animFrameRef.current = requestAnimationFrame(updateParticles)
@@ -320,6 +333,31 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
       if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current)
     }
   }, [render])
+
+  const spawnStarBurst = (x: number, y: number, count = 14) => {
+    sound.playEffect('star')
+    const newParticles: StarParticle[] = []
+    for (let i = 0; i < count; i++) {
+      const angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.4
+      const speed = Math.random() * 4 + 3.5
+      const size = Math.random() * 16 + 24
+      const maxLife = Math.floor(Math.random() * 10 + 22)
+      newParticles.push({
+        x: x + (Math.random() - 0.5) * 8,
+        y: y + (Math.random() - 0.5) * 8,
+        size,
+        initialSize: size,
+        opacity: 1,
+        rotation: Math.random() * Math.PI * 2,
+        vRot: (Math.random() - 0.5) * 0.25,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed - 1.5,
+        life: 0,
+        maxLife,
+      })
+    }
+    particlesRef.current.push(...newParticles)
+  }
 
   const notify = (text: string) => {
     window.clearTimeout(messageTimer.current)
@@ -337,12 +375,17 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
 
     if (tool === 'fill') {
       sound.playEffect('fill')
+      spawnStarBurst(x, y, 16)
       setActions((prev) => [...prev, { type: 'fill', regionId: targetRegion, color }])
       return
     }
 
     sound.playEffect(tool === 'eraser' ? 'draw-erase' : 'star')
-    event.currentTarget.setPointerCapture(event.pointerId)
+    try {
+      event.currentTarget.setPointerCapture(event.pointerId)
+    } catch {
+      // In synthetic tests or unsupported pointers
+    }
     setDraft({
       type: tool === 'eraser' ? 'erase' : 'stroke',
       regionId: targetRegion,
@@ -350,18 +393,6 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
       points: [[x, y]],
       pointerId: event.pointerId,
     })
-
-    if (tool === 'marker') {
-      particlesRef.current.push({
-        x,
-        y,
-        size: Math.random() * 20 + 24,
-        opacity: 1,
-        rotation: Math.random() * Math.PI * 2,
-        vx: (Math.random() - 0.5) * 2,
-        vy: (Math.random() - 0.5) * 2 - 1,
-      })
-    }
   }
 
   const handlePointerMove = (event: ReactPointerEvent<HTMLCanvasElement>) => {
@@ -371,29 +402,41 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
     const [x, y] = getCanvasPoint(canvas, event.clientX, event.clientY)
     setDraft((prev) => (prev ? { ...prev, points: [...prev.points, [x, y]] } : null))
 
-    if (draft.type === 'stroke') {
+    if (draft.type === 'stroke' && Math.random() < 0.28) {
+      const size = Math.random() * 10 + 16
       particlesRef.current.push({
-        x: x + (Math.random() - 0.5) * 12,
-        y: y + (Math.random() - 0.5) * 12,
-        size: Math.random() * 18 + 20,
+        x: x + (Math.random() - 0.5) * 8,
+        y: y + (Math.random() - 0.5) * 8,
+        size,
+        initialSize: size,
         opacity: 1,
         rotation: Math.random() * Math.PI * 2,
-        vx: (Math.random() - 0.5) * 2,
-        vy: (Math.random() - 0.5) * 2 - 1,
+        vRot: (Math.random() - 0.5) * 0.2,
+        vx: (Math.random() - 0.5) * 1.5,
+        vy: (Math.random() - 0.5) * 1.5 - 0.5,
+        life: 0,
+        maxLife: 16,
       })
     }
   }
 
   const handlePointerUp = (event: ReactPointerEvent<HTMLCanvasElement>) => {
     if (!draft || draft.pointerId !== event.pointerId) return
-    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
-      event.currentTarget.releasePointerCapture(event.pointerId)
-    }
+    try {
+      if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+        event.currentTarget.releasePointerCapture(event.pointerId)
+      }
+    } catch {}
     const finalStroke: StrokeAction = {
       type: draft.type,
       regionId: draft.regionId,
       color: draft.color,
       points: draft.points,
+    }
+    // Star burst on lifting finger after finishing stroke
+    if (draft.type === 'stroke' && draft.points.length > 0) {
+      const [lastX, lastY] = draft.points[draft.points.length - 1]
+      spawnStarBurst(lastX, lastY, 14)
     }
     setDraft(null)
     setActions((prev) => [...prev, finalStroke])
@@ -401,9 +444,11 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
 
   const handlePointerCancel = (event: ReactPointerEvent<HTMLCanvasElement>) => {
     if (draft && draft.pointerId === event.pointerId) {
-      if (event.currentTarget.hasPointerCapture(event.pointerId)) {
-        event.currentTarget.releasePointerCapture(event.pointerId)
-      }
+      try {
+        if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+          event.currentTarget.releasePointerCapture(event.pointerId)
+        }
+      } catch {}
       setDraft(null)
     }
   }
@@ -449,10 +494,10 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
         updatedAt: Date.now(),
       }
       await db.put('pictures', dataToSave, pictureKey)
-      notify('Đã lưu tranh!')
+      notify('Drawing saved!')
       setTimeout(() => onBack(), 350)
     } catch {
-      notify('Không thể lưu tranh vào IndexedDB.')
+      notify('Unable to save drawing.')
     }
   }
 
@@ -482,20 +527,20 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
       775
     )
     const link = document.createElement('a')
-    link.download = `to-mau-${pack}-${pictureNumber}.png`
+    link.download = `drawing-${pack}-${pictureNumber}.png`
     link.href = exportCanvas.toDataURL('image/png')
     link.click()
-    notify('Đã chụp ảnh tranh!')
+    notify('Screenshot saved!')
   }
 
   const handleReset = () => {
     sound.playEffect('draw-erase')
     setActions([])
-    notify('Đã xóa làm lại!')
+    notify('Canvas cleared!')
   }
 
   return (
-    <main className="workspace" aria-label="Màn hình tô màu">
+    <main className="workspace" aria-label="Drawing screen">
       {problem && <div className="error-state" role="alert">{problem}</div>}
 
       <header className="drawing-top-bar">
@@ -506,7 +551,7 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
             sound.playEffect('click')
             onBack()
           }}
-          aria-label="Quay lại danh sách tranh"
+          aria-label="Back to gallery"
         >
           <img
             src="/game-assets/ui/gallery-back-button.png"
@@ -516,7 +561,7 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
           />
         </button>
         <span className="drawing-title-indicator">
-          Bộ {pack} - Tranh {pictureNumber}
+          Pack {pack} • Picture {pictureNumber}
         </span>
       </header>
 
@@ -528,17 +573,17 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerUp}
           onPointerCancel={handlePointerCancel}
-          aria-label="Khung vẽ tương tác"
+          aria-label="Drawing canvas"
         />
       </section>
 
-      <aside className="native-shelf" aria-label="Thanh công cụ gốc">
+      <aside className="native-shelf" aria-label="Main shelf">
         <div className="shelf-top-buttons">
           <button
             type="button"
             onClick={handleScreenshot}
-            aria-label="Chụp và lưu ảnh vào thiết bị"
-            title="Chụp ảnh"
+            aria-label="Save screenshot"
+            title="Screenshot"
           >
             <img
               src={`${UI}/main_shelf/buttons small/btn_screenshot.png`}
@@ -550,8 +595,8 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
           <button
             type="button"
             onClick={handleSaveAndExit}
-            aria-label="Lưu tranh và quay lại thư viện"
-            title="Hoàn tất"
+            aria-label="Save and exit"
+            title="Done"
           >
             <img
               src={`${UI}/main_shelf/buttons small/btn_ok.png`}
@@ -565,7 +610,7 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
         <button
           type="button"
           className="shelf-tool-button"
-          aria-label="Chọn công cụ vẽ"
+          aria-label="Select tool"
           aria-expanded={showToolPicker}
           onClick={() => {
             sound.playEffect('click')
@@ -586,7 +631,7 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
         <button
           type="button"
           className={`shelf-color-button ${tool === 'eraser' ? 'disabled' : ''}`}
-          aria-label="Chọn màu sắc"
+          aria-label="Select color"
           aria-expanded={showPalette}
           onClick={() => {
             sound.playEffect('click')
@@ -614,7 +659,7 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
         <button
           type="button"
           className={`shelf-eraser-button ${tool === 'eraser' ? 'active' : ''}`}
-          aria-label="Cục tẩy xóa nét"
+          aria-label="Eraser"
           aria-pressed={tool === 'eraser'}
           onClick={() => {
             sound.playEffect('click')
@@ -637,8 +682,8 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
             type="button"
             onClick={handleUndo}
             disabled={actions.length === 0}
-            aria-label="Hoàn tác nét vừa vẽ"
-            title="Hoàn tác"
+            aria-label="Undo last action"
+            title="Undo"
           >
             <img
               src={`${UI}/main_shelf/buttons small/btn_undo.png`}
@@ -652,8 +697,8 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
             type="button"
             onClick={handleReset}
             disabled={actions.length === 0}
-            aria-label="Xóa làm lại từ đầu"
-            title="Xóa làm lại"
+            aria-label="Clear canvas"
+            title="Clear"
           >
             <img
               src={`${UI}/main_shelf/buttons small/btn_delete.png`}
@@ -665,7 +710,7 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
         </div>
 
         {showToolPicker && (
-          <div className="native-tool-picker" aria-label="Bảng chọn công cụ gốc">
+          <div className="native-tool-picker" aria-label="Tools">
             <button
               type="button"
               onClick={() => {
@@ -673,7 +718,7 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
                 setTool('marker')
                 setShowToolPicker(false)
               }}
-              aria-label="Bút lông"
+              aria-label="Marker"
             >
               <NativeToolIcon name="marker" color={color} />
             </button>
@@ -684,30 +729,30 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
                 setTool('fill')
                 setShowToolPicker(false)
               }}
-              aria-label="Tô vùng"
+              aria-label="Fill"
             >
               <NativeToolIcon name="fill" color={color} />
             </button>
-            <button type="button" disabled aria-label="Bút chì">
+            <button type="button" disabled aria-label="Pencil">
               <NativeToolIcon name="pencil" color={color} />
             </button>
-            <button type="button" disabled aria-label="Cọ vẽ">
+            <button type="button" disabled aria-label="Brush">
               <NativeToolIcon name="brush" color={color} />
             </button>
-            <button type="button" disabled aria-label="Bình xịt">
+            <button type="button" disabled aria-label="Spray">
               <NativeToolIcon name="spray" color={color} />
             </button>
-            <button type="button" disabled aria-label="Nhũ lấp lánh">
+            <button type="button" disabled aria-label="Glitter">
               <img src={`${UI}/main_shelf/tools/shine/icon_shine1.png`} alt="" width="58" height="58" />
             </button>
-            <button type="button" disabled aria-label="Họa tiết">
+            <button type="button" disabled aria-label="Pattern">
               <img src={`${UI}/main_shelf/tools/pattern/icon_pattern1.png`} alt="" width="58" height="58" />
             </button>
           </div>
         )}
 
         {showPalette && (
-          <div className="native-palette-picker" aria-label="Bảng màu gốc">
+          <div className="native-palette-picker" aria-label="Color palette">
             <div className="native-color-grid">
               {COLORS.map((swatch, index) => (
                 <button
@@ -715,7 +760,7 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
                   type="button"
                   className={`native-color ${index >= 3 ? 'locked' : ''}`}
                   style={{ backgroundColor: swatch }}
-                  aria-label={`Màu ${index + 1}`}
+                  aria-label={`Color ${index + 1}`}
                   aria-pressed={color === swatch}
                   onClick={() => {
                     if (index >= 3) return

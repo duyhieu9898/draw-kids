@@ -1,0 +1,3267 @@
+{
+  "schema_version": "1.0",
+  "delegation": {
+    "role": "delegated_inventory_only",
+    "scope": "read-only inventory using Python zipfile/hashlib",
+    "parent_verification_required": true,
+    "claim_disclaimer": "No claim that filename version is verified manifest version. Observations strictly distinguished from inferred gameplay."
+  },
+  "outer_archive": {
+    "filename": "Kids-Color-Games-Baby-Drawing_3.141_apkcube.apks",
+    "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/Kids-Color-Games-Baby-Drawing_3.141_apkcube.apks",
+    "size_bytes": 107917759,
+    "sha256": "90a3961d30ef0621d6a334c35bf6bfed06b9b42dd805ebecd7a7c28f478c1e29",
+    "format": "ZIP (Split APK archive / .apks)",
+    "entry_count": 3,
+    "entries": [
+      {
+        "path": "APKCube.txt",
+        "uncompressed_size": 29,
+        "compressed_size": 29,
+        "crc32": "ef3e8a96",
+        "sha256": "8a97b232bab8d86745c278fb462ed159ea796ff4cd2a0277fda5bf0315a3fea1"
+      },
+      {
+        "path": "base.apk",
+        "uncompressed_size": 106343309,
+        "compressed_size": 79540519,
+        "crc32": "4647edd0",
+        "sha256": "a98b03b080d913dd7131c964196910c675a48dc5e261c752c8d1305acc26d0f0"
+      },
+      {
+        "path": "split_config.arm64_v8a.apk",
+        "uncompressed_size": 28873412,
+        "compressed_size": 28376750,
+        "crc32": "134569ef",
+        "sha256": "3a3c08f88d30e97ed7b39753b1ad0ea090135cb2799e542edc97c15e8b4aa0ce"
+      }
+    ]
+  },
+  "nested_apks": {
+    "base.apk": {
+      "filename": "base.apk",
+      "uncompressed_size": 106343309,
+      "compressed_size": 79540519,
+      "sha256": "a98b03b080d913dd7131c964196910c675a48dc5e261c752c8d1305acc26d0f0",
+      "entry_count": 413,
+      "counts": {
+        "total_entries": 413,
+        "asset_count": 43,
+        "dex_count": 1,
+        "native_lib_count": 0,
+        "unity_bundle_count": 17,
+        "unity_metadata_count": 18,
+        "extension_counts": {
+          ".png": 190,
+          ".xml": 92,
+          ".properties": 32,
+          ".version": 28,
+          ".bundle": 17,
+          ".webp": 10,
+          "(no extension)": 8,
+          ".kotlin_builtins": 7,
+          ".json": 6,
+          ".dat": 4,
+          ".resource": 4,
+          ".pem": 3,
+          ".bin": 2,
+          ".kotlin_module": 2,
+          ".build_fingerprint": 1,
+          ".textproto": 1,
+          ".hash": 1,
+          ".config": 1,
+          ".unity3d": 1,
+          ".dex": 1,
+          ".binarypb": 1,
+          ".arsc": 1
+        }
+      },
+      "dex_files": [
+        "classes.dex"
+      ],
+      "native_libraries": [],
+      "unity_bundles": [
+        "assets/aa/Android/108adf0887f6c4b380eaf20e86d6ec21_monoscripts_b90cd4f4f9097bb758408ea56ce3149a.bundle",
+        "assets/aa/Android/abtest_assets_all_fa8a63dab10343a2293b93040ab5be52.bundle",
+        "assets/aa/Android/audio_assets_all_ed01b9d74ca9476eb2df2e7a3651b14c.bundle",
+        "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_cars.prefab_8aa999c74adccc35b21a0e457a6e9918.bundle",
+        "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_christmas.prefab_6489b17d52df4c3d677d173a1a3f63c2.bundle",
+        "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_dinosaurs.prefab_65ccefd081347177476008ed1bb31715.bundle",
+        "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_dolls.prefab_7ab76f41a38c51f502d7343b1ec5d875.bundle",
+        "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_food.prefab_159d83e1a30c2eac83d557a98862a79b.bundle",
+        "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_fullgame.prefab_84123612d0882089a74e9fdbe1d26dfc.bundle",
+        "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_halloween.prefab_4cc2f8fe4cd5d7a6bd10f47a3c232ce4.bundle",
+        "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_insects.prefab_ac7b661d83fc8d5aa137bcde65f83b3f.bundle",
+        "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_magic.prefab_e2c5723da9ad9aadb660dfeb1212d061.bundle",
+        "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_music.prefab_57d50a0823053b309be5b37714aaf104.bundle",
+        "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_school.prefab_9a0db5a332c3d8320771581f4dcd3266.bundle",
+        "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_tools.prefab_0100e18eeb50f9eca0aa4593012b8977.bundle",
+        "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_underwater.prefab_a50778576c7288dedaaa5feb13e965d0.bundle",
+        "assets/aa/Android/duplicateassetisolation_assets_all_639c9355e40ef259551e85adcf1e09ac.bundle"
+      ],
+      "unity_metadata": [
+        "assets/aa/AddressablesLink/link.xml",
+        "assets/aa/catalog.bin",
+        "assets/aa/catalog.hash",
+        "assets/aa/settings.json",
+        "assets/bin/Data/Managed/Metadata/global-metadata.dat",
+        "assets/bin/Data/Managed/Resources/System.Data.dll-resources.dat",
+        "assets/bin/Data/Managed/Resources/System.Drawing.dll-resources.dat",
+        "assets/bin/Data/Managed/Resources/mscorlib.dll-resources.dat",
+        "assets/bin/Data/Resources/unity default resources",
+        "assets/bin/Data/RuntimeInitializeOnLoads.json",
+        "assets/bin/Data/ScriptingAssemblies.json",
+        "assets/bin/Data/boot.config",
+        "assets/bin/Data/data.unity3d",
+        "assets/bin/Data/globalgamemanagers.resource",
+        "assets/bin/Data/resources.resource",
+        "assets/bin/Data/sharedassets1.resource",
+        "assets/bin/Data/sharedassets6.resource",
+        "assets/bin/Data/unity_app_guid"
+      ],
+      "unity_version_headers": [
+        {
+          "source_path": "assets/aa/Android/108adf0887f6c4b380eaf20e86d6ec21_monoscripts_b90cd4f4f9097bb758408ea56ce3149a.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/abtest_assets_all_fa8a63dab10343a2293b93040ab5be52.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/audio_assets_all_ed01b9d74ca9476eb2df2e7a3651b14c.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_cars.prefab_8aa999c74adccc35b21a0e457a6e9918.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_christmas.prefab_6489b17d52df4c3d677d173a1a3f63c2.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_dinosaurs.prefab_65ccefd081347177476008ed1bb31715.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_dolls.prefab_7ab76f41a38c51f502d7343b1ec5d875.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_food.prefab_159d83e1a30c2eac83d557a98862a79b.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_fullgame.prefab_84123612d0882089a74e9fdbe1d26dfc.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_halloween.prefab_4cc2f8fe4cd5d7a6bd10f47a3c232ce4.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_insects.prefab_ac7b661d83fc8d5aa137bcde65f83b3f.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_magic.prefab_e2c5723da9ad9aadb660dfeb1212d061.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_music.prefab_57d50a0823053b309be5b37714aaf104.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_school.prefab_9a0db5a332c3d8320771581f4dcd3266.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_tools.prefab_0100e18eeb50f9eca0aa4593012b8977.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_underwater.prefab_a50778576c7288dedaaa5feb13e965d0.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/aa/Android/duplicateassetisolation_assets_all_639c9355e40ef259551e85adcf1e09ac.bundle",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        },
+        {
+          "source_path": "assets/bin/Data/data.unity3d",
+          "header_magic": "UnityFS",
+          "unity_version": ""
+        }
+      ],
+      "entries": [
+        {
+          "path": "AndroidManifest.xml",
+          "uncompressed_size": 27720,
+          "compressed_size": 6048,
+          "crc32": "18c7a047",
+          "sha256": "bb281aff305719e1a0c510c83e738a7e7dd4e66ae9f00f3c7295d1bb8f2abf4d"
+        },
+        {
+          "path": "DebugProbesKt.bin",
+          "uncompressed_size": 1738,
+          "compressed_size": 1738,
+          "crc32": "7cded4df",
+          "sha256": "158a19eb94aa2f3e2f459db69ee10276c73b945dd6c5f8fc223cf2d85e2b5e33"
+        },
+        {
+          "path": "META-INF/androidx.activity_activity.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "7c5a3320",
+          "sha256": "d82f34ae9aa41bc4a0cb529a1ac0898fed09d6b479fb1cc44cb66c34f15ee84d"
+        },
+        {
+          "path": "META-INF/androidx.annotation_annotation-experimental.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "efcb0786",
+          "sha256": "64d23f858ef51b0f996e4966d4e27c0371b437e2d2787890b1f7ad22d4ec5663"
+        },
+        {
+          "path": "META-INF/androidx.arch.core_core-runtime.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "c356bda3",
+          "sha256": "c89b87c262e9d5ffd20e73aac74a1772adcc9f5a21682cc33adcf5086e5fef5c"
+        },
+        {
+          "path": "META-INF/androidx.browser_browser.version",
+          "uncompressed_size": 60,
+          "compressed_size": 50,
+          "crc32": "07e712cf",
+          "sha256": "ca92576f7af9e521912986df67a9cbacdc89b77daffe97580eaae3ddff9562bc"
+        },
+        {
+          "path": "META-INF/androidx.core_core-ktx.version",
+          "uncompressed_size": 7,
+          "compressed_size": 7,
+          "crc32": "d6eff90f",
+          "sha256": "118705d21506adb8d7c06a51156bb59497679f644fb4ae3d14bbbfc366643124"
+        },
+        {
+          "path": "META-INF/androidx.core_core.version",
+          "uncompressed_size": 7,
+          "compressed_size": 7,
+          "crc32": "d6eff90f",
+          "sha256": "118705d21506adb8d7c06a51156bb59497679f644fb4ae3d14bbbfc366643124"
+        },
+        {
+          "path": "META-INF/androidx.customview_customview.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "fd7ea868",
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+        },
+        {
+          "path": "META-INF/androidx.documentfile_documentfile.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "fd7ea868",
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+        },
+        {
+          "path": "META-INF/androidx.fragment_fragment.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "45c2cf0d",
+          "sha256": "1575e1af4a95f12f70b4ee6a6adce8160953d93ea17dc2611b90883ccc3ad3b8"
+        },
+        {
+          "path": "META-INF/androidx.interpolator_interpolator.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "fd7ea868",
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+        },
+        {
+          "path": "META-INF/androidx.legacy_legacy-support-core-utils.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "fd7ea868",
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+        },
+        {
+          "path": "META-INF/androidx.lifecycle_lifecycle-livedata-core.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "70444469",
+          "sha256": "ad8650bc9057d9dfd809961b69dbad640c288d809fa44437d44d83d3b118c821"
+        },
+        {
+          "path": "META-INF/androidx.lifecycle_lifecycle-livedata.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "7beadac6",
+          "sha256": "c28fcca53637bc88e124af1725df13cb98c69dedefd62fb3cdbe1cdb6b760624"
+        },
+        {
+          "path": "META-INF/androidx.lifecycle_lifecycle-runtime.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "70444469",
+          "sha256": "ad8650bc9057d9dfd809961b69dbad640c288d809fa44437d44d83d3b118c821"
+        },
+        {
+          "path": "META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "70444469",
+          "sha256": "ad8650bc9057d9dfd809961b69dbad640c288d809fa44437d44d83d3b118c821"
+        },
+        {
+          "path": "META-INF/androidx.lifecycle_lifecycle-viewmodel.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "70444469",
+          "sha256": "ad8650bc9057d9dfd809961b69dbad640c288d809fa44437d44d83d3b118c821"
+        },
+        {
+          "path": "META-INF/androidx.loader_loader.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "fd7ea868",
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+        },
+        {
+          "path": "META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "fd7ea868",
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+        },
+        {
+          "path": "META-INF/androidx.print_print.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "fd7ea868",
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+        },
+        {
+          "path": "META-INF/androidx.savedstate_savedstate.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "45c2cf0d",
+          "sha256": "1575e1af4a95f12f70b4ee6a6adce8160953d93ea17dc2611b90883ccc3ad3b8"
+        },
+        {
+          "path": "META-INF/androidx.tracing_tracing.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "fd7ea868",
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+        },
+        {
+          "path": "META-INF/androidx.versionedparcelable_versionedparcelable.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "5cd9fe4c",
+          "sha256": "cc52f678848b814373757b460383bf61960e4943c203735adde0a350b3e50989"
+        },
+        {
+          "path": "META-INF/androidx.viewpager_viewpager.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "fd7ea868",
+          "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+        },
+        {
+          "path": "META-INF/com/android/build/gradle/app-metadata.properties",
+          "uncompressed_size": 56,
+          "compressed_size": 52,
+          "crc32": "56aeffda",
+          "sha256": "ee43b43abb53dc6695acc63dbdc5a6dca46e4b2cb8824011f35623ddd2eddcbb"
+        },
+        {
+          "path": "META-INF/com.android.games.engine.build_fingerprint",
+          "uncompressed_size": 84,
+          "compressed_size": 84,
+          "crc32": "2442ce75",
+          "sha256": "f36e64d7b86153dbc6990bdecd0ab2a54668cc2e43c0dbae42063017b2d50658"
+        },
+        {
+          "path": "META-INF/com.google.play.common.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "21d1b1c6",
+          "sha256": "25cec9739d3218e48acc5d8c3d4333e1d624121c5b7ab3bcddc71d0fa0134b83"
+        },
+        {
+          "path": "META-INF/com.google.play.core.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "21d1b1c6",
+          "sha256": "25cec9739d3218e48acc5d8c3d4333e1d624121c5b7ab3bcddc71d0fa0134b83"
+        },
+        {
+          "path": "META-INF/com.google.play.review.version",
+          "uncompressed_size": 6,
+          "compressed_size": 6,
+          "crc32": "21d1b1c6",
+          "sha256": "25cec9739d3218e48acc5d8c3d4333e1d624121c5b7ab3bcddc71d0fa0134b83"
+        },
+        {
+          "path": "META-INF/kotlin-stdlib.kotlin_module",
+          "uncompressed_size": 231,
+          "compressed_size": 141,
+          "crc32": "3ccba7ca",
+          "sha256": "c47e71ead2910ddcbe0627cf615397fd0f7de0e95af332e271fc1b985e50a1c5"
+        },
+        {
+          "path": "META-INF/kotlinx_coroutines_core.version",
+          "uncompressed_size": 5,
+          "compressed_size": 5,
+          "crc32": "10dbda9d",
+          "sha256": "4f232ffa4f33d6227b6f492a7857a3fb3ea8ea0f8ab1d89fe667211326262a4a"
+        },
+        {
+          "path": "META-INF/kotlinx_coroutines_play_services.version",
+          "uncompressed_size": 5,
+          "compressed_size": 5,
+          "crc32": "10dbda9d",
+          "sha256": "4f232ffa4f33d6227b6f492a7857a3fb3ea8ea0f8ab1d89fe667211326262a4a"
+        },
+        {
+          "path": "META-INF/purchase_prodRelease.kotlin_module",
+          "uncompressed_size": 158,
+          "compressed_size": 117,
+          "crc32": "d6e3e58d",
+          "sha256": "493eaac8a37607d641310abce79e2baa0adfb50565ee5c70d12d532ef64a7376"
+        },
+        {
+          "path": "META-INF/version-control-info.textproto",
+          "uncompressed_size": 46,
+          "compressed_size": 46,
+          "crc32": "b8ff6554",
+          "sha256": "38d377afa76b6364e5bf551cf4ffec1a881a46102a0047f523fbf148e0df6928"
+        },
+        {
+          "path": "assets/AppstoreAuthenticationKey.pem",
+          "uncompressed_size": 451,
+          "compressed_size": 451,
+          "crc32": "35d67b20",
+          "sha256": "ad304b038d7de4f2a9811c43c4a6a02825bcef1b75a60af2fa07f41ca5d88350"
+        },
+        {
+          "path": "assets/UnityServicesProjectConfiguration.json",
+          "uncompressed_size": 1538,
+          "compressed_size": 1538,
+          "crc32": "68f10dfa",
+          "sha256": "79c14b29072db5c59a6b4835e4610ab8aaeca8d97571d503f78e24ea251e9797"
+        },
+        {
+          "path": "assets/aa/AddressablesLink/link.xml",
+          "uncompressed_size": 7811,
+          "compressed_size": 7811,
+          "crc32": "8d598f72",
+          "sha256": "2e4aa69eb9c7dce1a73fabe0ca13194e49dee4208a29c19c37ed431c9858ecdd"
+        },
+        {
+          "path": "assets/aa/Android/108adf0887f6c4b380eaf20e86d6ec21_monoscripts_b90cd4f4f9097bb758408ea56ce3149a.bundle",
+          "uncompressed_size": 3113,
+          "compressed_size": 3113,
+          "crc32": "434c0a30",
+          "sha256": "508843281922821b52a14844d986c0800332b1707de8b5b16692a5eb4c8e903c"
+        },
+        {
+          "path": "assets/aa/Android/abtest_assets_all_fa8a63dab10343a2293b93040ab5be52.bundle",
+          "uncompressed_size": 5077,
+          "compressed_size": 5077,
+          "crc32": "2634962d",
+          "sha256": "c31086a54d1b59c037d9cc6502fea7d321505a160f41b3fc0c25d98f2e83127e"
+        },
+        {
+          "path": "assets/aa/Android/audio_assets_all_ed01b9d74ca9476eb2df2e7a3651b14c.bundle",
+          "uncompressed_size": 3949012,
+          "compressed_size": 3949012,
+          "crc32": "f2a4f694",
+          "sha256": "a7c364ac880ceb4bd7167d1352e97e01a0ab0ca92162d143d24ae3fe32adae21"
+        },
+        {
+          "path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_cars.prefab_8aa999c74adccc35b21a0e457a6e9918.bundle",
+          "uncompressed_size": 98647,
+          "compressed_size": 98647,
+          "crc32": "580d426a",
+          "sha256": "4e86d45df9938a8c59c3dfc6efb3338d0fb2a88d1b8653cb2d704b73b18b6899"
+        },
+        {
+          "path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_christmas.prefab_6489b17d52df4c3d677d173a1a3f63c2.bundle",
+          "uncompressed_size": 135285,
+          "compressed_size": 135285,
+          "crc32": "324acff8",
+          "sha256": "8273f41e36e605537980102e41c3b820ecfc08c474ff3fb53719f1808389ed42"
+        },
+        {
+          "path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_dinosaurs.prefab_65ccefd081347177476008ed1bb31715.bundle",
+          "uncompressed_size": 107268,
+          "compressed_size": 107268,
+          "crc32": "e90ce667",
+          "sha256": "feddb376b6cfc7ac30caa8eb8f6c31e1c50210ce69fd8493c0e65d5305b3d6c6"
+        },
+        {
+          "path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_dolls.prefab_7ab76f41a38c51f502d7343b1ec5d875.bundle",
+          "uncompressed_size": 106454,
+          "compressed_size": 106454,
+          "crc32": "a6d0dc11",
+          "sha256": "4e7cc47a4dd349410150410a0d310b6aa1c1f6787c8e384fd9afbda5976131a5"
+        },
+        {
+          "path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_food.prefab_159d83e1a30c2eac83d557a98862a79b.bundle",
+          "uncompressed_size": 95467,
+          "compressed_size": 95467,
+          "crc32": "37856a81",
+          "sha256": "658e908a88d86a985387c343ef0332f88affec84e96c9a53691b49064341c1bf"
+        },
+        {
+          "path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_fullgame.prefab_84123612d0882089a74e9fdbe1d26dfc.bundle",
+          "uncompressed_size": 988358,
+          "compressed_size": 988358,
+          "crc32": "2695b029",
+          "sha256": "d084f0ff2ef1bf9886e3e942ee8ee07e503cd974fc78c2a24127f5b6d06b6a92"
+        },
+        {
+          "path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_halloween.prefab_4cc2f8fe4cd5d7a6bd10f47a3c232ce4.bundle",
+          "uncompressed_size": 124768,
+          "compressed_size": 124768,
+          "crc32": "03e0b4a0",
+          "sha256": "c1db4d08132eea7017b596bb59eaa89f8f2b176ced6756e436f358004f4b61c5"
+        },
+        {
+          "path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_insects.prefab_ac7b661d83fc8d5aa137bcde65f83b3f.bundle",
+          "uncompressed_size": 153902,
+          "compressed_size": 153902,
+          "crc32": "02275eb5",
+          "sha256": "332f235fbb5e4e84ce9911363d336f1030fbc30d594c278b4d0a5dc7b01c19fd"
+        },
+        {
+          "path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_magic.prefab_e2c5723da9ad9aadb660dfeb1212d061.bundle",
+          "uncompressed_size": 79029,
+          "compressed_size": 79029,
+          "crc32": "34e2354d",
+          "sha256": "8515418a06be484d86168bc0042e7e7c0adabb9223c9fa9be3c0d2bc431e0e46"
+        },
+        {
+          "path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_music.prefab_57d50a0823053b309be5b37714aaf104.bundle",
+          "uncompressed_size": 134953,
+          "compressed_size": 134953,
+          "crc32": "32c387ba",
+          "sha256": "988691b3d31a04405d213b846e0ae6ae1a45e5a31c725f61287fd82323cdc4f9"
+        },
+        {
+          "path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_school.prefab_9a0db5a332c3d8320771581f4dcd3266.bundle",
+          "uncompressed_size": 78038,
+          "compressed_size": 78038,
+          "crc32": "1adef90f",
+          "sha256": "cf637be1c498bd83bc8db57ccd0f1cfc2d5549bc07260612ad24159f5801cb19"
+        },
+        {
+          "path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_tools.prefab_0100e18eeb50f9eca0aa4593012b8977.bundle",
+          "uncompressed_size": 193751,
+          "compressed_size": 193751,
+          "crc32": "11688c30",
+          "sha256": "8e483b71fc4f5411eeeb85b7b023eb2acc7646303e10f4f4b4ba881d3b85367d"
+        },
+        {
+          "path": "assets/aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_underwater.prefab_a50778576c7288dedaaa5feb13e965d0.bundle",
+          "uncompressed_size": 173331,
+          "compressed_size": 173331,
+          "crc32": "46868771",
+          "sha256": "62eb30bfcdeeb5712f199c3c2f2e1976de645b8f1fbf764fcfce19cf04c092d9"
+        },
+        {
+          "path": "assets/aa/Android/duplicateassetisolation_assets_all_639c9355e40ef259551e85adcf1e09ac.bundle",
+          "uncompressed_size": 5798512,
+          "compressed_size": 5798512,
+          "crc32": "9d422ded",
+          "sha256": "ea00901d2d4cf989797219d1b85a33ecf6e8cb5e12efa2571ebbdaba1e0f4ac7"
+        },
+        {
+          "path": "assets/aa/catalog.bin",
+          "uncompressed_size": 36668,
+          "compressed_size": 36668,
+          "crc32": "bac49be7",
+          "sha256": "215f7a5f5b14bb4fa080109566688853250232a8d5d29b0c34f7185f340be142"
+        },
+        {
+          "path": "assets/aa/catalog.hash",
+          "uncompressed_size": 32,
+          "compressed_size": 32,
+          "crc32": "da1579b9",
+          "sha256": "64bbe68143377c19b5af43ab1d495785b4a0b85a2c64901b80e84e4872b0b672"
+        },
+        {
+          "path": "assets/aa/settings.json",
+          "uncompressed_size": 854,
+          "compressed_size": 854,
+          "crc32": "be63b9c1",
+          "sha256": "277683f2e0c3c5dca3f167f6b39ef1052c03f9614e2eadfa1d6c9de58ae232f5"
+        },
+        {
+          "path": "assets/bin/Data/Managed/Metadata/global-metadata.dat",
+          "uncompressed_size": 12298740,
+          "compressed_size": 3740075,
+          "crc32": "6c45cb6b",
+          "sha256": "74c297e59adca67550002c43eb95ecc814a8a14e5be97b96f47a3f7286d1a5d0"
+        },
+        {
+          "path": "assets/bin/Data/Managed/Resources/System.Data.dll-resources.dat",
+          "uncompressed_size": 93718,
+          "compressed_size": 7957,
+          "crc32": "6622a023",
+          "sha256": "98a7950ec6de3242c2e190dfa630188dfa32511a125542b94baa952d1c757d49"
+        },
+        {
+          "path": "assets/bin/Data/Managed/Resources/System.Drawing.dll-resources.dat",
+          "uncompressed_size": 25453,
+          "compressed_size": 9716,
+          "crc32": "296392f1",
+          "sha256": "7c33aa707bc3fdc83991b81a97d6fc622b140762a767300f08f616c2c0a91255"
+        },
+        {
+          "path": "assets/bin/Data/Managed/Resources/mscorlib.dll-resources.dat",
+          "uncompressed_size": 337563,
+          "compressed_size": 126076,
+          "crc32": "d475b854",
+          "sha256": "c5baa176a5b72cd545266340e42102d393a5e43d38c95796bc828918bb95277f"
+        },
+        {
+          "path": "assets/bin/Data/Resources/unity default resources",
+          "uncompressed_size": 3750676,
+          "compressed_size": 798971,
+          "crc32": "05a1bd7b",
+          "sha256": "a2d348b7877234457f9ba80958d7fe0eadeee68511a8c009135e54c12e898751"
+        },
+        {
+          "path": "assets/bin/Data/RuntimeInitializeOnLoads.json",
+          "uncompressed_size": 16291,
+          "compressed_size": 16291,
+          "crc32": "663925ac",
+          "sha256": "8c123c7d422977178e1054fad965ac4759ca6ef673707b8a511b3349bee32c74"
+        },
+        {
+          "path": "assets/bin/Data/ScriptingAssemblies.json",
+          "uncompressed_size": 8807,
+          "compressed_size": 8807,
+          "crc32": "90e5d7cd",
+          "sha256": "239da935bd7a783c0d79b62ae53c5df4cfa9bc60c5dccd259dcdf8c8b9c1c38e"
+        },
+        {
+          "path": "assets/bin/Data/boot.config",
+          "uncompressed_size": 175,
+          "compressed_size": 140,
+          "crc32": "1b515044",
+          "sha256": "55b8b057d54979bb9162fb523793c29b1869230ada8b292a7e9b884981f7a02f"
+        },
+        {
+          "path": "assets/bin/Data/data.unity3d",
+          "uncompressed_size": 78087958,
+          "compressed_size": 78087958,
+          "crc32": "bf5745be",
+          "sha256": "103f6eaeda46b926306adedbc8b0c18eb82e27be01f063bb927057f52446fdf1"
+        },
+        {
+          "path": "assets/bin/Data/globalgamemanagers.resource",
+          "uncompressed_size": 874240,
+          "compressed_size": 874240,
+          "crc32": "ad6afdea",
+          "sha256": "62dd181e64cbc5df556bd84a3ff6f431594f9a639877623dcea740b32e6eb5b7"
+        },
+        {
+          "path": "assets/bin/Data/resources.resource",
+          "uncompressed_size": 6275840,
+          "compressed_size": 6275840,
+          "crc32": "854fc761",
+          "sha256": "1adbfc0e66e0a51320a5fd4ebc5e56a32dc528cc4d7c87be61b95e56b91dcb7c"
+        },
+        {
+          "path": "assets/bin/Data/sharedassets1.resource",
+          "uncompressed_size": 60736,
+          "compressed_size": 60736,
+          "crc32": "030ccc4a",
+          "sha256": "a34505bf037b652366e30bc28274098fc70805a2551160107b98b3d607259be3"
+        },
+        {
+          "path": "assets/bin/Data/sharedassets6.resource",
+          "uncompressed_size": 20896,
+          "compressed_size": 20896,
+          "crc32": "c2247805",
+          "sha256": "2153ad9798658d8cf19b1ddcebd9f8f296310ce852994879e85788570afc58cc"
+        },
+        {
+          "path": "assets/bin/Data/unity_app_guid",
+          "uncompressed_size": 36,
+          "compressed_size": 36,
+          "crc32": "20d7e971",
+          "sha256": "b5f89e2d9e34810a9c4e641b726517c92b017b5c6bfe8d847e956c03b95244b1"
+        },
+        {
+          "path": "assets/com/appsflyer/internal/28445207a6f5af97c-",
+          "uncompressed_size": 6609,
+          "compressed_size": 6609,
+          "crc32": "e4b97ccc",
+          "sha256": "17df2e491f87dbf73608d832bee6e7c20db762d620cd2b16c966e85f206906d3"
+        },
+        {
+          "path": "assets/com/appsflyer/internal/2b7867f15e66c02ea-",
+          "uncompressed_size": 7308,
+          "compressed_size": 7308,
+          "crc32": "93af0807",
+          "sha256": "000fafa55b2be74904f369bc834776faee23c1f26f54b539a136957522ee1589"
+        },
+        {
+          "path": "assets/com/appsflyer/internal/d1bb394ba89138f2d-",
+          "uncompressed_size": 3489,
+          "compressed_size": 3489,
+          "crc32": "847d3142",
+          "sha256": "79e80bc7908300fabf621e50fbf3f27e96f774e843e807617bdc50b61b08d09f"
+        },
+        {
+          "path": "assets/com/appsflyer/internal/eebc3677933725bab-",
+          "uncompressed_size": 13452,
+          "compressed_size": 13452,
+          "crc32": "6b5430c4",
+          "sha256": "6b06b0c9fddb714ce498d52b1e7d737b617d203b4f43389c884c6269740ce7a8"
+        },
+        {
+          "path": "assets/google-services-desktop.json",
+          "uncompressed_size": 993,
+          "compressed_size": 993,
+          "crc32": "535492e8",
+          "sha256": "b177de66dda0f8c8c61398d823c0ae25f64015ed3444f252ac68481e973421c7"
+        },
+        {
+          "path": "assets/settings.json",
+          "uncompressed_size": 1620,
+          "compressed_size": 1620,
+          "crc32": "7bb64503",
+          "sha256": "2f6ea5b9b8ebdc2fccaf396e7bd2b9e268d9b8c296a70874a3db0680948a0124"
+        },
+        {
+          "path": "billing.properties",
+          "uncompressed_size": 50,
+          "compressed_size": 37,
+          "crc32": "01dc31e7",
+          "sha256": "d748e65c1bfd6ea11b5130f711cafe682b8cf64757a3b7c57c635c1ef0e750a1"
+        },
+        {
+          "path": "classes.dex",
+          "uncompressed_size": 2988852,
+          "compressed_size": 2988852,
+          "crc32": "3cf1da41",
+          "sha256": "d425532d4c97fb89c4dd1c28f4da6a8684c114b2de9b3bb232e196ceee6d74f8"
+        },
+        {
+          "path": "core-common.properties",
+          "uncompressed_size": 58,
+          "compressed_size": 41,
+          "crc32": "8b1055d6",
+          "sha256": "b5153b8b6a843b0124253522a2eaba79840c92803d67cda1ccdff6b86e9a2eb7"
+        },
+        {
+          "path": "firebase-analytics.properties",
+          "uncompressed_size": 74,
+          "compressed_size": 50,
+          "crc32": "6e7c8022",
+          "sha256": "7a5cca3a2af0a69dfaa8264cb6d052f04b415576bb20ff800f464153288605d8"
+        },
+        {
+          "path": "firebase-annotations.properties",
+          "uncompressed_size": 78,
+          "compressed_size": 51,
+          "crc32": "c1d3dcf2",
+          "sha256": "0a9af694f0a979e09e33be21c6428cceb2260d0c85a75cd374ba9fb997383de3"
+        },
+        {
+          "path": "firebase-encoders-json.properties",
+          "uncompressed_size": 82,
+          "compressed_size": 53,
+          "crc32": "14eef179",
+          "sha256": "354e4def95204eb991b805e8f8e2319651e0ed590d1ad6ffe8a5cd4b9ec65db7"
+        },
+        {
+          "path": "firebase-encoders-proto.properties",
+          "uncompressed_size": 84,
+          "compressed_size": 54,
+          "crc32": "a1d9b8c9",
+          "sha256": "eba792be6ea03f3b6d68eccfd25f3f53a0767657ec12b1b90996b5d5b34a9688"
+        },
+        {
+          "path": "firebase-encoders.properties",
+          "uncompressed_size": 72,
+          "compressed_size": 48,
+          "crc32": "7df25dbd",
+          "sha256": "527438e526e7befb6c04dc394f4e36824a11019c7d6d687c2772a435d22c0e9f"
+        },
+        {
+          "path": "firebase-installations-interop.properties",
+          "uncompressed_size": 98,
+          "compressed_size": 60,
+          "crc32": "73732fc8",
+          "sha256": "e18456985c7e2c69b5b0b538643b7a3f60e4357072b2d08fa1b4ad52d10e8f04"
+        },
+        {
+          "path": "firebase-installations.properties",
+          "uncompressed_size": 82,
+          "compressed_size": 53,
+          "crc32": "c9acc34e",
+          "sha256": "66de47b00d792d4cb320ee5acbcfc8b2e63379f3575c26b6c0795d1d52d031e5"
+        },
+        {
+          "path": "firebase-measurement-connector.properties",
+          "uncompressed_size": 98,
+          "compressed_size": 61,
+          "crc32": "59c9abbf",
+          "sha256": "ca7d9dd559c3cf48a087b9d4fc5b7c6eded0c99892297b59758093459d98463a"
+        },
+        {
+          "path": "integrity.properties",
+          "uncompressed_size": 54,
+          "compressed_size": 39,
+          "crc32": "09526ed6",
+          "sha256": "4288c259a7390b19d95cd67e82dbbdfe6aa5eafc4ef40d87f6fb96022d71a7ce"
+        },
+        {
+          "path": "kotlin/annotation/annotation.kotlin_builtins",
+          "uncompressed_size": 926,
+          "compressed_size": 559,
+          "crc32": "d36c8b5b",
+          "sha256": "f7c93e7067ca12ba9b3d94c6e540e4c23cb6fdd8c9aff704b553caba650fc357"
+        },
+        {
+          "path": "kotlin/collections/collections.kotlin_builtins",
+          "uncompressed_size": 3685,
+          "compressed_size": 1521,
+          "crc32": "f41c30cf",
+          "sha256": "539b85c2403f6ef0638161ad99df7b11256412e9411335ed2ea3931a3efd7c76"
+        },
+        {
+          "path": "kotlin/coroutines/coroutines.kotlin_builtins",
+          "uncompressed_size": 200,
+          "compressed_size": 157,
+          "crc32": "c69fe143",
+          "sha256": "59a6d632b8a9f5dba26f2a689c3865e195351df7c3c08aa1669fe0df9f9eb883"
+        },
+        {
+          "path": "kotlin/internal/internal.kotlin_builtins",
+          "uncompressed_size": 646,
+          "compressed_size": 394,
+          "crc32": "d8d2330d",
+          "sha256": "c76b70a3db1eccbe42ea91a53667d7661edfc615409d3d6e574b5843b1e2a05e"
+        },
+        {
+          "path": "kotlin/kotlin.kotlin_builtins",
+          "uncompressed_size": 17783,
+          "compressed_size": 5004,
+          "crc32": "f8dceab9",
+          "sha256": "0633ac9c37e96556927bd7224a5d31c098e13b1416e48290d50bd502aed62d3b"
+        },
+        {
+          "path": "kotlin/ranges/ranges.kotlin_builtins",
+          "uncompressed_size": 3305,
+          "compressed_size": 1264,
+          "crc32": "7f91df9f",
+          "sha256": "b59c1b5a9a491df799eee202ad919376009bd4f822d7e9fcf79c20b350503852"
+        },
+        {
+          "path": "kotlin/reflect/reflect.kotlin_builtins",
+          "uncompressed_size": 2395,
+          "compressed_size": 1265,
+          "crc32": "13816860",
+          "sha256": "f0021ca61426250d6b17e76dd5f732c5908cf67dcaf33b0429a3ead7b1894386"
+        },
+        {
+          "path": "play-services-appset.properties",
+          "uncompressed_size": 78,
+          "compressed_size": 52,
+          "crc32": "2e36e4f0",
+          "sha256": "6439ca4f71d95013dbeec8f7f973699df1f33c215ebb52d41c5d0cb9c4567a38"
+        },
+        {
+          "path": "play-services-auth-api-phone.properties",
+          "uncompressed_size": 94,
+          "compressed_size": 60,
+          "crc32": "551a5adc",
+          "sha256": "9616650f2a823c681bd7b2ea848bba1f6cb3472e1a0ddd71175e6cc3461ba7d5"
+        },
+        {
+          "path": "play-services-auth-base.properties",
+          "uncompressed_size": 84,
+          "compressed_size": 55,
+          "crc32": "28b50e59",
+          "sha256": "7da8d4a55bedcc07809620e7757cf1ded6372840366f37c2c0928fcf37d7e35a"
+        },
+        {
+          "path": "play-services-auth.properties",
+          "uncompressed_size": 74,
+          "compressed_size": 50,
+          "crc32": "6f65d4a1",
+          "sha256": "5f7c84929a07e7a9fc3bf281ebdcefdb99a52196654f6e7408ac5d2bd5496e4b"
+        },
+        {
+          "path": "play-services-base.properties",
+          "uncompressed_size": 74,
+          "compressed_size": 50,
+          "crc32": "54708c61",
+          "sha256": "432ae25a7385bbf7d5ceb2cefeb377fc92e0713a14932c7aad2353759c2343bc"
+        },
+        {
+          "path": "play-services-basement.properties",
+          "uncompressed_size": 82,
+          "compressed_size": 53,
+          "crc32": "50107977",
+          "sha256": "f104c265304c046ad9ba4807df8a0537204caf35dae11cc090cd8a34be6ee1da"
+        },
+        {
+          "path": "play-services-location.properties",
+          "uncompressed_size": 82,
+          "compressed_size": 53,
+          "crc32": "ab97afb9",
+          "sha256": "8104769b08dd94c4d3cce0f981bc29ae9c5fcba6f7de68c4724281e872bee84a"
+        },
+        {
+          "path": "play-services-measurement-api.properties",
+          "uncompressed_size": 96,
+          "compressed_size": 60,
+          "crc32": "04f0d36b",
+          "sha256": "38d06c3d706cb63f502ea7047ce6cf729bafbe9e427b21e2986b1fabef8add55"
+        },
+        {
+          "path": "play-services-measurement-base.properties",
+          "uncompressed_size": 98,
+          "compressed_size": 61,
+          "crc32": "6bdab4dc",
+          "sha256": "1d05e06dbb9827e21c7611ad94e5491ee084d19381287ce9038e676b762f4f41"
+        },
+        {
+          "path": "play-services-measurement-impl.properties",
+          "uncompressed_size": 98,
+          "compressed_size": 61,
+          "crc32": "dd2c47c6",
+          "sha256": "565aeea3d8753a6c6cfdefbea3ed9e59bb9502ddfc8fa02bb707d60ab2cfb53a"
+        },
+        {
+          "path": "play-services-measurement-sdk-api.properties",
+          "uncompressed_size": 104,
+          "compressed_size": 64,
+          "crc32": "4458a6ac",
+          "sha256": "f3dca17c346acb21924b4ea59621d0f017cf27215a53eb8877aa811bab3affed"
+        },
+        {
+          "path": "play-services-measurement-sdk.properties",
+          "uncompressed_size": 96,
+          "compressed_size": 60,
+          "crc32": "7ac2d23d",
+          "sha256": "7c9001142c37cacedab821d4b82b7401ed749ff092785254a1a356ad07ab6b79"
+        },
+        {
+          "path": "play-services-measurement.properties",
+          "uncompressed_size": 88,
+          "compressed_size": 56,
+          "crc32": "3d45e865",
+          "sha256": "03a11acbbfe9716ae7b1feef01941418aa0e26f6c08c659c1eb0e64fedcf2d78"
+        },
+        {
+          "path": "play-services-places-placereport.properties",
+          "uncompressed_size": 102,
+          "compressed_size": 56,
+          "crc32": "6fe58122",
+          "sha256": "dcb990b67e7beba71fbf0c58a98c9d51051c80215537fe8add33cd8cb2381a1e"
+        },
+        {
+          "path": "play-services-stats.properties",
+          "uncompressed_size": 76,
+          "compressed_size": 51,
+          "crc32": "4452cfc2",
+          "sha256": "6b751c654deb3ac65a878025d2ff2b89fabfa0ebe00ac4152ad3f7a361aed107"
+        },
+        {
+          "path": "play-services-tasks.properties",
+          "uncompressed_size": 76,
+          "compressed_size": 51,
+          "crc32": "155b1813",
+          "sha256": "f8df4c59acead3b3395b6e7092806c3e4ce06e54ecbc84e97f6ecf6d583380ff"
+        },
+        {
+          "path": "res/anim/lunar_console_slide_in_top.xml",
+          "uncompressed_size": 396,
+          "compressed_size": 396,
+          "crc32": "fada7fbd",
+          "sha256": "e6c1f318332dfdbd1f7dd829a46f69c94c1fc3147e2e65f91e8317548fe9107b"
+        },
+        {
+          "path": "res/anim/lunar_console_slide_out_top.xml",
+          "uncompressed_size": 396,
+          "compressed_size": 396,
+          "crc32": "28e49406",
+          "sha256": "ec3eae63fc2ea7645be2e6abe9e1bcf0019de612c6c145e1e0711ed6f959645d"
+        },
+        {
+          "path": "res/color/common_google_signin_btn_text_dark.xml",
+          "uncompressed_size": 712,
+          "compressed_size": 712,
+          "crc32": "9dadf1a4",
+          "sha256": "99c00a929ad19657de03fd7001562ca1c51666c518afe3e3275e8e0f92105d2d"
+        },
+        {
+          "path": "res/color/common_google_signin_btn_text_light.xml",
+          "uncompressed_size": 712,
+          "compressed_size": 712,
+          "crc32": "d5736381",
+          "sha256": "1777253eb2eb4b369f27b411645fd9d55960fa1afe3f7e57c11019cb6c3346b7"
+        },
+        {
+          "path": "res/color/common_google_signin_btn_tint.xml",
+          "uncompressed_size": 464,
+          "compressed_size": 464,
+          "crc32": "44356c3d",
+          "sha256": "c230db3d543d322c35c60b744c12b0aa7526f1ccfffbb570caee6f47c99f9626"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_icon_dark.xml",
+          "uncompressed_size": 588,
+          "compressed_size": 588,
+          "crc32": "5f6e2bb9",
+          "sha256": "dcfd4ca9b0e5bc90f6a78bf5a1f39697e0bfe9e8d6458aa39fbc6ef2fe6dc432"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_icon_dark_focused.xml",
+          "uncompressed_size": 892,
+          "compressed_size": 892,
+          "crc32": "ac1416f2",
+          "sha256": "1e9d29cc238493796f68d182b21bb61c5f1d89e2195c0be5b863ebe16d756ba7"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_icon_dark_normal.xml",
+          "uncompressed_size": 548,
+          "compressed_size": 548,
+          "crc32": "661b83d5",
+          "sha256": "1eda13c77a1c0722967e44868012f12c6e129e479d44829180fd2d51e7e82ef4"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_icon_disabled.xml",
+          "uncompressed_size": 1132,
+          "compressed_size": 1132,
+          "crc32": "a9686cb2",
+          "sha256": "e56e40708c05ec76d0f992236d5ad1c8a98c0be9905f212728dba27132b970f5"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_icon_light.xml",
+          "uncompressed_size": 588,
+          "compressed_size": 588,
+          "crc32": "e18ee826",
+          "sha256": "aa52451939929e1fa8d700c2a51887488eb3dea89cef3e6ef2cbab849968a93f"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_icon_light_focused.xml",
+          "uncompressed_size": 892,
+          "compressed_size": 892,
+          "crc32": "ec1bd2bd",
+          "sha256": "6449ca60b603016f3c9af0895f63f25df653c34e5989edfdedf8ccca5a2d3ce4"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_icon_light_normal.xml",
+          "uncompressed_size": 548,
+          "compressed_size": 548,
+          "crc32": "c5b6a334",
+          "sha256": "7f5dc2000e7ffe5c684714b2d64bcd9b73ce00b257e2e5c349f60fff975c688d"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_text_dark.xml",
+          "uncompressed_size": 588,
+          "compressed_size": 588,
+          "crc32": "254b7ac9",
+          "sha256": "94591edb65fe8475f063c7f1dbb72341970752b08bae76b2c02ec955b4c3d6c2"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_text_dark_focused.xml",
+          "uncompressed_size": 892,
+          "compressed_size": 892,
+          "crc32": "8b653bba",
+          "sha256": "bb8c5e80fe58289146b7b01a75a2d96c1adecb9ae1f9ffba040c94ac8dfa4d1b"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_text_dark_normal.xml",
+          "uncompressed_size": 584,
+          "compressed_size": 584,
+          "crc32": "d4336ea7",
+          "sha256": "84aa573c77a64f82c91f20f1a64f12029ab86b73b85b677c1f6627e999f128bd"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_text_disabled.xml",
+          "uncompressed_size": 1152,
+          "compressed_size": 1152,
+          "crc32": "2967d1f6",
+          "sha256": "26b1cdd0a0233285e484a3850b19025915a355a55322d82b49ba8d664b2c4ba3"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_text_light.xml",
+          "uncompressed_size": 588,
+          "compressed_size": 588,
+          "crc32": "781e214d",
+          "sha256": "de36fc059c83eb495c7bb12f2208b96c8848e21f82bd11a798dac4d69ba1b1c8"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_text_light_focused.xml",
+          "uncompressed_size": 892,
+          "compressed_size": 892,
+          "crc32": "8588a565",
+          "sha256": "e4575a423556406a297632004b1c58bfd57a952e642496af7e1a4786183df559"
+        },
+        {
+          "path": "res/drawable/common_google_signin_btn_text_light_normal.xml",
+          "uncompressed_size": 584,
+          "compressed_size": 584,
+          "crc32": "062d61a4",
+          "sha256": "e882f676fd4eb74082ecaf2c5ea90c8a1bd0e4e78ba546f5c0121863235a4a4c"
+        },
+        {
+          "path": "res/drawable/ic_launcher_background.xml",
+          "uncompressed_size": 5696,
+          "compressed_size": 5696,
+          "crc32": "ed917daa",
+          "sha256": "16dc6523396ba158880e13209fde1a3a36c61a1d3ed327c999214cfc0a15d1fa"
+        },
+        {
+          "path": "res/drawable/lunar_console_actions_empty_warning.png",
+          "uncompressed_size": 877,
+          "compressed_size": 877,
+          "crc32": "67250810",
+          "sha256": "d66ae2f234bc121eb05937dc35c88845d9f7659f90248998fd647495d3430344"
+        },
+        {
+          "path": "res/drawable/lunar_console_base_button_selector.xml",
+          "uncompressed_size": 588,
+          "compressed_size": 588,
+          "crc32": "3187446b",
+          "sha256": "ac374c868f6626b57b17daf6315b818aba382a22d4a93f6b5d244cb1453111b2"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_button_clear.png",
+          "uncompressed_size": 140,
+          "compressed_size": 140,
+          "crc32": "ee91bd9f",
+          "sha256": "cb8be41fa7ca93fc4389fee5e4a1c5102d55f50d36fb2e146cb130f07623a08f"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_button_clipboard.png",
+          "uncompressed_size": 171,
+          "compressed_size": 171,
+          "crc32": "3ef13529",
+          "sha256": "aa38cf17b0806671f879249ae92e85c17e736a9b5ac7ae6a66e38ef516aa603b"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_button_close.png",
+          "uncompressed_size": 238,
+          "compressed_size": 238,
+          "crc32": "9eed12d1",
+          "sha256": "42ed6d4e92a44d487f657cfd1054d631df09ce1df99bf44a5167f6cda6e9be68"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_button_console.png",
+          "uncompressed_size": 187,
+          "compressed_size": 187,
+          "crc32": "82138614",
+          "sha256": "ad1a6156855977b6db29775ed069ed28922373335bb5e25937d00d51bd3b921a"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_button_email.png",
+          "uncompressed_size": 281,
+          "compressed_size": 281,
+          "crc32": "3a2091cb",
+          "sha256": "f30988b29348ca5b0ab480a42d57c6526571a12dde18742ea7a7bc01ec45c8e0"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_button_lock.png",
+          "uncompressed_size": 310,
+          "compressed_size": 310,
+          "crc32": "1a94a92b",
+          "sha256": "d8c50a96963af8cb3f38e2d618c883926c10b3215793308fb1b970c6af053b4a"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_button_more.png",
+          "uncompressed_size": 128,
+          "compressed_size": 128,
+          "crc32": "b1102cec",
+          "sha256": "afa9abc860b7fb3a2d4a8e5508d4c1df5ef7e7d6c21a4d4e4c2214ae40b3c19f"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_button_settings.png",
+          "uncompressed_size": 423,
+          "compressed_size": 423,
+          "crc32": "ae133fda",
+          "sha256": "86799d13398b75783b84a404ecb8bedb8a24f367ba4d203dbcc702f4971ca02d"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_button_unlock.png",
+          "uncompressed_size": 276,
+          "compressed_size": 276,
+          "crc32": "1f123afd",
+          "sha256": "69df0f71a6e9f3adfe0601a2aa5c4dadadbd93a48216bf2a9de985298a11d702"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_button_variable_help.png",
+          "uncompressed_size": 510,
+          "compressed_size": 510,
+          "crc32": "a8e90331",
+          "sha256": "d8ad6e837613cf86a98e9edb8ebb8bafafa629925e06a229c334ca55a3e78661"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_log.png",
+          "uncompressed_size": 435,
+          "compressed_size": 435,
+          "crc32": "8321e312",
+          "sha256": "6c971b288fd568eabe9c693e3b2cf35cd827ad58510b664ec3110d2de851eff6"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_log_error.png",
+          "uncompressed_size": 332,
+          "compressed_size": 332,
+          "crc32": "44185597",
+          "sha256": "b3768c42f3d4733dc5507c78954aafac1a99a80bd45075c23557aab214d58380"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_log_warning.png",
+          "uncompressed_size": 379,
+          "compressed_size": 379,
+          "crc32": "803f9860",
+          "sha256": "250c9e8b5010c9bc9d257bc7c124a9a0022ae893346218da11b7b4b892bbb23c"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_resize_hor.png",
+          "uncompressed_size": 129,
+          "compressed_size": 129,
+          "crc32": "ad63416a",
+          "sha256": "00fb9441a1782bbcba37647da163a08aabda89ca7565f895d3106ac9f52e827b"
+        },
+        {
+          "path": "res/drawable/lunar_console_icon_resize_ver.png",
+          "uncompressed_size": 128,
+          "compressed_size": 128,
+          "crc32": "c77106da",
+          "sha256": "3881380f414362e2f6d255ad568bc207b0e901b3b929fb765e26b3d3a9b3ea4d"
+        },
+        {
+          "path": "res/drawable/lunar_console_selector_value_text.xml",
+          "uncompressed_size": 588,
+          "compressed_size": 588,
+          "crc32": "ab2352ef",
+          "sha256": "017d21041f5feba7d9ce0a2142d465741819daaf306e00138d3d8c234c5cff27"
+        },
+        {
+          "path": "res/drawable/lunar_console_shape_collapse_text_background.xml",
+          "uncompressed_size": 740,
+          "compressed_size": 740,
+          "crc32": "261296ea",
+          "sha256": "2d951e2441045178dbba861123f17e8d9bdaa532c1593bf27d13c8c7f36f896e"
+        },
+        {
+          "path": "res/drawable/lunar_console_shape_filter_text.xml",
+          "uncompressed_size": 776,
+          "compressed_size": 776,
+          "crc32": "ab297cda",
+          "sha256": "2611acde92c54f128420e794a8a93e6e5a9e18bbef5c16b7f80bb8d075220b76"
+        },
+        {
+          "path": "res/drawable/lunar_console_shape_move_resize.xml",
+          "uncompressed_size": 500,
+          "compressed_size": 500,
+          "crc32": "61514fae",
+          "sha256": "318bbaf33fea74bc224e8930f7f25dcf78017703e9ee2393cb3418e0bc228fcc"
+        },
+        {
+          "path": "res/drawable/lunar_console_shape_switch_thumb.xml",
+          "uncompressed_size": 516,
+          "compressed_size": 516,
+          "crc32": "4cf49967",
+          "sha256": "1615a868340d5ad7fdcf62085b4449de8a655854853e5da15409d3d12ecaf281"
+        },
+        {
+          "path": "res/drawable/lunar_console_shape_switch_track.xml",
+          "uncompressed_size": 564,
+          "compressed_size": 564,
+          "crc32": "d32f25c8",
+          "sha256": "8a4f1839ee9d6f3108724ad4e0f8c3fed660d8c71e09b770015366f01ebd3c04"
+        },
+        {
+          "path": "res/drawable/lunar_console_shape_switch_track_off.xml",
+          "uncompressed_size": 760,
+          "compressed_size": 760,
+          "crc32": "0e7778bb",
+          "sha256": "99bcf3865690e447ee9b9f61eb45d9005594c71c4ba6404ac3a63627602c15f6"
+        },
+        {
+          "path": "res/drawable/lunar_console_shape_switch_track_on.xml",
+          "uncompressed_size": 648,
+          "compressed_size": 648,
+          "crc32": "281d11ff",
+          "sha256": "44322b113710b2f9b20f7884f4ac0525ab86c12638e91c7490456c293b035fb9"
+        },
+        {
+          "path": "res/drawable/lunar_console_shape_variable_value_text.xml",
+          "uncompressed_size": 776,
+          "compressed_size": 776,
+          "crc32": "bc5a8102",
+          "sha256": "68470e47f4e16ab68363e0965e3989ae55cdb552af1a98864a28d89b36a9c5ce"
+        },
+        {
+          "path": "res/drawable/notification_bg.xml",
+          "uncompressed_size": 532,
+          "compressed_size": 532,
+          "crc32": "a5a2a063",
+          "sha256": "37a70435ee8d8a3c1438e9c4351f7672dd6e1afd571bec896727ff5ba1ed0ada"
+        },
+        {
+          "path": "res/drawable/notification_bg_low.xml",
+          "uncompressed_size": 532,
+          "compressed_size": 532,
+          "crc32": "c39c1d2b",
+          "sha256": "e5ce469b8def91bec5ee3e62ee7e60e31ed639ea55fcdb1b1fefadc301103d41"
+        },
+        {
+          "path": "res/drawable/notification_icon_background.xml",
+          "uncompressed_size": 372,
+          "compressed_size": 372,
+          "crc32": "2b5d087b",
+          "sha256": "82668c37b036c102a35be9965ada335e37dad2fd4ff3ad05ddf99f1445495f53"
+        },
+        {
+          "path": "res/drawable/notification_tile_bg.xml",
+          "uncompressed_size": 304,
+          "compressed_size": 304,
+          "crc32": "cb185f0d",
+          "sha256": "64624061b73ff8cabe7585a9e0bf2678a04e1cad65574efb8f2d9c1727e6be43"
+        },
+        {
+          "path": "res/drawable-anydpi-v21/ic_call_answer.xml",
+          "uncompressed_size": 1356,
+          "compressed_size": 1356,
+          "crc32": "e718162c",
+          "sha256": "5f6376dfe199d8a6e40033d3e623989d052c9b2f974d00c824fbb8b76fc6fde8"
+        },
+        {
+          "path": "res/drawable-anydpi-v21/ic_call_answer_low.xml",
+          "uncompressed_size": 1320,
+          "compressed_size": 1320,
+          "crc32": "841b4300",
+          "sha256": "8f9acacabaf2dfb4bb53dab7ce7bec9c1451ce0a0219ffaa41760ea82da3d2d6"
+        },
+        {
+          "path": "res/drawable-anydpi-v21/ic_call_answer_video.xml",
+          "uncompressed_size": 772,
+          "compressed_size": 772,
+          "crc32": "6d825b66",
+          "sha256": "5d4cdaae5838ad9442c085f951b766b2808bff13b8c85a14e0bcf8571514492c"
+        },
+        {
+          "path": "res/drawable-anydpi-v21/ic_call_answer_video_low.xml",
+          "uncompressed_size": 736,
+          "compressed_size": 736,
+          "crc32": "4484223e",
+          "sha256": "4a959580080ebb1d822a2459a4234d2abf0dd0b65d9c28bda8c258dafc888c51"
+        },
+        {
+          "path": "res/drawable-anydpi-v21/ic_call_decline.xml",
+          "uncompressed_size": 1528,
+          "compressed_size": 1528,
+          "crc32": "8e9ea254",
+          "sha256": "2d825b79cce60203492ff09a04826db0ac8d9eb9bc0fb9fb139ae1aa5cde0f67"
+        },
+        {
+          "path": "res/drawable-anydpi-v21/ic_call_decline_low.xml",
+          "uncompressed_size": 1492,
+          "compressed_size": 1492,
+          "crc32": "dc9946b2",
+          "sha256": "c8321364802409baf4d76e2a84e303871585bdc95b0395040c5ecea0e2051105"
+        },
+        {
+          "path": "res/drawable-anydpi-v24/$ic_launcher_foreground__0.xml",
+          "uncompressed_size": 788,
+          "compressed_size": 788,
+          "crc32": "1cfa49c2",
+          "sha256": "b9d00dcf8c7aefc419976ee55536034abee0982a3fbd3e9f0fbab7777edee5a4"
+        },
+        {
+          "path": "res/drawable-anydpi-v24/ic_launcher_foreground.xml",
+          "uncompressed_size": 1572,
+          "compressed_size": 1572,
+          "crc32": "97c39d14",
+          "sha256": "e249fe51273c1486abad621bcdc20157725de178d16629dc80765d0c6078ec7f"
+        },
+        {
+          "path": "res/drawable-hdpi-v11/icon_grey.png",
+          "uncompressed_size": 604,
+          "compressed_size": 604,
+          "crc32": "8ee89d9d",
+          "sha256": "126db4f01f93975ce5d3883136edef8e956b9e1713bfa355464c611c1c11f1b4"
+        },
+        {
+          "path": "res/drawable-hdpi-v11/icon_large.png",
+          "uncompressed_size": 6213,
+          "compressed_size": 6213,
+          "crc32": "2d92407b",
+          "sha256": "10b29646734111719cb45b49c9be60632dc32c48a1e3a2ffbb92ba368f134a2d"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/common_full_open_on_phone.png",
+          "uncompressed_size": 681,
+          "compressed_size": 681,
+          "crc32": "3ae6b82e",
+          "sha256": "e8e2fecfbf111cc5ef65dbb6c7395a5ae16a68f7e0922738d0c802b26e866e49"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+          "uncompressed_size": 897,
+          "compressed_size": 897,
+          "crc32": "85696478",
+          "sha256": "9865619196624a3cba32a36b0111357afea3148f123221ba8c7265bc681ab8a9"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+          "uncompressed_size": 683,
+          "compressed_size": 683,
+          "crc32": "58fb3053",
+          "sha256": "94a0b6363a09d466a3dc3722379ab367d9ff73a21ba0ff2c5bab6c30aa5f8b38"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+          "uncompressed_size": 960,
+          "compressed_size": 960,
+          "crc32": "d939ee0d",
+          "sha256": "d66f7061c274b1b6f8524993367af902737ddf9187db0cc8d91a8c64ad9b944a"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+          "uncompressed_size": 694,
+          "compressed_size": 694,
+          "crc32": "9a55c238",
+          "sha256": "dc9a0ae125491ccdac95b57b5eee4060efd191294e171c8e369d7d0ec3ab2268"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/googleg_disabled_color_18.png",
+          "uncompressed_size": 410,
+          "compressed_size": 410,
+          "crc32": "0cb58331",
+          "sha256": "f73508090d3e6bbc3e39ba768e71855aad52ecaaaccda676d43a1860010cc557"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/googleg_standard_color_18.png",
+          "uncompressed_size": 808,
+          "compressed_size": 808,
+          "crc32": "7d62f5a4",
+          "sha256": "f221f962a62c954a11b1734e9631fc8531e34bee557665fea864aa4386e25e39"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/ic_call_answer.png",
+          "uncompressed_size": 472,
+          "compressed_size": 472,
+          "crc32": "033f4e8a",
+          "sha256": "5c80d88a7b82ef5833255bf70ff1c26c3efb2a92ae90cac222f3200f59e0b1ea"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/ic_call_answer_low.png",
+          "uncompressed_size": 472,
+          "compressed_size": 472,
+          "crc32": "033f4e8a",
+          "sha256": "5c80d88a7b82ef5833255bf70ff1c26c3efb2a92ae90cac222f3200f59e0b1ea"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/ic_call_answer_video.png",
+          "uncompressed_size": 254,
+          "compressed_size": 254,
+          "crc32": "abe30596",
+          "sha256": "6adcfc9dd1e1b82b985d223fc8a01c8e8f0dd3b9051d38062674b2380af79a50"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/ic_call_answer_video_low.png",
+          "uncompressed_size": 254,
+          "compressed_size": 254,
+          "crc32": "abe30596",
+          "sha256": "6adcfc9dd1e1b82b985d223fc8a01c8e8f0dd3b9051d38062674b2380af79a50"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/ic_call_decline.png",
+          "uncompressed_size": 375,
+          "compressed_size": 375,
+          "crc32": "a7b67394",
+          "sha256": "12ec9f9ad5fa3d7d897114af6c2297b66f31cb056e43daffbe80d23f6f66396d"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/ic_call_decline_low.png",
+          "uncompressed_size": 375,
+          "compressed_size": 375,
+          "crc32": "a7b67394",
+          "sha256": "12ec9f9ad5fa3d7d897114af6c2297b66f31cb056e43daffbe80d23f6f66396d"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_actions_empty_warning.png",
+          "uncompressed_size": 1333,
+          "compressed_size": 1333,
+          "crc32": "f4c07cb2",
+          "sha256": "1c2cbd7cba3f6bf7e75e164aa78e6a516acf677b05526de1f0c0c65fb172deb2"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_button_clear.png",
+          "uncompressed_size": 202,
+          "compressed_size": 202,
+          "crc32": "ec7e9db7",
+          "sha256": "87f0925db3ef81b6b64de555dbd6e18cc8b82ae9e8530bf6cc78ffaddc4fb86a"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_button_clipboard.png",
+          "uncompressed_size": 274,
+          "compressed_size": 274,
+          "crc32": "2dd7616d",
+          "sha256": "b1aa6c310e64da4c2b1ea173f99ba879043e710940d47e28c23652aba4f47947"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_button_close.png",
+          "uncompressed_size": 294,
+          "compressed_size": 294,
+          "crc32": "82658d47",
+          "sha256": "bc898f558fe30c20e8ec1976f2d7b1ba6c96508bcb0ae8ad0ddecca7681c8fc0"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_button_console.png",
+          "uncompressed_size": 248,
+          "compressed_size": 248,
+          "crc32": "da6b853c",
+          "sha256": "7a4271e558fda03282e1a1c0ca1c3f76accbe240a64f5cb355cfcac4e9708525"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_button_email.png",
+          "uncompressed_size": 382,
+          "compressed_size": 382,
+          "crc32": "29595a3e",
+          "sha256": "e5e2d7bfe3163e9cceac1b5c2f5dfe390bc9e82416d09a70b6406147c2dfb033"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_button_lock.png",
+          "uncompressed_size": 363,
+          "compressed_size": 363,
+          "crc32": "aaef33b5",
+          "sha256": "64b4778f675f784320642a843211ed775a1abc2ccace94226e4ad61e579831b1"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_button_more.png",
+          "uncompressed_size": 164,
+          "compressed_size": 164,
+          "crc32": "872f5a3d",
+          "sha256": "15feaeb5e39630b8baadb53ff6d7b0beb5e102f4d2e950471d99d8a82ff432d5"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_button_settings.png",
+          "uncompressed_size": 639,
+          "compressed_size": 639,
+          "crc32": "874b054f",
+          "sha256": "87723eb50baa938c8ec36c8904b29164a49c650293294d11214cd25961b232d1"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_button_unlock.png",
+          "uncompressed_size": 364,
+          "compressed_size": 364,
+          "crc32": "2eeb05b7",
+          "sha256": "c5dd44a637822951c775ba74e4ae36f42a205e877c7b4e9764a460cf5cf4dcaa"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_button_variable_help.png",
+          "uncompressed_size": 788,
+          "compressed_size": 788,
+          "crc32": "fd5ae09a",
+          "sha256": "5258537c409a63bd9a824408bc60e2d2e6e6f74a581d162e73eeca518bb55b94"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_log.png",
+          "uncompressed_size": 674,
+          "compressed_size": 674,
+          "crc32": "94d41dd3",
+          "sha256": "f7c9e6b55bcf0b383fc50f702485589a11f57e8d3b301afd2b7fe65b1e616b31"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_log_error.png",
+          "uncompressed_size": 463,
+          "compressed_size": 463,
+          "crc32": "da27a8ae",
+          "sha256": "fb3c4151b18c4439f88e0ca52190d6169065dc1f8e102ee78379900497fc782e"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_log_warning.png",
+          "uncompressed_size": 532,
+          "compressed_size": 532,
+          "crc32": "b0bc5cc9",
+          "sha256": "73dd4669d173d794194b84bc961f2e3a73a6479830bc71f5c73648025cf5aea4"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_resize_hor.png",
+          "uncompressed_size": 169,
+          "compressed_size": 169,
+          "crc32": "771327d0",
+          "sha256": "07c8435c87ca4b055b22b84e551ccd8bd899d583411e579cf3ff70d39ac6c0d4"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/lunar_console_icon_resize_ver.png",
+          "uncompressed_size": 164,
+          "compressed_size": 164,
+          "crc32": "c711f326",
+          "sha256": "b82c4ce702897dcf20ae89b19d879e6583b8034227b1a0ead1f7b661f87c6d01"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/notification_bg_low_normal.9.png",
+          "uncompressed_size": 212,
+          "compressed_size": 212,
+          "crc32": "378c117e",
+          "sha256": "21f0b55280be10b187ceff8edef4a5a7047683e6e9fcf47de410aa3839f41094"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/notification_bg_low_pressed.9.png",
+          "uncompressed_size": 225,
+          "compressed_size": 225,
+          "crc32": "5059e725",
+          "sha256": "42aee0b03883e94df5e543348a397d1302c1b8221895871a83b81899f5a9647b"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/notification_bg_normal.9.png",
+          "uncompressed_size": 212,
+          "compressed_size": 212,
+          "crc32": "c22cbe9f",
+          "sha256": "0c6328c7b2420570a7ec38b3beb3bac9a29d895ac1ab7239315aba7266418593"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png",
+          "uncompressed_size": 225,
+          "compressed_size": 225,
+          "crc32": "a1d68cd0",
+          "sha256": "18b328d8017e677d5aad3dbd66bae356b5cac978c6f0670938ea648e51d0eb66"
+        },
+        {
+          "path": "res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png",
+          "uncompressed_size": 107,
+          "compressed_size": 107,
+          "crc32": "6ed8c1f1",
+          "sha256": "8430ec003e003f3f2ba2f78d48fd150e25407667e530e82e87a7d4841c0fd676"
+        },
+        {
+          "path": "res/drawable-ldpi-v11/icon_grey.png",
+          "uncompressed_size": 273,
+          "compressed_size": 273,
+          "crc32": "fc06ad11",
+          "sha256": "b4e0115e3e982a15926d11ae3d5d258205f9d9d1c6f25b1be6e2e65a095d41d4"
+        },
+        {
+          "path": "res/drawable-ldpi-v11/icon_large.png",
+          "uncompressed_size": 2266,
+          "compressed_size": 2266,
+          "crc32": "5b2ef8fa",
+          "sha256": "364f2a4ba681fea1e3045f18c4d7193321d6166203e1083b02a56922718afce3"
+        },
+        {
+          "path": "res/drawable-ldpi-v4/ic_call_answer.png",
+          "uncompressed_size": 270,
+          "compressed_size": 270,
+          "crc32": "bdbf1204",
+          "sha256": "6d34a8bb29be26e343781603588506f33bd1b93732a1c1bc9fd84678aa36b178"
+        },
+        {
+          "path": "res/drawable-ldpi-v4/ic_call_answer_low.png",
+          "uncompressed_size": 270,
+          "compressed_size": 270,
+          "crc32": "bdbf1204",
+          "sha256": "6d34a8bb29be26e343781603588506f33bd1b93732a1c1bc9fd84678aa36b178"
+        },
+        {
+          "path": "res/drawable-ldpi-v4/ic_call_answer_video.png",
+          "uncompressed_size": 199,
+          "compressed_size": 199,
+          "crc32": "1ca1cc7a",
+          "sha256": "66356f564f051a568e25071f60da312c418309f9129773aceb2246773458681c"
+        },
+        {
+          "path": "res/drawable-ldpi-v4/ic_call_answer_video_low.png",
+          "uncompressed_size": 199,
+          "compressed_size": 199,
+          "crc32": "1ca1cc7a",
+          "sha256": "66356f564f051a568e25071f60da312c418309f9129773aceb2246773458681c"
+        },
+        {
+          "path": "res/drawable-ldpi-v4/ic_call_decline.png",
+          "uncompressed_size": 201,
+          "compressed_size": 201,
+          "crc32": "9d7544da",
+          "sha256": "a18cdaaf3742b1a3d4f484fa15d00fa34afb21495884301aafa3213338661ed6"
+        },
+        {
+          "path": "res/drawable-ldpi-v4/ic_call_decline_low.png",
+          "uncompressed_size": 201,
+          "compressed_size": 201,
+          "crc32": "9d7544da",
+          "sha256": "a18cdaaf3742b1a3d4f484fa15d00fa34afb21495884301aafa3213338661ed6"
+        },
+        {
+          "path": "res/drawable-mdpi-v11/icon_grey.png",
+          "uncompressed_size": 341,
+          "compressed_size": 341,
+          "crc32": "9743a15c",
+          "sha256": "8634bc6dbb3680004961120a98c49312bb7ae1e49ccd50124744d04f35b30668"
+        },
+        {
+          "path": "res/drawable-mdpi-v11/icon_large.png",
+          "uncompressed_size": 3120,
+          "compressed_size": 3120,
+          "crc32": "051eb9a7",
+          "sha256": "b3ea68adb1304ffeefb8480441cf483d6953490c39a3558716e35d645e622aa7"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+          "uncompressed_size": 610,
+          "compressed_size": 610,
+          "crc32": "88698600",
+          "sha256": "71bfd776b21b1102f26e31a0f6dc65d40de2cbae650c7528241d5cdc17eac991"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+          "uncompressed_size": 500,
+          "compressed_size": 500,
+          "crc32": "c6f5722c",
+          "sha256": "77d8cc5447360efba3b3f1659bea9680eccbe47e2aaa07424d562f0e5c8af829"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+          "uncompressed_size": 615,
+          "compressed_size": 615,
+          "crc32": "4199e4d9",
+          "sha256": "9635dab0f3c0b0557f3535d9655784f68130db57ce3920ae68c2d4cab4edd35e"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+          "uncompressed_size": 465,
+          "compressed_size": 465,
+          "crc32": "dd5d7c6f",
+          "sha256": "08a416adad6c0e9bece3238674a76b24bbac2ce95c1cffca817b3c675ac69f6b"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/googleg_disabled_color_18.png",
+          "uncompressed_size": 281,
+          "compressed_size": 281,
+          "crc32": "fa60669e",
+          "sha256": "7c1e1629c95fb2603fbdeab93a8fbf30b9c80be11ef483d497f8a88e8f67bd6b"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/googleg_standard_color_18.png",
+          "uncompressed_size": 562,
+          "compressed_size": 562,
+          "crc32": "76065920",
+          "sha256": "788a3b9472e9a46e1b6b68d918cd1571914b732e93aab014d77f20be5374e9de"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/ic_call_answer.png",
+          "uncompressed_size": 317,
+          "compressed_size": 317,
+          "crc32": "a24abe92",
+          "sha256": "f2ff62f473d8a5e00a8b6c81c15be9a0536471c3d5a81e37d04bc3356ea81ca0"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/ic_call_answer_low.png",
+          "uncompressed_size": 317,
+          "compressed_size": 317,
+          "crc32": "a24abe92",
+          "sha256": "f2ff62f473d8a5e00a8b6c81c15be9a0536471c3d5a81e37d04bc3356ea81ca0"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/ic_call_answer_video.png",
+          "uncompressed_size": 206,
+          "compressed_size": 206,
+          "crc32": "d61ca1a1",
+          "sha256": "6306048ba5f7eca43e7bdadeefa9412180508486fd543e02de93d2a013e223f0"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/ic_call_answer_video_low.png",
+          "uncompressed_size": 206,
+          "compressed_size": 206,
+          "crc32": "d61ca1a1",
+          "sha256": "6306048ba5f7eca43e7bdadeefa9412180508486fd543e02de93d2a013e223f0"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/ic_call_decline.png",
+          "uncompressed_size": 264,
+          "compressed_size": 264,
+          "crc32": "bd953c30",
+          "sha256": "7e87b3e0229126dc3c2bdaddcd8f330f3bb5f7613a05024c3cd6445dd161f788"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/ic_call_decline_low.png",
+          "uncompressed_size": 264,
+          "compressed_size": 264,
+          "crc32": "bd953c30",
+          "sha256": "7e87b3e0229126dc3c2bdaddcd8f330f3bb5f7613a05024c3cd6445dd161f788"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/notification_bg_low_normal.9.png",
+          "uncompressed_size": 215,
+          "compressed_size": 215,
+          "crc32": "d9fa55b7",
+          "sha256": "2f7fbda0ba6e53e9a47e2fc0e24e32c447c613a5808c2d6285dc651e83a07ad7"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/notification_bg_low_pressed.9.png",
+          "uncompressed_size": 223,
+          "compressed_size": 223,
+          "crc32": "b80ede38",
+          "sha256": "e17761ed280edd93d7141bd504b70f9e9e15a8652288d9e6333bf4ce964ef844"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/notification_bg_normal.9.png",
+          "uncompressed_size": 215,
+          "compressed_size": 215,
+          "crc32": "c135d194",
+          "sha256": "a8676a1793ac8310ffb12986232df66df092d29c242aeedc2b73556c010d38dc"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png",
+          "uncompressed_size": 223,
+          "compressed_size": 223,
+          "crc32": "ed1fee6a",
+          "sha256": "99c14d6855b8be296d58017d3751b8dc849c47b6d1d80ab614ff9075080e461b"
+        },
+        {
+          "path": "res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png",
+          "uncompressed_size": 98,
+          "compressed_size": 98,
+          "crc32": "2ea3830b",
+          "sha256": "0d773e62c756422313262846c787e58f67e0ee87e45e1ae9942002e816c4cb9e"
+        },
+        {
+          "path": "res/drawable-v21/notification_action_background.xml",
+          "uncompressed_size": 1180,
+          "compressed_size": 1180,
+          "crc32": "ba2c1d1e",
+          "sha256": "bfc7643d4213ad7e611d2fd7cdff89b8c45ffbbe067bd382422bd8a88a7a9249"
+        },
+        {
+          "path": "res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+          "uncompressed_size": 908,
+          "compressed_size": 908,
+          "crc32": "fca1f28e",
+          "sha256": "a2678f2ea0deaa179fcc3595be61d69a396c71f17efdc78bdec4a36a7fb663c2"
+        },
+        {
+          "path": "res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+          "uncompressed_size": 1040,
+          "compressed_size": 1040,
+          "crc32": "dec4dd4f",
+          "sha256": "b81a69b96ffa766d887eb1d3fe16a2d6f528e43b045c3f528d56ca7f0e10117e"
+        },
+        {
+          "path": "res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+          "uncompressed_size": 872,
+          "compressed_size": 872,
+          "crc32": "f137f97a",
+          "sha256": "5085fb2e8ef69f25b1ad0894802076025f0bac3f427df4f18ed40cd0e3a0574d"
+        },
+        {
+          "path": "res/drawable-xhdpi-v11/icon_grey.png",
+          "uncompressed_size": 893,
+          "compressed_size": 893,
+          "crc32": "430994f9",
+          "sha256": "e88ece384b796f10bd2f7391014709628a949cde5b1e5c20592a4064912c4120"
+        },
+        {
+          "path": "res/drawable-xhdpi-v11/icon_large.png",
+          "uncompressed_size": 8218,
+          "compressed_size": 8218,
+          "crc32": "0bb9b649",
+          "sha256": "a0cb517b6fa38d3e11c341c2a51bd8c43ff93aa93da2a711f97b6029933a99fc"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/common_full_open_on_phone.png",
+          "uncompressed_size": 489,
+          "compressed_size": 489,
+          "crc32": "cc7eabe9",
+          "sha256": "e816dc0998f4ee90d7b630f17e16fcc2e72d91078c5315adaac4bc2da4c226d7"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+          "uncompressed_size": 1032,
+          "compressed_size": 1032,
+          "crc32": "f4f0cee1",
+          "sha256": "9d62d3eabefaf89e6018d3902cc8c4bb888a8891d9639deda8fb58ba60fe1822"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+          "uncompressed_size": 776,
+          "compressed_size": 776,
+          "crc32": "c1b93349",
+          "sha256": "f62bf21d152a276ae8d9a0d62997f12c60d64ec812fd973ff60e3295deee34b4"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+          "uncompressed_size": 1086,
+          "compressed_size": 1086,
+          "crc32": "fecc21a4",
+          "sha256": "fcb4416a4f5f5b4d72854d91722289789b30bb562c6f0f57975818ab555cc809"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+          "uncompressed_size": 808,
+          "compressed_size": 808,
+          "crc32": "db1aed88",
+          "sha256": "092bf333080e2b3ece63147ea15e6ac04915968c010e5c3f85f8cb650d61ecb7"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/googleg_disabled_color_18.png",
+          "uncompressed_size": 516,
+          "compressed_size": 516,
+          "crc32": "edf1a67b",
+          "sha256": "6083523032ab5df9e6cb82e4ff3d48af7738900a2e9b23d991beaa2eba7862e9"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/googleg_standard_color_18.png",
+          "uncompressed_size": 982,
+          "compressed_size": 982,
+          "crc32": "bc0a585a",
+          "sha256": "90c44675525e290332f7dba6adb97c7af3b8299e56cf5211e893d0e1dec41547"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/ic_call_answer.png",
+          "uncompressed_size": 623,
+          "compressed_size": 623,
+          "crc32": "cc930448",
+          "sha256": "e64c2e57627e24ec1ed37e67344c2bf31d1d6bdd2d8d715840c1edf0bd1425b6"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/ic_call_answer_low.png",
+          "uncompressed_size": 623,
+          "compressed_size": 623,
+          "crc32": "cc930448",
+          "sha256": "e64c2e57627e24ec1ed37e67344c2bf31d1d6bdd2d8d715840c1edf0bd1425b6"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/ic_call_answer_video.png",
+          "uncompressed_size": 290,
+          "compressed_size": 290,
+          "crc32": "e4259315",
+          "sha256": "5d02a81102644428ca639aec3df626eeb4a839a9ddc76fc2b158b04461d7f00f"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/ic_call_answer_video_low.png",
+          "uncompressed_size": 290,
+          "compressed_size": 290,
+          "crc32": "e4259315",
+          "sha256": "5d02a81102644428ca639aec3df626eeb4a839a9ddc76fc2b158b04461d7f00f"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/ic_call_decline.png",
+          "uncompressed_size": 452,
+          "compressed_size": 452,
+          "crc32": "ec5a7046",
+          "sha256": "9a9a30c305022a2f8e075d2ed7d33f5c7711bba8d0d0385511fdb62f89f208e3"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/ic_call_decline_low.png",
+          "uncompressed_size": 452,
+          "compressed_size": 452,
+          "crc32": "ec5a7046",
+          "sha256": "9a9a30c305022a2f8e075d2ed7d33f5c7711bba8d0d0385511fdb62f89f208e3"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_actions_empty_warning.png",
+          "uncompressed_size": 1821,
+          "compressed_size": 1821,
+          "crc32": "c6a5cc33",
+          "sha256": "5022d24aadd22de8e636ce513ab300c6e393960b5900846a44b2680a9897a8c8"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_button_clear.png",
+          "uncompressed_size": 208,
+          "compressed_size": 208,
+          "crc32": "818dd40b",
+          "sha256": "40144720ebd7c7a5cca408dae507d0fc64fbdb979a40320ff2012b7e7b1adb31"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_button_clipboard.png",
+          "uncompressed_size": 247,
+          "compressed_size": 247,
+          "crc32": "7b476ff6",
+          "sha256": "c58f3a9473249939110f806f935b2d355a769f29e8d142964da1a946ab86f969"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_button_close.png",
+          "uncompressed_size": 343,
+          "compressed_size": 343,
+          "crc32": "459ef45b",
+          "sha256": "5f5c05d75e17084585e004e12467abd0f8355cf19fdbcf6266d945c134e303d3"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_button_console.png",
+          "uncompressed_size": 261,
+          "compressed_size": 261,
+          "crc32": "34bd216c",
+          "sha256": "a7b53c2cd3103c5357251f8146085eac8758d3f637bdde46cdc6b076faa7deab"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_button_email.png",
+          "uncompressed_size": 471,
+          "compressed_size": 471,
+          "crc32": "10058189",
+          "sha256": "a6cc0e760c3f7d89b8b621166b54156e78dcddef7727a1c962e323919836f3d3"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_button_lock.png",
+          "uncompressed_size": 493,
+          "compressed_size": 493,
+          "crc32": "b7bc311b",
+          "sha256": "a88f61422a494798f4c9495cc23d62f544e5feff90222c52c31b0b3d67826daf"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_button_more.png",
+          "uncompressed_size": 208,
+          "compressed_size": 208,
+          "crc32": "fa40096c",
+          "sha256": "ea9ed23d15fbc4f2c3670665cbffd380d2bad2e1301f7f62373a0ce339668e7e"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_button_settings.png",
+          "uncompressed_size": 740,
+          "compressed_size": 740,
+          "crc32": "d6cbc88e",
+          "sha256": "ffdc5c3c5f2ab9f9847558ba2b02a3285282df1e8a0b2c9b42817b51a31e1f06"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_button_unlock.png",
+          "uncompressed_size": 482,
+          "compressed_size": 482,
+          "crc32": "bf1f0913",
+          "sha256": "92a7170c9ec7a2c00395c698d515a83401d4ea60a607e20dad9131ec17d3d824"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_button_variable_help.png",
+          "uncompressed_size": 1072,
+          "compressed_size": 1072,
+          "crc32": "d5ca21cc",
+          "sha256": "e8340f5e2d2baf881c1303c9dfa2c0297e15b37c936b62b9759c82bd07cc55fa"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_log.png",
+          "uncompressed_size": 877,
+          "compressed_size": 877,
+          "crc32": "67250810",
+          "sha256": "d66ae2f234bc121eb05937dc35c88845d9f7659f90248998fd647495d3430344"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_log_error.png",
+          "uncompressed_size": 642,
+          "compressed_size": 642,
+          "crc32": "a18780a7",
+          "sha256": "165faace41d29d7f6d1c7368cfa131f4fc5035824428143e0ab9dcd3aa153966"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_log_warning.png",
+          "uncompressed_size": 527,
+          "compressed_size": 527,
+          "crc32": "75a7238f",
+          "sha256": "8491eb596ab97b7d8f5267c5462501ff9f11705baab0519aed735767c1e77de4"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_resize_hor.png",
+          "uncompressed_size": 242,
+          "compressed_size": 242,
+          "crc32": "0c5e0021",
+          "sha256": "b769325737b097fc792997b50d5804c8801463170ab898fbb1d37df1fa3aa66e"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/lunar_console_icon_resize_ver.png",
+          "uncompressed_size": 240,
+          "compressed_size": 240,
+          "crc32": "ce8e7fe1",
+          "sha256": "008a73016a5ea82cb4107f626b8e66fb8e96716a3e97f9df7d96b79206f77d31"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/notification_bg_low_normal.9.png",
+          "uncompressed_size": 221,
+          "compressed_size": 221,
+          "crc32": "3ad03275",
+          "sha256": "3e09afa21c45372c035598c017c8fb405a6d678e6cb84dc857581cb3b40e482d"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png",
+          "uncompressed_size": 252,
+          "compressed_size": 252,
+          "crc32": "c8900a8e",
+          "sha256": "20343222f9f79dd565c3a2248494d452e70820ac1c437173c38badd45f962afd"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/notification_bg_normal.9.png",
+          "uncompressed_size": 221,
+          "compressed_size": 221,
+          "crc32": "9944f31a",
+          "sha256": "559bf783d765c02338e97952bdc9c6689c7ff99090b8c9813369118da8b080f0"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png",
+          "uncompressed_size": 247,
+          "compressed_size": 247,
+          "crc32": "c29ac558",
+          "sha256": "d27af435101ca4cbec0c840bd30687918cd39eb83aab1487420855623a45998b"
+        },
+        {
+          "path": "res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png",
+          "uncompressed_size": 138,
+          "compressed_size": 138,
+          "crc32": "04576501",
+          "sha256": "b44eeda34d7a529c2fe55719eb098fa29707caa91d18de06a7a775d6e6bcf973"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v11/icon_large.png",
+          "uncompressed_size": 18039,
+          "compressed_size": 18039,
+          "crc32": "2a9c1002",
+          "sha256": "73a746e7e15185b41419b67f1a6e71d37e3303e80017d26d7ec3aa173612dbe1"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+          "uncompressed_size": 1510,
+          "compressed_size": 1510,
+          "crc32": "30b789c3",
+          "sha256": "be03693c47d3c4d4466f14a695eaccd210b61e91d808c0c4a46d6f021b598278"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+          "uncompressed_size": 1138,
+          "compressed_size": 1138,
+          "crc32": "aefcba59",
+          "sha256": "71f14a18275f8678fd9f0c1c0affc400a975a0b815b82eca7345b6aaecf978ee"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+          "uncompressed_size": 1638,
+          "compressed_size": 1638,
+          "crc32": "89e3a379",
+          "sha256": "42a1b93ba380eeba9d499582df981a535f872af234ad6600675fff37459306e5"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+          "uncompressed_size": 1255,
+          "compressed_size": 1255,
+          "crc32": "3dae25e9",
+          "sha256": "5624a284adf8a5e8e7c2560524eb05d7ee97d09a9c2dbe3a76a840766015ae30"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/googleg_disabled_color_18.png",
+          "uncompressed_size": 727,
+          "compressed_size": 727,
+          "crc32": "2c75d16b",
+          "sha256": "5db3ab4d30063b5e8fa63ae2993f83efd0af71d6526b3a1468f9e3bf891af587"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/googleg_standard_color_18.png",
+          "uncompressed_size": 1441,
+          "compressed_size": 1441,
+          "crc32": "e1b2a1fb",
+          "sha256": "549a81cda776769840f37f184d34eb673ff9e5c0671c67172818e91273753e1a"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/ic_call_answer.png",
+          "uncompressed_size": 884,
+          "compressed_size": 884,
+          "crc32": "0ef1b92c",
+          "sha256": "86763a30af2a934c7c13b123b36443d1d17918b71c6149bc6ee80115b872593d"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/ic_call_answer_low.png",
+          "uncompressed_size": 884,
+          "compressed_size": 884,
+          "crc32": "0ef1b92c",
+          "sha256": "86763a30af2a934c7c13b123b36443d1d17918b71c6149bc6ee80115b872593d"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/ic_call_answer_video.png",
+          "uncompressed_size": 384,
+          "compressed_size": 384,
+          "crc32": "73026ef5",
+          "sha256": "ca48f604262f2b4ef8b100c73130efe2ad33ef8c2a2c1b3516f24f51b7b04665"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/ic_call_answer_video_low.png",
+          "uncompressed_size": 384,
+          "compressed_size": 384,
+          "crc32": "73026ef5",
+          "sha256": "ca48f604262f2b4ef8b100c73130efe2ad33ef8c2a2c1b3516f24f51b7b04665"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/ic_call_decline.png",
+          "uncompressed_size": 628,
+          "compressed_size": 628,
+          "crc32": "7f492a7c",
+          "sha256": "87adad32e0ec19c4e920420bf3a06c9f94f6128ed0d866a1891628aeab2cef06"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/ic_call_decline_low.png",
+          "uncompressed_size": 628,
+          "compressed_size": 628,
+          "crc32": "7f492a7c",
+          "sha256": "87adad32e0ec19c4e920420bf3a06c9f94f6128ed0d866a1891628aeab2cef06"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_actions_empty_warning.png",
+          "uncompressed_size": 2603,
+          "compressed_size": 2603,
+          "crc32": "b6662ad2",
+          "sha256": "6e4fff0262da6697a8434c0e2542d46e6da66fac837cda9c3feeaa7ab6c9d92f"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_button_clear.png",
+          "uncompressed_size": 275,
+          "compressed_size": 275,
+          "crc32": "21b767c3",
+          "sha256": "fab50bd3910bac5cd52a38ed91b731abe6fbe2924c84326956f24007f5d6a915"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_button_clipboard.png",
+          "uncompressed_size": 345,
+          "compressed_size": 345,
+          "crc32": "4b90ea56",
+          "sha256": "5283ba4b3faf32a2c3cba1701bf5fd5f372e2707b820e2bc9d4de354faedbc9b"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_button_close.png",
+          "uncompressed_size": 408,
+          "compressed_size": 408,
+          "crc32": "96b1ae34",
+          "sha256": "95ae2ba71bd9b915548b9f4281330bb75bc1d800606d6e24c2ac61b6dc6844fb"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_button_console.png",
+          "uncompressed_size": 338,
+          "compressed_size": 338,
+          "crc32": "57d01f6c",
+          "sha256": "3ff9ba36afd2809262cfe5e1ed16d85c4a5b077c853e56731403674c65f4010d"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_button_email.png",
+          "uncompressed_size": 574,
+          "compressed_size": 574,
+          "crc32": "43fbf3a6",
+          "sha256": "f8c9e98c370f80665d631c53da8da1698d5b3bbfa45ee16a4d8142f643b83075"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_button_lock.png",
+          "uncompressed_size": 671,
+          "compressed_size": 671,
+          "crc32": "a8a1b0ba",
+          "sha256": "1589965f77cb05404c45f938b74d35362d5d73bacc3b921048ea812006feedef"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_button_more.png",
+          "uncompressed_size": 275,
+          "compressed_size": 275,
+          "crc32": "473a6d12",
+          "sha256": "57286d1b85c2543a31dfc73ef513a428b51a47f7424929274373ae4aefc4ffd8"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_button_settings.png",
+          "uncompressed_size": 1141,
+          "compressed_size": 1141,
+          "crc32": "8f688401",
+          "sha256": "d87c7edd244b96f9b8736d2a57abd48af43259303745ad086aaf4ae63a70f3fb"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_button_unlock.png",
+          "uncompressed_size": 666,
+          "compressed_size": 666,
+          "crc32": "a175c4a6",
+          "sha256": "db8b11379f4ffe1d32fc4eb53a021fd32b76dd681dec7d255d1a1768d446bd72"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_button_variable_help.png",
+          "uncompressed_size": 1598,
+          "compressed_size": 1598,
+          "crc32": "3dbc7273",
+          "sha256": "c7fcb2c4fb44c0151d96762d47be9b0ae9613e023e6c7f19202a4b442431e142"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_log.png",
+          "uncompressed_size": 1333,
+          "compressed_size": 1333,
+          "crc32": "f4c07cb2",
+          "sha256": "1c2cbd7cba3f6bf7e75e164aa78e6a516acf677b05526de1f0c0c65fb172deb2"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_log_error.png",
+          "uncompressed_size": 899,
+          "compressed_size": 899,
+          "crc32": "cb99ef3e",
+          "sha256": "f9c662e3310f24b85e1facef4fb2c7650f0494584d0013c0d076a37697f5157e"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_log_warning.png",
+          "uncompressed_size": 654,
+          "compressed_size": 654,
+          "crc32": "57e49002",
+          "sha256": "3c2c77103e13cc34915c10ec6c5733247868381d08fc7b0950175aba738a42dd"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_resize_hor.png",
+          "uncompressed_size": 313,
+          "compressed_size": 313,
+          "crc32": "d81f8bcf",
+          "sha256": "e863aa592ef1857d79c98081031a39b776e456ef1aa89dbc6d6bad4e40e48065"
+        },
+        {
+          "path": "res/drawable-xxhdpi-v4/lunar_console_icon_resize_ver.png",
+          "uncompressed_size": 303,
+          "compressed_size": 303,
+          "crc32": "f111cb23",
+          "sha256": "4796962d5d2aece23727857c8cff513866bc7146063b8478129b0f17e4f74d7f"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/ic_call_answer.png",
+          "uncompressed_size": 1171,
+          "compressed_size": 1171,
+          "crc32": "0d1f216a",
+          "sha256": "ec698a3217bce74d8bc4a44bb008f2dbd3d1aebff1af1e9641805143dbf9fa87"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/ic_call_answer_low.png",
+          "uncompressed_size": 1171,
+          "compressed_size": 1171,
+          "crc32": "0d1f216a",
+          "sha256": "ec698a3217bce74d8bc4a44bb008f2dbd3d1aebff1af1e9641805143dbf9fa87"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/ic_call_answer_video.png",
+          "uncompressed_size": 465,
+          "compressed_size": 465,
+          "crc32": "f842e86c",
+          "sha256": "4c717ce1ffb551c765981add65d1956132d8f522337de2866b045f0a60485426"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/ic_call_answer_video_low.png",
+          "uncompressed_size": 465,
+          "compressed_size": 465,
+          "crc32": "f842e86c",
+          "sha256": "4c717ce1ffb551c765981add65d1956132d8f522337de2866b045f0a60485426"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/ic_call_decline.png",
+          "uncompressed_size": 823,
+          "compressed_size": 823,
+          "crc32": "b4e9dacd",
+          "sha256": "ab73b729bb95878120a3bdc8dc915f3aaa1d7070fc644a0de64d40941ad507ed"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/ic_call_decline_low.png",
+          "uncompressed_size": 823,
+          "compressed_size": 823,
+          "crc32": "b4e9dacd",
+          "sha256": "ab73b729bb95878120a3bdc8dc915f3aaa1d7070fc644a0de64d40941ad507ed"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_actions_empty_warning.png",
+          "uncompressed_size": 3287,
+          "compressed_size": 3287,
+          "crc32": "97cd7528",
+          "sha256": "ff0ee8f856a9827b0e533cef69fb57e889bbcee02a83bdf8de07fe936ba5f257"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_button_clear.png",
+          "uncompressed_size": 313,
+          "compressed_size": 313,
+          "crc32": "7e285260",
+          "sha256": "79eac088625cc6b5d8246aa143903857fac8a61f86cdda07c0f695895cba1aba"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_button_clipboard.png",
+          "uncompressed_size": 392,
+          "compressed_size": 392,
+          "crc32": "29cd227b",
+          "sha256": "776b574c85ecc9f552fd559bd35a9fbf817392960bf23a97a12554e44de505b7"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_button_close.png",
+          "uncompressed_size": 455,
+          "compressed_size": 455,
+          "crc32": "115ee07c",
+          "sha256": "9051bf6cee5d074ea9e32efdc950c86f3c5a75ca0e5c2280544f4397c5a04a53"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_button_console.png",
+          "uncompressed_size": 398,
+          "compressed_size": 398,
+          "crc32": "07c8ad64",
+          "sha256": "654886701241ebc6acda03bb1098d56eb347426a9cf063ef1682e87027bd7491"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_button_email.png",
+          "uncompressed_size": 706,
+          "compressed_size": 706,
+          "crc32": "2581aa27",
+          "sha256": "cffc794d8981f2dae21aebebf05a301ede885d651006d194aaf8367d2ffbc84e"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_button_lock.png",
+          "uncompressed_size": 877,
+          "compressed_size": 877,
+          "crc32": "4addc36c",
+          "sha256": "c758f63464682b941bb54e9d5fb967a927e88a50b09a2cc1b5e3212545f36f67"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_button_more.png",
+          "uncompressed_size": 329,
+          "compressed_size": 329,
+          "crc32": "ae3b8a7c",
+          "sha256": "baf2c0210fe8735d9fddedaa3dfa247799485f682056acf334abe31beb9634ac"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_button_settings.png",
+          "uncompressed_size": 1451,
+          "compressed_size": 1451,
+          "crc32": "6d02b09f",
+          "sha256": "1663883e498a3fff2b484466108ef915ad06a5db423ceda49a149008d632dc5b"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_button_unlock.png",
+          "uncompressed_size": 869,
+          "compressed_size": 869,
+          "crc32": "da2e24d6",
+          "sha256": "f356c4f1c6cb8a1a32f105137c826bc8f4960ca319a56a3e050fef02f89425a9"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_button_variable_help.png",
+          "uncompressed_size": 2153,
+          "compressed_size": 2153,
+          "crc32": "71143c2d",
+          "sha256": "2e0516039ecc1cbed7d543878c1f3aa7bcfa52cba7eb2702fa16c790165b3fc5"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_log.png",
+          "uncompressed_size": 1821,
+          "compressed_size": 1821,
+          "crc32": "c6a5cc33",
+          "sha256": "5022d24aadd22de8e636ce513ab300c6e393960b5900846a44b2680a9897a8c8"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_log_error.png",
+          "uncompressed_size": 1172,
+          "compressed_size": 1172,
+          "crc32": "770d1d7e",
+          "sha256": "e3ba5fcaa2fa6c0dac834cfd62c15cc431b3aafaf934791833c172a09c8bd5d6"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_log_warning.png",
+          "uncompressed_size": 772,
+          "compressed_size": 772,
+          "crc32": "2b3a888e",
+          "sha256": "cd267c6587f7e8450cbd1dc5991105dda326b7c546948be4ac4c9d58f955de26"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_resize_hor.png",
+          "uncompressed_size": 366,
+          "compressed_size": 366,
+          "crc32": "b9f27bb8",
+          "sha256": "24f2aec03860436c32268c33aac461a610bcedd466f045e65aab872048d43d87"
+        },
+        {
+          "path": "res/drawable-xxxhdpi-v4/lunar_console_icon_resize_ver.png",
+          "uncompressed_size": 355,
+          "compressed_size": 355,
+          "crc32": "a833e1b4",
+          "sha256": "ea855a6b157ef84e613275a15825c82729f5d1e27eb2d1195da5dea7946acf25"
+        },
+        {
+          "path": "res/layout/browser_actions_context_menu_page.xml",
+          "uncompressed_size": 1660,
+          "compressed_size": 1660,
+          "crc32": "4fd28542",
+          "sha256": "5154811f8b240884e02e648c710b870d52ac33fa96c68871c22c275e3dee0b54"
+        },
+        {
+          "path": "res/layout/browser_actions_context_menu_row.xml",
+          "uncompressed_size": 1212,
+          "compressed_size": 1212,
+          "crc32": "13a58922",
+          "sha256": "e0f0d0be63444a961f60992ba7f2282b4191a3c662259a00ea6fb05861af28b5"
+        },
+        {
+          "path": "res/layout/custom_dialog.xml",
+          "uncompressed_size": 612,
+          "compressed_size": 612,
+          "crc32": "4681925a",
+          "sha256": "f0f0bc44da2a46737fad965fb8ff764d02e73f3c490c21f8114f0d96b5383676"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_activity_settings.xml",
+          "uncompressed_size": 512,
+          "compressed_size": 512,
+          "crc32": "6d25fe6c",
+          "sha256": "91d990867f105cc641c78932d99c9bf9d26d8c1d0789ffc18f736afc81bc8589"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_console_action_entry.xml",
+          "uncompressed_size": 572,
+          "compressed_size": 572,
+          "crc32": "a68387e1",
+          "sha256": "b2240b5b4c56e219507a34fecc1b7bc0751e322e6855fde6b0987352d4724a2f"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_console_action_view.xml",
+          "uncompressed_size": 2380,
+          "compressed_size": 2380,
+          "crc32": "95976b6b",
+          "sha256": "2bfd1b7f3cc7f267661d3628ec02c57401b00bc7e5af994ee10765049778e0b0"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_console_header_entry.xml",
+          "uncompressed_size": 612,
+          "compressed_size": 612,
+          "crc32": "c21a4d70",
+          "sha256": "b0c86e195fb82b8419fc92cf4dba63d59d2c7ab30eec8d3796c073666b1aafc4"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_console_log_entry.xml",
+          "uncompressed_size": 1416,
+          "compressed_size": 1416,
+          "crc32": "69211a75",
+          "sha256": "f123c2757aea1b54ab294280d54c391be0ac0386d4350010b5bdca9032a85390"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_console_log_view.xml",
+          "uncompressed_size": 2880,
+          "compressed_size": 2880,
+          "crc32": "b4bda41a",
+          "sha256": "c20def66488d984ebe92bb4ea86ae2ed4bd7b000bb4c8951325e8ab85c7bf8b2"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_console_variable_entry.xml",
+          "uncompressed_size": 980,
+          "compressed_size": 980,
+          "crc32": "10df29e4",
+          "sha256": "e32853349e94f23c09b209b3e1c24d001615052e65527f74d823d2b5098b803a"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_console_view.xml",
+          "uncompressed_size": 832,
+          "compressed_size": 832,
+          "crc32": "ede8e272",
+          "sha256": "0b5f22ecc1184d231e96439aa352a6828332189a7418b3f763db6ccb753300c3"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_edit_variable_dialog.xml",
+          "uncompressed_size": 1132,
+          "compressed_size": 1132,
+          "crc32": "d6ad21b5",
+          "sha256": "59fb71a7e432543e131f3da8d2bd8d1775fcaa8534bdca7e7dc99718d9c740d7"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_edit_variable_enum.xml",
+          "uncompressed_size": 436,
+          "compressed_size": 436,
+          "crc32": "a2134200",
+          "sha256": "6b38eea2da7d0a67f4b99bf968438d72984754200ce7482e05006c3b6238ca42"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_edit_variable_range.xml",
+          "uncompressed_size": 916,
+          "compressed_size": 916,
+          "crc32": "be108d7a",
+          "sha256": "50f967d153a55a95801c2c0e1712a64059bf22bfc651b9afe1356fce3bc29edf"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_edit_variable_value.xml",
+          "uncompressed_size": 516,
+          "compressed_size": 516,
+          "crc32": "f60d1f2a",
+          "sha256": "307214d9cb81aec484a5a27cbcf1f355c920357c99810e22761df14edd546446"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_log_details_dialog.xml",
+          "uncompressed_size": 1676,
+          "compressed_size": 1676,
+          "crc32": "d6ad8cf9",
+          "sha256": "f968e8186499bb48c10e6a2a1991e03dde47418a05360f46ab986e02823faca0"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_move_resize.xml",
+          "uncompressed_size": 2252,
+          "compressed_size": 2252,
+          "crc32": "1aa7a73b",
+          "sha256": "3e9fd8891af94397bebcbe518535515f5cbdc4887880947638a14a2b96716ef9"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_overlay_log_entry.xml",
+          "uncompressed_size": 432,
+          "compressed_size": 432,
+          "crc32": "28792475",
+          "sha256": "e9f576db7afcca4978b9faca1188d19f6470c4a4bae8821d3d4eeb74c9ed0b14"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_settings_header.xml",
+          "uncompressed_size": 612,
+          "compressed_size": 612,
+          "crc32": "74cebccb",
+          "sha256": "753c68b6a880b00676d618fb2988256b144d0fda31f10b197a5847525a210c28"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_settings_property.xml",
+          "uncompressed_size": 1272,
+          "compressed_size": 1272,
+          "crc32": "1a11d668",
+          "sha256": "6e8f07b39a9b728af45f96ae2992f84d47a3172cc721ad620816f4463c27ff3e"
+        },
+        {
+          "path": "res/layout/lunar_console_layout_warning.xml",
+          "uncompressed_size": 1580,
+          "compressed_size": 1580,
+          "crc32": "2b741c13",
+          "sha256": "899ae60e9f76cbfd0e5089847f789c847ecf6124bfbce724497572bb44325a7e"
+        },
+        {
+          "path": "res/layout/notification_template_part_chronometer.xml",
+          "uncompressed_size": 440,
+          "compressed_size": 440,
+          "crc32": "01285b17",
+          "sha256": "78c27639904f1815fc96eb06cdeb0cf340f7719aa0cf4a9fbb439e2d40371d40"
+        },
+        {
+          "path": "res/layout/notification_template_part_time.xml",
+          "uncompressed_size": 440,
+          "compressed_size": 440,
+          "crc32": "2eb8c3eb",
+          "sha256": "318ff007ba0bc2ce0b2ba9437ff2bd6ed193d28b3ace28caa3fe7e69cce9d936"
+        },
+        {
+          "path": "res/layout-sw600dp-v13/lunar_console_layout_warning.xml",
+          "uncompressed_size": 1600,
+          "compressed_size": 1600,
+          "crc32": "33b368a2",
+          "sha256": "0c99923cf75d02b9e6d03d4c30925cacd100ad1c69cd631bf96e33173eb0cd1e"
+        },
+        {
+          "path": "res/layout-v21/notification_action.xml",
+          "uncompressed_size": 1052,
+          "compressed_size": 1052,
+          "crc32": "e41396fb",
+          "sha256": "47dbe3e977341324c411da59e0d9c13564b3b0b1df6d15ff5622be0b5226a266"
+        },
+        {
+          "path": "res/layout-v21/notification_action_tombstone.xml",
+          "uncompressed_size": 1228,
+          "compressed_size": 1228,
+          "crc32": "e79f75d3",
+          "sha256": "2d65a8722d0c1980032f3e6b52b1a15ac585f2cfcbb3cc72df79b277357f3c34"
+        },
+        {
+          "path": "res/layout-v21/notification_template_custom_big.xml",
+          "uncompressed_size": 2456,
+          "compressed_size": 2456,
+          "crc32": "3f2767ca",
+          "sha256": "807f2fda4d7cc667af1b8f22adce25d6df42e48f4a67c8328eeb1a920f0ebfa7"
+        },
+        {
+          "path": "res/layout-v21/notification_template_icon_group.xml",
+          "uncompressed_size": 988,
+          "compressed_size": 988,
+          "crc32": "3f1dc96e",
+          "sha256": "682834cae168eaf504e9f598a296af6e9cb165baa0cc4f6c82761df3b367fbd7"
+        },
+        {
+          "path": "res/menu/lunar_console_more_options_menu.xml",
+          "uncompressed_size": 708,
+          "compressed_size": 708,
+          "crc32": "cc8dca57",
+          "sha256": "a87aa60e998b43f051437a922c11e5d03853d3efe1a675211f8cbbf82a8a85cf"
+        },
+        {
+          "path": "res/mipmap-anydpi-v26/app_icon.xml",
+          "uncompressed_size": 448,
+          "compressed_size": 448,
+          "crc32": "29f1890d",
+          "sha256": "2c269406bae9fd707ffc32d8f1af8233c9352f1239c3ce92a0b903146cd0544e"
+        },
+        {
+          "path": "res/mipmap-anydpi-v26/ic_launcher.xml",
+          "uncompressed_size": 548,
+          "compressed_size": 548,
+          "crc32": "d622e62b",
+          "sha256": "51ad4941978eaac4fde8544098780c11dd0f87e2dfdcb4518935fecb17c44dd7"
+        },
+        {
+          "path": "res/mipmap-anydpi-v26/ic_launcher_round.xml",
+          "uncompressed_size": 548,
+          "compressed_size": 548,
+          "crc32": "d622e62b",
+          "sha256": "51ad4941978eaac4fde8544098780c11dd0f87e2dfdcb4518935fecb17c44dd7"
+        },
+        {
+          "path": "res/mipmap-hdpi-v4/app_icon.png",
+          "uncompressed_size": 9396,
+          "compressed_size": 9396,
+          "crc32": "7c1090a2",
+          "sha256": "24a86f106058e68018b0cc8e3c5e84c133afaf4bc0cef71564bd42b06608a7b2"
+        },
+        {
+          "path": "res/mipmap-hdpi-v4/app_icon_background.png",
+          "uncompressed_size": 3911,
+          "compressed_size": 3911,
+          "crc32": "b8130fa3",
+          "sha256": "b533c19e0f59c568b66ee3759949dce164b1f89a369f16d624ed8465a7ec4fc5"
+        },
+        {
+          "path": "res/mipmap-hdpi-v4/app_icon_foreground.png",
+          "uncompressed_size": 14661,
+          "compressed_size": 14661,
+          "crc32": "db8edc96",
+          "sha256": "24e50e9e08986299df7870b09f6c8c7ae78715d02f5097558bbfc62ce2483c7e"
+        },
+        {
+          "path": "res/mipmap-hdpi-v4/app_icon_round.png",
+          "uncompressed_size": 8278,
+          "compressed_size": 8278,
+          "crc32": "404925d9",
+          "sha256": "dc7e73b9953a98c18561b95b9ec01e49f313a58e397168b4cbd47543356eaea6"
+        },
+        {
+          "path": "res/mipmap-hdpi-v4/ic_launcher.webp",
+          "uncompressed_size": 1404,
+          "compressed_size": 1404,
+          "crc32": "726105db",
+          "sha256": "dd00996198640ed28fbc09cdcd7a3807cf8707f3eb255b659634da3ca6a6ff01"
+        },
+        {
+          "path": "res/mipmap-hdpi-v4/ic_launcher_round.webp",
+          "uncompressed_size": 2898,
+          "compressed_size": 2898,
+          "crc32": "8aa92342",
+          "sha256": "1ed73f5341a69d3b41c7e02e126803f50cc8c3284adf4bbb737f0c93577aef07"
+        },
+        {
+          "path": "res/mipmap-ldpi-v4/app_icon.png",
+          "uncompressed_size": 3178,
+          "compressed_size": 3178,
+          "crc32": "17c0b722",
+          "sha256": "5fa1d9288d291df6eec3455ec353bfe59874cb33e575caf3743696d223ebeb5c"
+        },
+        {
+          "path": "res/mipmap-ldpi-v4/app_icon_background.png",
+          "uncompressed_size": 1881,
+          "compressed_size": 1881,
+          "crc32": "d4b7fb1f",
+          "sha256": "11efc39e8582233fab8026a85fe83c2c7315a38ecbf633109754ed41c7e87837"
+        },
+        {
+          "path": "res/mipmap-ldpi-v4/app_icon_foreground.png",
+          "uncompressed_size": 5403,
+          "compressed_size": 5403,
+          "crc32": "36e42266",
+          "sha256": "67ffddaebd65110d15451aa27ef644e47630791c128779ccda96c0eb2da2f1fc"
+        },
+        {
+          "path": "res/mipmap-ldpi-v4/app_icon_round.png",
+          "uncompressed_size": 2860,
+          "compressed_size": 2860,
+          "crc32": "c9b6a3bc",
+          "sha256": "8af96c8f729fe023841da8edcca2ce83badfd4ca08cb7d311e6573b1f2758149"
+        },
+        {
+          "path": "res/mipmap-mdpi-v4/app_icon.png",
+          "uncompressed_size": 5044,
+          "compressed_size": 5044,
+          "crc32": "595b5956",
+          "sha256": "f224d597705e666324c93287f349742d51ed06692029db400b8396aeb6e75ef4"
+        },
+        {
+          "path": "res/mipmap-mdpi-v4/app_icon_background.png",
+          "uncompressed_size": 2467,
+          "compressed_size": 2467,
+          "crc32": "33857d47",
+          "sha256": "74f63ca1fdc88c73464bf3b623c82400b0e431a249590f6bdb899b4be5bc08f3"
+        },
+        {
+          "path": "res/mipmap-mdpi-v4/app_icon_foreground.png",
+          "uncompressed_size": 8200,
+          "compressed_size": 8200,
+          "crc32": "e708ca65",
+          "sha256": "9a28963f85289ed34e21cdf27ecf80c364e13d0c4b81c07e7809944c429423e3"
+        },
+        {
+          "path": "res/mipmap-mdpi-v4/app_icon_round.png",
+          "uncompressed_size": 4449,
+          "compressed_size": 4449,
+          "crc32": "90d73a7f",
+          "sha256": "29a784f370b27a81282b0f94b6667bf1e21e9e72d713f5b6f8d7c496e08dcbcd"
+        },
+        {
+          "path": "res/mipmap-mdpi-v4/ic_launcher.webp",
+          "uncompressed_size": 982,
+          "compressed_size": 982,
+          "crc32": "ad08b444",
+          "sha256": "846219e6f72fe9a6c104ca8919cbee36a101e7d2ff8da9da67b689a5888f060d"
+        },
+        {
+          "path": "res/mipmap-mdpi-v4/ic_launcher_round.webp",
+          "uncompressed_size": 1772,
+          "compressed_size": 1772,
+          "crc32": "5eda1942",
+          "sha256": "4e2c58b91de01130e6479e00cbbaaf6e77cd961dd2c8e303cf13cd077fa92632"
+        },
+        {
+          "path": "res/mipmap-xhdpi-v4/app_icon.png",
+          "uncompressed_size": 13958,
+          "compressed_size": 13958,
+          "crc32": "3dd2a3c3",
+          "sha256": "305dbf91af69fd60a957deb03e45671232b0bfce2264c10bc622b46ab4073f0c"
+        },
+        {
+          "path": "res/mipmap-xhdpi-v4/app_icon_background.png",
+          "uncompressed_size": 5530,
+          "compressed_size": 5530,
+          "crc32": "cd93a9ed",
+          "sha256": "180db317fc8adc798bbb83eed5bacf1892b7580bb8937fa63e879a5b8d6f81e7"
+        },
+        {
+          "path": "res/mipmap-xhdpi-v4/app_icon_foreground.png",
+          "uncompressed_size": 22413,
+          "compressed_size": 22413,
+          "crc32": "84897fb3",
+          "sha256": "d7beb0b44fedbb1ae161544c2a989feac7c164d2bb2fd4efedcb64f015feeae9"
+        },
+        {
+          "path": "res/mipmap-xhdpi-v4/app_icon_round.png",
+          "uncompressed_size": 12691,
+          "compressed_size": 12691,
+          "crc32": "2149ca89",
+          "sha256": "63a234969d9c115b5a8d83a003afd8efcff3503dfc3e2f17a33b8f9022fd8a45"
+        },
+        {
+          "path": "res/mipmap-xhdpi-v4/ic_launcher.webp",
+          "uncompressed_size": 1900,
+          "compressed_size": 1900,
+          "crc32": "fe60d158",
+          "sha256": "398340dad816fc9a6338cb151a8cf1e45b926f9bfb70628b24c4bd2523cc94d4"
+        },
+        {
+          "path": "res/mipmap-xhdpi-v4/ic_launcher_round.webp",
+          "uncompressed_size": 3918,
+          "compressed_size": 3918,
+          "crc32": "4f4977fa",
+          "sha256": "91b490aef86574901137f0a252272e1f1add99c1ad709e0696ed68929b88d261"
+        },
+        {
+          "path": "res/mipmap-xxhdpi-v4/app_icon.png",
+          "uncompressed_size": 24522,
+          "compressed_size": 24522,
+          "crc32": "b2656b32",
+          "sha256": "a7bd950886619b3f6919fd18900c4f90fa79c5f8699d063279aaa9e22c703a1d"
+        },
+        {
+          "path": "res/mipmap-xxhdpi-v4/app_icon_background.png",
+          "uncompressed_size": 9295,
+          "compressed_size": 9295,
+          "crc32": "a2bce8b0",
+          "sha256": "8a455c64ee1e44ce85a96125583fef5be24d9cbaaf4d7fe67d8687beb2e50037"
+        },
+        {
+          "path": "res/mipmap-xxhdpi-v4/app_icon_foreground.png",
+          "uncompressed_size": 41672,
+          "compressed_size": 41672,
+          "crc32": "96db9919",
+          "sha256": "e570ce9332a15650c44d471b3efb08b4c67a5c1e9668999474a0faf274dd37c7"
+        },
+        {
+          "path": "res/mipmap-xxhdpi-v4/app_icon_round.png",
+          "uncompressed_size": 22498,
+          "compressed_size": 22498,
+          "crc32": "18f4ea45",
+          "sha256": "e99133a05a1a58348a38a8029cfca79795249edbb999d4f64938cc7c0089d5a4"
+        },
+        {
+          "path": "res/mipmap-xxhdpi-v4/ic_launcher.webp",
+          "uncompressed_size": 2884,
+          "compressed_size": 2884,
+          "crc32": "12e67cde",
+          "sha256": "58ae87fa0c5b5d1562d27fd648d2c061553fe20e3ed570bde588162d01ea7a27"
+        },
+        {
+          "path": "res/mipmap-xxhdpi-v4/ic_launcher_round.webp",
+          "uncompressed_size": 5914,
+          "compressed_size": 5914,
+          "crc32": "a1164bb5",
+          "sha256": "3009fad079f5772f30ecd767f98924367fbe0f81c30048d672d4fda2d5ca7d12"
+        },
+        {
+          "path": "res/mipmap-xxxhdpi-v4/app_icon.png",
+          "uncompressed_size": 35594,
+          "compressed_size": 35594,
+          "crc32": "643c4a57",
+          "sha256": "c30dc989dc332088bd706e217ecd8cc995603006264a0861a334d915203de93c"
+        },
+        {
+          "path": "res/mipmap-xxxhdpi-v4/app_icon_background.png",
+          "uncompressed_size": 14029,
+          "compressed_size": 14029,
+          "crc32": "f2bda639",
+          "sha256": "7f48840f0a85984c7b2d031baa8ca3e4b2552489663f8f7f06ddebe27d425290"
+        },
+        {
+          "path": "res/mipmap-xxxhdpi-v4/app_icon_foreground.png",
+          "uncompressed_size": 66126,
+          "compressed_size": 66126,
+          "crc32": "e0018467",
+          "sha256": "ca93d3db81f7b2ffb25656ea51f92befc24e4266a07176740f46cc56db765e3b"
+        },
+        {
+          "path": "res/mipmap-xxxhdpi-v4/app_icon_round.png",
+          "uncompressed_size": 32972,
+          "compressed_size": 32972,
+          "crc32": "cb5283e8",
+          "sha256": "8affb882e7f21d2018feafc5bd46d9d654f5179639fff9b9d8eee8edd14e3c19"
+        },
+        {
+          "path": "res/mipmap-xxxhdpi-v4/ic_launcher.webp",
+          "uncompressed_size": 3844,
+          "compressed_size": 3844,
+          "crc32": "099ea624",
+          "sha256": "f98fef5bc3bfe5b65692c40ad1cbae2bec4faf9f1b249c397626740db71b62d8"
+        },
+        {
+          "path": "res/mipmap-xxxhdpi-v4/ic_launcher_round.webp",
+          "uncompressed_size": 7778,
+          "compressed_size": 7778,
+          "crc32": "f5fd6bcb",
+          "sha256": "5faf033745c8c882c43bb1b372d4e4a5890caec63d9892a2e756c954108b85dc"
+        },
+        {
+          "path": "res/raw/com_android_billingclient_heterodyne_info",
+          "uncompressed_size": 46,
+          "compressed_size": 46,
+          "crc32": "16a80d92",
+          "sha256": "e46d2d91fc704d0779fd412ff408c004cdfaf862f81cb7eecd249521c0d49f7a"
+        },
+        {
+          "path": "res/raw/com_android_billingclient_registration_info.binarypb",
+          "uncompressed_size": 56,
+          "compressed_size": 56,
+          "crc32": "edf6d38a",
+          "sha256": "49e31804de6a48859bf2cc1658173ef3d6affb885b939c542e991586096b1cad"
+        },
+        {
+          "path": "res/raw/extra_roots.pem",
+          "uncompressed_size": 7995,
+          "compressed_size": 7995,
+          "crc32": "7f89ec68",
+          "sha256": "41e80b80d3e7c0c0b5b2b5d881c7d48d2013cb8dd4ab409dff9e11dd97d52e81"
+        },
+        {
+          "path": "res/raw/firebase_common_keep.xml",
+          "uncompressed_size": 290,
+          "compressed_size": 290,
+          "crc32": "51cf4ab5",
+          "sha256": "5ef20e971497f76063ae165ee4aebc767cb12bcdd9fad3a0ca2c73d2c32f8163"
+        },
+        {
+          "path": "res/raw/russian_trusted_root.pem",
+          "uncompressed_size": 2057,
+          "compressed_size": 2057,
+          "crc32": "75545d4a",
+          "sha256": "aa800ef345422d6158c6fafe1c06c429dbda21c3df4bb1ccb45a920ec1111399"
+        },
+        {
+          "path": "res/xml/appsflyer_backup_rules.xml",
+          "uncompressed_size": 572,
+          "compressed_size": 572,
+          "crc32": "ffb6b0e9",
+          "sha256": "aa1e18f5e881f6a70fc016628320205fb9398a33c2265ddae8c78e8417edf2c5"
+        },
+        {
+          "path": "res/xml/appsflyer_data_extraction_rules.xml",
+          "uncompressed_size": 1036,
+          "compressed_size": 1036,
+          "crc32": "2069a9b4",
+          "sha256": "d11aa10b9203d2b3a1e63aa904356554b90aa94468aa3a6ebb183ae75e393a64"
+        },
+        {
+          "path": "res/xml/bbid_backup_rules.xml",
+          "uncompressed_size": 696,
+          "compressed_size": 696,
+          "crc32": "c3b7cbea",
+          "sha256": "c0b046361cb5226170064434bd6e965bb91999c501a4410359b86f290b991ea7"
+        },
+        {
+          "path": "res/xml/bbid_data_extraction_rules.xml",
+          "uncompressed_size": 1260,
+          "compressed_size": 1260,
+          "crc32": "e9ac2ccd",
+          "sha256": "a3e7d2da415f8dd919ff0b08d0ae1b65f1dd975c254fb64b9ebb88cda4cd4e34"
+        },
+        {
+          "path": "res/xml/com_android_billingclient_phenotype.xml",
+          "uncompressed_size": 704,
+          "compressed_size": 704,
+          "crc32": "d9912e80",
+          "sha256": "f91787dc08b6b43652b8a80b4951265981c6abd234f336211f6f185a81ceace5"
+        },
+        {
+          "path": "res/xml/file_paths.xml",
+          "uncompressed_size": 412,
+          "compressed_size": 412,
+          "crc32": "441a729f",
+          "sha256": "e11bb628e2d0c9fb24da822e3746ac68e9f738e750367b8a876c37f3136db4ae"
+        },
+        {
+          "path": "res/xml/file_provider_paths.xml",
+          "uncompressed_size": 292,
+          "compressed_size": 292,
+          "crc32": "76f955d4",
+          "sha256": "d2d84d2033aafb9a4cca3cfc262e08565d676861060fb83784752b1a7b40012f"
+        },
+        {
+          "path": "res/xml/image_share_filepaths.xml",
+          "uncompressed_size": 308,
+          "compressed_size": 308,
+          "crc32": "10ed4d63",
+          "sha256": "f1dd43e7cc35c6405c0dfcd8f9251101e7a2575703da448b88a1dc53c3d02feb"
+        },
+        {
+          "path": "res/xml/network_security_config.xml",
+          "uncompressed_size": 576,
+          "compressed_size": 576,
+          "crc32": "98409cc9",
+          "sha256": "b0b72fdb769b01cc9e1638ba6d0e0b4446f6f63996648fbee59b02f8a7b1c9f4"
+        },
+        {
+          "path": "res/xml/splits0.xml",
+          "uncompressed_size": 8404,
+          "compressed_size": 8404,
+          "crc32": "7b91bb99",
+          "sha256": "84d8b8c05e4b7f4f3bc3e87e5230715c3d59b42071f8d5824853eadfb02e74e8"
+        },
+        {
+          "path": "res/xml-v26/network_security_config.xml",
+          "uncompressed_size": 496,
+          "compressed_size": 496,
+          "crc32": "822b9319",
+          "sha256": "7ea70c27a66be5e294206d262cbe8c5da361c9cac76116b7c873de0434ec0e74"
+        },
+        {
+          "path": "resources.arsc",
+          "uncompressed_size": 279628,
+          "compressed_size": 279628,
+          "crc32": "f279da2f",
+          "sha256": "ddbbae12d701d54ce15d4e38ffd0614682f444d82e330f3fcab7752561a0bdd1"
+        },
+        {
+          "path": "review.properties",
+          "uncompressed_size": 48,
+          "compressed_size": 36,
+          "crc32": "f9d6dcdf",
+          "sha256": "9a5278881d0e56c9e9f673402cd9af9f66f5f8526773492925492db256bd3db9"
+        },
+        {
+          "path": "transport-api.properties",
+          "uncompressed_size": 62,
+          "compressed_size": 44,
+          "crc32": "c43f2a02",
+          "sha256": "e75f0a43308c145c5470418f30b7705738845c39c83bdb694ca5847b56a175bb"
+        },
+        {
+          "path": "transport-backend-cct.properties",
+          "uncompressed_size": 78,
+          "compressed_size": 52,
+          "crc32": "6de3abf7",
+          "sha256": "1ed039ee49f0d7dd101964776aced73dcdf0b2335d24db4ca5330f7ce629b2d6"
+        },
+        {
+          "path": "transport-runtime.properties",
+          "uncompressed_size": 70,
+          "compressed_size": 48,
+          "crc32": "f5d472eb",
+          "sha256": "cc9fd0b49140b730b541af9b1fbcecbe714277ac80c207f76bb07f95daa33c19"
+        },
+        {
+          "path": "stamp-cert-sha256",
+          "uncompressed_size": 32,
+          "compressed_size": 35,
+          "crc32": "62d68276",
+          "sha256": "1d9c2a02a93816ff5c7ae64f9aad02c23de49dc514620db1a7ad624d2a83679c"
+        }
+      ]
+    },
+    "split_config.arm64_v8a.apk": {
+      "filename": "split_config.arm64_v8a.apk",
+      "uncompressed_size": 28873412,
+      "compressed_size": 28376750,
+      "sha256": "3a3c08f88d30e97ed7b39753b1ad0ea090135cb2799e542edc97c15e8b4aa0ce",
+      "entry_count": 9,
+      "counts": {
+        "total_entries": 9,
+        "asset_count": 0,
+        "dex_count": 0,
+        "native_lib_count": 7,
+        "unity_bundle_count": 0,
+        "unity_metadata_count": 0,
+        "extension_counts": {
+          ".so": 7,
+          ".xml": 1,
+          "(no extension)": 1
+        }
+      },
+      "dex_files": [],
+      "native_libraries": [
+        "lib/arm64-v8a/libFirebaseCppAnalytics.so",
+        "lib/arm64-v8a/libFirebaseCppApp-12_10_1.so",
+        "lib/arm64-v8a/libUniWebViewNativeTexture.so",
+        "lib/arm64-v8a/lib_burst_generated.so",
+        "lib/arm64-v8a/libil2cpp.so",
+        "lib/arm64-v8a/libmain.so",
+        "lib/arm64-v8a/libunity.so"
+      ],
+      "unity_bundles": [],
+      "unity_metadata": [],
+      "unity_version_headers": [
+        {
+          "source_path": "lib/arm64-v8a/libunity.so",
+          "header_magic": "ELF shared object string table",
+          "unity_version": [
+            "6000.3",
+            "6000.3.24f1",
+            "6000.3.24f1_4e7b9b5b6244"
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "path": "AndroidManifest.xml",
+          "uncompressed_size": 1176,
+          "compressed_size": 507,
+          "crc32": "64a68bb6",
+          "sha256": "346eb9e38f45f47f9e53ad1e0bc61f2184617552598f234f78c3bbc0f443ebe1"
+        },
+        {
+          "path": "lib/arm64-v8a/libFirebaseCppAnalytics.so",
+          "uncompressed_size": 51296,
+          "compressed_size": 13477,
+          "crc32": "609c8704",
+          "sha256": "fb1cfd21c9da0580ab4b9c3c39fc55cc5cac79d5998f66e94b7a16fd14c34e94"
+        },
+        {
+          "path": "lib/arm64-v8a/libFirebaseCppApp-12_10_1.so",
+          "uncompressed_size": 4270944,
+          "compressed_size": 1206770,
+          "crc32": "30898a7a",
+          "sha256": "eb2beed5455cabddb5833165b3d9e1a77b78acf6625449ad5edf2f3b1cd1d776"
+        },
+        {
+          "path": "lib/arm64-v8a/libUniWebViewNativeTexture.so",
+          "uncompressed_size": 396032,
+          "compressed_size": 128709,
+          "crc32": "a2057e62",
+          "sha256": "f0a835290b3dd43f84886fcdf5136c4f1c0b08de3f020db445f8c33bf12da127"
+        },
+        {
+          "path": "lib/arm64-v8a/lib_burst_generated.so",
+          "uncompressed_size": 30328,
+          "compressed_size": 8902,
+          "crc32": "7e43a37f",
+          "sha256": "93a5fda139754b2c4fb0dee4b27c9bff6c920e5a0126a727029b1a9271ee08a6"
+        },
+        {
+          "path": "lib/arm64-v8a/libil2cpp.so",
+          "uncompressed_size": 50469616,
+          "compressed_size": 15082943,
+          "crc32": "41ae1f73",
+          "sha256": "bd0f03471d09990aa35abd10ce590dbd315cf8854044f5ceee9ba120bbfe5261"
+        },
+        {
+          "path": "lib/arm64-v8a/libmain.so",
+          "uncompressed_size": 6696,
+          "compressed_size": 2578,
+          "crc32": "15770e6b",
+          "sha256": "bf92f1914f7d394d0f36cc3f586a670165377692f6b3a774bc61c57076b776b6"
+        },
+        {
+          "path": "lib/arm64-v8a/libunity.so",
+          "uncompressed_size": 28659360,
+          "compressed_size": 12418255,
+          "crc32": "d7e009bd",
+          "sha256": "9cb66fd32cd7057e065b349c5754220eaff46dbc981d4de7cdf23b05f9895b4a"
+        },
+        {
+          "path": "stamp-cert-sha256",
+          "uncompressed_size": 32,
+          "compressed_size": 35,
+          "crc32": "62d68276",
+          "sha256": "1d9c2a02a93816ff5c7ae64f9aad02c23de49dc514620db1a7ad624d2a83679c"
+        }
+      ]
+    }
+  },
+  "unity_fingerprint": {
+    "engine": "Unity",
+    "readable_version_header": "6000.3.24f1",
+    "bundle_magic": "UnityFS",
+    "bundle_format_version": 8,
+    "bundle_target_version": "5.x.x",
+    "libunity_version_strings": [
+      "6000.3.24f1",
+      "6000.3",
+      "6000.3.24f1_4e7b9b5b6244"
+    ],
+    "scripting_backend": "IL2CPP (arm64-v8a libil2cpp.so + global-metadata.dat)",
+    "addressables_detected": true,
+    "addressables_bundle_count": 17
+  },
+  "counts_summary": {
+    "outer_package_bytes": 107917759,
+    "outer_sha256": "90a3961d30ef0621d6a334c35bf6bfed06b9b42dd805ebecd7a7c28f478c1e29",
+    "nested_apks_count": 2,
+    "base_apk_entries": 413,
+    "base_apk_assets": 43,
+    "base_apk_dex": 1,
+    "base_apk_native_libs": 0,
+    "base_apk_unity_bundles": 17,
+    "split_config_arm64_v8a_entries": 9,
+    "split_config_arm64_v8a_dex": 0,
+    "split_config_arm64_v8a_native_libs": 7
+  },
+  "observations_vs_inferences": {
+    "verified_observations": [
+      "Outer archive is a ZIP container holding 3 files: APKCube.txt (29 bytes), base.apk (106343309 bytes), and split_config.arm64_v8a.apk (28873412 bytes).",
+      "base.apk contains 413 entries: exactly 1 DEX file (classes.dex), 0 native libraries (.so), and 43 files under assets/.",
+      "split_config.arm64_v8a.apk contains 9 entries: exactly 0 DEX files, 0 assets, and 7 native libraries under lib/arm64-v8a/.",
+      "Readable Unity version header UnityFS / 6000.3.24f1 is present at offset 0x00 of assets/bin/Data/data.unity3d and all 17 Addressables .bundle archives.",
+      "Native library lib/arm64-v8a/libunity.so contains version symbols including 6000.3.24f1 and 6000.3.24f1_4e7b9b5b6244.",
+      "Scripting backend is Unity IL2CPP as evidenced by lib/arm64-v8a/libil2cpp.so and assets/bin/Data/Managed/Metadata/global-metadata.dat.",
+      "Binary string pool of AndroidManifest.xml contains the string 3.141 and package identifier com.bimiboo.drawing."
+    ],
+    "inferred_aspects": [
+      "The archive name Kids-Color-Games-Baby-Drawing_3.141_apkcube.apks suggests application title Kids Color Games Baby Drawing and version 3.141, but filename version is not canonical proof of manifest version without parent verification.",
+      "Prefab bundle names referencing themes (cars, christmas, dinosaurs, dolls, food, fullgame, halloween, insects, magic, music, school, tools, underwater) suggest drawing packs or paywall categories, but gameplay semantics are unverified by static inventory.",
+      "Architectural change: The v1 package used Cocos2d-x (libMyGame.so), whereas this package is built on Unity 6 IL2CPP; gameplay engine parity or regression is unverified."
+    ]
+  },
+  "limitations": [
+    "Static zipfile/hashlib inventory only; no package installation, process execution, or runtime dynamic analysis was performed.",
+    "Binary XML files (AndroidManifest.xml, link.xml, etc.) were not fully deserialized via aapt2/apktool per read-only constraint; filename version is not claimed to be verified manifest version.",
+    "Compiled Unity AssetBundles and serialized resources (.resource, .unity3d) were inventoried by entry digest and header signature; internal GameObject hierarchies and textures were not extracted.",
+    "Native libraries and IL2CPP assemblies were identified by symbol strings and ELF headers; complete decompilation of libil2cpp.so was not performed."
+  ]
+}

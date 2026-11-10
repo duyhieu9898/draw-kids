@@ -1,0 +1,1747 @@
+{
+  "evidence_id": "ev_0cdaa5be4b48b3e6ecc89c221b6900e993265da18fa8c895ee20c278ec508d4d",
+  "subject": {
+    "name": "global-metadata.dat",
+    "digest": {
+      "sha256": "74c297e59adca67550002c43eb95ecc814a8a14e5be97b96f47a3f7286d1a5d0"
+    },
+    "local_path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/base/assets/bin/Data/Managed/Metadata/global-metadata.dat",
+    "format": "file",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-analysis-view",
+    "name": "REA analysis view projection",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis-view",
+  "operation": "inspect_analysis_view",
+  "parameters": {
+    "parent_evidence_id": "ev_0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa",
+    "view": {
+      "kind": "il2cpp-metadata",
+      "offset": 8750,
+      "limit": 230,
+      "collection": "types",
+      "fields": [
+        "name",
+        "namespace",
+        "method_start",
+        "method_count",
+        "index"
+      ]
+    }
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "kind": "il2cpp-metadata",
+    "view": {
+      "kind": "il2cpp-metadata",
+      "offset": 8750,
+      "limit": 230,
+      "collection": "types",
+      "fields": [
+        "name",
+        "namespace",
+        "method_start",
+        "method_count",
+        "index"
+      ]
+    },
+    "items": [
+      {
+        "name": "SqlStringStorage",
+        "namespace": "System.Data.Common",
+        "method_start": 69245,
+        "method_count": 17,
+        "index": 8750
+      },
+      {
+        "name": "SqlBooleanStorage",
+        "namespace": "System.Data.Common",
+        "method_start": 69262,
+        "method_count": 15,
+        "index": 8751
+      },
+      {
+        "name": "SingleStorage",
+        "namespace": "System.Data.Common",
+        "method_start": 69277,
+        "method_count": 14,
+        "index": 8752
+      },
+      {
+        "name": "<>c__DisplayClass6_0",
+        "namespace": "",
+        "method_start": 69310,
+        "method_count": 2,
+        "index": 8753
+      },
+      {
+        "name": "SqlUdtStorage",
+        "namespace": "System.Data.Common",
+        "method_start": 69291,
+        "method_count": 19,
+        "index": 8754
+      },
+      {
+        "name": "StringStorage",
+        "namespace": "System.Data.Common",
+        "method_start": 69312,
+        "method_count": 16,
+        "index": 8755
+      },
+      {
+        "name": "TimeSpanStorage",
+        "namespace": "System.Data.Common",
+        "method_start": 69328,
+        "method_count": 16,
+        "index": 8756
+      },
+      {
+        "name": "UInt16Storage",
+        "namespace": "System.Data.Common",
+        "method_start": 69344,
+        "method_count": 14,
+        "index": 8757
+      },
+      {
+        "name": "UInt32Storage",
+        "namespace": "System.Data.Common",
+        "method_start": 69358,
+        "method_count": 14,
+        "index": 8758
+      },
+      {
+        "name": "UInt64Storage",
+        "namespace": "System.Data.Common",
+        "method_start": 69372,
+        "method_count": 14,
+        "index": 8759
+      },
+      {
+        "name": "__StaticArrayInitTypeSize=36",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8760
+      },
+      {
+        "name": "__StaticArrayInitTypeSize=38",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8761
+      },
+      {
+        "name": "__StaticArrayInitTypeSize=52",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8762
+      },
+      {
+        "name": "__StaticArrayInitTypeSize=64",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8763
+      },
+      {
+        "name": "__StaticArrayInitTypeSize=152",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8764
+      },
+      {
+        "name": "__StaticArrayInitTypeSize=176",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8765
+      },
+      {
+        "name": "<PrivateImplementationDetails>",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8766
+      },
+      {
+        "name": "<Module>",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8767
+      },
+      {
+        "name": "a",
+        "namespace": "",
+        "method_start": 69386,
+        "method_count": 4,
+        "index": 8768
+      },
+      {
+        "name": "BulletText",
+        "namespace": "",
+        "method_start": 69390,
+        "method_count": 4,
+        "index": 8769
+      },
+      {
+        "name": "BimibooSecurityBootstrapper",
+        "namespace": "",
+        "method_start": 69394,
+        "method_count": 2,
+        "index": 8770
+      },
+      {
+        "name": "b",
+        "namespace": "",
+        "method_start": 69402,
+        "method_count": 6,
+        "index": 8771
+      },
+      {
+        "name": "ABTest",
+        "namespace": "",
+        "method_start": 69396,
+        "method_count": 6,
+        "index": 8772
+      },
+      {
+        "name": "c",
+        "namespace": "",
+        "method_start": 69408,
+        "method_count": 3,
+        "index": 8773
+      },
+      {
+        "name": "CustomTMPCurve",
+        "namespace": "",
+        "method_start": 69411,
+        "method_count": 7,
+        "index": 8774
+      },
+      {
+        "name": "d",
+        "namespace": "",
+        "method_start": 69418,
+        "method_count": 3,
+        "index": 8775
+      },
+      {
+        "name": "CustomLoadingLayer",
+        "namespace": "",
+        "method_start": 69421,
+        "method_count": 2,
+        "index": 8776
+      },
+      {
+        "name": "SystemRAM",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8777
+      },
+      {
+        "name": "AllScenes",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8778
+      },
+      {
+        "name": "ProductTypes",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8779
+      },
+      {
+        "name": "e",
+        "namespace": "",
+        "method_start": 69423,
+        "method_count": 9,
+        "index": 8780
+      },
+      {
+        "name": "PaletteTypes",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8781
+      },
+      {
+        "name": "BrushTypes",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8782
+      },
+      {
+        "name": "f",
+        "namespace": "",
+        "method_start": 69432,
+        "method_count": 11,
+        "index": 8783
+      },
+      {
+        "name": "PersistantAudioManager",
+        "namespace": "",
+        "method_start": 69443,
+        "method_count": 13,
+        "index": 8784
+      },
+      {
+        "name": "ScriptableLayers",
+        "namespace": "",
+        "method_start": 69456,
+        "method_count": 3,
+        "index": 8785
+      },
+      {
+        "name": "ScriptableStrokes",
+        "namespace": "",
+        "method_start": 69459,
+        "method_count": 1,
+        "index": 8786
+      },
+      {
+        "name": "g",
+        "namespace": "",
+        "method_start": 69460,
+        "method_count": 4,
+        "index": 8787
+      },
+      {
+        "name": "ChangeBoardSize",
+        "namespace": "",
+        "method_start": 69464,
+        "method_count": 7,
+        "index": 8788
+      },
+      {
+        "name": "ChoosePaintables",
+        "namespace": "",
+        "method_start": 69471,
+        "method_count": 3,
+        "index": 8789
+      },
+      {
+        "name": "CustomToolMover",
+        "namespace": "",
+        "method_start": 69474,
+        "method_count": 5,
+        "index": 8790
+      },
+      {
+        "name": "h",
+        "namespace": "",
+        "method_start": 69494,
+        "method_count": 6,
+        "index": 8791
+      },
+      {
+        "name": "DrawingPage",
+        "namespace": "",
+        "method_start": 69479,
+        "method_count": 15,
+        "index": 8792
+      },
+      {
+        "name": "i",
+        "namespace": "",
+        "method_start": 69500,
+        "method_count": 2,
+        "index": 8793
+      },
+      {
+        "name": "LayerSelection",
+        "namespace": "",
+        "method_start": 69502,
+        "method_count": 8,
+        "index": 8794
+      },
+      {
+        "name": "MaskScaller",
+        "namespace": "",
+        "method_start": 69510,
+        "method_count": 1,
+        "index": 8795
+      },
+      {
+        "name": "j",
+        "namespace": "",
+        "method_start": 69511,
+        "method_count": 3,
+        "index": 8796
+      },
+      {
+        "name": "k",
+        "namespace": "",
+        "method_start": 69514,
+        "method_count": 6,
+        "index": 8797
+      },
+      {
+        "name": "PaintablesController",
+        "namespace": "",
+        "method_start": 69520,
+        "method_count": 14,
+        "index": 8798
+      },
+      {
+        "name": "l",
+        "namespace": "",
+        "method_start": 69534,
+        "method_count": 4,
+        "index": 8799
+      },
+      {
+        "name": "ScreenShotLayer",
+        "namespace": "",
+        "method_start": 69538,
+        "method_count": 3,
+        "index": 8800
+      },
+      {
+        "name": "SetupBrushes",
+        "namespace": "",
+        "method_start": 69541,
+        "method_count": 3,
+        "index": 8801
+      },
+      {
+        "name": "Brush",
+        "namespace": "",
+        "method_start": 69544,
+        "method_count": 11,
+        "index": 8802
+      },
+      {
+        "name": "ButtonTools",
+        "namespace": "",
+        "method_start": 69555,
+        "method_count": 4,
+        "index": 8803
+      },
+      {
+        "name": "LockPanel",
+        "namespace": "",
+        "method_start": 69559,
+        "method_count": 2,
+        "index": 8804
+      },
+      {
+        "name": "ManageBigButtons",
+        "namespace": "",
+        "method_start": 69561,
+        "method_count": 8,
+        "index": 8805
+      },
+      {
+        "name": "ManageBrushes",
+        "namespace": "",
+        "method_start": 69569,
+        "method_count": 6,
+        "index": 8806
+      },
+      {
+        "name": "ManagePalette",
+        "namespace": "",
+        "method_start": 69575,
+        "method_count": 8,
+        "index": 8807
+      },
+      {
+        "name": "ManagePhysicalBrushes",
+        "namespace": "",
+        "method_start": 69583,
+        "method_count": 9,
+        "index": 8808
+      },
+      {
+        "name": "m",
+        "namespace": "",
+        "method_start": 69615,
+        "method_count": 2,
+        "index": 8809
+      },
+      {
+        "name": "o",
+        "namespace": "",
+        "method_start": 69617,
+        "method_count": 2,
+        "index": 8810
+      },
+      {
+        "name": "p",
+        "namespace": "",
+        "method_start": 69619,
+        "method_count": 6,
+        "index": 8811
+      },
+      {
+        "name": "ManageTools",
+        "namespace": "",
+        "method_start": 69592,
+        "method_count": 23,
+        "index": 8812
+      },
+      {
+        "name": "Palette",
+        "namespace": "",
+        "method_start": 69625,
+        "method_count": 15,
+        "index": 8813
+      },
+      {
+        "name": "SelectablePaletteItems",
+        "namespace": "",
+        "method_start": 69640,
+        "method_count": 10,
+        "index": 8814
+      },
+      {
+        "name": "q",
+        "namespace": "",
+        "method_start": 69659,
+        "method_count": 2,
+        "index": 8815
+      },
+      {
+        "name": "ToolBrushes",
+        "namespace": "",
+        "method_start": 69650,
+        "method_count": 9,
+        "index": 8816
+      },
+      {
+        "name": "r",
+        "namespace": "",
+        "method_start": 69664,
+        "method_count": 2,
+        "index": 8817
+      },
+      {
+        "name": "ToolColors",
+        "namespace": "",
+        "method_start": 69661,
+        "method_count": 3,
+        "index": 8818
+      },
+      {
+        "name": "s",
+        "namespace": "",
+        "method_start": 69666,
+        "method_count": 1,
+        "index": 8819
+      },
+      {
+        "name": "UIManager",
+        "namespace": "",
+        "method_start": 69667,
+        "method_count": 7,
+        "index": 8820
+      },
+      {
+        "name": "t",
+        "namespace": "",
+        "method_start": 69674,
+        "method_count": 3,
+        "index": 8821
+      },
+      {
+        "name": "<>c",
+        "namespace": "",
+        "method_start": 69682,
+        "method_count": 3,
+        "index": 8822
+      },
+      {
+        "name": "AnimationBackgroundTransition",
+        "namespace": "",
+        "method_start": 69677,
+        "method_count": 5,
+        "index": 8823
+      },
+      {
+        "name": "DynamicGalleryMenu",
+        "namespace": "",
+        "method_start": 69685,
+        "method_count": 13,
+        "index": 8824
+      },
+      {
+        "name": "u",
+        "namespace": "",
+        "method_start": 69698,
+        "method_count": 1,
+        "index": 8825
+      },
+      {
+        "name": "v",
+        "namespace": "",
+        "method_start": 69719,
+        "method_count": 2,
+        "index": 8826
+      },
+      {
+        "name": "w",
+        "namespace": "",
+        "method_start": 69721,
+        "method_count": 2,
+        "index": 8827
+      },
+      {
+        "name": "x",
+        "namespace": "",
+        "method_start": 69723,
+        "method_count": 2,
+        "index": 8828
+      },
+      {
+        "name": "GalleryMenu",
+        "namespace": "",
+        "method_start": 69699,
+        "method_count": 20,
+        "index": 8829
+      },
+      {
+        "name": "GalleryMenuPool",
+        "namespace": "",
+        "method_start": 69725,
+        "method_count": 5,
+        "index": 8830
+      },
+      {
+        "name": "GalleryTouchSystem",
+        "namespace": "",
+        "method_start": 69730,
+        "method_count": 3,
+        "index": 8831
+      },
+      {
+        "name": "IconTag",
+        "namespace": "",
+        "method_start": 69733,
+        "method_count": 9,
+        "index": 8832
+      },
+      {
+        "name": "y",
+        "namespace": "",
+        "method_start": 69753,
+        "method_count": 3,
+        "index": 8833
+      },
+      {
+        "name": "ManageGalleryMenuScroll",
+        "namespace": "",
+        "method_start": 69742,
+        "method_count": 11,
+        "index": 8834
+      },
+      {
+        "name": "PacksList",
+        "namespace": "",
+        "method_start": 69756,
+        "method_count": 3,
+        "index": 8835
+      },
+      {
+        "name": "z",
+        "namespace": "",
+        "method_start": 69764,
+        "method_count": 6,
+        "index": 8836
+      },
+      {
+        "name": "ba",
+        "namespace": "",
+        "method_start": 69759,
+        "method_count": 5,
+        "index": 8837
+      },
+      {
+        "name": "bb",
+        "namespace": "",
+        "method_start": 69770,
+        "method_count": 1,
+        "index": 8838
+      },
+      {
+        "name": "GalleryBackground",
+        "namespace": "",
+        "method_start": 69771,
+        "method_count": 2,
+        "index": 8839
+      },
+      {
+        "name": "<>c",
+        "namespace": "",
+        "method_start": 69779,
+        "method_count": 3,
+        "index": 8840
+      },
+      {
+        "name": "bc",
+        "namespace": "",
+        "method_start": 69782,
+        "method_count": 6,
+        "index": 8841
+      },
+      {
+        "name": "bd",
+        "namespace": "",
+        "method_start": 69788,
+        "method_count": 6,
+        "index": 8842
+      },
+      {
+        "name": "be",
+        "namespace": "",
+        "method_start": 69773,
+        "method_count": 6,
+        "index": 8843
+      },
+      {
+        "name": "UIParticleSystem",
+        "namespace": "",
+        "method_start": 69794,
+        "method_count": 11,
+        "index": 8844
+      },
+      {
+        "name": "UIParticlesSortMode",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8845
+      },
+      {
+        "name": "UIParticleSystemRenderMode",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8846
+      },
+      {
+        "name": "bf",
+        "namespace": "",
+        "method_start": 69828,
+        "method_count": 2,
+        "index": 8847
+      },
+      {
+        "name": "<ChangeButtonFadeAsync>d__20",
+        "namespace": "",
+        "method_start": 69830,
+        "method_count": 2,
+        "index": 8848
+      },
+      {
+        "name": "<HideAsync>d__31",
+        "namespace": "",
+        "method_start": 69832,
+        "method_count": 2,
+        "index": 8849
+      },
+      {
+        "name": "<InitializePaywallAsync>d__22",
+        "namespace": "",
+        "method_start": 69834,
+        "method_count": 2,
+        "index": 8850
+      },
+      {
+        "name": "<InstantiateOriginalCards>d__26",
+        "namespace": "",
+        "method_start": 69836,
+        "method_count": 2,
+        "index": 8851
+      },
+      {
+        "name": "<InstantiateVariantsCards>d__27",
+        "namespace": "",
+        "method_start": 69838,
+        "method_count": 2,
+        "index": 8852
+      },
+      {
+        "name": "<Show>d__21",
+        "namespace": "",
+        "method_start": 69840,
+        "method_count": 2,
+        "index": 8853
+      },
+      {
+        "name": "<ShowCardAnimation>d__28",
+        "namespace": "",
+        "method_start": 69842,
+        "method_count": 2,
+        "index": 8854
+      },
+      {
+        "name": "IAPTools",
+        "namespace": "",
+        "method_start": 69805,
+        "method_count": 23,
+        "index": 8855
+      },
+      {
+        "name": "<>c",
+        "namespace": "",
+        "method_start": 69895,
+        "method_count": 3,
+        "index": 8856
+      },
+      {
+        "name": "bh",
+        "namespace": "",
+        "method_start": 69889,
+        "method_count": 6,
+        "index": 8857
+      },
+      {
+        "name": "bi",
+        "namespace": "",
+        "method_start": 69898,
+        "method_count": 6,
+        "index": 8858
+      },
+      {
+        "name": "bj",
+        "namespace": "",
+        "method_start": 69904,
+        "method_count": 6,
+        "index": 8859
+      },
+      {
+        "name": "<OnRestoreButtonPressed>d__42",
+        "namespace": "",
+        "method_start": 69910,
+        "method_count": 2,
+        "index": 8860
+      },
+      {
+        "name": "<PurchaseProductAsync>d__41",
+        "namespace": "",
+        "method_start": 69912,
+        "method_count": 2,
+        "index": 8861
+      },
+      {
+        "name": "<WaitForIAPInitializationAsync>d__50",
+        "namespace": "",
+        "method_start": 69914,
+        "method_count": 2,
+        "index": 8862
+      },
+      {
+        "name": "InAppPurchaseManager",
+        "namespace": "",
+        "method_start": 69844,
+        "method_count": 45,
+        "index": 8863
+      },
+      {
+        "name": "ManagePreloader",
+        "namespace": "",
+        "method_start": 69916,
+        "method_count": 2,
+        "index": 8864
+      },
+      {
+        "name": "bk",
+        "namespace": "",
+        "method_start": 69928,
+        "method_count": 6,
+        "index": 8865
+      },
+      {
+        "name": "<OnIAPRequestCallAsync>d__9",
+        "namespace": "",
+        "method_start": 69934,
+        "method_count": 2,
+        "index": 8866
+      },
+      {
+        "name": "RestoreButton",
+        "namespace": "",
+        "method_start": 69918,
+        "method_count": 10,
+        "index": 8867
+      },
+      {
+        "name": "CustomTitleFontSizeChanger",
+        "namespace": "",
+        "method_start": 69936,
+        "method_count": 3,
+        "index": 8868
+      },
+      {
+        "name": "AbstractPurchaseButton",
+        "namespace": "",
+        "method_start": 69939,
+        "method_count": 6,
+        "index": 8869
+      },
+      {
+        "name": "PurchaseButton",
+        "namespace": "",
+        "method_start": 69945,
+        "method_count": 3,
+        "index": 8870
+      },
+      {
+        "name": "PurchaseButton_TMP",
+        "namespace": "",
+        "method_start": 69948,
+        "method_count": 7,
+        "index": 8871
+      },
+      {
+        "name": "PurchaseProductCard",
+        "namespace": "",
+        "method_start": 69955,
+        "method_count": 8,
+        "index": 8872
+      },
+      {
+        "name": "bl",
+        "namespace": "",
+        "method_start": 69963,
+        "method_count": 2,
+        "index": 8873
+      },
+      {
+        "name": "SaleIcon",
+        "namespace": "",
+        "method_start": 69965,
+        "method_count": 2,
+        "index": 8874
+      },
+      {
+        "name": "SaleIcon_TMP",
+        "namespace": "",
+        "method_start": 69967,
+        "method_count": 2,
+        "index": 8875
+      },
+      {
+        "name": "<CheckFirstTimeUse>d__1",
+        "namespace": "",
+        "method_start": 69973,
+        "method_count": 2,
+        "index": 8876
+      },
+      {
+        "name": "bm",
+        "namespace": "",
+        "method_start": 69969,
+        "method_count": 4,
+        "index": 8877
+      },
+      {
+        "name": "<>c",
+        "namespace": "",
+        "method_start": 69978,
+        "method_count": 4,
+        "index": 8878
+      },
+      {
+        "name": "<InitializeAsync>d__2",
+        "namespace": "",
+        "method_start": 69982,
+        "method_count": 2,
+        "index": 8879
+      },
+      {
+        "name": "bn",
+        "namespace": "",
+        "method_start": 69975,
+        "method_count": 3,
+        "index": 8880
+      },
+      {
+        "name": "bo",
+        "namespace": "",
+        "method_start": 69984,
+        "method_count": 2,
+        "index": 8881
+      },
+      {
+        "name": "bp",
+        "namespace": "",
+        "method_start": 69988,
+        "method_count": 2,
+        "index": 8882
+      },
+      {
+        "name": "LocalizationMaterialsData",
+        "namespace": "",
+        "method_start": 69986,
+        "method_count": 2,
+        "index": 8883
+      },
+      {
+        "name": "LocalizationProduct",
+        "namespace": "",
+        "method_start": 69990,
+        "method_count": 2,
+        "index": 8884
+      },
+      {
+        "name": "bq",
+        "namespace": "",
+        "method_start": 69992,
+        "method_count": 2,
+        "index": 8885
+      },
+      {
+        "name": "CustomLanguageAndSize",
+        "namespace": "",
+        "method_start": 69994,
+        "method_count": 3,
+        "index": 8886
+      },
+      {
+        "name": "CustomTitle",
+        "namespace": "",
+        "method_start": 69997,
+        "method_count": 3,
+        "index": 8887
+      },
+      {
+        "name": "CustomTitleSetter",
+        "namespace": "",
+        "method_start": 70000,
+        "method_count": 4,
+        "index": 8888
+      },
+      {
+        "name": "I2LanguageAttribute",
+        "namespace": "",
+        "method_start": 70004,
+        "method_count": 1,
+        "index": 8889
+      },
+      {
+        "name": "MaterialColorChanger",
+        "namespace": "",
+        "method_start": 70005,
+        "method_count": 3,
+        "index": 8890
+      },
+      {
+        "name": "bs",
+        "namespace": "",
+        "method_start": 70008,
+        "method_count": 4,
+        "index": 8891
+      },
+      {
+        "name": "<>c",
+        "namespace": "",
+        "method_start": 70015,
+        "method_count": 3,
+        "index": 8892
+      },
+      {
+        "name": "bt",
+        "namespace": "",
+        "method_start": 70012,
+        "method_count": 3,
+        "index": 8893
+      },
+      {
+        "name": "ImageVersion",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8894
+      },
+      {
+        "name": "ImageWithMetaData",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8895
+      },
+      {
+        "name": "IconWithMetaData",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8896
+      },
+      {
+        "name": "Meta",
+        "namespace": "",
+        "method_start": 70034,
+        "method_count": 1,
+        "index": 8897
+      },
+      {
+        "name": "bu",
+        "namespace": "",
+        "method_start": 70035,
+        "method_count": 13,
+        "index": 8898
+      },
+      {
+        "name": "bv",
+        "namespace": "",
+        "method_start": 70048,
+        "method_count": 1,
+        "index": 8899
+      },
+      {
+        "name": "bw",
+        "namespace": "",
+        "method_start": 70049,
+        "method_count": 1,
+        "index": 8900
+      },
+      {
+        "name": "bx",
+        "namespace": "",
+        "method_start": 70050,
+        "method_count": 1,
+        "index": 8901
+      },
+      {
+        "name": "<IsIconCreatedByUnity>d__16",
+        "namespace": "",
+        "method_start": 70051,
+        "method_count": 2,
+        "index": 8902
+      },
+      {
+        "name": "<LoadIcon>d__11",
+        "namespace": "",
+        "method_start": 70053,
+        "method_count": 2,
+        "index": 8903
+      },
+      {
+        "name": "<LoadTexture>d__12",
+        "namespace": "",
+        "method_start": 70055,
+        "method_count": 2,
+        "index": 8904
+      },
+      {
+        "name": "<MoveOldCache>d__15",
+        "namespace": "",
+        "method_start": 70057,
+        "method_count": 2,
+        "index": 8905
+      },
+      {
+        "name": "by",
+        "namespace": "",
+        "method_start": 70018,
+        "method_count": 16,
+        "index": 8906
+      },
+      {
+        "name": "bz",
+        "namespace": "",
+        "method_start": 70062,
+        "method_count": 7,
+        "index": 8907
+      },
+      {
+        "name": "ca",
+        "namespace": "",
+        "method_start": 70059,
+        "method_count": 3,
+        "index": 8908
+      },
+      {
+        "name": "cb",
+        "namespace": "",
+        "method_start": 70080,
+        "method_count": 8,
+        "index": 8909
+      },
+      {
+        "name": "cc",
+        "namespace": "",
+        "method_start": 70088,
+        "method_count": 8,
+        "index": 8910
+      },
+      {
+        "name": "LoadIcons",
+        "namespace": "",
+        "method_start": 70069,
+        "method_count": 11,
+        "index": 8911
+      },
+      {
+        "name": "LoadImage",
+        "namespace": "",
+        "method_start": 70096,
+        "method_count": 8,
+        "index": 8912
+      },
+      {
+        "name": "cd",
+        "namespace": "",
+        "method_start": 70123,
+        "method_count": 6,
+        "index": 8913
+      },
+      {
+        "name": "<HasGalleryPermission>d__34",
+        "namespace": "",
+        "method_start": 70129,
+        "method_count": 2,
+        "index": 8914
+      },
+      {
+        "name": "<OnScreenShot>d__32",
+        "namespace": "",
+        "method_start": 70131,
+        "method_count": 2,
+        "index": 8915
+      },
+      {
+        "name": "<PassParentalGate>d__33",
+        "namespace": "",
+        "method_start": 70133,
+        "method_count": 2,
+        "index": 8916
+      },
+      {
+        "name": "ce",
+        "namespace": "",
+        "method_start": 70135,
+        "method_count": 6,
+        "index": 8917
+      },
+      {
+        "name": "<SaveScreenShot>d__35",
+        "namespace": "",
+        "method_start": 70141,
+        "method_count": 2,
+        "index": 8918
+      },
+      {
+        "name": "SaveImage",
+        "namespace": "",
+        "method_start": 70104,
+        "method_count": 19,
+        "index": 8919
+      },
+      {
+        "name": "cf",
+        "namespace": "",
+        "method_start": 70143,
+        "method_count": 5,
+        "index": 8920
+      },
+      {
+        "name": "GalleryLifetimeScope",
+        "namespace": "",
+        "method_start": 70148,
+        "method_count": 2,
+        "index": 8921
+      },
+      {
+        "name": "GameplayLifetimeScope",
+        "namespace": "",
+        "method_start": 70150,
+        "method_count": 2,
+        "index": 8922
+      },
+      {
+        "name": "cg",
+        "namespace": "",
+        "method_start": 70152,
+        "method_count": 3,
+        "index": 8923
+      },
+      {
+        "name": "IntroLifetimeScope",
+        "namespace": "",
+        "method_start": 70155,
+        "method_count": 2,
+        "index": 8924
+      },
+      {
+        "name": "MenuLifetimeScope",
+        "namespace": "",
+        "method_start": 70157,
+        "method_count": 3,
+        "index": 8925
+      },
+      {
+        "name": "ch",
+        "namespace": "",
+        "method_start": 70160,
+        "method_count": 3,
+        "index": 8926
+      },
+      {
+        "name": "<UpdateButton>d__6",
+        "namespace": "",
+        "method_start": 70170,
+        "method_count": 2,
+        "index": 8927
+      },
+      {
+        "name": "ButtonContentSizeController",
+        "namespace": "",
+        "method_start": 70163,
+        "method_count": 7,
+        "index": 8928
+      },
+      {
+        "name": "ParentalGatePositionController",
+        "namespace": "",
+        "method_start": 70172,
+        "method_count": 5,
+        "index": 8929
+      },
+      {
+        "name": "PlaySpineAnimationsLoop",
+        "namespace": "",
+        "method_start": 70177,
+        "method_count": 3,
+        "index": 8930
+      },
+      {
+        "name": "ci",
+        "namespace": "",
+        "method_start": 70180,
+        "method_count": 4,
+        "index": 8931
+      },
+      {
+        "name": "cj",
+        "namespace": "",
+        "method_start": 70184,
+        "method_count": 3,
+        "index": 8932
+      },
+      {
+        "name": "TMP_TextController",
+        "namespace": "",
+        "method_start": 70187,
+        "method_count": 7,
+        "index": 8933
+      },
+      {
+        "name": "TMProCurve",
+        "namespace": "",
+        "method_start": 70194,
+        "method_count": 9,
+        "index": 8934
+      },
+      {
+        "name": "CharacterData",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8935
+      },
+      {
+        "name": "ck",
+        "namespace": "",
+        "method_start": 70203,
+        "method_count": 5,
+        "index": 8936
+      },
+      {
+        "name": "cl",
+        "namespace": "",
+        "method_start": 70208,
+        "method_count": 2,
+        "index": 8937
+      },
+      {
+        "name": "cm",
+        "namespace": "",
+        "method_start": 70222,
+        "method_count": 6,
+        "index": 8938
+      },
+      {
+        "name": "cn",
+        "namespace": "",
+        "method_start": 70210,
+        "method_count": 12,
+        "index": 8939
+      },
+      {
+        "name": "co",
+        "namespace": "",
+        "method_start": 70228,
+        "method_count": 1,
+        "index": 8940
+      },
+      {
+        "name": "ManageLocalization",
+        "namespace": "",
+        "method_start": 70229,
+        "method_count": 2,
+        "index": 8941
+      },
+      {
+        "name": "SafeArea",
+        "namespace": "",
+        "method_start": 70231,
+        "method_count": 6,
+        "index": 8942
+      },
+      {
+        "name": "cp",
+        "namespace": "",
+        "method_start": 70237,
+        "method_count": 1,
+        "index": 8943
+      },
+      {
+        "name": "cq",
+        "namespace": "",
+        "method_start": 70244,
+        "method_count": 2,
+        "index": 8944
+      },
+      {
+        "name": "DisplayParticles",
+        "namespace": "",
+        "method_start": 70238,
+        "method_count": 6,
+        "index": 8945
+      },
+      {
+        "name": "ParticleEffectManager",
+        "namespace": "",
+        "method_start": 70246,
+        "method_count": 4,
+        "index": 8946
+      },
+      {
+        "name": "DemoCell",
+        "namespace": "",
+        "method_start": 70250,
+        "method_count": 3,
+        "index": 8947
+      },
+      {
+        "name": "RecyclableScrollerDemo",
+        "namespace": "",
+        "method_start": 70253,
+        "method_count": 5,
+        "index": 8948
+      },
+      {
+        "name": "cr",
+        "namespace": "",
+        "method_start": 70258,
+        "method_count": 5,
+        "index": 8949
+      },
+      {
+        "name": "YooIdGalleryEntry",
+        "namespace": "Sandbox.YooIdGallery",
+        "method_start": 70263,
+        "method_count": 3,
+        "index": 8950
+      },
+      {
+        "name": "<>c",
+        "namespace": "",
+        "method_start": 70273,
+        "method_count": 31,
+        "index": 8951
+      },
+      {
+        "name": "cs",
+        "namespace": "",
+        "method_start": 70266,
+        "method_count": 7,
+        "index": 8952
+      },
+      {
+        "name": "<>c",
+        "namespace": "",
+        "method_start": 70327,
+        "method_count": 3,
+        "index": 8953
+      },
+      {
+        "name": "ct",
+        "namespace": "",
+        "method_start": 70330,
+        "method_count": 2,
+        "index": 8954
+      },
+      {
+        "name": "cu",
+        "namespace": "",
+        "method_start": 70332,
+        "method_count": 2,
+        "index": 8955
+      },
+      {
+        "name": "cv",
+        "namespace": "",
+        "method_start": 70304,
+        "method_count": 23,
+        "index": 8956
+      },
+      {
+        "name": "YooIdGalleryOrientationMode",
+        "namespace": "Sandbox.YooIdGallery",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8957
+      },
+      {
+        "name": "YooIdGalleryOrientation",
+        "namespace": "Sandbox.YooIdGallery",
+        "method_start": 70334,
+        "method_count": 4,
+        "index": 8958
+      },
+      {
+        "name": "cx",
+        "namespace": "",
+        "method_start": 70338,
+        "method_count": 2,
+        "index": 8959
+      },
+      {
+        "name": "SlotMachine",
+        "namespace": "DanielLochner.Assets.SimpleScrollSnap",
+        "method_start": 70340,
+        "method_count": 2,
+        "index": 8960
+      },
+      {
+        "name": "DynamicContentController",
+        "namespace": "DanielLochner.Assets.SimpleScrollSnap",
+        "method_start": 70342,
+        "method_count": 10,
+        "index": 8961
+      },
+      {
+        "name": "Rotator",
+        "namespace": "DanielLochner.Assets.SimpleScrollSnap",
+        "method_start": 70352,
+        "method_count": 2,
+        "index": 8962
+      },
+      {
+        "name": "cy",
+        "namespace": "",
+        "method_start": 70354,
+        "method_count": 2,
+        "index": 8963
+      },
+      {
+        "name": "MovementType",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8964
+      },
+      {
+        "name": "MovementAxis",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8965
+      },
+      {
+        "name": "Direction",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8966
+      },
+      {
+        "name": "SnapTarget",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8967
+      },
+      {
+        "name": "SizeControl",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8968
+      },
+      {
+        "name": "TransitionEffect",
+        "namespace": "",
+        "method_start": 70405,
+        "method_count": 2,
+        "index": 8969
+      },
+      {
+        "name": "cz",
+        "namespace": "",
+        "method_start": 70407,
+        "method_count": 2,
+        "index": 8970
+      },
+      {
+        "name": "da",
+        "namespace": "",
+        "method_start": 70356,
+        "method_count": 49,
+        "index": 8971
+      },
+      {
+        "name": "db",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8972
+      },
+      {
+        "name": "dc",
+        "namespace": "",
+        "method_start": 70409,
+        "method_count": 2,
+        "index": 8973
+      },
+      {
+        "name": "DirectionType",
+        "namespace": "",
+        "method_start": -1,
+        "method_count": 0,
+        "index": 8974
+      },
+      {
+        "name": "RecyclableScrollRect",
+        "namespace": "PolyAndCode.UI",
+        "method_start": 70411,
+        "method_count": 11,
+        "index": 8975
+      },
+      {
+        "name": "<>c",
+        "namespace": "",
+        "method_start": 70430,
+        "method_count": 3,
+        "index": 8976
+      },
+      {
+        "name": "dd",
+        "namespace": "",
+        "method_start": 70433,
+        "method_count": 2,
+        "index": 8977
+      },
+      {
+        "name": "de",
+        "namespace": "",
+        "method_start": 70435,
+        "method_count": 2,
+        "index": 8978
+      },
+      {
+        "name": "df",
+        "namespace": "",
+        "method_start": 70437,
+        "method_count": 6,
+        "index": 8979
+      }
+    ],
+    "parent_evidence_id": "ev_0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa",
+    "parent_operation": "inspect_il2cpp_metadata",
+    "parent_digest": "0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa",
+    "view_digest": "fbe9fb6575d428c95e97146c65f558c4d8d78f00292b47d64c00d95514da1dac",
+    "artifact": {
+      "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/base/assets/bin/Data/Managed/Metadata/global-metadata.dat",
+      "sha256": "74c297e59adca67550002c43eb95ecc814a8a14e5be97b96f47a3f7286d1a5d0"
+    },
+    "coverage": {
+      "status": "page",
+      "examined": 230,
+      "total": 15941,
+      "next_offset": 8980,
+      "exhausted": false
+    },
+    "limitations": [
+      "Only unencrypted global-metadata.dat versions 24, 27, 29, 31 and 39 are decoded; names, counts and string literals are observed file content, not runtime behavior.",
+      "Method addresses come from the binary's code-generation module methodPointers, matched by module name, method count and metadata token; generic method instances (see generic_instances), adjustor thunks and invokers are not linked, no-body means an observed zero slot, and unknown means no module claimed the method or its slot has an unresolved relocation.",
+      "Field, parameter and return type names are rendered from the binary's Il2CppType table in a C#-like form (keywords for primitives, Namespace.Outer+Inner, generic parameters by metadata name); nested generic arguments stay with the type component that declares them. An unresolved type-table slot retains its type index with a null name; a loader-unresolved value inside the type graph is refused rather than rendered from stored placeholder bytes. Custom modifiers, array bounds and attributes are not reported.",
+      "The binary/metadata pair is caller-selected. Module name/count/token agreement is structural evidence, not a cryptographic proof that both files come from the same build.",
+      "declaring_type for types is derived from the nestedTypes section, and member and parameter owners from the owners' index ranges; row positions are the metadata indices."
+    ],
+    "unknowns": [
+      "Generic method instances were not requested; their count is unknown.",
+      "Addresses come from static binary tables; runtime behavior and generic instance code remain unknown."
+    ],
+    "metadata_version": 39,
+    "counts": {
+      "sections": 31,
+      "images": 211,
+      "types": 15941,
+      "methods": 109875,
+      "nested_types": 5633,
+      "fields": 64120,
+      "properties": 20014,
+      "events": 679,
+      "parameters": 115801,
+      "string_literals": 19681,
+      "code_gen_modules": 211,
+      "method_addresses": 109875,
+      "method_address_states": {
+        "code": 97250,
+        "no_body": 12625,
+        "unknown": 0
+      },
+      "return_types": 109875,
+      "field_types": 64120,
+      "parameter_types": 115801,
+      "generic_method_instances": null,
+      "generic_method_instance_states": null,
+      "generic_method_issues": null
+    },
+    "binary_source": {
+      "artifact": {
+        "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/libil2cpp.so",
+        "sha256": "bd0f03471d09990aa35abd10ce590dbd315cf8854044f5ceee9ba120bbfe5261",
+        "bytes": 50469616
+      },
+      "format": "elf",
+      "architecture": "arm64",
+      "image_base": "0x0"
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Only unencrypted global-metadata.dat versions 24, 27, 29, 31 and 39 are decoded; names, counts and string literals are observed file content, not runtime behavior.",
+    "Method addresses come from the binary's code-generation module methodPointers, matched by module name, method count and metadata token; generic method instances (see generic_instances), adjustor thunks and invokers are not linked, no-body means an observed zero slot, and unknown means no module claimed the method or its slot has an unresolved relocation.",
+    "Field, parameter and return type names are rendered from the binary's Il2CppType table in a C#-like form (keywords for primitives, Namespace.Outer+Inner, generic parameters by metadata name); nested generic arguments stay with the type component that declares them. An unresolved type-table slot retains its type index with a null name; a loader-unresolved value inside the type graph is refused rather than rendered from stored placeholder bytes. Custom modifiers, array bounds and attributes are not reported.",
+    "The binary/metadata pair is caller-selected. Module name/count/token agreement is structural evidence, not a cryptographic proof that both files come from the same build.",
+    "declaring_type for types is derived from the nestedTypes section, and member and parameter owners from the owners' index ranges; row positions are the metadata indices."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/base/assets/bin/Data/Managed/Metadata/global-metadata.dat"
+    }
+  ],
+  "evidence_links": [
+    "ev_0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa"
+  ]
+}

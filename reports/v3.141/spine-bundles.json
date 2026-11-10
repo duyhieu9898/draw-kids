@@ -1,0 +1,170 @@
+[
+  {
+    "name": "intro-drawing",
+    "container": "data.unity3d",
+    "file": "sharedassets1.assets",
+    "path_id": 9,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "intro-drawing.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/data.unity3d/sharedassets1.assets/9"
+  },
+  {
+    "name": "insects",
+    "container": "data.unity3d",
+    "file": "sharedassets2.assets",
+    "path_id": 201,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "insects.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/data.unity3d/sharedassets2.assets/201"
+  },
+  {
+    "name": "magic",
+    "container": "data.unity3d",
+    "file": "sharedassets2.assets",
+    "path_id": 204,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "magic.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/data.unity3d/sharedassets2.assets/204"
+  },
+  {
+    "name": "ocean",
+    "container": "data.unity3d",
+    "file": "sharedassets2.assets",
+    "path_id": 206,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "ocean.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/data.unity3d/sharedassets2.assets/206"
+  },
+  {
+    "name": "school",
+    "container": "data.unity3d",
+    "file": "sharedassets2.assets",
+    "path_id": 209,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "school.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/data.unity3d/sharedassets2.assets/209"
+  },
+  {
+    "name": "dino",
+    "container": "data.unity3d",
+    "file": "sharedassets2.assets",
+    "path_id": 211,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "dino.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/data.unity3d/sharedassets2.assets/211"
+  },
+  {
+    "name": "animals",
+    "container": "data.unity3d",
+    "file": "sharedassets2.assets",
+    "path_id": 213,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "animals.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/data.unity3d/sharedassets2.assets/213"
+  },
+  {
+    "name": "dolls",
+    "container": "data.unity3d",
+    "file": "sharedassets2.assets",
+    "path_id": 215,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "dolls.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/data.unity3d/sharedassets2.assets/215"
+  },
+  {
+    "name": "music",
+    "container": "data.unity3d",
+    "file": "sharedassets2.assets",
+    "path_id": 218,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "music.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/data.unity3d/sharedassets2.assets/218"
+  },
+  {
+    "name": "halloween",
+    "container": "data.unity3d",
+    "file": "sharedassets2.assets",
+    "path_id": 221,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "halloween.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/data.unity3d/sharedassets2.assets/221"
+  },
+  {
+    "name": "christmas",
+    "container": "data.unity3d",
+    "file": "sharedassets2.assets",
+    "path_id": 222,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "christmas.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/data.unity3d/sharedassets2.assets/222"
+  },
+  {
+    "name": "food",
+    "container": "data.unity3d",
+    "file": "sharedassets2.assets",
+    "path_id": 223,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "food.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/data.unity3d/sharedassets2.assets/223"
+  },
+  {
+    "name": "vehicles",
+    "container": "data.unity3d",
+    "file": "sharedassets2.assets",
+    "path_id": 224,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "vehicles.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/data.unity3d/sharedassets2.assets/224"
+  },
+  {
+    "name": "pop-up-drawing-an",
+    "container": "defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_fullgame.prefab_84123612d0882089a74e9fdbe1d26dfc.bundle",
+    "file": "CAB-a5fd52a248b7c3492298e4180a59bab8",
+    "path_id": -3828652467745795968,
+    "spine_version": "3.8.99",
+    "errors": [],
+    "pages": [
+      "pop-up-drawing-an.png"
+    ],
+    "directory": "extracted/v3.141/spine-bundles/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_fullgame.prefab_84123612d0882089a74e9fdbe1d26dfc.bundle/CAB-a5fd52a248b7c3492298e4180a59bab8/-3828652467745795968"
+  }
+]

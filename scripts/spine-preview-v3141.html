@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Original 3.141 Spine compatibility preview</title>
+<style>html,body{margin:0;width:100%;height:100%;background:white}canvas{width:100%;height:100%;display:block}#status{position:fixed;bottom:4px;left:4px;font:11px sans-serif;background:#ffffffd9}</style><canvas id="stage"></canvas><div id="status">Loading original 3.141 payload…</div><script src="spine-webgl.js"></script><script>
+const canvas=document.getElementById('stage'),status=document.getElementById('status');
+const ctx=new spine.webgl.ManagedWebGLRenderingContext(canvas),renderer=new spine.webgl.SceneRenderer(canvas,ctx),assets=new spine.webgl.AssetManager(ctx);
+const base='../spine-bundles/data.unity3d/sharedassets1.assets/9/';
+assets.loadText(base+'skeleton.json');assets.loadTextureAtlas(base+'skeleton.atlas');
+let skeleton,state,last=performance.now();const frozen=new URLSearchParams(location.search).get('t');
+function render(now){try{
+ if(!skeleton){if(!assets.isLoadingComplete())return requestAnimationFrame(render);if(assets.hasErrors())throw Error(JSON.stringify(assets.getErrors()));
+ const json=new spine.SkeletonJson(new spine.AtlasAttachmentLoader(assets.get(base+'skeleton.atlas')));const data=json.readSkeletonData(JSON.parse(assets.get(base+'skeleton.json')));
+ skeleton=new spine.Skeleton(data);state=new spine.AnimationState(new spine.AnimationStateData(data));state.setAnimation(0,'intro',false);
+ if(frozen!==null)state.update(Number(frozen));window.spinePreview={skeleton,state,data,runtime:'official-3.8',cameraVerified:false};status.textContent='Original 3.141 / Spine 3.8 — compatibility preview; viewport calibration pending';}
+ const dt=Math.min((now-last)/1000,.1);last=now;if(frozen===null)state.update(dt);state.apply(skeleton);skeleton.updateWorldTransform();
+ const dpr=devicePixelRatio||1;canvas.width=Math.round(canvas.clientWidth*dpr);canvas.height=Math.round(canvas.clientHeight*dpr);
+ const h=1080,w=h*canvas.clientWidth/canvas.clientHeight;renderer.camera.viewportWidth=w;renderer.camera.viewportHeight=h;renderer.camera.position.set(0,0,0);
+ ctx.gl.viewport(0,0,canvas.width,canvas.height);ctx.gl.clearColor(1,1,1,1);ctx.gl.clear(ctx.gl.COLOR_BUFFER_BIT);renderer.begin();renderer.drawSkeleton(skeleton,false);renderer.end();requestAnimationFrame(render);
+ }catch(e){status.textContent=String(e);window.previewError=String(e);throw e;}}
+ requestAnimationFrame(render);
+</script>

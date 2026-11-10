@@ -1,0 +1,66 @@
+An inventory of [`Kids-Color-Games-Baby-Drawing_3.141_apkcube.apks`](file:///home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/Kids-Color-Games-Baby-Drawing_3.141_apkcube.apks) has been performed using Python `zipfile` and `hashlib`. 
+
+Outputs written:
+- [`reports/v3.141/package-inventory.json`](file:///home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/reports/v3.141/package-inventory.json)
+- [`docs/v3.141/PACKAGE_INVENTORY.md`](file:///home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/docs/v3.141/PACKAGE_INVENTORY.md)
+
+---
+
+### Archive & Nested Package Hashes
+
+| Package Level | Path / Name | Size (Bytes) | SHA-256 Digest |
+| :--- | :--- | :--- | :--- |
+| **Outer APKS** | `Kids-Color-Games-Baby-Drawing_3.141_apkcube.apks` | 107,917,759 | `90a3961d30ef0621d6a334c35bf6bfed06b9b42dd805ebecd7a7c28f478c1e29` |
+| Nested Entry | `APKCube.txt` | 29 | `8a97b232bab8d86745c278fb462ed159ea796ff4cd2a0277fda5bf0315a3fea1` |
+| Nested APK | `base.apk` | 106,343,309 | `a98b03b080d913dd7131c964196910c675a48dc5e261c752c8d1305acc26d0f0` |
+| Nested APK | `split_config.arm64_v8a.apk` | 28,873,412 | `3a3c08f88d30e97ed7b39753b1ad0ea090135cb2799e542edc97c15e8b4aa0ce` |
+
+---
+
+### Concise Counts Summary
+
+| Metric | Outer Archive (`.apks`) | `base.apk` | `split_config.arm64_v8a.apk` |
+| :--- | :--- | :--- | :--- |
+| **Total Archive Entries** | 3 | 413 | 9 |
+| **DEX Bytecode Files** | N/A | 1 (`classes.dex`) | 0 |
+| **Native Libraries (`.so`)** | N/A | 0 | 7 (`lib/arm64-v8a/*.so`) |
+| **Assets (`assets/`)** | N/A | 43 | 0 |
+| **Unity Addressables Bundles (`.bundle`)** | N/A | 17 | 0 |
+| **Unity Data & Metadata Files** | N/A | 18 | 0 |
+| **Top Extension Counts** | `.apk` (2), `.txt` (1) | `.png` (190), `.xml` (92), `.properties` (32), `.version` (28), `.bundle` (17), `.webp` (10) | `.so` (7), `.xml` (1), `(no ext)` (1) |
+
+---
+
+### Unity Identification & Headers
+
+1. **Unity Version Header:**
+   - Offset `0x00` of `assets/bin/Data/data.unity3d` and all 17 `.bundle` archives starts with:
+     `UnityFS\x00\x00\x00\x00\x085.x.x\x006000.3.24f1\x00`
+   - **Header Magic:** `UnityFS` (Format 8, Target 5.x.x, Engine version **`6000.3.24f1`** - Unity 6).
+   - In `lib/arm64-v8a/libunity.so`: string symbols `6000.3.24f1` and `6000.3.24f1_4e7b9b5b6244`.
+2. **Unity Metadata & Native Runtime:**
+   - Metadata: `assets/bin/Data/Managed/Metadata/global-metadata.dat` (12,298,740 bytes)
+   - Runtime: `lib/arm64-v8a/libil2cpp.so` (50,469,616 bytes) and `lib/arm64-v8a/libunity.so` (28,659,360 bytes)
+   - Addressables Catalog: `assets/aa/catalog.bin` (36,668 bytes) + 17 content bundles under `assets/aa/Android/`
+3. **Secret Protection:**
+   - `assets/AppstoreAuthenticationKey.pem` and service configurations (`google-services-desktop.json`, `settings.json`) were inventoried strictly by size and SHA-256 digest without dumping or leaking credentials.
+
+---
+
+### Observations vs. Inferred Gameplay
+
+- **Verified Observations:**
+  - Valid split APK container containing `base.apk` and `split_config.arm64_v8a.apk`.
+  - Architecture has shifted completely from v1's Cocos2d-x (`libMyGame.so`) to **Unity 6 IL2CPP** (`6000.3.24f1`).
+  - Architecture split is strictly 64-bit ARM (`arm64-v8a`).
+- **Inferred (Not Verified as Gameplay or Canonical Manifest Truth):**
+  - **No claims that filename version is verified manifest version:** While the string `3.141` appears in the binary `AndroidManifest.xml` string pool and file name, manifest decoding and canonical version confirmation are left to parent verification.
+  - The 13 prefab paywall bundles (`cars`, `christmas`, `dinosaurs`, `dolls`, `food`, `fullgame`, `halloween`, `insects`, `magic`, `music`, `school`, `tools`, `underwater`) suggest content packs, but runtime rendering, drawing canvas mechanics, and paywall locks remain unverified by static inventory.
+
+---
+
+### Limitations
+
+1. **Static zipfile/hashlib only:** Performed without process execution, APK decompilation (`apktool`/`jadx`), or emulator installation.
+2. **Serialized Asset Hierarchies:** Internal Unity GameObject prefabs, FMOD audio banks (`FSB5`), and binary textures were inventoried at container boundaries; individual internal sub-assets were not deserialized.
+3. **Delegated Task Boundary:** This is a delegated inventory report; final verification rests with the parent task.

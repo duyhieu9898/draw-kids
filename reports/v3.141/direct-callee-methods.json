@@ -1,0 +1,323 @@
+{
+  "evidence_id": "ev_8fd19eba6e31e8659f561410be6c56262b251229d17c6f31eeddc76cd0bd45b3",
+  "subject": {
+    "name": "global-metadata.dat",
+    "digest": {
+      "sha256": "74c297e59adca67550002c43eb95ecc814a8a14e5be97b96f47a3f7286d1a5d0"
+    },
+    "local_path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/base/assets/bin/Data/Managed/Metadata/global-metadata.dat",
+    "format": "file",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-analysis-view",
+    "name": "REA analysis view projection",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis-view",
+  "operation": "inspect_analysis_view",
+  "parameters": {
+    "parent_evidence_id": "ev_0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa",
+    "view": {
+      "kind": "il2cpp-metadata",
+      "indices": [
+        28600,
+        28917,
+        29765,
+        36352,
+        36371,
+        36373,
+        36524,
+        36653,
+        36939,
+        37526,
+        70110,
+        70119,
+        70733,
+        72084,
+        72085,
+        72086,
+        72087,
+        81061,
+        81092,
+        81651,
+        84221,
+        85195,
+        88173,
+        93713,
+        93780,
+        93794,
+        107055,
+        107502
+      ],
+      "offset": 0,
+      "limit": 120,
+      "collection": "methods"
+    }
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "kind": "il2cpp-metadata",
+    "view": {
+      "kind": "il2cpp-metadata",
+      "indices": [
+        28600,
+        28917,
+        29765,
+        36352,
+        36371,
+        36373,
+        36524,
+        36653,
+        36939,
+        37526,
+        70110,
+        70119,
+        70733,
+        72084,
+        72085,
+        72086,
+        72087,
+        81061,
+        81092,
+        81651,
+        84221,
+        85195,
+        88173,
+        93713,
+        93780,
+        93794,
+        107055,
+        107502
+      ],
+      "offset": 0,
+      "limit": 120,
+      "collection": "methods"
+    },
+    "items": [
+      {
+        "name": "set_sprite",
+        "declaring_type": 3682,
+        "index": 28600
+      },
+      {
+        "name": "get_platform",
+        "declaring_type": 3702,
+        "index": 28917
+      },
+      {
+        "name": "Log",
+        "declaring_type": 3751,
+        "index": 29765
+      },
+      {
+        "name": "set_enabled",
+        "declaring_type": 4113,
+        "index": 36352
+      },
+      {
+        "name": "get_transform",
+        "declaring_type": 4118,
+        "index": 36371
+      },
+      {
+        "name": "get_gameObject",
+        "declaring_type": 4118,
+        "index": 36373
+      },
+      {
+        "name": "SetActive",
+        "declaring_type": 4133,
+        "index": 36524
+      },
+      {
+        "name": "StartCoroutine",
+        "declaring_type": 4140,
+        "index": 36653
+      },
+      {
+        "name": "op_Inequality",
+        "declaring_type": 4174,
+        "index": 36939
+      },
+      {
+        "name": "get_time",
+        "declaring_type": 4214,
+        "index": 37526
+      },
+      {
+        "name": "uk",
+        "declaring_type": 8919,
+        "index": 70110
+      },
+      {
+        "name": "ur",
+        "declaring_type": 8919,
+        "index": 70119
+      },
+      {
+        "name": "OnEndSpineActionAsync",
+        "declaring_type": 9040,
+        "index": 70733
+      },
+      {
+        "name": "ce",
+        "declaring_type": 9321,
+        "index": 72084
+      },
+      {
+        "name": "cf",
+        "declaring_type": 9321,
+        "index": 72085
+      },
+      {
+        "name": "cg",
+        "declaring_type": 9321,
+        "index": 72086
+      },
+      {
+        "name": "ch",
+        "declaring_type": 9321,
+        "index": 72087
+      },
+      {
+        "name": "add_Complete",
+        "declaring_type": 10448,
+        "index": 81061
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 10446,
+        "index": 81092
+      },
+      {
+        "name": "get_AnimationState",
+        "declaring_type": 10536,
+        "index": 81651
+      },
+      {
+        "name": "ClearAll",
+        "declaring_type": 10840,
+        "index": 84221
+      },
+      {
+        "name": "Undo",
+        "declaring_type": 10967,
+        "index": 85195
+      },
+      {
+        "name": "Forget",
+        "declaring_type": 11572,
+        "index": 88173
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 12465,
+        "index": 93713
+      },
+      {
+        "name": "DOMoveZ",
+        "declaring_type": 12499,
+        "index": 93780
+      },
+      {
+        "name": "DOKill",
+        "declaring_type": 12499,
+        "index": 93794
+      },
+      {
+        "name": "IncreamentScore",
+        "declaring_type": 15214,
+        "index": 107055
+      },
+      {
+        "name": "PlaySound",
+        "declaring_type": 15273,
+        "index": 107502
+      }
+    ],
+    "parent_evidence_id": "ev_0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa",
+    "parent_operation": "inspect_il2cpp_metadata",
+    "parent_digest": "0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa",
+    "view_digest": "fa5b9047ac800cee1ff3e4bb5bb321ea5dc64bb062c0ed46ef3663cb03263aa6",
+    "artifact": {
+      "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/base/assets/bin/Data/Managed/Metadata/global-metadata.dat",
+      "sha256": "74c297e59adca67550002c43eb95ecc814a8a14e5be97b96f47a3f7286d1a5d0"
+    },
+    "coverage": {
+      "status": "page",
+      "examined": 28,
+      "total": 28,
+      "next_offset": null,
+      "exhausted": true
+    },
+    "limitations": [
+      "Only unencrypted global-metadata.dat versions 24, 27, 29, 31 and 39 are decoded; names, counts and string literals are observed file content, not runtime behavior.",
+      "Method addresses come from the binary's code-generation module methodPointers, matched by module name, method count and metadata token; generic method instances (see generic_instances), adjustor thunks and invokers are not linked, no-body means an observed zero slot, and unknown means no module claimed the method or its slot has an unresolved relocation.",
+      "Field, parameter and return type names are rendered from the binary's Il2CppType table in a C#-like form (keywords for primitives, Namespace.Outer+Inner, generic parameters by metadata name); nested generic arguments stay with the type component that declares them. An unresolved type-table slot retains its type index with a null name; a loader-unresolved value inside the type graph is refused rather than rendered from stored placeholder bytes. Custom modifiers, array bounds and attributes are not reported.",
+      "The binary/metadata pair is caller-selected. Module name/count/token agreement is structural evidence, not a cryptographic proof that both files come from the same build.",
+      "declaring_type for types is derived from the nestedTypes section, and member and parameter owners from the owners' index ranges; row positions are the metadata indices."
+    ],
+    "unknowns": [
+      "Generic method instances were not requested; their count is unknown.",
+      "Addresses come from static binary tables; runtime behavior and generic instance code remain unknown."
+    ],
+    "metadata_version": 39,
+    "counts": {
+      "sections": 31,
+      "images": 211,
+      "types": 15941,
+      "methods": 109875,
+      "nested_types": 5633,
+      "fields": 64120,
+      "properties": 20014,
+      "events": 679,
+      "parameters": 115801,
+      "string_literals": 19681,
+      "code_gen_modules": 211,
+      "method_addresses": 109875,
+      "method_address_states": {
+        "code": 97250,
+        "no_body": 12625,
+        "unknown": 0
+      },
+      "return_types": 109875,
+      "field_types": 64120,
+      "parameter_types": 115801,
+      "generic_method_instances": null,
+      "generic_method_instance_states": null,
+      "generic_method_issues": null
+    },
+    "binary_source": {
+      "artifact": {
+        "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/libil2cpp.so",
+        "sha256": "bd0f03471d09990aa35abd10ce590dbd315cf8854044f5ceee9ba120bbfe5261",
+        "bytes": 50469616
+      },
+      "format": "elf",
+      "architecture": "arm64",
+      "image_base": "0x0"
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Only unencrypted global-metadata.dat versions 24, 27, 29, 31 and 39 are decoded; names, counts and string literals are observed file content, not runtime behavior.",
+    "Method addresses come from the binary's code-generation module methodPointers, matched by module name, method count and metadata token; generic method instances (see generic_instances), adjustor thunks and invokers are not linked, no-body means an observed zero slot, and unknown means no module claimed the method or its slot has an unresolved relocation.",
+    "Field, parameter and return type names are rendered from the binary's Il2CppType table in a C#-like form (keywords for primitives, Namespace.Outer+Inner, generic parameters by metadata name); nested generic arguments stay with the type component that declares them. An unresolved type-table slot retains its type index with a null name; a loader-unresolved value inside the type graph is refused rather than rendered from stored placeholder bytes. Custom modifiers, array bounds and attributes are not reported.",
+    "The binary/metadata pair is caller-selected. Module name/count/token agreement is structural evidence, not a cryptographic proof that both files come from the same build.",
+    "declaring_type for types is derived from the nestedTypes section, and member and parameter owners from the owners' index ranges; row positions are the metadata indices."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/base/assets/bin/Data/Managed/Metadata/global-metadata.dat"
+    }
+  ],
+  "evidence_links": [
+    "ev_0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa"
+  ]
+}

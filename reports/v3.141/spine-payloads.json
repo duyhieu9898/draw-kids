@@ -1,0 +1,2298 @@
+{
+  "metadata": {
+    "generator": "Standard library Python bounded static analysis",
+    "sources_read": [
+      "reports/v3.141/unity-objects.json",
+      "extracted/v3.141/unity-text"
+    ],
+    "total_spine_payloads": 14,
+    "spine_versions": [
+      "3.8.99"
+    ],
+    "caveats": [
+      "Timeline max key is not necessarily full runtime transition duration.",
+      "Static serialized asset analysis only; makes no runtime or gameplay claims.",
+      "Bounded delegated analysis, parent reviews."
+    ]
+  },
+  "payloads": [
+    {
+      "name": "intro-drawing",
+      "scoped_source": {
+        "container": "bin/Data/data.unity3d",
+        "file": "sharedassets1.assets",
+        "path_id": 9,
+        "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets1.assets/9.bytes",
+        "bytes": 126244,
+        "sha256": "ede7eb6a6873e94b074a44ee48b4632ee75da2d595fa96830b8aa3e49023e757"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "XOXtw4tgrw1dt3RjZJqBWQksQnk",
+        "width": 269.07,
+        "height": 509,
+        "fps": null,
+        "images": "./images/",
+        "audio": "E:/Project/Bimi_Boo/Sandbox/Intro"
+      },
+      "counts": {
+        "bones": 63,
+        "slots": 52,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "intro": {
+          "timeline_channels": [
+            "bones",
+            "deform",
+            "drawOrder",
+            "slots"
+          ],
+          "numeric_key_count": 765,
+          "last_numeric_time_key_seconds": 6.8
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "intro-drawing.atlas",
+          "path_id": 8,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets1.assets/8.bytes",
+          "sha256": "33264ad2e1fff8a78b17811623d41b4f4aac0161908682e4bd764e44567ca140",
+          "bytes": 4488,
+          "pages": [
+            "intro-drawing.png"
+          ],
+          "is_exact_basename_match": true
+        }
+      ]
+    },
+    {
+      "name": "insects",
+      "scoped_source": {
+        "container": "bin/Data/data.unity3d",
+        "file": "sharedassets2.assets",
+        "path_id": 201,
+        "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/201.bytes",
+        "bytes": 16183,
+        "sha256": "033b444465d550635511e4590afce51215abd66cd6e524445c8ff19633da3b30"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "FPIi7v+Etce0K6QYiMs3tIWKJzc",
+        "width": 199.06,
+        "height": 196.06,
+        "fps": null,
+        "images": "./images/",
+        "audio": "E:/1 \u043d\u0443\u0436\u043d\u044b\u0435 \u043f\u0430\u043f\u043a\u0438/Kimikosoft/Drawing/[DRA39] Animation Main Menu icons/insects"
+      },
+      "counts": {
+        "bones": 1,
+        "slots": 19,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "action": {
+          "timeline_channels": [
+            "deform",
+            "slots"
+          ],
+          "numeric_key_count": 55,
+          "last_numeric_time_key_seconds": 3.3333
+        },
+        "idle": {
+          "timeline_channels": [],
+          "numeric_key_count": 0,
+          "last_numeric_time_key_seconds": null
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "insects.atlas",
+          "path_id": 220,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/220.bytes",
+          "sha256": "5e976c8fb3209c70f26180235923d2d92874cf8462723bd3996d8568d0cdd300",
+          "bytes": 1507,
+          "pages": [
+            "insects.png"
+          ],
+          "is_exact_basename_match": true
+        },
+        {
+          "name": "animals.atlas",
+          "path_id": 219,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/219.bytes",
+          "sha256": "203399beef5f8b3a78cfb59226ea3ec03e584db9bf1c168b282826d2ad733f90",
+          "bytes": 1113,
+          "pages": [
+            "animals.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "christmas.atlas",
+          "path_id": 203,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/203.bytes",
+          "sha256": "9c37b8fedda65e87769394efdd09936926eaa181662117bace197978c39dbb59",
+          "bytes": 2061,
+          "pages": [
+            "christmas.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dino.atlas",
+          "path_id": 216,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/216.bytes",
+          "sha256": "834abf08735da0ea3d5de83ac0c2373cc028ffc9ba136dd85192c9567d924468",
+          "bytes": 1207,
+          "pages": [
+            "dino.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dolls.atlas",
+          "path_id": 202,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/202.bytes",
+          "sha256": "d22594b135b3fd2d86ad3c8b76db1c07ff6f038e88f18574f28adc12ed36c8dd",
+          "bytes": 1584,
+          "pages": [
+            "dolls.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "food.atlas",
+          "path_id": 210,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/210.bytes",
+          "sha256": "45582f4a9f1ae94d4c8f594186b779ba915175cc072dcec0fa3cfa94eb5e0d25",
+          "bytes": 1119,
+          "pages": [
+            "food.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "halloween.atlas",
+          "path_id": 207,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/207.bytes",
+          "sha256": "161c81fd5d9be604b025981959c22f43197946243f3a6457cb7f005d145930bf",
+          "bytes": 1305,
+          "pages": [
+            "halloween.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "magic.atlas",
+          "path_id": 205,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/205.bytes",
+          "sha256": "8f41d07c3c3eddd234117fa4d4d2a2175600317902f573690565908354d2eaa8",
+          "bytes": 1281,
+          "pages": [
+            "magic.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "music.atlas",
+          "path_id": 214,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/214.bytes",
+          "sha256": "6b25b8cfe2218eb5a0cdc74f598cf94ee15363b56e898a88909598c895a4ad66",
+          "bytes": 1897,
+          "pages": [
+            "music.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "ocean.atlas",
+          "path_id": 217,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/217.bytes",
+          "sha256": "577c2fc48b5771bbb797eca7afa9cf280b8e0d8d2718a272e915988795186bbd",
+          "bytes": 1117,
+          "pages": [
+            "ocean.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "school.atlas",
+          "path_id": 208,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/208.bytes",
+          "sha256": "6d99f80457aa965421d8afbee3ce2ebb3c1fbfe91e793bf188d95eb1275af2a8",
+          "bytes": 2071,
+          "pages": [
+            "school.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "vehicles.atlas",
+          "path_id": 212,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/212.bytes",
+          "sha256": "0a58bcea5b691250ced02cbf481b4f8d0cf6b0d221e09ab4369c5643537ce715",
+          "bytes": 1500,
+          "pages": [
+            "vehicles.png"
+          ],
+          "is_exact_basename_match": false
+        }
+      ]
+    },
+    {
+      "name": "magic",
+      "scoped_source": {
+        "container": "bin/Data/data.unity3d",
+        "file": "sharedassets2.assets",
+        "path_id": 204,
+        "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/204.bytes",
+        "bytes": 16240,
+        "sha256": "fa5efacd77d1c673eb19cc40bf10ccfd8b5d502bb9e234613679fdacede818f9"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "T+FhzAfN9ULPzyC7OfTb4uD6UME",
+        "width": 128,
+        "height": 230,
+        "fps": null,
+        "images": "./images/",
+        "audio": "E:/1 \u043d\u0443\u0436\u043d\u044b\u0435 \u043f\u0430\u043f\u043a\u0438/Kimikosoft/Drawing/[DRA39] Animation Main Menu icons/magic"
+      },
+      "counts": {
+        "bones": 1,
+        "slots": 15,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "action": {
+          "timeline_channels": [
+            "deform",
+            "slots"
+          ],
+          "numeric_key_count": 50,
+          "last_numeric_time_key_seconds": 3.3333
+        },
+        "idle": {
+          "timeline_channels": [],
+          "numeric_key_count": 0,
+          "last_numeric_time_key_seconds": null
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "magic.atlas",
+          "path_id": 205,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/205.bytes",
+          "sha256": "8f41d07c3c3eddd234117fa4d4d2a2175600317902f573690565908354d2eaa8",
+          "bytes": 1281,
+          "pages": [
+            "magic.png"
+          ],
+          "is_exact_basename_match": true
+        },
+        {
+          "name": "animals.atlas",
+          "path_id": 219,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/219.bytes",
+          "sha256": "203399beef5f8b3a78cfb59226ea3ec03e584db9bf1c168b282826d2ad733f90",
+          "bytes": 1113,
+          "pages": [
+            "animals.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "christmas.atlas",
+          "path_id": 203,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/203.bytes",
+          "sha256": "9c37b8fedda65e87769394efdd09936926eaa181662117bace197978c39dbb59",
+          "bytes": 2061,
+          "pages": [
+            "christmas.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dino.atlas",
+          "path_id": 216,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/216.bytes",
+          "sha256": "834abf08735da0ea3d5de83ac0c2373cc028ffc9ba136dd85192c9567d924468",
+          "bytes": 1207,
+          "pages": [
+            "dino.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dolls.atlas",
+          "path_id": 202,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/202.bytes",
+          "sha256": "d22594b135b3fd2d86ad3c8b76db1c07ff6f038e88f18574f28adc12ed36c8dd",
+          "bytes": 1584,
+          "pages": [
+            "dolls.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "food.atlas",
+          "path_id": 210,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/210.bytes",
+          "sha256": "45582f4a9f1ae94d4c8f594186b779ba915175cc072dcec0fa3cfa94eb5e0d25",
+          "bytes": 1119,
+          "pages": [
+            "food.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "halloween.atlas",
+          "path_id": 207,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/207.bytes",
+          "sha256": "161c81fd5d9be604b025981959c22f43197946243f3a6457cb7f005d145930bf",
+          "bytes": 1305,
+          "pages": [
+            "halloween.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "insects.atlas",
+          "path_id": 220,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/220.bytes",
+          "sha256": "5e976c8fb3209c70f26180235923d2d92874cf8462723bd3996d8568d0cdd300",
+          "bytes": 1507,
+          "pages": [
+            "insects.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "music.atlas",
+          "path_id": 214,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/214.bytes",
+          "sha256": "6b25b8cfe2218eb5a0cdc74f598cf94ee15363b56e898a88909598c895a4ad66",
+          "bytes": 1897,
+          "pages": [
+            "music.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "ocean.atlas",
+          "path_id": 217,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/217.bytes",
+          "sha256": "577c2fc48b5771bbb797eca7afa9cf280b8e0d8d2718a272e915988795186bbd",
+          "bytes": 1117,
+          "pages": [
+            "ocean.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "school.atlas",
+          "path_id": 208,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/208.bytes",
+          "sha256": "6d99f80457aa965421d8afbee3ce2ebb3c1fbfe91e793bf188d95eb1275af2a8",
+          "bytes": 2071,
+          "pages": [
+            "school.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "vehicles.atlas",
+          "path_id": 212,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/212.bytes",
+          "sha256": "0a58bcea5b691250ced02cbf481b4f8d0cf6b0d221e09ab4369c5643537ce715",
+          "bytes": 1500,
+          "pages": [
+            "vehicles.png"
+          ],
+          "is_exact_basename_match": false
+        }
+      ]
+    },
+    {
+      "name": "ocean",
+      "scoped_source": {
+        "container": "bin/Data/data.unity3d",
+        "file": "sharedassets2.assets",
+        "path_id": 206,
+        "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/206.bytes",
+        "bytes": 17537,
+        "sha256": "34b274f7d882e51a8d8f9e5980908109eb5c9eb93a2afd05cbfd285cd9e3cb5c"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "9HBXkq2UcBQWVyJBI/eF5uEgl9s",
+        "width": 129,
+        "height": 219,
+        "fps": null,
+        "images": "./images/",
+        "audio": "E:/1 \u043d\u0443\u0436\u043d\u044b\u0435 \u043f\u0430\u043f\u043a\u0438/Kimikosoft/Drawing/[DRA39] Animation Main Menu icons/ocean"
+      },
+      "counts": {
+        "bones": 1,
+        "slots": 13,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "action": {
+          "timeline_channels": [
+            "deform",
+            "slots"
+          ],
+          "numeric_key_count": 48,
+          "last_numeric_time_key_seconds": 3.3333
+        },
+        "idle": {
+          "timeline_channels": [],
+          "numeric_key_count": 0,
+          "last_numeric_time_key_seconds": null
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "ocean.atlas",
+          "path_id": 217,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/217.bytes",
+          "sha256": "577c2fc48b5771bbb797eca7afa9cf280b8e0d8d2718a272e915988795186bbd",
+          "bytes": 1117,
+          "pages": [
+            "ocean.png"
+          ],
+          "is_exact_basename_match": true
+        },
+        {
+          "name": "animals.atlas",
+          "path_id": 219,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/219.bytes",
+          "sha256": "203399beef5f8b3a78cfb59226ea3ec03e584db9bf1c168b282826d2ad733f90",
+          "bytes": 1113,
+          "pages": [
+            "animals.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "christmas.atlas",
+          "path_id": 203,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/203.bytes",
+          "sha256": "9c37b8fedda65e87769394efdd09936926eaa181662117bace197978c39dbb59",
+          "bytes": 2061,
+          "pages": [
+            "christmas.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dino.atlas",
+          "path_id": 216,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/216.bytes",
+          "sha256": "834abf08735da0ea3d5de83ac0c2373cc028ffc9ba136dd85192c9567d924468",
+          "bytes": 1207,
+          "pages": [
+            "dino.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dolls.atlas",
+          "path_id": 202,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/202.bytes",
+          "sha256": "d22594b135b3fd2d86ad3c8b76db1c07ff6f038e88f18574f28adc12ed36c8dd",
+          "bytes": 1584,
+          "pages": [
+            "dolls.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "food.atlas",
+          "path_id": 210,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/210.bytes",
+          "sha256": "45582f4a9f1ae94d4c8f594186b779ba915175cc072dcec0fa3cfa94eb5e0d25",
+          "bytes": 1119,
+          "pages": [
+            "food.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "halloween.atlas",
+          "path_id": 207,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/207.bytes",
+          "sha256": "161c81fd5d9be604b025981959c22f43197946243f3a6457cb7f005d145930bf",
+          "bytes": 1305,
+          "pages": [
+            "halloween.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "insects.atlas",
+          "path_id": 220,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/220.bytes",
+          "sha256": "5e976c8fb3209c70f26180235923d2d92874cf8462723bd3996d8568d0cdd300",
+          "bytes": 1507,
+          "pages": [
+            "insects.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "magic.atlas",
+          "path_id": 205,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/205.bytes",
+          "sha256": "8f41d07c3c3eddd234117fa4d4d2a2175600317902f573690565908354d2eaa8",
+          "bytes": 1281,
+          "pages": [
+            "magic.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "music.atlas",
+          "path_id": 214,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/214.bytes",
+          "sha256": "6b25b8cfe2218eb5a0cdc74f598cf94ee15363b56e898a88909598c895a4ad66",
+          "bytes": 1897,
+          "pages": [
+            "music.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "school.atlas",
+          "path_id": 208,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/208.bytes",
+          "sha256": "6d99f80457aa965421d8afbee3ce2ebb3c1fbfe91e793bf188d95eb1275af2a8",
+          "bytes": 2071,
+          "pages": [
+            "school.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "vehicles.atlas",
+          "path_id": 212,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/212.bytes",
+          "sha256": "0a58bcea5b691250ced02cbf481b4f8d0cf6b0d221e09ab4369c5643537ce715",
+          "bytes": 1500,
+          "pages": [
+            "vehicles.png"
+          ],
+          "is_exact_basename_match": false
+        }
+      ]
+    },
+    {
+      "name": "school",
+      "scoped_source": {
+        "container": "bin/Data/data.unity3d",
+        "file": "sharedassets2.assets",
+        "path_id": 209,
+        "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/209.bytes",
+        "bytes": 27684,
+        "sha256": "6ffebc1318d8cf12baf67b1d82150fe74ecfd9b478063763e20d476b1a9cd019"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "aV6FP0QKrNgwMGtAJBnVzPtwMqc",
+        "width": 178,
+        "height": 219,
+        "fps": null,
+        "images": "./images/",
+        "audio": "E:/1 \u043d\u0443\u0436\u043d\u044b\u0435 \u043f\u0430\u043f\u043a\u0438/Kimikosoft/Drawing/[DRA39] Animation Main Menu icons/school"
+      },
+      "counts": {
+        "bones": 1,
+        "slots": 23,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "action": {
+          "timeline_channels": [
+            "deform",
+            "slots"
+          ],
+          "numeric_key_count": 93,
+          "last_numeric_time_key_seconds": 3.3333
+        },
+        "idle": {
+          "timeline_channels": [],
+          "numeric_key_count": 0,
+          "last_numeric_time_key_seconds": null
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "school.atlas",
+          "path_id": 208,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/208.bytes",
+          "sha256": "6d99f80457aa965421d8afbee3ce2ebb3c1fbfe91e793bf188d95eb1275af2a8",
+          "bytes": 2071,
+          "pages": [
+            "school.png"
+          ],
+          "is_exact_basename_match": true
+        },
+        {
+          "name": "animals.atlas",
+          "path_id": 219,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/219.bytes",
+          "sha256": "203399beef5f8b3a78cfb59226ea3ec03e584db9bf1c168b282826d2ad733f90",
+          "bytes": 1113,
+          "pages": [
+            "animals.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "christmas.atlas",
+          "path_id": 203,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/203.bytes",
+          "sha256": "9c37b8fedda65e87769394efdd09936926eaa181662117bace197978c39dbb59",
+          "bytes": 2061,
+          "pages": [
+            "christmas.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dino.atlas",
+          "path_id": 216,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/216.bytes",
+          "sha256": "834abf08735da0ea3d5de83ac0c2373cc028ffc9ba136dd85192c9567d924468",
+          "bytes": 1207,
+          "pages": [
+            "dino.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dolls.atlas",
+          "path_id": 202,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/202.bytes",
+          "sha256": "d22594b135b3fd2d86ad3c8b76db1c07ff6f038e88f18574f28adc12ed36c8dd",
+          "bytes": 1584,
+          "pages": [
+            "dolls.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "food.atlas",
+          "path_id": 210,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/210.bytes",
+          "sha256": "45582f4a9f1ae94d4c8f594186b779ba915175cc072dcec0fa3cfa94eb5e0d25",
+          "bytes": 1119,
+          "pages": [
+            "food.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "halloween.atlas",
+          "path_id": 207,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/207.bytes",
+          "sha256": "161c81fd5d9be604b025981959c22f43197946243f3a6457cb7f005d145930bf",
+          "bytes": 1305,
+          "pages": [
+            "halloween.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "insects.atlas",
+          "path_id": 220,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/220.bytes",
+          "sha256": "5e976c8fb3209c70f26180235923d2d92874cf8462723bd3996d8568d0cdd300",
+          "bytes": 1507,
+          "pages": [
+            "insects.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "magic.atlas",
+          "path_id": 205,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/205.bytes",
+          "sha256": "8f41d07c3c3eddd234117fa4d4d2a2175600317902f573690565908354d2eaa8",
+          "bytes": 1281,
+          "pages": [
+            "magic.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "music.atlas",
+          "path_id": 214,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/214.bytes",
+          "sha256": "6b25b8cfe2218eb5a0cdc74f598cf94ee15363b56e898a88909598c895a4ad66",
+          "bytes": 1897,
+          "pages": [
+            "music.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "ocean.atlas",
+          "path_id": 217,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/217.bytes",
+          "sha256": "577c2fc48b5771bbb797eca7afa9cf280b8e0d8d2718a272e915988795186bbd",
+          "bytes": 1117,
+          "pages": [
+            "ocean.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "vehicles.atlas",
+          "path_id": 212,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/212.bytes",
+          "sha256": "0a58bcea5b691250ced02cbf481b4f8d0cf6b0d221e09ab4369c5643537ce715",
+          "bytes": 1500,
+          "pages": [
+            "vehicles.png"
+          ],
+          "is_exact_basename_match": false
+        }
+      ]
+    },
+    {
+      "name": "dino",
+      "scoped_source": {
+        "container": "bin/Data/data.unity3d",
+        "file": "sharedassets2.assets",
+        "path_id": 211,
+        "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/211.bytes",
+        "bytes": 23795,
+        "sha256": "d41113de85ed7ae4b9140c4e17b212db1f7e825bc1abbcffc7303eeb1e216e26"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "lT0DHo9V0G5w2TmZR1t0hwBqzF8",
+        "width": 185,
+        "height": 219,
+        "fps": null,
+        "images": "./images/",
+        "audio": "E:/1 \u043d\u0443\u0436\u043d\u044b\u0435 \u043f\u0430\u043f\u043a\u0438/Kimikosoft/Drawing/[DRA39] Animation Main Menu icons/dino"
+      },
+      "counts": {
+        "bones": 1,
+        "slots": 14,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "action": {
+          "timeline_channels": [
+            "deform",
+            "slots"
+          ],
+          "numeric_key_count": 57,
+          "last_numeric_time_key_seconds": 3.3333
+        },
+        "idle": {
+          "timeline_channels": [],
+          "numeric_key_count": 0,
+          "last_numeric_time_key_seconds": null
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "dino.atlas",
+          "path_id": 216,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/216.bytes",
+          "sha256": "834abf08735da0ea3d5de83ac0c2373cc028ffc9ba136dd85192c9567d924468",
+          "bytes": 1207,
+          "pages": [
+            "dino.png"
+          ],
+          "is_exact_basename_match": true
+        },
+        {
+          "name": "animals.atlas",
+          "path_id": 219,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/219.bytes",
+          "sha256": "203399beef5f8b3a78cfb59226ea3ec03e584db9bf1c168b282826d2ad733f90",
+          "bytes": 1113,
+          "pages": [
+            "animals.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "christmas.atlas",
+          "path_id": 203,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/203.bytes",
+          "sha256": "9c37b8fedda65e87769394efdd09936926eaa181662117bace197978c39dbb59",
+          "bytes": 2061,
+          "pages": [
+            "christmas.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dolls.atlas",
+          "path_id": 202,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/202.bytes",
+          "sha256": "d22594b135b3fd2d86ad3c8b76db1c07ff6f038e88f18574f28adc12ed36c8dd",
+          "bytes": 1584,
+          "pages": [
+            "dolls.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "food.atlas",
+          "path_id": 210,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/210.bytes",
+          "sha256": "45582f4a9f1ae94d4c8f594186b779ba915175cc072dcec0fa3cfa94eb5e0d25",
+          "bytes": 1119,
+          "pages": [
+            "food.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "halloween.atlas",
+          "path_id": 207,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/207.bytes",
+          "sha256": "161c81fd5d9be604b025981959c22f43197946243f3a6457cb7f005d145930bf",
+          "bytes": 1305,
+          "pages": [
+            "halloween.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "insects.atlas",
+          "path_id": 220,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/220.bytes",
+          "sha256": "5e976c8fb3209c70f26180235923d2d92874cf8462723bd3996d8568d0cdd300",
+          "bytes": 1507,
+          "pages": [
+            "insects.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "magic.atlas",
+          "path_id": 205,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/205.bytes",
+          "sha256": "8f41d07c3c3eddd234117fa4d4d2a2175600317902f573690565908354d2eaa8",
+          "bytes": 1281,
+          "pages": [
+            "magic.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "music.atlas",
+          "path_id": 214,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/214.bytes",
+          "sha256": "6b25b8cfe2218eb5a0cdc74f598cf94ee15363b56e898a88909598c895a4ad66",
+          "bytes": 1897,
+          "pages": [
+            "music.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "ocean.atlas",
+          "path_id": 217,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/217.bytes",
+          "sha256": "577c2fc48b5771bbb797eca7afa9cf280b8e0d8d2718a272e915988795186bbd",
+          "bytes": 1117,
+          "pages": [
+            "ocean.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "school.atlas",
+          "path_id": 208,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/208.bytes",
+          "sha256": "6d99f80457aa965421d8afbee3ce2ebb3c1fbfe91e793bf188d95eb1275af2a8",
+          "bytes": 2071,
+          "pages": [
+            "school.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "vehicles.atlas",
+          "path_id": 212,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/212.bytes",
+          "sha256": "0a58bcea5b691250ced02cbf481b4f8d0cf6b0d221e09ab4369c5643537ce715",
+          "bytes": 1500,
+          "pages": [
+            "vehicles.png"
+          ],
+          "is_exact_basename_match": false
+        }
+      ]
+    },
+    {
+      "name": "animals",
+      "scoped_source": {
+        "container": "bin/Data/data.unity3d",
+        "file": "sharedassets2.assets",
+        "path_id": 213,
+        "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/213.bytes",
+        "bytes": 17579,
+        "sha256": "b53d81e8a6611a67f5bb8a4fc25114839d10185e147f107d3640cd09e5c576d7"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "NjrgJnc2q/98vzXjOSU+zSLVHiE",
+        "width": 199,
+        "height": 203,
+        "fps": null,
+        "images": "./images/",
+        "audio": "E:/1 \u043d\u0443\u0436\u043d\u044b\u0435 \u043f\u0430\u043f\u043a\u0438/Kimikosoft/Drawing/[DRA39] Animation Main Menu icons/animals"
+      },
+      "counts": {
+        "bones": 1,
+        "slots": 11,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "action": {
+          "timeline_channels": [
+            "deform",
+            "slots"
+          ],
+          "numeric_key_count": 49,
+          "last_numeric_time_key_seconds": 3.3333
+        },
+        "idle": {
+          "timeline_channels": [],
+          "numeric_key_count": 0,
+          "last_numeric_time_key_seconds": null
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "animals.atlas",
+          "path_id": 219,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/219.bytes",
+          "sha256": "203399beef5f8b3a78cfb59226ea3ec03e584db9bf1c168b282826d2ad733f90",
+          "bytes": 1113,
+          "pages": [
+            "animals.png"
+          ],
+          "is_exact_basename_match": true
+        },
+        {
+          "name": "christmas.atlas",
+          "path_id": 203,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/203.bytes",
+          "sha256": "9c37b8fedda65e87769394efdd09936926eaa181662117bace197978c39dbb59",
+          "bytes": 2061,
+          "pages": [
+            "christmas.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dino.atlas",
+          "path_id": 216,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/216.bytes",
+          "sha256": "834abf08735da0ea3d5de83ac0c2373cc028ffc9ba136dd85192c9567d924468",
+          "bytes": 1207,
+          "pages": [
+            "dino.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dolls.atlas",
+          "path_id": 202,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/202.bytes",
+          "sha256": "d22594b135b3fd2d86ad3c8b76db1c07ff6f038e88f18574f28adc12ed36c8dd",
+          "bytes": 1584,
+          "pages": [
+            "dolls.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "food.atlas",
+          "path_id": 210,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/210.bytes",
+          "sha256": "45582f4a9f1ae94d4c8f594186b779ba915175cc072dcec0fa3cfa94eb5e0d25",
+          "bytes": 1119,
+          "pages": [
+            "food.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "halloween.atlas",
+          "path_id": 207,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/207.bytes",
+          "sha256": "161c81fd5d9be604b025981959c22f43197946243f3a6457cb7f005d145930bf",
+          "bytes": 1305,
+          "pages": [
+            "halloween.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "insects.atlas",
+          "path_id": 220,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/220.bytes",
+          "sha256": "5e976c8fb3209c70f26180235923d2d92874cf8462723bd3996d8568d0cdd300",
+          "bytes": 1507,
+          "pages": [
+            "insects.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "magic.atlas",
+          "path_id": 205,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/205.bytes",
+          "sha256": "8f41d07c3c3eddd234117fa4d4d2a2175600317902f573690565908354d2eaa8",
+          "bytes": 1281,
+          "pages": [
+            "magic.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "music.atlas",
+          "path_id": 214,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/214.bytes",
+          "sha256": "6b25b8cfe2218eb5a0cdc74f598cf94ee15363b56e898a88909598c895a4ad66",
+          "bytes": 1897,
+          "pages": [
+            "music.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "ocean.atlas",
+          "path_id": 217,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/217.bytes",
+          "sha256": "577c2fc48b5771bbb797eca7afa9cf280b8e0d8d2718a272e915988795186bbd",
+          "bytes": 1117,
+          "pages": [
+            "ocean.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "school.atlas",
+          "path_id": 208,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/208.bytes",
+          "sha256": "6d99f80457aa965421d8afbee3ce2ebb3c1fbfe91e793bf188d95eb1275af2a8",
+          "bytes": 2071,
+          "pages": [
+            "school.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "vehicles.atlas",
+          "path_id": 212,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/212.bytes",
+          "sha256": "0a58bcea5b691250ced02cbf481b4f8d0cf6b0d221e09ab4369c5643537ce715",
+          "bytes": 1500,
+          "pages": [
+            "vehicles.png"
+          ],
+          "is_exact_basename_match": false
+        }
+      ]
+    },
+    {
+      "name": "dolls",
+      "scoped_source": {
+        "container": "bin/Data/data.unity3d",
+        "file": "sharedassets2.assets",
+        "path_id": 215,
+        "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/215.bytes",
+        "bytes": 17830,
+        "sha256": "5413a37fad4fb7852c98bea39917fbabe368381c6120df167bcef9f827c005b0"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "rWEGcPprHcGnlzGS6535xSDIijg",
+        "width": 168,
+        "height": 219,
+        "fps": null,
+        "images": "./images/",
+        "audio": "E:/1 \u043d\u0443\u0436\u043d\u044b\u0435 \u043f\u0430\u043f\u043a\u0438/Kimikosoft/Drawing/[DRA39] Animation Main Menu icons/dolls"
+      },
+      "counts": {
+        "bones": 1,
+        "slots": 18,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "action": {
+          "timeline_channels": [
+            "deform",
+            "slots"
+          ],
+          "numeric_key_count": 65,
+          "last_numeric_time_key_seconds": 3.3333
+        },
+        "idle": {
+          "timeline_channels": [],
+          "numeric_key_count": 0,
+          "last_numeric_time_key_seconds": null
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "dolls.atlas",
+          "path_id": 202,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/202.bytes",
+          "sha256": "d22594b135b3fd2d86ad3c8b76db1c07ff6f038e88f18574f28adc12ed36c8dd",
+          "bytes": 1584,
+          "pages": [
+            "dolls.png"
+          ],
+          "is_exact_basename_match": true
+        },
+        {
+          "name": "animals.atlas",
+          "path_id": 219,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/219.bytes",
+          "sha256": "203399beef5f8b3a78cfb59226ea3ec03e584db9bf1c168b282826d2ad733f90",
+          "bytes": 1113,
+          "pages": [
+            "animals.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "christmas.atlas",
+          "path_id": 203,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/203.bytes",
+          "sha256": "9c37b8fedda65e87769394efdd09936926eaa181662117bace197978c39dbb59",
+          "bytes": 2061,
+          "pages": [
+            "christmas.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dino.atlas",
+          "path_id": 216,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/216.bytes",
+          "sha256": "834abf08735da0ea3d5de83ac0c2373cc028ffc9ba136dd85192c9567d924468",
+          "bytes": 1207,
+          "pages": [
+            "dino.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "food.atlas",
+          "path_id": 210,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/210.bytes",
+          "sha256": "45582f4a9f1ae94d4c8f594186b779ba915175cc072dcec0fa3cfa94eb5e0d25",
+          "bytes": 1119,
+          "pages": [
+            "food.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "halloween.atlas",
+          "path_id": 207,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/207.bytes",
+          "sha256": "161c81fd5d9be604b025981959c22f43197946243f3a6457cb7f005d145930bf",
+          "bytes": 1305,
+          "pages": [
+            "halloween.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "insects.atlas",
+          "path_id": 220,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/220.bytes",
+          "sha256": "5e976c8fb3209c70f26180235923d2d92874cf8462723bd3996d8568d0cdd300",
+          "bytes": 1507,
+          "pages": [
+            "insects.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "magic.atlas",
+          "path_id": 205,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/205.bytes",
+          "sha256": "8f41d07c3c3eddd234117fa4d4d2a2175600317902f573690565908354d2eaa8",
+          "bytes": 1281,
+          "pages": [
+            "magic.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "music.atlas",
+          "path_id": 214,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/214.bytes",
+          "sha256": "6b25b8cfe2218eb5a0cdc74f598cf94ee15363b56e898a88909598c895a4ad66",
+          "bytes": 1897,
+          "pages": [
+            "music.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "ocean.atlas",
+          "path_id": 217,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/217.bytes",
+          "sha256": "577c2fc48b5771bbb797eca7afa9cf280b8e0d8d2718a272e915988795186bbd",
+          "bytes": 1117,
+          "pages": [
+            "ocean.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "school.atlas",
+          "path_id": 208,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/208.bytes",
+          "sha256": "6d99f80457aa965421d8afbee3ce2ebb3c1fbfe91e793bf188d95eb1275af2a8",
+          "bytes": 2071,
+          "pages": [
+            "school.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "vehicles.atlas",
+          "path_id": 212,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/212.bytes",
+          "sha256": "0a58bcea5b691250ced02cbf481b4f8d0cf6b0d221e09ab4369c5643537ce715",
+          "bytes": 1500,
+          "pages": [
+            "vehicles.png"
+          ],
+          "is_exact_basename_match": false
+        }
+      ]
+    },
+    {
+      "name": "music",
+      "scoped_source": {
+        "container": "bin/Data/data.unity3d",
+        "file": "sharedassets2.assets",
+        "path_id": 218,
+        "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/218.bytes",
+        "bytes": 29601,
+        "sha256": "6b19e0ff2cde734454039b50917c85c6f1ed1fa3fb3be6e8f3d29c97e7266869"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "4ZRf0jcPQ13iFfeknb1Scg4Sx7k",
+        "width": 170,
+        "height": 219,
+        "fps": null,
+        "images": "./images/",
+        "audio": "E:/1 \u043d\u0443\u0436\u043d\u044b\u0435 \u043f\u0430\u043f\u043a\u0438/Kimikosoft/Drawing/[DRA39] Animation Main Menu icons/music"
+      },
+      "counts": {
+        "bones": 1,
+        "slots": 19,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "action": {
+          "timeline_channels": [
+            "deform",
+            "slots"
+          ],
+          "numeric_key_count": 95,
+          "last_numeric_time_key_seconds": 3.3333
+        },
+        "idle": {
+          "timeline_channels": [],
+          "numeric_key_count": 0,
+          "last_numeric_time_key_seconds": null
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "music.atlas",
+          "path_id": 214,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/214.bytes",
+          "sha256": "6b25b8cfe2218eb5a0cdc74f598cf94ee15363b56e898a88909598c895a4ad66",
+          "bytes": 1897,
+          "pages": [
+            "music.png"
+          ],
+          "is_exact_basename_match": true
+        },
+        {
+          "name": "animals.atlas",
+          "path_id": 219,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/219.bytes",
+          "sha256": "203399beef5f8b3a78cfb59226ea3ec03e584db9bf1c168b282826d2ad733f90",
+          "bytes": 1113,
+          "pages": [
+            "animals.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "christmas.atlas",
+          "path_id": 203,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/203.bytes",
+          "sha256": "9c37b8fedda65e87769394efdd09936926eaa181662117bace197978c39dbb59",
+          "bytes": 2061,
+          "pages": [
+            "christmas.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dino.atlas",
+          "path_id": 216,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/216.bytes",
+          "sha256": "834abf08735da0ea3d5de83ac0c2373cc028ffc9ba136dd85192c9567d924468",
+          "bytes": 1207,
+          "pages": [
+            "dino.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dolls.atlas",
+          "path_id": 202,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/202.bytes",
+          "sha256": "d22594b135b3fd2d86ad3c8b76db1c07ff6f038e88f18574f28adc12ed36c8dd",
+          "bytes": 1584,
+          "pages": [
+            "dolls.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "food.atlas",
+          "path_id": 210,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/210.bytes",
+          "sha256": "45582f4a9f1ae94d4c8f594186b779ba915175cc072dcec0fa3cfa94eb5e0d25",
+          "bytes": 1119,
+          "pages": [
+            "food.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "halloween.atlas",
+          "path_id": 207,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/207.bytes",
+          "sha256": "161c81fd5d9be604b025981959c22f43197946243f3a6457cb7f005d145930bf",
+          "bytes": 1305,
+          "pages": [
+            "halloween.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "insects.atlas",
+          "path_id": 220,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/220.bytes",
+          "sha256": "5e976c8fb3209c70f26180235923d2d92874cf8462723bd3996d8568d0cdd300",
+          "bytes": 1507,
+          "pages": [
+            "insects.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "magic.atlas",
+          "path_id": 205,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/205.bytes",
+          "sha256": "8f41d07c3c3eddd234117fa4d4d2a2175600317902f573690565908354d2eaa8",
+          "bytes": 1281,
+          "pages": [
+            "magic.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "ocean.atlas",
+          "path_id": 217,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/217.bytes",
+          "sha256": "577c2fc48b5771bbb797eca7afa9cf280b8e0d8d2718a272e915988795186bbd",
+          "bytes": 1117,
+          "pages": [
+            "ocean.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "school.atlas",
+          "path_id": 208,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/208.bytes",
+          "sha256": "6d99f80457aa965421d8afbee3ce2ebb3c1fbfe91e793bf188d95eb1275af2a8",
+          "bytes": 2071,
+          "pages": [
+            "school.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "vehicles.atlas",
+          "path_id": 212,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/212.bytes",
+          "sha256": "0a58bcea5b691250ced02cbf481b4f8d0cf6b0d221e09ab4369c5643537ce715",
+          "bytes": 1500,
+          "pages": [
+            "vehicles.png"
+          ],
+          "is_exact_basename_match": false
+        }
+      ]
+    },
+    {
+      "name": "halloween",
+      "scoped_source": {
+        "container": "bin/Data/data.unity3d",
+        "file": "sharedassets2.assets",
+        "path_id": 221,
+        "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/221.bytes",
+        "bytes": 20747,
+        "sha256": "542b7e9fdc2f99a91457c06659868b41fc9d218bb8899e15cf79cfe58eaeb635"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "IL/cjWrZ1A/qinV23YOJCL+QLTQ",
+        "width": 199,
+        "height": 184,
+        "fps": null,
+        "images": "./images/",
+        "audio": "E:/1 \u043d\u0443\u0436\u043d\u044b\u0435 \u043f\u0430\u043f\u043a\u0438/Kimikosoft/Drawing/[DRA39] Animation Main Menu icons/halloween"
+      },
+      "counts": {
+        "bones": 1,
+        "slots": 15,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "action": {
+          "timeline_channels": [
+            "deform",
+            "slots"
+          ],
+          "numeric_key_count": 60,
+          "last_numeric_time_key_seconds": 3.3333
+        },
+        "idle": {
+          "timeline_channels": [],
+          "numeric_key_count": 0,
+          "last_numeric_time_key_seconds": null
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "halloween.atlas",
+          "path_id": 207,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/207.bytes",
+          "sha256": "161c81fd5d9be604b025981959c22f43197946243f3a6457cb7f005d145930bf",
+          "bytes": 1305,
+          "pages": [
+            "halloween.png"
+          ],
+          "is_exact_basename_match": true
+        },
+        {
+          "name": "animals.atlas",
+          "path_id": 219,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/219.bytes",
+          "sha256": "203399beef5f8b3a78cfb59226ea3ec03e584db9bf1c168b282826d2ad733f90",
+          "bytes": 1113,
+          "pages": [
+            "animals.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "christmas.atlas",
+          "path_id": 203,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/203.bytes",
+          "sha256": "9c37b8fedda65e87769394efdd09936926eaa181662117bace197978c39dbb59",
+          "bytes": 2061,
+          "pages": [
+            "christmas.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dino.atlas",
+          "path_id": 216,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/216.bytes",
+          "sha256": "834abf08735da0ea3d5de83ac0c2373cc028ffc9ba136dd85192c9567d924468",
+          "bytes": 1207,
+          "pages": [
+            "dino.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dolls.atlas",
+          "path_id": 202,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/202.bytes",
+          "sha256": "d22594b135b3fd2d86ad3c8b76db1c07ff6f038e88f18574f28adc12ed36c8dd",
+          "bytes": 1584,
+          "pages": [
+            "dolls.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "food.atlas",
+          "path_id": 210,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/210.bytes",
+          "sha256": "45582f4a9f1ae94d4c8f594186b779ba915175cc072dcec0fa3cfa94eb5e0d25",
+          "bytes": 1119,
+          "pages": [
+            "food.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "insects.atlas",
+          "path_id": 220,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/220.bytes",
+          "sha256": "5e976c8fb3209c70f26180235923d2d92874cf8462723bd3996d8568d0cdd300",
+          "bytes": 1507,
+          "pages": [
+            "insects.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "magic.atlas",
+          "path_id": 205,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/205.bytes",
+          "sha256": "8f41d07c3c3eddd234117fa4d4d2a2175600317902f573690565908354d2eaa8",
+          "bytes": 1281,
+          "pages": [
+            "magic.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "music.atlas",
+          "path_id": 214,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/214.bytes",
+          "sha256": "6b25b8cfe2218eb5a0cdc74f598cf94ee15363b56e898a88909598c895a4ad66",
+          "bytes": 1897,
+          "pages": [
+            "music.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "ocean.atlas",
+          "path_id": 217,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/217.bytes",
+          "sha256": "577c2fc48b5771bbb797eca7afa9cf280b8e0d8d2718a272e915988795186bbd",
+          "bytes": 1117,
+          "pages": [
+            "ocean.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "school.atlas",
+          "path_id": 208,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/208.bytes",
+          "sha256": "6d99f80457aa965421d8afbee3ce2ebb3c1fbfe91e793bf188d95eb1275af2a8",
+          "bytes": 2071,
+          "pages": [
+            "school.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "vehicles.atlas",
+          "path_id": 212,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/212.bytes",
+          "sha256": "0a58bcea5b691250ced02cbf481b4f8d0cf6b0d221e09ab4369c5643537ce715",
+          "bytes": 1500,
+          "pages": [
+            "vehicles.png"
+          ],
+          "is_exact_basename_match": false
+        }
+      ]
+    },
+    {
+      "name": "christmas",
+      "scoped_source": {
+        "container": "bin/Data/data.unity3d",
+        "file": "sharedassets2.assets",
+        "path_id": 222,
+        "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/222.bytes",
+        "bytes": 19924,
+        "sha256": "701fcf7b42699935d9735496138e745143dfac9f00d21a6d96210d28a32d6086"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "E6SKd+RMlf9b8Zxz4bRqEWR6ftU",
+        "width": 189,
+        "height": 219,
+        "fps": null,
+        "images": "./images/",
+        "audio": "E:/1 \u043d\u0443\u0436\u043d\u044b\u0435 \u043f\u0430\u043f\u043a\u0438/Kimikosoft/Drawing/[DRA39] Animation Main Menu icons/christmas"
+      },
+      "counts": {
+        "bones": 1,
+        "slots": 23,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "action": {
+          "timeline_channels": [
+            "deform",
+            "slots"
+          ],
+          "numeric_key_count": 78,
+          "last_numeric_time_key_seconds": 3.3333
+        },
+        "idle": {
+          "timeline_channels": [],
+          "numeric_key_count": 0,
+          "last_numeric_time_key_seconds": null
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "christmas.atlas",
+          "path_id": 203,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/203.bytes",
+          "sha256": "9c37b8fedda65e87769394efdd09936926eaa181662117bace197978c39dbb59",
+          "bytes": 2061,
+          "pages": [
+            "christmas.png"
+          ],
+          "is_exact_basename_match": true
+        },
+        {
+          "name": "animals.atlas",
+          "path_id": 219,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/219.bytes",
+          "sha256": "203399beef5f8b3a78cfb59226ea3ec03e584db9bf1c168b282826d2ad733f90",
+          "bytes": 1113,
+          "pages": [
+            "animals.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dino.atlas",
+          "path_id": 216,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/216.bytes",
+          "sha256": "834abf08735da0ea3d5de83ac0c2373cc028ffc9ba136dd85192c9567d924468",
+          "bytes": 1207,
+          "pages": [
+            "dino.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dolls.atlas",
+          "path_id": 202,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/202.bytes",
+          "sha256": "d22594b135b3fd2d86ad3c8b76db1c07ff6f038e88f18574f28adc12ed36c8dd",
+          "bytes": 1584,
+          "pages": [
+            "dolls.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "food.atlas",
+          "path_id": 210,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/210.bytes",
+          "sha256": "45582f4a9f1ae94d4c8f594186b779ba915175cc072dcec0fa3cfa94eb5e0d25",
+          "bytes": 1119,
+          "pages": [
+            "food.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "halloween.atlas",
+          "path_id": 207,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/207.bytes",
+          "sha256": "161c81fd5d9be604b025981959c22f43197946243f3a6457cb7f005d145930bf",
+          "bytes": 1305,
+          "pages": [
+            "halloween.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "insects.atlas",
+          "path_id": 220,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/220.bytes",
+          "sha256": "5e976c8fb3209c70f26180235923d2d92874cf8462723bd3996d8568d0cdd300",
+          "bytes": 1507,
+          "pages": [
+            "insects.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "magic.atlas",
+          "path_id": 205,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/205.bytes",
+          "sha256": "8f41d07c3c3eddd234117fa4d4d2a2175600317902f573690565908354d2eaa8",
+          "bytes": 1281,
+          "pages": [
+            "magic.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "music.atlas",
+          "path_id": 214,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/214.bytes",
+          "sha256": "6b25b8cfe2218eb5a0cdc74f598cf94ee15363b56e898a88909598c895a4ad66",
+          "bytes": 1897,
+          "pages": [
+            "music.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "ocean.atlas",
+          "path_id": 217,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/217.bytes",
+          "sha256": "577c2fc48b5771bbb797eca7afa9cf280b8e0d8d2718a272e915988795186bbd",
+          "bytes": 1117,
+          "pages": [
+            "ocean.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "school.atlas",
+          "path_id": 208,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/208.bytes",
+          "sha256": "6d99f80457aa965421d8afbee3ce2ebb3c1fbfe91e793bf188d95eb1275af2a8",
+          "bytes": 2071,
+          "pages": [
+            "school.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "vehicles.atlas",
+          "path_id": 212,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/212.bytes",
+          "sha256": "0a58bcea5b691250ced02cbf481b4f8d0cf6b0d221e09ab4369c5643537ce715",
+          "bytes": 1500,
+          "pages": [
+            "vehicles.png"
+          ],
+          "is_exact_basename_match": false
+        }
+      ]
+    },
+    {
+      "name": "food",
+      "scoped_source": {
+        "container": "bin/Data/data.unity3d",
+        "file": "sharedassets2.assets",
+        "path_id": 223,
+        "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/223.bytes",
+        "bytes": 12083,
+        "sha256": "f8d2788ee908ba59ad3e505fe4b6e7105a64d8cdae74ac65811ab98ace9f3e4e"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "yint7/0XUQaJpw8ENncZn2mR9Sw",
+        "width": 199,
+        "height": 187,
+        "fps": null,
+        "images": "./images/",
+        "audio": "E:/1 \u043d\u0443\u0436\u043d\u044b\u0435 \u043f\u0430\u043f\u043a\u0438/Kimikosoft/Drawing/[DRA39] Animation Main Menu icons/food"
+      },
+      "counts": {
+        "bones": 1,
+        "slots": 13,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "action": {
+          "timeline_channels": [
+            "deform",
+            "slots"
+          ],
+          "numeric_key_count": 41,
+          "last_numeric_time_key_seconds": 3.3333
+        },
+        "idle": {
+          "timeline_channels": [],
+          "numeric_key_count": 0,
+          "last_numeric_time_key_seconds": null
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "food.atlas",
+          "path_id": 210,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/210.bytes",
+          "sha256": "45582f4a9f1ae94d4c8f594186b779ba915175cc072dcec0fa3cfa94eb5e0d25",
+          "bytes": 1119,
+          "pages": [
+            "food.png"
+          ],
+          "is_exact_basename_match": true
+        },
+        {
+          "name": "animals.atlas",
+          "path_id": 219,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/219.bytes",
+          "sha256": "203399beef5f8b3a78cfb59226ea3ec03e584db9bf1c168b282826d2ad733f90",
+          "bytes": 1113,
+          "pages": [
+            "animals.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "christmas.atlas",
+          "path_id": 203,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/203.bytes",
+          "sha256": "9c37b8fedda65e87769394efdd09936926eaa181662117bace197978c39dbb59",
+          "bytes": 2061,
+          "pages": [
+            "christmas.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dino.atlas",
+          "path_id": 216,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/216.bytes",
+          "sha256": "834abf08735da0ea3d5de83ac0c2373cc028ffc9ba136dd85192c9567d924468",
+          "bytes": 1207,
+          "pages": [
+            "dino.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dolls.atlas",
+          "path_id": 202,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/202.bytes",
+          "sha256": "d22594b135b3fd2d86ad3c8b76db1c07ff6f038e88f18574f28adc12ed36c8dd",
+          "bytes": 1584,
+          "pages": [
+            "dolls.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "halloween.atlas",
+          "path_id": 207,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/207.bytes",
+          "sha256": "161c81fd5d9be604b025981959c22f43197946243f3a6457cb7f005d145930bf",
+          "bytes": 1305,
+          "pages": [
+            "halloween.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "insects.atlas",
+          "path_id": 220,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/220.bytes",
+          "sha256": "5e976c8fb3209c70f26180235923d2d92874cf8462723bd3996d8568d0cdd300",
+          "bytes": 1507,
+          "pages": [
+            "insects.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "magic.atlas",
+          "path_id": 205,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/205.bytes",
+          "sha256": "8f41d07c3c3eddd234117fa4d4d2a2175600317902f573690565908354d2eaa8",
+          "bytes": 1281,
+          "pages": [
+            "magic.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "music.atlas",
+          "path_id": 214,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/214.bytes",
+          "sha256": "6b25b8cfe2218eb5a0cdc74f598cf94ee15363b56e898a88909598c895a4ad66",
+          "bytes": 1897,
+          "pages": [
+            "music.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "ocean.atlas",
+          "path_id": 217,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/217.bytes",
+          "sha256": "577c2fc48b5771bbb797eca7afa9cf280b8e0d8d2718a272e915988795186bbd",
+          "bytes": 1117,
+          "pages": [
+            "ocean.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "school.atlas",
+          "path_id": 208,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/208.bytes",
+          "sha256": "6d99f80457aa965421d8afbee3ce2ebb3c1fbfe91e793bf188d95eb1275af2a8",
+          "bytes": 2071,
+          "pages": [
+            "school.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "vehicles.atlas",
+          "path_id": 212,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/212.bytes",
+          "sha256": "0a58bcea5b691250ced02cbf481b4f8d0cf6b0d221e09ab4369c5643537ce715",
+          "bytes": 1500,
+          "pages": [
+            "vehicles.png"
+          ],
+          "is_exact_basename_match": false
+        }
+      ]
+    },
+    {
+      "name": "vehicles",
+      "scoped_source": {
+        "container": "bin/Data/data.unity3d",
+        "file": "sharedassets2.assets",
+        "path_id": 224,
+        "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/224.bytes",
+        "bytes": 27628,
+        "sha256": "e963d10a7f77d8110bf3d6520153d7c596c3b7b9367b6f2b69a99ab19b3aba68"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "OsSRNDA+aZxqxh0JcY92C593NHM",
+        "width": 198,
+        "height": 198,
+        "fps": null,
+        "images": "./images/",
+        "audio": ""
+      },
+      "counts": {
+        "bones": 2,
+        "slots": 19,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "action": {
+          "timeline_channels": [
+            "deform",
+            "slots"
+          ],
+          "numeric_key_count": 84,
+          "last_numeric_time_key_seconds": 4
+        },
+        "idle": {
+          "timeline_channels": [],
+          "numeric_key_count": 0,
+          "last_numeric_time_key_seconds": null
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "vehicles.atlas",
+          "path_id": 212,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/212.bytes",
+          "sha256": "0a58bcea5b691250ced02cbf481b4f8d0cf6b0d221e09ab4369c5643537ce715",
+          "bytes": 1500,
+          "pages": [
+            "vehicles.png"
+          ],
+          "is_exact_basename_match": true
+        },
+        {
+          "name": "animals.atlas",
+          "path_id": 219,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/219.bytes",
+          "sha256": "203399beef5f8b3a78cfb59226ea3ec03e584db9bf1c168b282826d2ad733f90",
+          "bytes": 1113,
+          "pages": [
+            "animals.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "christmas.atlas",
+          "path_id": 203,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/203.bytes",
+          "sha256": "9c37b8fedda65e87769394efdd09936926eaa181662117bace197978c39dbb59",
+          "bytes": 2061,
+          "pages": [
+            "christmas.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dino.atlas",
+          "path_id": 216,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/216.bytes",
+          "sha256": "834abf08735da0ea3d5de83ac0c2373cc028ffc9ba136dd85192c9567d924468",
+          "bytes": 1207,
+          "pages": [
+            "dino.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "dolls.atlas",
+          "path_id": 202,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/202.bytes",
+          "sha256": "d22594b135b3fd2d86ad3c8b76db1c07ff6f038e88f18574f28adc12ed36c8dd",
+          "bytes": 1584,
+          "pages": [
+            "dolls.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "food.atlas",
+          "path_id": 210,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/210.bytes",
+          "sha256": "45582f4a9f1ae94d4c8f594186b779ba915175cc072dcec0fa3cfa94eb5e0d25",
+          "bytes": 1119,
+          "pages": [
+            "food.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "halloween.atlas",
+          "path_id": 207,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/207.bytes",
+          "sha256": "161c81fd5d9be604b025981959c22f43197946243f3a6457cb7f005d145930bf",
+          "bytes": 1305,
+          "pages": [
+            "halloween.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "insects.atlas",
+          "path_id": 220,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/220.bytes",
+          "sha256": "5e976c8fb3209c70f26180235923d2d92874cf8462723bd3996d8568d0cdd300",
+          "bytes": 1507,
+          "pages": [
+            "insects.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "magic.atlas",
+          "path_id": 205,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/205.bytes",
+          "sha256": "8f41d07c3c3eddd234117fa4d4d2a2175600317902f573690565908354d2eaa8",
+          "bytes": 1281,
+          "pages": [
+            "magic.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "music.atlas",
+          "path_id": 214,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/214.bytes",
+          "sha256": "6b25b8cfe2218eb5a0cdc74f598cf94ee15363b56e898a88909598c895a4ad66",
+          "bytes": 1897,
+          "pages": [
+            "music.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "ocean.atlas",
+          "path_id": 217,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/217.bytes",
+          "sha256": "577c2fc48b5771bbb797eca7afa9cf280b8e0d8d2718a272e915988795186bbd",
+          "bytes": 1117,
+          "pages": [
+            "ocean.png"
+          ],
+          "is_exact_basename_match": false
+        },
+        {
+          "name": "school.atlas",
+          "path_id": 208,
+          "export": "extracted/v3.141/unity-text/data.unity3d/sharedassets2.assets/208.bytes",
+          "sha256": "6d99f80457aa965421d8afbee3ce2ebb3c1fbfe91e793bf188d95eb1275af2a8",
+          "bytes": 2071,
+          "pages": [
+            "school.png"
+          ],
+          "is_exact_basename_match": false
+        }
+      ]
+    },
+    {
+      "name": "pop-up-drawing-an",
+      "scoped_source": {
+        "container": "aa/Android/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_fullgame.prefab_84123612d0882089a74e9fdbe1d26dfc.bundle",
+        "file": "CAB-a5fd52a248b7c3492298e4180a59bab8",
+        "path_id": -3828652467745795968,
+        "export": "extracted/v3.141/unity-text/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_fullgame.prefab_84123612d0882089a74e9fdbe1d26dfc.bundle/CAB-a5fd52a248b7c3492298e4180a59bab8/-3828652467745795968.bytes",
+        "bytes": 88256,
+        "sha256": "815b686f95617e458cecce37436cdda38712c022f055e40c59c9805c27604d27"
+      },
+      "spine_version": "3.8.99",
+      "skeleton_metadata": {
+        "hash": "u67zVy+d/Iu8/etI4TZw6971qvo",
+        "width": 742.01,
+        "height": 714,
+        "fps": null,
+        "images": "./images/",
+        "audio": "C:/Users/admin/Desktop/\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430 (3)"
+      },
+      "counts": {
+        "bones": 45,
+        "slots": 64,
+        "skins": 1
+      },
+      "skins": [
+        "default"
+      ],
+      "animations": {
+        "bell": {
+          "timeline_channels": [
+            "bones"
+          ],
+          "numeric_key_count": 5,
+          "last_numeric_time_key_seconds": 1.6
+        },
+        "car": {
+          "timeline_channels": [
+            "bones"
+          ],
+          "numeric_key_count": 12,
+          "last_numeric_time_key_seconds": 3.6667
+        },
+        "dino": {
+          "timeline_channels": [
+            "bones",
+            "slots"
+          ],
+          "numeric_key_count": 62,
+          "last_numeric_time_key_seconds": 3
+        },
+        "items": {
+          "timeline_channels": [
+            "bones"
+          ],
+          "numeric_key_count": 32,
+          "last_numeric_time_key_seconds": 2.3
+        },
+        "notes": {
+          "timeline_channels": [
+            "bones"
+          ],
+          "numeric_key_count": 32,
+          "last_numeric_time_key_seconds": 3.3333
+        },
+        "parrot": {
+          "timeline_channels": [
+            "bones",
+            "slots"
+          ],
+          "numeric_key_count": 126,
+          "last_numeric_time_key_seconds": 3.1667
+        },
+        "snow-man": {
+          "timeline_channels": [
+            "bones"
+          ],
+          "numeric_key_count": 269,
+          "last_numeric_time_key_seconds": 4.3333
+        },
+        "stars": {
+          "timeline_channels": [
+            "bones"
+          ],
+          "numeric_key_count": 68,
+          "last_numeric_time_key_seconds": 2.3333
+        }
+      },
+      "atlas_candidates_in_serialized_file": [
+        {
+          "name": "pop-up-drawing-an.atlas",
+          "path_id": -1342860290518334678,
+          "export": "extracted/v3.141/unity-text/defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_fullgame.prefab_84123612d0882089a74e9fdbe1d26dfc.bundle/CAB-a5fd52a248b7c3492298e4180a59bab8/-1342860290518334678.bytes",
+          "sha256": "84276925ae2f998b04f8ac500a8a71ac33421168092b96cf555daa345ffeb350",
+          "bytes": 3182,
+          "pages": [
+            "pop-up-drawing-an.png"
+          ],
+          "is_exact_basename_match": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+> Active migration: see [3.141 status](v3.141/STATUS.md). The checklist below records historical 3.101 work; its parity/completion claims have not been revalidated for 3.141. Recovery tag: `version-1`.
+
 # Kế hoạch theo doc.md
 
 Mục tiêu đã ghi trong doc.md: trẻ 3–4 tuổi, iPhone 12 Pro, dùng cá nhân, PWA offline. Hướng triển khai giữ nguyên React + TypeScript + Vite + Canvas 2D; chưa có kết quả POC iPhone để khẳng định đáp ứng đầy đủ.

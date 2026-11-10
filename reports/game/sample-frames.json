@@ -1,0 +1,450 @@
+{
+  "archive": "original/kids-coloring-and-drawing-games-3-101.apk",
+  "plist_file": "assets/res/pack1/image-1-3.plist",
+  "png_file": {
+    "archive_path": "assets/res/pack1/image-1-3.png",
+    "byte_size": 9899,
+    "width": 779,
+    "height": 1289,
+    "bit_depth": 2,
+    "color_type": 3,
+    "color_type_description": "palette_indexed"
+  },
+  "metadata": {
+    "format": 3,
+    "pixelFormat": "RGBA8888",
+    "premultiplyAlpha": false,
+    "realTextureFileName": "image-1-3.png",
+    "size": "{779,1289}",
+    "smartupdate": "$TexturePacker:SmartUpdate:cec5abd2c3664a197d07bc8ef8492189:57f0bb262b633ecd492741c99c53a903:9d766be4d22e0eca1fbe1fdd62d77715$",
+    "textureFileName": "image-1-3.png"
+  },
+  "frames": {
+    "img-1-3-1.png": {
+      "textureRect": "{{2,2},{775,775}}",
+      "textureRotated": false,
+      "spriteOffset": "{0,0}",
+      "spriteSize": "{775,775}",
+      "spriteSourceSize": "{775,775}",
+      "vertices": "775 775 0 775 0 0 775 0 394 93 317 93 254 76 226 76 217 127 222 167 213 255 231 296 291 338 274 550 224 552 177 583 152 655 96 676 93 686 128 720 162 692 188 717 229 732 289 739 546 735 626 721 667 696 699 720 722 700 720 667 674 655 663 601 610 552 583 449 554 416 439 338 491 291 506 250 496 168 501 99 484 71",
+      "verticesUV": "777 777 2 777 2 2 777 2 396 95 319 95 256 78 228 78 219 129 224 169 215 257 233 298 293 340 276 552 226 554 179 585 154 657 98 678 95 688 130 722 164 694 190 719 231 734 291 741 548 737 628 723 669 698 701 722 724 702 722 669 676 657 665 603 612 554 585 451 556 418 441 340 493 293 508 252 498 170 503 101 486 73",
+      "triangles": "23 0 1 22 23 1 19 21 22 19 20 21 19 22 1 18 19 1 17 18 1 17 1 2 15 16 17 10 15 17 15 10 11 15 11 14 14 12 13 14 11 12 10 17 2 9 10 2 8 9 2 7 8 2 40 2 3 6 7 2 40 6 2 6 40 4 6 4 5 39 40 3 38 39 3 37 38 3 33 37 3 34 35 36 34 36 37 33 34 37 31 33 3 31 32 33 29 31 3 29 30 31 0 29 3 25 26 27 0 25 27 0 23 24 0 28 29 27 28 0 0 24 25",
+      "aliases": [],
+      "parsed_geometry": {
+        "texture_rect": [
+          2.0,
+          2.0,
+          775.0,
+          775.0
+        ],
+        "sprite_offset": [
+          0.0,
+          0.0
+        ],
+        "sprite_size": [
+          775.0,
+          775.0
+        ],
+        "sprite_source_size": [
+          775.0,
+          775.0
+        ],
+        "vertex_count": 41,
+        "vertices_bounds": {
+          "x_min": 0.0,
+          "x_max": 775.0,
+          "y_min": 0.0,
+          "y_max": 775.0
+        },
+        "uv_bounds": {
+          "u_min": 2.0,
+          "u_max": 777.0,
+          "v_min": 2.0,
+          "v_max": 777.0
+        },
+        "triangle_count": 41
+      }
+    },
+    "img-1-3-2.png": {
+      "textureRect": "{{2,781},{677,205}}",
+      "textureRotated": false,
+      "spriteOffset": "{24,-257}",
+      "spriteSize": "{677,205}",
+      "spriteSourceSize": "{775,775}",
+      "vertices": "651 564 702 649 750 672 723 731 559 743 251 747 151 717 114 735 73 674 149 634 159 589 206 542 288 544 240 586 259 606 295 607 342 631 375 616 454 647 547 631 596 584 610 542",
+      "verticesUV": "580 803 631 888 679 911 652 970 488 982 180 986 80 956 43 974 2 913 78 873 88 828 135 781 217 783 169 825 188 845 224 846 271 870 304 855 383 886 476 870 525 823 539 781",
+      "triangles": "16 17 18 5 15 16 11 12 13 10 11 13 9 13 14 14 5 6 9 10 13 5 16 18 6 9 14 6 7 8 6 8 9 4 18 19 5 14 15 4 5 18 1 19 20 4 1 3 1 4 19 1 2 3 0 1 20 0 20 21",
+      "aliases": [],
+      "parsed_geometry": {
+        "texture_rect": [
+          2.0,
+          781.0,
+          677.0,
+          205.0
+        ],
+        "sprite_offset": [
+          24.0,
+          -257.0
+        ],
+        "sprite_size": [
+          677.0,
+          205.0
+        ],
+        "sprite_source_size": [
+          775.0,
+          775.0
+        ],
+        "vertex_count": 22,
+        "vertices_bounds": {
+          "x_min": 73.0,
+          "x_max": 750.0,
+          "y_min": 542.0,
+          "y_max": 747.0
+        },
+        "uv_bounds": {
+          "u_min": 2.0,
+          "u_max": 679.0,
+          "v_min": 781.0,
+          "v_max": 986.0
+        },
+        "triangle_count": 20
+      }
+    },
+    "img-1-3-3.png": {
+      "textureRect": "{{282,390},{309,278}}",
+      "textureRotated": false,
+      "spriteOffset": "{-30,168.5}",
+      "spriteSize": "{309,278}",
+      "spriteSourceSize": "{775,775}",
+      "vertices": "419 88 472 120 512 180 512 275 472 330 399 358 299 354 243 321 215 287 203 242 207 170 253 113 302 89 352 80",
+      "verticesUV": "498 398 551 430 591 490 591 585 551 640 478 668 378 664 322 631 294 597 282 552 286 480 332 423 381 399 431 390",
+      "triangles": "6 12 13 9 11 12 9 10 11 6 9 12 7 8 9 6 7 9 5 6 13 3 4 5 5 1 2 5 2 3 0 1 5 0 5 13",
+      "aliases": [],
+      "parsed_geometry": {
+        "texture_rect": [
+          282.0,
+          390.0,
+          309.0,
+          278.0
+        ],
+        "sprite_offset": [
+          -30.0,
+          168.5
+        ],
+        "sprite_size": [
+          309.0,
+          278.0
+        ],
+        "sprite_source_size": [
+          775.0,
+          775.0
+        ],
+        "vertex_count": 14,
+        "vertices_bounds": {
+          "x_min": 203.0,
+          "x_max": 512.0,
+          "y_min": 80.0,
+          "y_max": 358.0
+        },
+        "uv_bounds": {
+          "u_min": 282.0,
+          "u_max": 591.0,
+          "v_min": 390.0,
+          "v_max": 668.0
+        },
+        "triangle_count": 12
+      }
+    },
+    "img-1-3-4.png": {
+      "textureRect": "{{227,99},{130,116}}",
+      "textureRotated": false,
+      "spriteOffset": "{59.5,270.5}",
+      "spriteSize": "{130,116}",
+      "spriteSourceSize": "{775,775}",
+      "vertices": "512 75 503 175 453 117 382 84 476 59",
+      "verticesUV": "357 115 348 215 298 157 227 124 321 99",
+      "triangles": "2 3 4 0 1 2 0 2 4",
+      "aliases": [],
+      "parsed_geometry": {
+        "texture_rect": [
+          227.0,
+          99.0,
+          130.0,
+          116.0
+        ],
+        "sprite_offset": [
+          59.5,
+          270.5
+        ],
+        "sprite_size": [
+          130.0,
+          116.0
+        ],
+        "sprite_source_size": [
+          775.0,
+          775.0
+        ],
+        "vertex_count": 5,
+        "vertices_bounds": {
+          "x_min": 382.0,
+          "x_max": 512.0,
+          "y_min": 59.0,
+          "y_max": 175.0
+        },
+        "uv_bounds": {
+          "u_min": 227.0,
+          "u_max": 357.0,
+          "v_min": 99.0,
+          "v_max": 215.0
+        },
+        "triangle_count": 3
+      }
+    },
+    "img-1-3-5.png": {
+      "textureRect": "{{298,326},{113,117}}",
+      "textureRotated": false,
+      "spriteOffset": "{-120,264}",
+      "spriteSize": "{113,117}",
+      "spriteSourceSize": "{775,775}",
+      "vertices": "324 89 272 113 211 182 211 65 281 65",
+      "verticesUV": "411 350 359 374 298 443 298 326 368 326",
+      "triangles": "1 3 4 1 2 3 0 1 4",
+      "aliases": [],
+      "parsed_geometry": {
+        "texture_rect": [
+          298.0,
+          326.0,
+          113.0,
+          117.0
+        ],
+        "sprite_offset": [
+          -120.0,
+          264.0
+        ],
+        "sprite_size": [
+          113.0,
+          117.0
+        ],
+        "sprite_source_size": [
+          775.0,
+          775.0
+        ],
+        "vertex_count": 5,
+        "vertices_bounds": {
+          "x_min": 211.0,
+          "x_max": 324.0,
+          "y_min": 65.0,
+          "y_max": 182.0
+        },
+        "uv_bounds": {
+          "u_min": 298.0,
+          "u_max": 411.0,
+          "v_min": 326.0,
+          "v_max": 443.0
+        },
+        "triangle_count": 3
+      }
+    },
+    "img-1-3-6.png": {
+      "textureRect": "{{220,147},{274,175}}",
+      "textureRotated": false,
+      "spriteOffset": "{93.5,-181}",
+      "spriteSize": "{274,175}",
+      "spriteSourceSize": "{775,775}",
+      "vertices": "618 513 613 571 581 619 517 656 408 655 344 591 434 548 528 561 570 543 601 481",
+      "verticesUV": "494 179 489 237 457 285 393 322 284 321 220 257 310 214 404 227 446 209 477 147",
+      "triangles": "3 6 7 4 5 6 2 7 8 3 4 6 0 1 8 2 3 7 1 2 8 0 8 9",
+      "aliases": [],
+      "parsed_geometry": {
+        "texture_rect": [
+          220.0,
+          147.0,
+          274.0,
+          175.0
+        ],
+        "sprite_offset": [
+          93.5,
+          -181.0
+        ],
+        "sprite_size": [
+          274.0,
+          175.0
+        ],
+        "sprite_source_size": [
+          775.0,
+          775.0
+        ],
+        "vertex_count": 10,
+        "vertices_bounds": {
+          "x_min": 344.0,
+          "x_max": 618.0,
+          "y_min": 481.0,
+          "y_max": 656.0
+        },
+        "uv_bounds": {
+          "u_min": 220.0,
+          "u_max": 494.0,
+          "v_min": 147.0,
+          "v_max": 322.0
+        },
+        "triangle_count": 8
+      }
+    },
+    "img-1-3-7.png": {
+      "textureRect": "{{378,982},{323,305}}",
+      "textureRotated": false,
+      "spriteOffset": "{53,-95}",
+      "spriteSize": "{323,305}",
+      "spriteSourceSize": "{775,775}",
+      "vertices": "557 404 602 456 602 517 576 554 530 575 440 557 386 586 372 635 289 635 289 597 312 550 309 524 279 444 279 336 359 350 450 330",
+      "verticesUV": "656 1056 701 1108 701 1169 675 1206 629 1227 539 1209 485 1238 471 1287 388 1287 388 1249 411 1202 408 1176 378 1096 378 988 458 1002 549 982",
+      "triangles": "12 13 14 5 14 15 11 12 14 5 11 14 10 11 6 9 7 8 9 10 6 9 6 7 5 6 11 1 2 3 4 0 1 0 4 5 1 3 4 0 5 15",
+      "aliases": [],
+      "parsed_geometry": {
+        "texture_rect": [
+          378.0,
+          982.0,
+          323.0,
+          305.0
+        ],
+        "sprite_offset": [
+          53.0,
+          -95.0
+        ],
+        "sprite_size": [
+          323.0,
+          305.0
+        ],
+        "sprite_source_size": [
+          775.0,
+          775.0
+        ],
+        "vertex_count": 16,
+        "vertices_bounds": {
+          "x_min": 279.0,
+          "x_max": 602.0,
+          "y_min": 330.0,
+          "y_max": 635.0
+        },
+        "uv_bounds": {
+          "u_min": 378.0,
+          "u_max": 701.0,
+          "v_min": 982.0,
+          "v_max": 1287.0
+        },
+        "triangle_count": 14
+      }
+    },
+    "img-1-3-8.png": {
+      "textureRect": "{{306,1031},{93,234}}",
+      "textureRotated": false,
+      "spriteOffset": "{-112,-120.5}",
+      "spriteSize": "{93,234}",
+      "spriteSourceSize": "{775,775}",
+      "vertices": "316 512 322 577 282 625 237 613 229 575 265 550 274 391",
+      "verticesUV": "393 1152 399 1217 359 1265 314 1253 306 1215 342 1190 351 1031",
+      "triangles": "3 4 5 2 3 5 1 2 5 0 1 5 0 5 6",
+      "aliases": [],
+      "parsed_geometry": {
+        "texture_rect": [
+          306.0,
+          1031.0,
+          93.0,
+          234.0
+        ],
+        "sprite_offset": [
+          -112.0,
+          -120.5
+        ],
+        "sprite_size": [
+          93.0,
+          234.0
+        ],
+        "sprite_source_size": [
+          775.0,
+          775.0
+        ],
+        "vertex_count": 7,
+        "vertices_bounds": {
+          "x_min": 229.0,
+          "x_max": 322.0,
+          "y_min": 391.0,
+          "y_max": 625.0
+        },
+        "uv_bounds": {
+          "u_min": 306.0,
+          "u_max": 399.0,
+          "v_min": 1031.0,
+          "v_max": 1265.0
+        },
+        "triangle_count": 5
+      }
+    },
+    "img-1-3-9.png": {
+      "textureRect": "{{405,1201},{1,1}}",
+      "textureRotated": false,
+      "spriteOffset": "{-387,387}",
+      "spriteSize": "{1,1}",
+      "spriteSourceSize": "{775,775}",
+      "vertices": "0 0 1 0 1 1 0 1",
+      "verticesUV": "405 1201 406 1201 406 1202 405 1202",
+      "triangles": "0 1 2 0 2 3",
+      "aliases": [],
+      "parsed_geometry": {
+        "texture_rect": [
+          405.0,
+          1201.0,
+          1.0,
+          1.0
+        ],
+        "sprite_offset": [
+          -387.0,
+          387.0
+        ],
+        "sprite_size": [
+          1.0,
+          1.0
+        ],
+        "sprite_source_size": [
+          775.0,
+          775.0
+        ],
+        "vertex_count": 4,
+        "vertices_bounds": {
+          "x_min": 0.0,
+          "x_max": 1.0,
+          "y_min": 0.0,
+          "y_max": 1.0
+        },
+        "uv_bounds": {
+          "u_min": 405.0,
+          "u_max": 406.0,
+          "v_min": 1201.0,
+          "v_max": 1202.0
+        },
+        "triangle_count": 2
+      }
+    }
+  },
+  "coordinate_analysis": {
+    "coordinate_facts": [
+      "Atlas texture dimensions in PNG IHDR (779x1289) match metadata size {779,1289}.",
+      "Untrimmed canvas size (spriteSourceSize) is {775,775} for all 9 frames.",
+      "textureRect {{x,y},{w,h}} defines the bounding box of trimmed sprite pixels within the 779x1289 atlas.",
+      "textureRotated is false for all 9 frames, indicating axis-aligned packing with no rotation.",
+      "vertices coordinates are in the untrimmed 775x775 canvas coordinate space.",
+      "spriteSize {w,h} strictly matches the vertex bounding range (x_max - x_min, y_max - y_min).",
+      "spriteOffset {x,y} strictly matches the center offset of the trimmed bounding box relative to the untrimmed canvas center (387.5, 387.5): offset.x = (x_min + x_max)/2 - 387.5; offset.y = 387.5 - (y_min + y_max)/2 (inverting Y due to top-down image vs bottom-up Cocos2d axes).",
+      "verticesUV coordinates are atlas pixel coordinates matching uv_x = v_x - x_min + rect.x and uv_y = v_y - y_min + rect.y.",
+      "triangles are vertex index triplets defining 2D polygon rendering meshes for Cocos2d polygon sprites."
+    ],
+    "unknown_mapping_to_interactive_regions": [
+      "The plist format (TexturePacker / Cocos2d format 3) specifies purely geometric rendering and packing information.",
+      "The plist contains no semantic tags, layer roles, coloring zone identifiers, or interactive region mappings.",
+      "It is unknown from the plist data whether any frame represents an outline, line art, mask, fill area, background, or accessory.",
+      "It is unknown whether touch hit-testing utilizes polygon vertices, runtime alpha testing, separate physics shapes, or bounding boxes.",
+      "Rendering order (z-order) and compositing hierarchy are not specified in the plist and are governed by runtime scene graph code.",
+      "Frame img-1-3-9.png is a 1x1 pixel quad at (0,0) canvas coordinates; its runtime purpose (e.g., placeholder, dummy quad, color tint reference) is unknown from atlas data alone."
+    ]
+  }
+}

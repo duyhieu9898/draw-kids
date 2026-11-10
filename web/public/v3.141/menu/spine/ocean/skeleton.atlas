@@ -1,0 +1,83 @@
+
+ocean.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 254, 63
+  size: 106, 186
+  orig: 106, 186
+  offset: 0, 0
+  index: -1
+body-1
+  rotate: false
+  xy: 128, 0
+  size: 21, 33
+  orig: 21, 33
+  offset: 0, 0
+  index: -1
+body-2
+  rotate: false
+  xy: 183, 9
+  size: 39, 24
+  orig: 39, 24
+  offset: 0, 0
+  index: -1
+body-3
+  rotate: false
+  xy: 254, 33
+  size: 31, 29
+  orig: 32, 29
+  offset: 0, 0
+  index: -1
+body-4
+  rotate: false
+  xy: 150, 7
+  size: 32, 26
+  orig: 32, 26
+  offset: 0, 0
+  index: -1
+body-5
+  rotate: false
+  xy: 223, 12
+  size: 21, 21
+  orig: 22, 21
+  offset: 1, 0
+  index: -1
+fin
+  rotate: false
+  xy: 286, 14
+  size: 47, 48
+  orig: 47, 48
+  offset: 0, 0
+  index: -1
+hair-1
+  rotate: false
+  xy: 361, 130
+  size: 106, 119
+  orig: 107, 119
+  offset: 1, 0
+  index: -1
+hair-2
+  rotate: false
+  xy: 334, 17
+  size: 22, 45
+  orig: 22, 45
+  offset: 0, 0
+  index: -1
+image
+  rotate: false
+  xy: 128, 34
+  size: 125, 215
+  orig: 127, 217
+  offset: 1, 1
+  index: -1
+stroke
+  rotate: false
+  xy: 0, 32
+  size: 127, 217
+  orig: 129, 219
+  offset: 1, 1
+  index: -1

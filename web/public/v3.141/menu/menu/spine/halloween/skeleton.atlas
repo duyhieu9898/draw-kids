@@ -1,0 +1,97 @@
+
+halloween.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+belt-l
+  rotate: false
+  xy: 128, 35
+  size: 51, 36
+  orig: 51, 36
+  offset: 0, 0
+  index: -1
+belt-l-1
+  rotate: false
+  xy: 162, 2
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+belt-m
+  rotate: false
+  xy: 42, 5
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1
+belt-r
+  rotate: false
+  xy: 66, 10
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+belt-r-1
+  rotate: false
+  xy: 180, 40
+  size: 32, 31
+  orig: 32, 31
+  offset: 0, 0
+  index: -1
+candle
+  rotate: false
+  xy: 0, 5
+  size: 41, 66
+  orig: 41, 66
+  offset: 0, 0
+  index: -1
+fire
+  rotate: false
+  xy: 98, 29
+  size: 29, 42
+  orig: 29, 42
+  offset: 0, 0
+  index: -1
+hat-d
+  rotate: false
+  xy: 393, 56
+  size: 196, 76
+  orig: 196, 76
+  offset: 0, 0
+  index: -1
+hat-d-1
+  rotate: false
+  xy: 42, 29
+  size: 55, 42
+  orig: 55, 42
+  offset: 0, 0
+  index: -1
+hat-u
+  rotate: false
+  xy: 393, 133
+  size: 104, 121
+  orig: 104, 121
+  offset: 0, 0
+  index: -1
+image
+  rotate: false
+  xy: 198, 74
+  size: 194, 180
+  orig: 196, 182
+  offset: 1, 1
+  index: -1
+ring
+  rotate: false
+  xy: 128, 0
+  size: 33, 34
+  orig: 33, 34
+  offset: 0, 0
+  index: -1
+stroke
+  rotate: false
+  xy: 0, 72
+  size: 197, 182
+  orig: 199, 184
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,118 @@
+
+dolls.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm-r
+  rotate: false
+  xy: 331, 10
+  size: 41, 31
+  orig: 41, 31
+  offset: 0, 0
+  index: -1
+arn-l
+  rotate: false
+  xy: 401, 64
+  size: 50, 29
+  orig: 50, 29
+  offset: 0, 0
+  index: -1
+boot-l
+  rotate: false
+  xy: 430, 34
+  size: 36, 29
+  orig: 36, 29
+  offset: 0, 0
+  index: -1
+boot-r
+  rotate: false
+  xy: 374, 39
+  size: 25, 35
+  orig: 25, 35
+  offset: 0, 0
+  index: -1
+dress
+  rotate: false
+  xy: 331, 134
+  size: 109, 83
+  orig: 109, 83
+  offset: 0, 0
+  index: -1
+dress-l
+  rotate: false
+  xy: 452, 76
+  size: 36, 28
+  orig: 36, 28
+  offset: 0, 0
+  index: -1
+dress-r
+  rotate: false
+  xy: 462, 145
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+hair-1
+  rotate: false
+  xy: 400, 15
+  size: 29, 48
+  orig: 29, 48
+  offset: 0, 0
+  index: -1
+hair-2
+  rotate: false
+  xy: 441, 182
+  size: 62, 35
+  orig: 62, 35
+  offset: 0, 0
+  index: -1
+hair-3
+  rotate: false
+  xy: 401, 94
+  size: 44, 39
+  orig: 44, 39
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 331, 75
+  size: 69, 58
+  orig: 69, 58
+  offset: 0, 0
+  index: -1
+image
+  rotate: false
+  xy: 167, 3
+  size: 163, 214
+  orig: 165, 216
+  offset: 1, 1
+  index: -1
+leg-l
+  rotate: false
+  xy: 446, 105
+  size: 40, 36
+  orig: 40, 36
+  offset: 0, 0
+  index: -1
+leg-r
+  rotate: false
+  xy: 441, 142
+  size: 20, 39
+  orig: 20, 39
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 331, 42
+  size: 42, 32
+  orig: 42, 32
+  offset: 0, 0
+  index: -1
+stroke
+  rotate: false
+  xy: 0, 0
+  size: 166, 217
+  orig: 168, 219
+  offset: 1, 1
+  index: -1

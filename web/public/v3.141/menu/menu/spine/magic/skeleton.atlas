@@ -1,0 +1,97 @@
+
+magic.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm-l
+  rotate: false
+  xy: 368, 218
+  size: 31, 38
+  orig: 31, 38
+  offset: 0, 0
+  index: -1
+arm-r
+  rotate: false
+  xy: 288, 22
+  size: 32, 39
+  orig: 32, 39
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 168, 6
+  size: 39, 23
+  orig: 39, 23
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 249, 123
+  size: 118, 133
+  orig: 118, 133
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 249, 62
+  size: 72, 60
+  orig: 72, 60
+  offset: 0, 0
+  index: -1
+image
+  rotate: false
+  xy: 127, 30
+  size: 121, 226
+  orig: 123, 228
+  offset: 1, 1
+  index: -1
+l
+  rotate: false
+  xy: 0, 7
+  size: 19, 20
+  orig: 19, 20
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 208, 11
+  size: 32, 18
+  orig: 32, 18
+  offset: 0, 0
+  index: -1
+r
+  rotate: false
+  xy: 20, 8
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: -1
+shirt
+  rotate: false
+  xy: 127, 6
+  size: 40, 23
+  orig: 40, 23
+  offset: 0, 0
+  index: -1
+stroke
+  rotate: false
+  xy: 0, 28
+  size: 126, 228
+  orig: 128, 230
+  offset: 1, 1
+  index: -1
+tail-1
+  rotate: false
+  xy: 322, 26
+  size: 66, 96
+  orig: 66, 96
+  offset: 0, 0
+  index: -1
+tail-2
+  rotate: false
+  xy: 249, 0
+  size: 38, 61
+  orig: 38, 61
+  offset: 0, 0
+  index: -1

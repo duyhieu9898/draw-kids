@@ -1,0 +1,111 @@
+
+vehicles.png
+size: 256,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bamp-1
+  rotate: false
+  xy: 192, 50
+  size: 35, 20
+  orig: 35, 20
+  offset: 0, 0
+  index: -1
+bamp-2
+  rotate: false
+  xy: 192, 29
+  size: 35, 20
+  orig: 35, 20
+  offset: 0, 0
+  index: -1
+bamp-3
+  rotate: false
+  xy: 204, 71
+  size: 35, 21
+  orig: 35, 21
+  offset: 0, 0
+  index: -1
+body-1
+  rotate: false
+  xy: 97, 16
+  size: 94, 54
+  orig: 94, 54
+  offset: 0, 0
+  index: -1
+body-2
+  rotate: false
+  xy: 0, 0
+  size: 96, 92
+  orig: 96, 92
+  offset: 0, 0
+  index: -1
+body-3
+  rotate: false
+  xy: 97, 71
+  size: 106, 21
+  orig: 106, 21
+  offset: 0, 0
+  index: -1
+image
+  rotate: false
+  xy: 0, 93
+  size: 194, 169
+  orig: 196, 171
+  offset: 1, 1
+  index: -1
+lamp-1
+  rotate: false
+  xy: 218, 102
+  size: 36, 14
+  orig: 36, 14
+  offset: 0, 0
+  index: -1
+lamp-2
+  rotate: false
+  xy: 192, 4
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 195, 93
+  size: 22, 23
+  orig: 22, 23
+  offset: 0, 0
+  index: -1
+stroke
+  rotate: false
+  xy: 0, 263
+  size: 196, 196
+  orig: 198, 198
+  offset: 1, 1
+  index: -1
+wheel-1
+  rotate: false
+  xy: 238, 141
+  size: 18, 19
+  orig: 18, 19
+  offset: 0, 0
+  index: -1
+wheel-2
+  rotate: false
+  xy: 195, 117
+  size: 42, 43
+  orig: 42, 43
+  offset: 0, 0
+  index: -1
+window-1
+  rotate: false
+  xy: 195, 161
+  size: 54, 41
+  orig: 54, 41
+  offset: 0, 0
+  index: -1
+window-2
+  rotate: false
+  xy: 195, 203
+  size: 40, 59
+  orig: 40, 59
+  offset: 0, 0
+  index: -1

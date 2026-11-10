@@ -7,14 +7,6 @@ type IntroWidget = IntroViewportWidget & {
   pause?: () => void
 }
 
-declare global {
-  interface Window {
-    spine?: {
-      SpineWidget: new (id: string, options: Record<string, unknown>) => IntroWidget
-    }
-  }
-}
-
 const INTRO = '/game-assets/intro'
 
 type Props = { onComplete: () => void }

@@ -1,0 +1,83 @@
+
+food.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+box
+  rotate: false
+  xy: 394, 78
+  size: 69, 97
+  orig: 69, 97
+  offset: 0, 0
+  index: -1
+bread-d
+  rotate: false
+  xy: 271, 7
+  size: 129, 20
+  orig: 129, 20
+  offset: 0, 0
+  index: -1
+bread-u
+  rotate: false
+  xy: 0, 2
+  size: 134, 64
+  orig: 134, 64
+  offset: 0, 0
+  index: -1
+free
+  rotate: false
+  xy: 394, 176
+  size: 124, 76
+  orig: 124, 76
+  offset: 0, 0
+  index: -1
+image
+  rotate: false
+  xy: 198, 70
+  size: 195, 182
+  orig: 197, 184
+  offset: 1, 1
+  index: -1
+meat
+  rotate: false
+  xy: 135, 0
+  size: 135, 27
+  orig: 135, 27
+  offset: 0, 0
+  index: -1
+salat
+  rotate: false
+  xy: 135, 28
+  size: 154, 38
+  orig: 154, 38
+  offset: 0, 0
+  index: -1
+stroke
+  rotate: false
+  xy: 0, 67
+  size: 197, 185
+  orig: 199, 187
+  offset: 1, 1
+  index: -1
+tomat-1
+  rotate: false
+  xy: 290, 43
+  size: 50, 26
+  orig: 50, 26
+  offset: 0, 0
+  index: -1
+tomat-2
+  rotate: false
+  xy: 388, 49
+  size: 53, 20
+  orig: 53, 20
+  offset: 0, 0
+  index: -1
+tomat-3
+  rotate: false
+  xy: 341, 44
+  size: 46, 25
+  orig: 46, 25
+  offset: 0, 0
+  index: -1

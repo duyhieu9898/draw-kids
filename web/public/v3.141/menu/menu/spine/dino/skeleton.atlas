@@ -1,0 +1,90 @@
+
+dino.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+egg-1
+  rotate: false
+  xy: 0, 0
+  size: 38, 37
+  orig: 38, 37
+  offset: 0, 0
+  index: -1
+egg-2
+  rotate: false
+  xy: 113, 16
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+egg-3
+  rotate: false
+  xy: 86, 6
+  size: 26, 31
+  orig: 26, 31
+  offset: 0, 0
+  index: -1
+egg-f
+  rotate: false
+  xy: 366, 7
+  size: 165, 118
+  orig: 165, 118
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 366, 126
+  size: 89, 129
+  orig: 89, 129
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 518, 151
+  size: 120, 104
+  orig: 120, 104
+  offset: 0, 0
+  index: -1
+image
+  rotate: false
+  xy: 184, 41
+  size: 181, 214
+  orig: 183, 216
+  offset: 1, 1
+  index: -1
+paw-l
+  rotate: false
+  xy: 39, 1
+  size: 46, 36
+  orig: 46, 36
+  offset: 0, 0
+  index: -1
+paw-r
+  rotate: false
+  xy: 184, 1
+  size: 46, 39
+  orig: 46, 39
+  offset: 0, 0
+  index: -1
+stroke
+  rotate: false
+  xy: 0, 38
+  size: 183, 217
+  orig: 185, 219
+  offset: 1, 1
+  index: -1
+tail-1
+  rotate: false
+  xy: 532, 102
+  size: 66, 48
+  orig: 66, 48
+  offset: 0, 0
+  index: -1
+tail-2
+  rotate: false
+  xy: 456, 146
+  size: 61, 109
+  orig: 61, 109
+  offset: 0, 0
+  index: -1

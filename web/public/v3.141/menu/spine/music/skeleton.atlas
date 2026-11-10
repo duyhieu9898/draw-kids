@@ -1,0 +1,139 @@
+
+music.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 469, 177
+  size: 140, 75
+  orig: 140, 75
+  offset: 0, 0
+  index: -1
+circle-l
+  rotate: false
+  xy: 271, 71
+  size: 30, 29
+  orig: 30, 29
+  offset: 0, 0
+  index: -1
+circle-r
+  rotate: false
+  xy: 271, 101
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+d-1
+  rotate: false
+  xy: 0, 0
+  size: 150, 34
+  orig: 150, 34
+  offset: 0, 0
+  index: -1
+d-2
+  rotate: false
+  xy: 302, 8
+  size: 150, 29
+  orig: 150, 29
+  offset: 0, 0
+  index: -1
+drum
+  rotate: false
+  xy: 469, 133
+  size: 135, 43
+  orig: 135, 43
+  offset: 0, 0
+  index: -1
+handle-1
+  rotate: false
+  xy: 273, 160
+  size: 16, 33
+  orig: 17, 33
+  offset: 1, 0
+  index: -1
+handle-2
+  rotate: false
+  xy: 169, 194
+  size: 129, 58
+  orig: 129, 58
+  offset: 0, 0
+  index: -1
+handle-3
+  rotate: false
+  xy: 273, 132
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: -1
+image
+  rotate: false
+  xy: 302, 38
+  size: 166, 214
+  orig: 168, 216
+  offset: 1, 1
+  index: -1
+rim-1
+  rotate: false
+  xy: 453, 2
+  size: 41, 35
+  orig: 41, 35
+  offset: 0, 0
+  index: -1
+rim-2
+  rotate: false
+  xy: 169, 157
+  size: 103, 36
+  orig: 103, 36
+  offset: 0, 0
+  index: -1
+rim-3
+  rotate: false
+  xy: 151, 4
+  size: 150, 30
+  orig: 150, 30
+  offset: 0, 0
+  index: -1
+stick-l
+  rotate: false
+  xy: 169, 47
+  size: 60, 53
+  orig: 60, 53
+  offset: 0, 0
+  index: -1
+stick-r
+  rotate: false
+  xy: 230, 35
+  size: 71, 35
+  orig: 71, 35
+  offset: 0, 0
+  index: -1
+stroke
+  rotate: false
+  xy: 0, 35
+  size: 168, 217
+  orig: 170, 219
+  offset: 1, 1
+  index: -1
+triangle-1
+  rotate: false
+  xy: 234, 100
+  size: 36, 56
+  orig: 36, 56
+  offset: 0, 0
+  index: -1
+triangle-2
+  rotate: false
+  xy: 169, 101
+  size: 64, 55
+  orig: 64, 55
+  offset: 0, 0
+  index: -1
+triangle-3
+  rotate: false
+  xy: 469, 74
+  size: 39, 58
+  orig: 39, 58
+  offset: 0, 0
+  index: -1

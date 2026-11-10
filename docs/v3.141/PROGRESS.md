@@ -24,7 +24,7 @@
 | :--- | :--- | :---: | :--- |
 | **Giai đoạn 1** | **Bóc tách & Kiểm kê APK 3.141** | ✅ Hoàn thành | 3.675 sprite, 3.353 PNG, 267 WAV audio, 14 Spine payloads. Commit `53a7ea6`. |
 | **Giai đoạn 2** | **Intro Animation (Spine 3.8)** | ✅ Hoàn thành | Chạy tốt trên Spine 3.8 WebGL runtime, preview tỉ lệ mobile ngang 844×390. |
-| **Giai đoạn 3** | **Main Menu (12 bộ tranh)** | 🔄 Đang làm | Đã trích xuất cấu trúc scene Unity (`menu-bindings.json`), test preview Spine WebGL (`scripts/unity-menu-v3141.html`). Cần đưa vào React `web/src/MainMenu.tsx`. |
+| **Giai đoạn 3** | **Main Menu (12 bộ tranh)** | ✅ Hoàn thành | Đưa thành công 12 bộ tranh và Spine 3.8 WebGL runtime vào `web/src/MainMenu.tsx`. Verified trên Chrome DevTools mobile landscape 844×390 DPR 3. |
 | **Giai đoạn 4** | **Gallery (Chọn tranh theo pack)** | ⏳ Chờ làm | Ánh xạ ID tranh từ catalog v3.141 sang từng pack trong 12 bộ. |
 | **Giai đoạn 5** | **Drawing Scene (Luồng tô màu)** | ⏳ Chờ làm | Đồng bộ công cụ vẽ, bảng màu và clipping mask cho tập tranh 3.141. |
 | **Giai đoạn 6** | **Audio & Voice System** | ⏳ Chờ làm | Tích hợp 267 file WAV đã decode vào `audio.ts`. |
@@ -50,9 +50,9 @@
   11. Christmas (`spine/christmas/`)
   12. Vehicles (`spine/vehicles/`)
 - [x] Tạo prototype kiểm tra Spine WebGL renderer độc lập (`scripts/unity-menu-v3141.html`).
-- [ ] Chuyển dữ liệu binding và Spine component vào ứng dụng web React (`web/`).
-- [ ] Đảm bảo cuộn ngang mượt mà trên cảm ứng mobile.
-- [ ] Kết nối sự kiện chọn bộ tranh chuyển hướng sang Gallery tương ứng.
+- [x] Chuyển dữ liệu binding và Spine component vào ứng dụng web React (`web/`).
+- [x] Đảm bảo cuộn ngang mượt mà trên cảm ứng mobile.
+- [x] Kết nối sự kiện chọn bộ tranh chuyển hướng sang Gallery tương ứng.
 
 ---
 
@@ -60,4 +60,8 @@
 
 - **2026-11-10 17:30:** Tạo commit `53a7ea6` hoàn thành trích xuất asset, decode 267 audio và test Intro Spine 3.8.
 - **2026-11-10 17:41:** Codex hoàn thành phân tích scene menu gốc (12 pack) trước khi chạm hạn mức OpenAI.
-- **2026-11-10 17:48:** Thiết lập tài liệu theo dõi tiến trình `docs/v3.141/PROGRESS.md`. Tiếp tục triển khai đưa Menu 12 packs và Spine runtime vào Web App.
+- **2026-11-10 17:48:** Thiết lập tài liệu theo dõi tiến trình `docs/v3.141/PROGRESS.md`. Push checkpoint lên GitHub origin.
+- **2026-11-10 17:58:** Hoàn thành Giai đoạn 3 (Main Menu 12 packs):
+  - Tích hợp Spine 3.8 WebGL runtime chính thức vào React PWA.
+  - Hiển thị 12 bộ tranh với animation Spine tương tác khi chạm.
+  - Kiểm thử responsive trên Chrome DevTools (844×390 DPR 3 iPhone 12 Pro) không có lỗi console, chuyển tiếp mượt mà sang Gallery.

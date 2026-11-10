@@ -1,0 +1,111 @@
+
+insects.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body-b-1
+  rotate: false
+  xy: 94, 25
+  size: 45, 35
+  orig: 45, 35
+  offset: 0, 0
+  index: -1
+body-b-2
+  rotate: false
+  xy: 94, 4
+  size: 33, 20
+  orig: 33, 20
+  offset: 0, 0
+  index: -1
+body-w-1
+  rotate: false
+  xy: 140, 28
+  size: 42, 32
+  orig: 42, 32
+  offset: 0, 0
+  index: -1
+body-w-2
+  rotate: false
+  xy: 183, 30
+  size: 43, 30
+  orig: 43, 30
+  offset: 0, 0
+  index: -1
+circle-l
+  rotate: false
+  xy: 183, 0
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+circle-r
+  rotate: false
+  xy: 213, 0
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 243, 20
+  size: 92, 69
+  orig: 92, 69
+  offset: 0, 0
+  index: -1
+hear-l
+  rotate: false
+  xy: 0, 14
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1
+heart-r
+  rotate: false
+  xy: 47, 14
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1
+image
+  rotate: false
+  xy: 198, 90
+  size: 195, 165
+  orig: 197, 167
+  offset: 1, 1
+  index: -1
+stroke
+  rotate: false
+  xy: 0, 61
+  size: 197, 194
+  orig: 199, 196
+  offset: 1, 1
+  index: -1
+wing-d-l
+  rotate: false
+  xy: 336, 21
+  size: 54, 68
+  orig: 54, 68
+  offset: 0, 0
+  index: -1
+wing-d-r
+  rotate: false
+  xy: 391, 21
+  size: 54, 68
+  orig: 54, 68
+  offset: 0, 0
+  index: -1
+wing-u-l
+  rotate: false
+  xy: 394, 159
+  size: 87, 96
+  orig: 87, 96
+  offset: 0, 0
+  index: -1
+wing-u-r
+  rotate: false
+  xy: 446, 62
+  size: 87, 96
+  orig: 87, 96
+  offset: 0, 0
+  index: -1

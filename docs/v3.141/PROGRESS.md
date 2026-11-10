@@ -27,7 +27,7 @@
 | **Giai đoạn 3** | **Main Menu (12 bộ tranh)** | ✅ Hoàn thành | Đưa thành công 12 bộ tranh và Spine 3.8 WebGL runtime vào `web/src/MainMenu.tsx`. Verified trên Chrome DevTools mobile landscape 844×390 DPR 3. |
 | **Giai đoạn 4** | **Gallery (Chọn tranh theo pack)** | ✅ Hoàn thành | Đưa 160 tranh và preview icons gốc vào Gallery. Căn chỉnh hiển thị chuẩn iPhone 12 Pro, giữ text tiếng Anh, điều hướng 2 chiều mượt mà. |
 | **Giai đoạn 5** | **Drawing Scene (Luồng tô màu)** | ✅ Hoàn thành | Tái hiện hiệu ứng ngôi sao bay bung toả khi nhấc ngón tay (star burst) & đổ màu từ APK gốc (`particle-star.png`, audio `star`), chuyển ngữ 100% tiếng Anh, lưu IndexedDB & preview card. |
-| **Giai đoạn 6** | **Audio & Voice System** | ⏳ Đang làm | Tích hợp 267 file WAV đã decode vào `audio.ts` và mở rộng sound effects. |
+| **Giai đoạn 6** | **Audio & Voice System** | ✅ Hoàn thành | Tích hợp toàn bộ 43 unique audio clips gốc (WAV/MP3) vào `web/public/game-assets/sounds/` và nâng cấp `SoundManager` trong `audio.ts`. |
 | **Giai đoạn 7** | **PWA, Cache Service Worker & Lưu trữ** | ⏳ Chờ làm | IndexedDB lưu tranh đã tô, service worker precache offline. |
 | **Giai đoạn 8** | **Kiểm thử nghiệm thu (Parity & Responsive)** | ⏳ Chờ làm | Kiểm thử Chrome DevTools kích thước 844×390 / DPR 3, test offline. |
 
@@ -74,9 +74,15 @@
 - [x] Tương thích an toàn Synthetic & Native PointerEvent (`try/catch` pointer capture).
 - [x] Lưu tranh vào IndexedDB và tự động cập nhật preview thumbnail + trạng thái `Colored` ở màn Gallery.
 
+## 6. Checklist chi tiết Giai đoạn 6 (Audio & Sound Effects)
+
+- [x] Kiểm kê toàn bộ 267 audio clip gốc từ `reports/v3.141/audio-exports.json`.
+- [x] Đồng bộ 43 unique audio clips gốc sang `web/public/game-assets/sounds/` (BGM, sound effects cho bút, cọ, tẩy, ngôi sao, chụp ảnh, chuyển menu, parental gate, âm thanh spine).
+- [x] Mở rộng typed interface cho `SoundManager` trong `web/src/audio.ts` hỗ trợ tải song song cả định dạng WAV và MP3.
+
 ---
 
-## 6. Nhật ký công việc (Worklog)
+## 7. Nhật ký công việc (Worklog)
 
 - **2026-11-10 17:30:** Tạo commit `53a7ea6` hoàn thành trích xuất asset, decode 267 audio và test Intro Spine 3.8.
 - **2026-11-10 17:41:** Codex hoàn thành phân tích scene menu gốc (12 pack) trước khi chạm hạn mức OpenAI.
@@ -97,3 +103,6 @@
   - Đồng bộ tương thích Spine 3.8 WebGL backward-compatibility cho skins giúp Intro và Menu chạy mượt mà không lỗi console.
   - Chuẩn hóa toàn bộ text sang tiếng Anh theo đúng bản gốc.
   - Kiểm thử thành công luồng vẽ -> nhấc tay -> hiệu ứng ngôi sao -> lưu tranh IndexedDB -> cập nhật thẻ tranh đã tô trong Gallery trên Chrome DevTools (iPhone 12 Pro 844×390 DPR 3).
+- **2026-11-10 18:34:** Hoàn thành Giai đoạn 6 (Audio & Sound Effects):
+  - Đồng bộ 43 unique audio clips gốc sang `web/public/game-assets/sounds/`.
+  - Mở rộng `SoundManager` hỗ trợ đầy đủ hiệu ứng âm thanh gốc (WAV/MP3).

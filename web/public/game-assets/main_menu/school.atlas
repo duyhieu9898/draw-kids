@@ -1,0 +1,62 @@
+
+school.png
+size: 562,669
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle
+  rotate: false
+  xy: 338, 2
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+p3-ball-1
+  rotate: false
+  xy: 509, 15
+  size: 45, 46
+  orig: 45, 46
+  offset: 0, 0
+  index: -1
+p3-ball-2
+  rotate: false
+  xy: 461, 13
+  size: 46, 48
+  orig: 46, 48
+  offset: 0, 0
+  index: -1
+p3-bg
+  rotate: true
+  xy: 2, 63
+  size: 604, 558
+  orig: 604, 558
+  offset: 0, 0
+  index: -1
+p3-erase-1
+  rotate: true
+  xy: 399, 13
+  size: 48, 60
+  orig: 48, 60
+  offset: 0, 0
+  index: -1
+p3-erase-2
+  rotate: true
+  xy: 270, 11
+  size: 50, 66
+  orig: 50, 66
+  offset: 0, 0
+  index: -1
+p3-pencil-1
+  rotate: true
+  xy: 136, 14
+  size: 47, 132
+  orig: 47, 132
+  offset: 0, 0
+  index: -1
+p3-pencil-2
+  rotate: true
+  xy: 2, 9
+  size: 52, 132
+  orig: 52, 132
+  offset: 0, 0
+  index: -1

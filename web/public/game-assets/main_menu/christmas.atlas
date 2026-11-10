@@ -1,0 +1,48 @@
+
+christmas.png
+size: 694,558
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle
+  rotate: false
+  xy: 588, 247
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+p8-ball
+  rotate: true
+  xy: 656, 348
+  size: 35, 36
+  orig: 35, 36
+  offset: 0, 0
+  index: -1
+p8-bell
+  rotate: false
+  xy: 588, 465
+  size: 103, 91
+  orig: 103, 91
+  offset: 0, 0
+  index: -1
+p8-bg
+  rotate: false
+  xy: 2, 2
+  size: 584, 554
+  orig: 584, 554
+  offset: 0, 0
+  index: -1
+p8-candy
+  rotate: false
+  xy: 588, 308
+  size: 66, 75
+  orig: 66, 75
+  offset: 0, 0
+  index: -1
+p8-snow
+  rotate: false
+  xy: 588, 385
+  size: 77, 78
+  orig: 77, 78
+  offset: 0, 0
+  index: -1

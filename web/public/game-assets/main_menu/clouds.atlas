@@ -1,0 +1,55 @@
+
+clouds.png
+size: 589,604
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer_2
+  rotate: false
+  xy: 2, 255
+  size: 304, 170
+  orig: 304, 170
+  offset: 0, 0
+  index: -1
+Layer_3
+  rotate: false
+  xy: 308, 106
+  size: 279, 186
+  orig: 279, 186
+  offset: 0, 0
+  index: -1
+Layer_4
+  rotate: true
+  xy: 2, 2
+  size: 251, 130
+  orig: 251, 130
+  offset: 0, 0
+  index: -1
+Layer_5
+  rotate: false
+  xy: 309, 452
+  size: 275, 150
+  orig: 275, 150
+  offset: 0, 0
+  index: -1
+Layer_6
+  rotate: true
+  xy: 134, 16
+  size: 237, 168
+  orig: 237, 168
+  offset: 0, 0
+  index: -1
+Layer_7
+  rotate: false
+  xy: 309, 294
+  size: 261, 156
+  orig: 261, 156
+  offset: 0, 0
+  index: -1
+Layer_8
+  rotate: false
+  xy: 2, 427
+  size: 305, 175
+  orig: 305, 175
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,433 @@
+{
+  "id": "5-5",
+  "pack": 5,
+  "pictureNumber": 5,
+  "source": "com.bimiboo.drawing 3.101",
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 0,
+      "frameIndex": 2,
+      "frame": "img-5-5-10.png",
+      "bounds": [
+        20,
+        491,
+        715,
+        128
+      ],
+      "spriteOffset": [
+        -10.5,
+        -167.0
+      ],
+      "spriteSize": [
+        714.0,
+        127.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        2,
+        781,
+        714,
+        127
+      ],
+      "mask": "region-0.png"
+    },
+    {
+      "regionId": 1,
+      "frameIndex": 3,
+      "frame": "img-5-5-11.png",
+      "bounds": [
+        66,
+        190,
+        133,
+        160
+      ],
+      "spriteOffset": [
+        -255.5,
+        118.0
+      ],
+      "spriteSize": [
+        132.0,
+        159.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        458,
+        567,
+        132,
+        159
+      ],
+      "mask": "region-1.png"
+    },
+    {
+      "regionId": 2,
+      "frameIndex": 4,
+      "frame": "img-5-5-12.png",
+      "bounds": [
+        29,
+        394,
+        271,
+        104
+      ],
+      "spriteOffset": [
+        -223.5,
+        -58.0
+      ],
+      "spriteSize": [
+        270.0,
+        103.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        2,
+        1115,
+        270,
+        103
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 5,
+      "frame": "img-5-5-13.png",
+      "bounds": [
+        310,
+        171,
+        54,
+        55
+      ],
+      "spriteOffset": [
+        -51.0,
+        189.5
+      ],
+      "spriteSize": [
+        53.0,
+        54.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        430,
+        897,
+        53,
+        54
+      ],
+      "mask": "region-3.png"
+    },
+    {
+      "regionId": 4,
+      "frameIndex": 6,
+      "frame": "img-5-5-14.png",
+      "bounds": [
+        286,
+        149,
+        164,
+        348
+      ],
+      "spriteOffset": [
+        -20.0,
+        65.0
+      ],
+      "spriteSize": [
+        163.0,
+        347.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        480,
+        832,
+        163,
+        347
+      ],
+      "mask": "region-4.png"
+    },
+    {
+      "regionId": 5,
+      "frameIndex": 7,
+      "frame": "img-5-5-15.png",
+      "bounds": [
+        106,
+        80,
+        238,
+        156
+      ],
+      "spriteOffset": [
+        -163.0,
+        230.0
+      ],
+      "spriteSize": [
+        237.0,
+        155.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        257,
+        903,
+        237,
+        155
+      ],
+      "mask": "region-5.png"
+    },
+    {
+      "regionId": 6,
+      "frameIndex": 8,
+      "frame": "img-5-5-2.png",
+      "bounds": [
+        508,
+        432,
+        55,
+        25
+      ],
+      "spriteOffset": [
+        147.5,
+        -56.5
+      ],
+      "spriteSize": [
+        54.0,
+        24.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        372,
+        902,
+        54,
+        24
+      ],
+      "mask": "region-6.png"
+    },
+    {
+      "regionId": 7,
+      "frameIndex": 9,
+      "frame": "img-5-5-3.png",
+      "bounds": [
+        520,
+        218,
+        215,
+        212
+      ],
+      "spriteOffset": [
+        239.5,
+        64.0
+      ],
+      "spriteSize": [
+        214.0,
+        211.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        505,
+        234,
+        214,
+        211
+      ],
+      "mask": "region-7.png"
+    },
+    {
+      "regionId": 8,
+      "frameIndex": 10,
+      "frame": "img-5-5-4.png",
+      "bounds": [
+        443,
+        219,
+        292,
+        294
+      ],
+      "spriteOffset": [
+        201.0,
+        22.0
+      ],
+      "spriteSize": [
+        291.0,
+        293.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        123,
+        834,
+        291,
+        293
+      ],
+      "mask": "region-8.png"
+    },
+    {
+      "regionId": 9,
+      "frameIndex": 11,
+      "frame": "img-5-5-5.png",
+      "bounds": [
+        651,
+        555,
+        101,
+        80
+      ],
+      "spriteOffset": [
+        313.5,
+        -207.0
+      ],
+      "spriteSize": [
+        100.0,
+        79.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        163,
+        611,
+        100,
+        79
+      ],
+      "mask": "region-9.png"
+    },
+    {
+      "regionId": 10,
+      "frameIndex": 12,
+      "frame": "img-5-5-6.png",
+      "bounds": [
+        498,
+        606,
+        85,
+        84
+      ],
+      "spriteOffset": [
+        152.5,
+        -260.0
+      ],
+      "spriteSize": [
+        84.0,
+        83.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        2,
+        902,
+        84,
+        83
+      ],
+      "mask": "region-10.png"
+    },
+    {
+      "regionId": 11,
+      "frameIndex": 13,
+      "frame": "img-5-5-7.png",
+      "bounds": [
+        143,
+        611,
+        85,
+        80
+      ],
+      "spriteOffset": [
+        -202.5,
+        -263.0
+      ],
+      "spriteSize": [
+        84.0,
+        79.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        37,
+        1040,
+        84,
+        79
+      ],
+      "mask": "region-11.png"
+    },
+    {
+      "regionId": 12,
+      "frameIndex": 14,
+      "frame": "img-5-5-8.png",
+      "bounds": [
+        438,
+        542,
+        204,
+        211
+      ],
+      "spriteOffset": [
+        152.0,
+        -259.5
+      ],
+      "spriteSize": [
+        203.0,
+        210.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        620,
+        874,
+        203,
+        210
+      ],
+      "mask": "region-12.png"
+    },
+    {
+      "regionId": 13,
+      "frameIndex": 15,
+      "frame": "img-5-5-9.png",
+      "bounds": [
+        84,
+        546,
+        199,
+        201
+      ],
+      "spriteOffset": [
+        -204.5,
+        -258.5
+      ],
+      "spriteSize": [
+        198.0,
+        200.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        647,
+        1084,
+        198,
+        200
+      ],
+      "mask": "region-13.png"
+    }
+  ]
+}

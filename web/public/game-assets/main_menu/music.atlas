@@ -1,0 +1,69 @@
+
+music.png
+size: 797,555
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle
+  rotate: false
+  xy: 697, 190
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+p4-bg
+  rotate: false
+  xy: 2, 2
+  size: 693, 551
+  orig: 693, 551
+  offset: 0, 0
+  index: -1
+p4-note1
+  rotate: false
+  xy: 697, 470
+  size: 86, 83
+  orig: 86, 83
+  offset: 0, 0
+  index: -1
+p4-note2
+  rotate: false
+  xy: 697, 390
+  size: 81, 78
+  orig: 81, 78
+  offset: 0, 0
+  index: -1
+p4-note3
+  rotate: false
+  xy: 697, 320
+  size: 55, 68
+  orig: 55, 68
+  offset: 0, 0
+  index: -1
+p4-note4
+  rotate: false
+  xy: 697, 251
+  size: 53, 67
+  orig: 53, 67
+  offset: 0, 0
+  index: -1
+p4-star1
+  rotate: false
+  xy: 697, 89
+  size: 48, 47
+  orig: 48, 47
+  offset: 0, 0
+  index: -1
+p4-star2
+  rotate: false
+  xy: 697, 138
+  size: 52, 50
+  orig: 52, 50
+  offset: 0, 0
+  index: -1
+p4-star3
+  rotate: false
+  xy: 747, 89
+  size: 48, 47
+  orig: 48, 47
+  offset: 0, 0
+  index: -1

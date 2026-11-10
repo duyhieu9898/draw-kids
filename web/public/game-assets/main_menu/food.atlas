@@ -1,0 +1,69 @@
+
+food.png
+size: 715,561
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle
+  rotate: false
+  xy: 606, 212
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+p6-ball-1
+  rotate: false
+  xy: 606, 66
+  size: 34, 34
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+p6-ball-2
+  rotate: false
+  xy: 606, 157
+  size: 52, 53
+  orig: 52, 53
+  offset: 0, 0
+  index: -1
+p6-ball-3
+  rotate: false
+  xy: 681, 422
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+p6-ball-4
+  rotate: true
+  xy: 606, 102
+  size: 53, 52
+  orig: 53, 52
+  offset: 0, 0
+  index: -1
+p6-bg
+  rotate: false
+  xy: 2, 2
+  size: 602, 557
+  orig: 602, 557
+  offset: 0, 0
+  index: -1
+p6-donut
+  rotate: false
+  xy: 606, 454
+  size: 107, 105
+  orig: 107, 105
+  offset: 0, 0
+  index: -1
+p6-glass-1
+  rotate: false
+  xy: 606, 273
+  size: 73, 87
+  orig: 73, 87
+  offset: 0, 0
+  index: -1
+p6-glass-2
+  rotate: false
+  xy: 606, 362
+  size: 73, 90
+  orig: 73, 90
+  offset: 0, 0
+  index: -1

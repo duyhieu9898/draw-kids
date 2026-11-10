@@ -1,0 +1,69 @@
+
+halloween.png
+size: 639,566
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle
+  rotate: false
+  xy: 573, 237
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+p7-ball-1
+  rotate: false
+  xy: 573, 77
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+p7-ball-2
+  rotate: false
+  xy: 573, 109
+  size: 30, 32
+  orig: 30, 32
+  offset: 0, 0
+  index: -1
+p7-bat
+  rotate: true
+  xy: 573, 441
+  size: 123, 63
+  orig: 123, 63
+  offset: 0, 0
+  index: -1
+p7-bg
+  rotate: false
+  xy: 2, 2
+  size: 569, 562
+  orig: 569, 562
+  offset: 0, 0
+  index: -1
+p7-candy-1
+  rotate: false
+  xy: 573, 298
+  size: 63, 66
+  orig: 63, 66
+  offset: 0, 0
+  index: -1
+p7-candy-2
+  rotate: true
+  xy: 573, 366
+  size: 73, 64
+  orig: 73, 64
+  offset: 0, 0
+  index: -1
+p7-star-1
+  rotate: false
+  xy: 573, 190
+  size: 47, 45
+  orig: 47, 45
+  offset: 0, 0
+  index: -1
+p7-star-2
+  rotate: false
+  xy: 573, 143
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1

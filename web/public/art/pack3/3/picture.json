@@ -1,0 +1,133 @@
+{
+  "id": "3-3",
+  "pack": 3,
+  "pictureNumber": 3,
+  "source": "com.bimiboo.drawing 3.101",
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 0,
+      "frameIndex": 2,
+      "frame": "img-3-3-2.png",
+      "bounds": [
+        281,
+        22,
+        451,
+        510
+      ],
+      "spriteOffset": [
+        118.5,
+        111.0
+      ],
+      "spriteSize": [
+        450.0,
+        509.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        781,
+        2,
+        450,
+        509
+      ],
+      "mask": "region-0.png"
+    },
+    {
+      "regionId": 1,
+      "frameIndex": 3,
+      "frame": "img-3-3-3.png",
+      "bounds": [
+        53,
+        131,
+        445,
+        259
+      ],
+      "spriteOffset": [
+        -112.5,
+        127.5
+      ],
+      "spriteSize": [
+        444.0,
+        258.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        1198,
+        2,
+        444,
+        258
+      ],
+      "mask": "region-1.png"
+    },
+    {
+      "regionId": 2,
+      "frameIndex": 4,
+      "frame": "img-3-3-4.png",
+      "bounds": [
+        71,
+        30,
+        371,
+        257
+      ],
+      "spriteOffset": [
+        -131.5,
+        229.5
+      ],
+      "spriteSize": [
+        370.0,
+        256.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        1230,
+        205,
+        370,
+        256
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 5,
+      "frame": "img-3-3-5.png",
+      "bounds": [
+        43,
+        520,
+        668,
+        229
+      ],
+      "spriteOffset": [
+        -11.0,
+        -246.5
+      ],
+      "spriteSize": [
+        667.0,
+        228.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        781,
+        514,
+        667,
+        228
+      ],
+      "mask": "region-3.png"
+    }
+  ]
+}

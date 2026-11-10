@@ -1,0 +1,163 @@
+{
+  "id": "1-6",
+  "pack": 1,
+  "pictureNumber": 6,
+  "source": "com.bimiboo.drawing 3.101",
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 0,
+      "frameIndex": 2,
+      "frame": "img-1-6-2.png",
+      "bounds": [
+        505,
+        219,
+        144,
+        106
+      ],
+      "spriteOffset": [
+        189.0,
+        116.0
+      ],
+      "spriteSize": [
+        143.0,
+        105.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        338,
+        547,
+        143,
+        105
+      ],
+      "mask": "region-0.png"
+    },
+    {
+      "regionId": 1,
+      "frameIndex": 3,
+      "frame": "img-1-6-3.png",
+      "bounds": [
+        318,
+        44,
+        306,
+        295
+      ],
+      "spriteOffset": [
+        83.0,
+        196.5
+      ],
+      "spriteSize": [
+        305.0,
+        294.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        2,
+        1034,
+        305,
+        294
+      ],
+      "mask": "region-1.png"
+    },
+    {
+      "regionId": 2,
+      "frameIndex": 4,
+      "frame": "img-1-6-4.png",
+      "bounds": [
+        20,
+        434,
+        747,
+        288
+      ],
+      "spriteOffset": [
+        5.5,
+        -190.0
+      ],
+      "spriteSize": [
+        746.0,
+        287.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        2,
+        781,
+        746,
+        287
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 5,
+      "frame": "img-1-6-5.png",
+      "bounds": [
+        168,
+        284,
+        427,
+        292
+      ],
+      "spriteOffset": [
+        -6.5,
+        -42.0
+      ],
+      "spriteSize": [
+        426.0,
+        291.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        187,
+        418,
+        426,
+        291
+      ],
+      "mask": "region-3.png"
+    },
+    {
+      "regionId": 4,
+      "frameIndex": 6,
+      "frame": "img-1-6-6.png",
+      "bounds": [
+        290,
+        362,
+        250,
+        193
+      ],
+      "spriteOffset": [
+        27.0,
+        -70.5
+      ],
+      "spriteSize": [
+        249.0,
+        192.0
+      ],
+      "spriteSourceSize": [
+        775.0,
+        775.0
+      ],
+      "textureRect": [
+        347,
+        127,
+        249,
+        192
+      ],
+      "mask": "region-4.png"
+    }
+  ]
+}

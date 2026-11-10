@@ -1,0 +1,76 @@
+
+cars.png
+size: 725,561
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle
+  rotate: false
+  xy: 640, 340
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+p5-bg
+  rotate: false
+  xy: 2, 2
+  size: 636, 557
+  orig: 636, 557
+  offset: 0, 0
+  index: -1
+p5-bolt-1
+  rotate: false
+  xy: 640, 215
+  size: 53, 60
+  orig: 53, 60
+  offset: 0, 0
+  index: -1
+p5-bolt-2
+  rotate: false
+  xy: 640, 277
+  size: 55, 61
+  orig: 55, 61
+  offset: 0, 0
+  index: -1
+p5-cogwheel-1
+  rotate: false
+  xy: 640, 481
+  size: 83, 78
+  orig: 83, 78
+  offset: 0, 0
+  index: -1
+p5-cogwheel-2
+  rotate: true
+  xy: 640, 155
+  size: 58, 53
+  orig: 58, 53
+  offset: 0, 0
+  index: -1
+p5-cogwheel-3
+  rotate: false
+  xy: 640, 55
+  size: 44, 39
+  orig: 44, 39
+  offset: 0, 0
+  index: -1
+p5-cogwheel-4
+  rotate: false
+  xy: 640, 15
+  size: 42, 38
+  orig: 42, 38
+  offset: 0, 0
+  index: -1
+p5-cogwheel-5
+  rotate: true
+  xy: 640, 96
+  size: 57, 53
+  orig: 57, 53
+  offset: 0, 0
+  index: -1
+p5-cogwheel-6
+  rotate: false
+  xy: 640, 401
+  size: 81, 78
+  orig: 81, 78
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,62 @@
+
+dolls.png
+size: 724,558
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle
+  rotate: false
+  xy: 647, 333
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+p2-ball-1
+  rotate: false
+  xy: 647, 289
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1
+p2-ball-2
+  rotate: false
+  xy: 690, 300
+  size: 32, 31
+  orig: 32, 31
+  offset: 0, 0
+  index: -1
+p2-ball-3
+  rotate: false
+  xy: 689, 253
+  size: 33, 34
+  orig: 33, 34
+  offset: 0, 0
+  index: -1
+p2-ball-4
+  rotate: false
+  xy: 647, 247
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+p2-bg
+  rotate: false
+  xy: 2, 2
+  size: 643, 554
+  orig: 643, 554
+  offset: 0, 0
+  index: -1
+p2-flower
+  rotate: false
+  xy: 647, 485
+  size: 71, 71
+  orig: 71, 71
+  offset: 0, 0
+  index: -1
+p2-pomade
+  rotate: false
+  xy: 647, 394
+  size: 35, 89
+  orig: 35, 89
+  offset: 0, 0
+  index: -1

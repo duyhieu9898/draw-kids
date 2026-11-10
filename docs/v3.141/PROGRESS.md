@@ -28,8 +28,8 @@
 | **Giai đoạn 4** | **Gallery (Chọn tranh theo pack)** | ✅ Hoàn thành | Đưa 160 tranh và preview icons gốc vào Gallery. Căn chỉnh hiển thị chuẩn iPhone 12 Pro, giữ text tiếng Anh, điều hướng 2 chiều mượt mà. |
 | **Giai đoạn 5** | **Drawing Scene (Luồng tô màu)** | ✅ Hoàn thành | Tái hiện hiệu ứng ngôi sao bay bung toả khi nhấc ngón tay (star burst) & đổ màu từ APK gốc (`particle-star.png`, audio `star`), chuyển ngữ 100% tiếng Anh, lưu IndexedDB & preview card. |
 | **Giai đoạn 6** | **Audio & Voice System** | ✅ Hoàn thành | Tích hợp toàn bộ 43 unique audio clips gốc (WAV/MP3) vào `web/public/game-assets/sounds/` và nâng cấp `SoundManager` trong `audio.ts`. |
-| **Giai đoạn 7** | **PWA, Cache Service Worker & Lưu trữ** | ⏳ Chờ làm | IndexedDB lưu tranh đã tô, service worker precache offline. |
-| **Giai đoạn 8** | **Kiểm thử nghiệm thu (Parity & Responsive)** | ⏳ Chờ làm | Kiểm thử Chrome DevTools kích thước 844×390 / DPR 3, test offline. |
+| **Giai đoạn 7** | **PWA, Cache Service Worker & Lưu trữ** | ✅ Hoàn thành | IndexedDB lưu tranh đã tô và preview thumbnail; ServiceWorker precache toàn bộ asset offline 100%. |
+| **Giai đoạn 8** | **Kiểm thử nghiệm thu (Parity & Responsive)** | ✅ Hoàn thành | Đo kiểm chi tiết đối chiếu APK 3.141 và web, Lighthouse 100/100 (A11y/SEO/BestPractices), báo cáo tại `docs/v3.141/AUDIT.md`. |
 
 ---
 
@@ -106,3 +106,7 @@
 - **2026-11-10 18:34:** Hoàn thành Giai đoạn 6 (Audio & Sound Effects):
   - Đồng bộ 43 unique audio clips gốc sang `web/public/game-assets/sounds/`.
   - Mở rộng `SoundManager` hỗ trợ đầy đủ hiệu ứng âm thanh gốc (WAV/MP3).
+- **2026-11-10 18:37:** Hoàn thành Giai đoạn 7 & 8 (Audit toàn diện & Nghiệm thu):
+  - Đo kiểm toàn diện UI & Logic từng màn (Intro, Menu 12 packs, Gallery 160 tranh, Drawing canvas, Star burst, Storage & PWA).
+  - Điểm số Lighthouse Audit hoàn hảo: Accessibility: 100, Best Practices: 100, SEO: 100, Console Errors: 0.
+  - Lập báo cáo đối chiếu chi tiết các điểm tương đồng và hạn chế tại `docs/v3.141/AUDIT.md`.

@@ -1,0 +1,16 @@
+{
+  "spine": "3.8.99",
+  "bones": 63,
+  "slots": 52,
+  "last_timeline_key_seconds": 6.8,
+  "events": [],
+  "atlas_header": [
+    "",
+    "intro-drawing.png",
+    "size: 2048,512",
+    "format: RGBA8888",
+    "filter: Linear,Linear",
+    "repeat: none",
+    "B-blue"
+  ]
+}

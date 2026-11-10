@@ -1,0 +1,982 @@
+{
+  "evidence_id": "ev_9f47b99f87a06afeb4c9c416f7f0f59c1d8b951eeb14af022f860b7cf80ae342",
+  "subject": {
+    "name": "global-metadata.dat",
+    "digest": {
+      "sha256": "74c297e59adca67550002c43eb95ecc814a8a14e5be97b96f47a3f7286d1a5d0"
+    },
+    "local_path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/base/assets/bin/Data/Managed/Metadata/global-metadata.dat",
+    "format": "file",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-analysis-view",
+    "name": "REA analysis view projection",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis-view",
+  "operation": "inspect_analysis_view",
+  "parameters": {
+    "parent_evidence_id": "ev_0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa",
+    "view": {
+      "kind": "il2cpp-metadata",
+      "offset": 0,
+      "limit": 700,
+      "collection": "methods",
+      "declaring_types": [
+        8781,
+        8782,
+        8792,
+        8794,
+        8798,
+        8802,
+        8807,
+        8812,
+        8824,
+        8829,
+        8835,
+        8911,
+        8912,
+        8919,
+        9040
+      ]
+    }
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "kind": "il2cpp-metadata",
+    "view": {
+      "kind": "il2cpp-metadata",
+      "offset": 0,
+      "limit": 700,
+      "collection": "methods",
+      "declaring_types": [
+        8781,
+        8782,
+        8792,
+        8794,
+        8798,
+        8802,
+        8807,
+        8812,
+        8824,
+        8829,
+        8835,
+        8911,
+        8912,
+        8919,
+        9040
+      ]
+    },
+    "items": [
+      {
+        "name": "Awake",
+        "declaring_type": 8792,
+        "index": 69479
+      },
+      {
+        "name": "OnEnable",
+        "declaring_type": 8792,
+        "index": 69480
+      },
+      {
+        "name": "Start",
+        "declaring_type": 8792,
+        "index": 69481
+      },
+      {
+        "name": "ga",
+        "declaring_type": 8792,
+        "index": 69482
+      },
+      {
+        "name": "Update",
+        "declaring_type": 8792,
+        "index": 69483
+      },
+      {
+        "name": "gb",
+        "declaring_type": 8792,
+        "index": 69484
+      },
+      {
+        "name": "gc",
+        "declaring_type": 8792,
+        "index": 69485
+      },
+      {
+        "name": "gd",
+        "declaring_type": 8792,
+        "index": 69486
+      },
+      {
+        "name": "OnSaveButtonUp",
+        "declaring_type": 8792,
+        "index": 69487
+      },
+      {
+        "name": "ge",
+        "declaring_type": 8792,
+        "index": 69488
+      },
+      {
+        "name": "OnButtonTrash",
+        "declaring_type": 8792,
+        "index": 69489
+      },
+      {
+        "name": "OnDestroy",
+        "declaring_type": 8792,
+        "index": 69490
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 8792,
+        "index": 69491
+      },
+      {
+        "name": ".cctor",
+        "declaring_type": 8792,
+        "index": 69492
+      },
+      {
+        "name": "gf",
+        "declaring_type": 8792,
+        "index": 69493
+      },
+      {
+        "name": "gg",
+        "declaring_type": 8794,
+        "index": 69502
+      },
+      {
+        "name": "gh",
+        "declaring_type": 8794,
+        "index": 69503
+      },
+      {
+        "name": "Start",
+        "declaring_type": 8794,
+        "index": 69504
+      },
+      {
+        "name": "OnPointerDown",
+        "declaring_type": 8794,
+        "index": 69505
+      },
+      {
+        "name": "OnPointerUp",
+        "declaring_type": 8794,
+        "index": 69506
+      },
+      {
+        "name": "OnDisable",
+        "declaring_type": 8794,
+        "index": 69507
+      },
+      {
+        "name": "OnDestroy",
+        "declaring_type": 8794,
+        "index": 69508
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 8794,
+        "index": 69509
+      },
+      {
+        "name": "Start",
+        "declaring_type": 8798,
+        "index": 69520
+      },
+      {
+        "name": "OnDestroy",
+        "declaring_type": 8798,
+        "index": 69521
+      },
+      {
+        "name": "gm",
+        "declaring_type": 8798,
+        "index": 69522
+      },
+      {
+        "name": "gn",
+        "declaring_type": 8798,
+        "index": 69523
+      },
+      {
+        "name": "go",
+        "declaring_type": 8798,
+        "index": 69524
+      },
+      {
+        "name": "Undo",
+        "declaring_type": 8798,
+        "index": 69525
+      },
+      {
+        "name": "gp",
+        "declaring_type": 8798,
+        "index": 69526
+      },
+      {
+        "name": "gq",
+        "declaring_type": 8798,
+        "index": 69527
+      },
+      {
+        "name": "gr",
+        "declaring_type": 8798,
+        "index": 69528
+      },
+      {
+        "name": "gs",
+        "declaring_type": 8798,
+        "index": 69529
+      },
+      {
+        "name": "gt",
+        "declaring_type": 8798,
+        "index": 69530
+      },
+      {
+        "name": "gu",
+        "declaring_type": 8798,
+        "index": 69531
+      },
+      {
+        "name": "gv",
+        "declaring_type": 8798,
+        "index": 69532
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 8798,
+        "index": 69533
+      },
+      {
+        "name": "OnEnable",
+        "declaring_type": 8802,
+        "index": 69544
+      },
+      {
+        "name": "OnDisable",
+        "declaring_type": 8802,
+        "index": 69545
+      },
+      {
+        "name": "ha",
+        "declaring_type": 8802,
+        "index": 69546
+      },
+      {
+        "name": "hb",
+        "declaring_type": 8802,
+        "index": 69547
+      },
+      {
+        "name": "hc",
+        "declaring_type": 8802,
+        "index": 69548
+      },
+      {
+        "name": "hd",
+        "declaring_type": 8802,
+        "index": 69549
+      },
+      {
+        "name": "he",
+        "declaring_type": 8802,
+        "index": 69550
+      },
+      {
+        "name": "OnPointerDown",
+        "declaring_type": 8802,
+        "index": 69551
+      },
+      {
+        "name": "OnPointerUp",
+        "declaring_type": 8802,
+        "index": 69552
+      },
+      {
+        "name": "OnPointerEnter",
+        "declaring_type": 8802,
+        "index": 69553
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 8802,
+        "index": 69554
+      },
+      {
+        "name": "OnEnable",
+        "declaring_type": 8807,
+        "index": 69575
+      },
+      {
+        "name": "OnDisable",
+        "declaring_type": 8807,
+        "index": 69576
+      },
+      {
+        "name": "hv",
+        "declaring_type": 8807,
+        "index": 69577
+      },
+      {
+        "name": "hw",
+        "declaring_type": 8807,
+        "index": 69578
+      },
+      {
+        "name": "hx",
+        "declaring_type": 8807,
+        "index": 69579
+      },
+      {
+        "name": "OnLockButtonPressed",
+        "declaring_type": 8807,
+        "index": 69580
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 8807,
+        "index": 69581
+      },
+      {
+        "name": "hy",
+        "declaring_type": 8807,
+        "index": 69582
+      },
+      {
+        "name": "Start",
+        "declaring_type": 8812,
+        "index": 69592
+      },
+      {
+        "name": "OnEnable",
+        "declaring_type": 8812,
+        "index": 69593
+      },
+      {
+        "name": "OnDisable",
+        "declaring_type": 8812,
+        "index": 69594
+      },
+      {
+        "name": "im",
+        "declaring_type": 8812,
+        "index": 69595
+      },
+      {
+        "name": "in",
+        "declaring_type": 8812,
+        "index": 69596
+      },
+      {
+        "name": "io",
+        "declaring_type": 8812,
+        "index": 69597
+      },
+      {
+        "name": "ip",
+        "declaring_type": 8812,
+        "index": 69598
+      },
+      {
+        "name": "iq",
+        "declaring_type": 8812,
+        "index": 69599
+      },
+      {
+        "name": "ir",
+        "declaring_type": 8812,
+        "index": 69600
+      },
+      {
+        "name": "is",
+        "declaring_type": 8812,
+        "index": 69601
+      },
+      {
+        "name": "it",
+        "declaring_type": 8812,
+        "index": 69602
+      },
+      {
+        "name": "iu",
+        "declaring_type": 8812,
+        "index": 69603
+      },
+      {
+        "name": "iv",
+        "declaring_type": 8812,
+        "index": 69604
+      },
+      {
+        "name": "iw",
+        "declaring_type": 8812,
+        "index": 69605
+      },
+      {
+        "name": "UndoPlaySound",
+        "declaring_type": 8812,
+        "index": 69606
+      },
+      {
+        "name": "OnButtonTools",
+        "declaring_type": 8812,
+        "index": 69607
+      },
+      {
+        "name": "ix",
+        "declaring_type": 8812,
+        "index": 69608
+      },
+      {
+        "name": "iy",
+        "declaring_type": 8812,
+        "index": 69609
+      },
+      {
+        "name": "iz",
+        "declaring_type": 8812,
+        "index": 69610
+      },
+      {
+        "name": "ja",
+        "declaring_type": 8812,
+        "index": 69611
+      },
+      {
+        "name": "OnButtonColors",
+        "declaring_type": 8812,
+        "index": 69612
+      },
+      {
+        "name": "OnButtonEraser",
+        "declaring_type": 8812,
+        "index": 69613
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 8812,
+        "index": 69614
+      },
+      {
+        "name": "km",
+        "declaring_type": 8824,
+        "index": 69685
+      },
+      {
+        "name": "Start",
+        "declaring_type": 8824,
+        "index": 69686
+      },
+      {
+        "name": "Update",
+        "declaring_type": 8824,
+        "index": 69687
+      },
+      {
+        "name": "kn",
+        "declaring_type": 8824,
+        "index": 69688
+      },
+      {
+        "name": "ko",
+        "declaring_type": 8824,
+        "index": 69689
+      },
+      {
+        "name": "kp",
+        "declaring_type": 8824,
+        "index": 69690
+      },
+      {
+        "name": "kq",
+        "declaring_type": 8824,
+        "index": 69691
+      },
+      {
+        "name": "kr",
+        "declaring_type": 8824,
+        "index": 69692
+      },
+      {
+        "name": "ks",
+        "declaring_type": 8824,
+        "index": 69693
+      },
+      {
+        "name": "OnDisable",
+        "declaring_type": 8824,
+        "index": 69694
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 8824,
+        "index": 69695
+      },
+      {
+        "name": "kt",
+        "declaring_type": 8824,
+        "index": 69696
+      },
+      {
+        "name": "ku",
+        "declaring_type": 8824,
+        "index": 69697
+      },
+      {
+        "name": "OnEnable",
+        "declaring_type": 8829,
+        "index": 69699
+      },
+      {
+        "name": "Start",
+        "declaring_type": 8829,
+        "index": 69700
+      },
+      {
+        "name": "ky",
+        "declaring_type": 8829,
+        "index": 69701
+      },
+      {
+        "name": "kz",
+        "declaring_type": 8829,
+        "index": 69702
+      },
+      {
+        "name": "la",
+        "declaring_type": 8829,
+        "index": 69703
+      },
+      {
+        "name": "lb",
+        "declaring_type": 8829,
+        "index": 69704
+      },
+      {
+        "name": "lc",
+        "declaring_type": 8829,
+        "index": 69705
+      },
+      {
+        "name": "ld",
+        "declaring_type": 8829,
+        "index": 69706
+      },
+      {
+        "name": "le",
+        "declaring_type": 8829,
+        "index": 69707
+      },
+      {
+        "name": "lf",
+        "declaring_type": 8829,
+        "index": 69708
+      },
+      {
+        "name": "lg",
+        "declaring_type": 8829,
+        "index": 69709
+      },
+      {
+        "name": "lh",
+        "declaring_type": 8829,
+        "index": 69710
+      },
+      {
+        "name": "li",
+        "declaring_type": 8829,
+        "index": 69711
+      },
+      {
+        "name": "lj",
+        "declaring_type": 8829,
+        "index": 69712
+      },
+      {
+        "name": "lk",
+        "declaring_type": 8829,
+        "index": 69713
+      },
+      {
+        "name": "ll",
+        "declaring_type": 8829,
+        "index": 69714
+      },
+      {
+        "name": "lm",
+        "declaring_type": 8829,
+        "index": 69715
+      },
+      {
+        "name": "OnDisable",
+        "declaring_type": 8829,
+        "index": 69716
+      },
+      {
+        "name": "OnDestroy",
+        "declaring_type": 8829,
+        "index": 69717
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 8829,
+        "index": 69718
+      },
+      {
+        "name": "mh",
+        "declaring_type": 8835,
+        "index": 69756
+      },
+      {
+        "name": "mi",
+        "declaring_type": 8835,
+        "index": 69757
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 8835,
+        "index": 69758
+      },
+      {
+        "name": "Awake",
+        "declaring_type": 8911,
+        "index": 70069
+      },
+      {
+        "name": "tk",
+        "declaring_type": 8911,
+        "index": 70070
+      },
+      {
+        "name": "tl",
+        "declaring_type": 8911,
+        "index": 70071
+      },
+      {
+        "name": "tm",
+        "declaring_type": 8911,
+        "index": 70072
+      },
+      {
+        "name": "tn",
+        "declaring_type": 8911,
+        "index": 70073
+      },
+      {
+        "name": "to",
+        "declaring_type": 8911,
+        "index": 70074
+      },
+      {
+        "name": "tp",
+        "declaring_type": 8911,
+        "index": 70075
+      },
+      {
+        "name": "tq",
+        "declaring_type": 8911,
+        "index": 70076
+      },
+      {
+        "name": "tr",
+        "declaring_type": 8911,
+        "index": 70077
+      },
+      {
+        "name": "OnDisable",
+        "declaring_type": 8911,
+        "index": 70078
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 8911,
+        "index": 70079
+      },
+      {
+        "name": "ts",
+        "declaring_type": 8912,
+        "index": 70096
+      },
+      {
+        "name": "tt",
+        "declaring_type": 8912,
+        "index": 70097
+      },
+      {
+        "name": "tu",
+        "declaring_type": 8912,
+        "index": 70098
+      },
+      {
+        "name": "tv",
+        "declaring_type": 8912,
+        "index": 70099
+      },
+      {
+        "name": "tw",
+        "declaring_type": 8912,
+        "index": 70100
+      },
+      {
+        "name": "tx",
+        "declaring_type": 8912,
+        "index": 70101
+      },
+      {
+        "name": "OnDisable",
+        "declaring_type": 8912,
+        "index": 70102
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 8912,
+        "index": 70103
+      },
+      {
+        "name": "ug",
+        "declaring_type": 8919,
+        "index": 70104
+      },
+      {
+        "name": "uh",
+        "declaring_type": 8919,
+        "index": 70105
+      },
+      {
+        "name": "Start",
+        "declaring_type": 8919,
+        "index": 70106
+      },
+      {
+        "name": "ui",
+        "declaring_type": 8919,
+        "index": 70107
+      },
+      {
+        "name": "uj",
+        "declaring_type": 8919,
+        "index": 70108
+      },
+      {
+        "name": "OnSave",
+        "declaring_type": 8919,
+        "index": 70109
+      },
+      {
+        "name": "uk",
+        "declaring_type": 8919,
+        "index": 70110
+      },
+      {
+        "name": "OnScreenShot",
+        "declaring_type": 8919,
+        "index": 70111
+      },
+      {
+        "name": "ul",
+        "declaring_type": 8919,
+        "index": 70112
+      },
+      {
+        "name": "um",
+        "declaring_type": 8919,
+        "index": 70113
+      },
+      {
+        "name": "un",
+        "declaring_type": 8919,
+        "index": 70114
+      },
+      {
+        "name": "uo",
+        "declaring_type": 8919,
+        "index": 70115
+      },
+      {
+        "name": "up",
+        "declaring_type": 8919,
+        "index": 70116
+      },
+      {
+        "name": "uq",
+        "declaring_type": 8919,
+        "index": 70117
+      },
+      {
+        "name": "OnDestroy",
+        "declaring_type": 8919,
+        "index": 70118
+      },
+      {
+        "name": "ur",
+        "declaring_type": 8919,
+        "index": 70119
+      },
+      {
+        "name": "us",
+        "declaring_type": 8919,
+        "index": 70120
+      },
+      {
+        "name": "ut",
+        "declaring_type": 8919,
+        "index": 70121
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 8919,
+        "index": 70122
+      },
+      {
+        "name": "StartGame",
+        "declaring_type": 9040,
+        "index": 70725
+      },
+      {
+        "name": "SetAnimation",
+        "declaring_type": 9040,
+        "index": 70726
+      },
+      {
+        "name": "ExceptionInLanguages",
+        "declaring_type": 9040,
+        "index": 70727
+      },
+      {
+        "name": "SetAppOrientation",
+        "declaring_type": 9040,
+        "index": 70728
+      },
+      {
+        "name": "InjectRateUsControllers",
+        "declaring_type": 9040,
+        "index": 70729
+      },
+      {
+        "name": "PlaySpine",
+        "declaring_type": 9040,
+        "index": 70730
+      },
+      {
+        "name": "OnEndSpineAction",
+        "declaring_type": 9040,
+        "index": 70731
+      },
+      {
+        "name": "PrepareNextSceneAsync",
+        "declaring_type": 9040,
+        "index": 70732
+      },
+      {
+        "name": "OnEndSpineActionAsync",
+        "declaring_type": 9040,
+        "index": 70733
+      },
+      {
+        "name": "LoadNextScene",
+        "declaring_type": 9040,
+        "index": 70734
+      },
+      {
+        "name": "LoadOnboardingSceneAsync",
+        "declaring_type": 9040,
+        "index": 70735
+      },
+      {
+        "name": ".ctor",
+        "declaring_type": 9040,
+        "index": 70736
+      }
+    ],
+    "parent_evidence_id": "ev_0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa",
+    "parent_operation": "inspect_il2cpp_metadata",
+    "parent_digest": "0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa",
+    "view_digest": "f72346b2a5c5a019863da5875705e01b23a686289a0eed9c46b9b55fef473779",
+    "artifact": {
+      "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/base/assets/bin/Data/Managed/Metadata/global-metadata.dat",
+      "sha256": "74c297e59adca67550002c43eb95ecc814a8a14e5be97b96f47a3f7286d1a5d0"
+    },
+    "coverage": {
+      "status": "page",
+      "examined": 165,
+      "total": 165,
+      "next_offset": null,
+      "exhausted": true
+    },
+    "limitations": [
+      "Only unencrypted global-metadata.dat versions 24, 27, 29, 31 and 39 are decoded; names, counts and string literals are observed file content, not runtime behavior.",
+      "Method addresses come from the binary's code-generation module methodPointers, matched by module name, method count and metadata token; generic method instances (see generic_instances), adjustor thunks and invokers are not linked, no-body means an observed zero slot, and unknown means no module claimed the method or its slot has an unresolved relocation.",
+      "Field, parameter and return type names are rendered from the binary's Il2CppType table in a C#-like form (keywords for primitives, Namespace.Outer+Inner, generic parameters by metadata name); nested generic arguments stay with the type component that declares them. An unresolved type-table slot retains its type index with a null name; a loader-unresolved value inside the type graph is refused rather than rendered from stored placeholder bytes. Custom modifiers, array bounds and attributes are not reported.",
+      "The binary/metadata pair is caller-selected. Module name/count/token agreement is structural evidence, not a cryptographic proof that both files come from the same build.",
+      "declaring_type for types is derived from the nestedTypes section, and member and parameter owners from the owners' index ranges; row positions are the metadata indices."
+    ],
+    "unknowns": [
+      "Generic method instances were not requested; their count is unknown.",
+      "Addresses come from static binary tables; runtime behavior and generic instance code remain unknown."
+    ],
+    "metadata_version": 39,
+    "counts": {
+      "sections": 31,
+      "images": 211,
+      "types": 15941,
+      "methods": 109875,
+      "nested_types": 5633,
+      "fields": 64120,
+      "properties": 20014,
+      "events": 679,
+      "parameters": 115801,
+      "string_literals": 19681,
+      "code_gen_modules": 211,
+      "method_addresses": 109875,
+      "method_address_states": {
+        "code": 97250,
+        "no_body": 12625,
+        "unknown": 0
+      },
+      "return_types": 109875,
+      "field_types": 64120,
+      "parameter_types": 115801,
+      "generic_method_instances": null,
+      "generic_method_instance_states": null,
+      "generic_method_issues": null
+    },
+    "binary_source": {
+      "artifact": {
+        "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/libil2cpp.so",
+        "sha256": "bd0f03471d09990aa35abd10ce590dbd315cf8854044f5ceee9ba120bbfe5261",
+        "bytes": 50469616
+      },
+      "format": "elf",
+      "architecture": "arm64",
+      "image_base": "0x0"
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Only unencrypted global-metadata.dat versions 24, 27, 29, 31 and 39 are decoded; names, counts and string literals are observed file content, not runtime behavior.",
+    "Method addresses come from the binary's code-generation module methodPointers, matched by module name, method count and metadata token; generic method instances (see generic_instances), adjustor thunks and invokers are not linked, no-body means an observed zero slot, and unknown means no module claimed the method or its slot has an unresolved relocation.",
+    "Field, parameter and return type names are rendered from the binary's Il2CppType table in a C#-like form (keywords for primitives, Namespace.Outer+Inner, generic parameters by metadata name); nested generic arguments stay with the type component that declares them. An unresolved type-table slot retains its type index with a null name; a loader-unresolved value inside the type graph is refused rather than rendered from stored placeholder bytes. Custom modifiers, array bounds and attributes are not reported.",
+    "The binary/metadata pair is caller-selected. Module name/count/token agreement is structural evidence, not a cryptographic proof that both files come from the same build.",
+    "declaring_type for types is derived from the nestedTypes section, and member and parameter owners from the owners' index ranges; row positions are the metadata indices."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/base/assets/bin/Data/Managed/Metadata/global-metadata.dat"
+    }
+  ],
+  "evidence_links": [
+    "ev_0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa"
+  ]
+}

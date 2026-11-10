@@ -1,0 +1,18 @@
+Completed bounded delegated analysis for Spine JSON payloads in v3.141. Only [SPINE_PAYLOADS.md](file:///home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/docs/v3.141/SPINE_PAYLOADS.md) and [spine-payloads.json](file:///home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/reports/v3.141/spine-payloads.json) were created; no web files, scripts, git records, or original assets were modified.
+
+### Key Findings Summary
+
+- **Total Valid Payloads**: 14 Spine JSON TextAssets across 2 Unity containers and 3 serialized files.
+- **Exact Spine Version**: `3.8.99` across all 14 payloads.
+- **Packaging & Companion Atlases**:
+  - `sharedassets1.assets` (in `bin/Data/data.unity3d`): 1 intro payload (`intro-drawing`), matched with `intro-drawing.atlas` (Path ID 8).
+  - `sharedassets2.assets` (in `bin/Data/data.unity3d`): 12 category payloads (`insects`, `magic`, `ocean`, `school`, `dino`, `animals`, `dolls`, `music`, `halloween`, `christmas`, `food`, `vehicles`), each matching a 1:1 namesake `.atlas` TextAsset co-packaged in the same serialized file.
+  - `CAB-a5fd52a248b7c3492298e4180a59bab8` (in `defaultlocalgroup_assets_assets_prefabs_paywalls_prefabs_fullgame.prefab_84123612d0882089a74e9fdbe1d26dfc.bundle`): 1 paywall payload (`pop-up-drawing-an`), matched with `pop-up-drawing-an.atlas` (Path ID -1342860290518334678).
+- **Timeline Keys**:
+  - `intro-drawing` `intro`: last numeric key at 6.8s (765 numeric keyframes).
+  - Category payloads (`action`): 3.3333s (except `vehicles` at 4.0s).
+  - Category payloads (`idle`): empty timeline dictionary `{}` (0 numeric keyframes; static pose).
+  - `pop-up-drawing-an`: 8 animations ranging from 1.6s (`bell`) to 4.3333s (`snow-man`).
+- **Analytical Boundaries**:
+  - **The timeline max key is not necessarily the full runtime transition duration** (runtime looping, crossfading, state transitions, or script-controlled playback govern actual timing).
+  - **No runtime/gameplay claims** are asserted. Static serialized analysis subject to parent review.

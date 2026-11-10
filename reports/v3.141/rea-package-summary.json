@@ -1,0 +1,487 @@
+{
+  "evidence_id": "ev_d87ba06445c77ad77b4948087c1e6c7653cf022c60cee0c4a4919e534ba69b0c",
+  "subject": {
+    "name": "base.apk",
+    "digest": {
+      "sha256": "a98b03b080d913dd7131c964196910c675a48dc5e261c752c8d1305acc26d0f0"
+    },
+    "local_path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/apks/base.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-analysis-view",
+    "name": "REA analysis view projection",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis-view",
+  "operation": "inspect_analysis_view",
+  "parameters": {
+    "parent_evidence_id": "ev_e2ab5073e9c16523e653b6cb4edeb911f1b5c56313253559467199827d1487fa",
+    "view": {
+      "kind": "summary"
+    }
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "kind": "summary",
+    "view": {
+      "kind": "summary"
+    },
+    "parent_evidence_id": "ev_e2ab5073e9c16523e653b6cb4edeb911f1b5c56313253559467199827d1487fa",
+    "parent_operation": "inspect_android_package",
+    "parent_digest": "e2ab5073e9c16523e653b6cb4edeb911f1b5c56313253559467199827d1487fa",
+    "view_digest": "dae88dcc3d2cf1f15c94a3c2978f617ce920ba658efaddedb727eed0687bc941",
+    "artifact": {
+      "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/apks/base.apk",
+      "sha256": "a98b03b080d913dd7131c964196910c675a48dc5e261c752c8d1305acc26d0f0"
+    },
+    "coverage": {
+      "status": "complete-within-view",
+      "examined": 1,
+      "total": 1,
+      "next_offset": null,
+      "exhausted": true
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "unknowns": [
+      "APK signatures were not verified; package declarations do not establish authenticity or runtime behavior."
+    ],
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3966
+      },
+      "package_name": "com.bimiboo.drawing",
+      "version_name": "3.141",
+      "version_code": "1369",
+      "min_sdk": "29",
+      "target_sdk": "36",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+        "com.samsung.android.mapsagent.permission.READ_APP_INFO",
+        "com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA",
+        "com.android.vending.BILLING",
+        "android.permission.WAKE_LOCK",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.POST_NOTIFICATIONS",
+        "com.bimiboo.drawing.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      ],
+      "manifest": {
+        "status": "complete",
+        "reported_total_bytes": null,
+        "text_code_units": 18367,
+        "text_included": false
+      },
+      "components": {
+        "status": "complete",
+        "items": [
+          {
+            "kind": "provider",
+            "declared_name": "androidx.core.content.FileProvider",
+            "name": "androidx.core.content.FileProvider",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": [
+              "com.bimiboo.drawing.provider"
+            ],
+            "target_activity": null
+          },
+          {
+            "kind": "activity",
+            "declared_name": "com.unity3d.player.UnityPlayerActivity",
+            "name": "com.unity3d.player.UnityPlayerActivity",
+            "exported": true,
+            "exported_default": true,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 6,
+            "actions": [
+              "android.intent.action.MAIN",
+              "android.intent.action.VIEW"
+            ],
+            "categories": [
+              "android.intent.category.LAUNCHER",
+              "android.intent.category.DEFAULT",
+              "android.intent.category.BROWSABLE"
+            ],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "activity",
+            "declared_name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+            "name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "service",
+            "declared_name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+            "name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+            "exported": true,
+            "exported_default": false,
+            "permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+            "permission_source": "component",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "activity",
+            "declared_name": "com.android.billingclient.api.ProxyBillingActivity",
+            "name": "com.android.billingclient.api.ProxyBillingActivity",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "activity",
+            "declared_name": "com.android.billingclient.api.ProxyBillingActivityV2",
+            "name": "com.android.billingclient.api.ProxyBillingActivityV2",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "receiver",
+            "declared_name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+            "name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "service",
+            "declared_name": "com.google.android.gms.measurement.AppMeasurementService",
+            "name": "com.google.android.gms.measurement.AppMeasurementService",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "service",
+            "declared_name": "com.google.android.gms.measurement.AppMeasurementJobService",
+            "name": "com.google.android.gms.measurement.AppMeasurementJobService",
+            "exported": false,
+            "exported_default": false,
+            "permission": "android.permission.BIND_JOB_SERVICE",
+            "permission_source": "component",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "activity",
+            "declared_name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "activity",
+            "declared_name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+            "name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "service",
+            "declared_name": "com.google.firebase.components.ComponentDiscoveryService",
+            "name": "com.google.firebase.components.ComponentDiscoveryService",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "provider",
+            "declared_name": "com.google.firebase.provider.FirebaseInitProvider",
+            "name": "com.google.firebase.provider.FirebaseInitProvider",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": [
+              "com.bimiboo.drawing.firebaseinitprovider"
+            ],
+            "target_activity": null
+          },
+          {
+            "kind": "activity",
+            "declared_name": "com.onevcat.uniwebview.UniWebViewProxyActivity",
+            "name": "com.onevcat.uniwebview.UniWebViewProxyActivity",
+            "exported": null,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "provider",
+            "declared_name": "com.onevcat.uniwebview.UniWebViewFileProvider",
+            "name": "com.onevcat.uniwebview.UniWebViewFileProvider",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": [
+              "com.bimiboo.drawing.uniwebview_fileprovider"
+            ],
+            "target_activity": null
+          },
+          {
+            "kind": "provider",
+            "declared_name": "com.bimiboo.pass.SharedSubProvider",
+            "name": "com.bimiboo.pass.SharedSubProvider",
+            "exported": true,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": [
+              "com.bimiboo.drawing.bbpass.sharedsub"
+            ],
+            "target_activity": null
+          },
+          {
+            "kind": "receiver",
+            "declared_name": "com.bimiboo.pass.SharedSubBeaconReceiver",
+            "name": "com.bimiboo.pass.SharedSubBeaconReceiver",
+            "exported": true,
+            "exported_default": true,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 1,
+            "actions": [
+              "com.bimiboo.pass.SHARED_SUB_BEACON"
+            ],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "provider",
+            "declared_name": "com.bimiboo.bimibooid.crossapp.BbIdCrossAppProvider",
+            "name": "com.bimiboo.bimibooid.crossapp.BbIdCrossAppProvider",
+            "exported": true,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 1,
+            "actions": [
+              "com.bimiboo.bimibooid.CROSSAPP_PROVIDER"
+            ],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": [
+              "com.bimiboo.drawing.bbid.crossapp"
+            ],
+            "target_activity": null
+          },
+          {
+            "kind": "activity",
+            "declared_name": "spacemadness.com.lunarconsole.settings.PluginSettingsActivity",
+            "name": "spacemadness.com.lunarconsole.settings.PluginSettingsActivity",
+            "exported": null,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "receiver",
+            "declared_name": "com.unity.androidnotifications.UnityNotificationManager",
+            "name": "com.unity.androidnotifications.UnityNotificationManager",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "service",
+            "declared_name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+            "name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "service",
+            "declared_name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+            "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+            "exported": false,
+            "exported_default": false,
+            "permission": "android.permission.BIND_JOB_SERVICE",
+            "permission_source": "component",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          },
+          {
+            "kind": "receiver",
+            "declared_name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+            "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+            "exported": false,
+            "exported_default": false,
+            "permission": null,
+            "permission_source": "none",
+            "intent_filter_count": 0,
+            "actions": [],
+            "categories": [],
+            "foreground_service_type": null,
+            "authorities": null,
+            "target_activity": null
+          }
+        ],
+        "limitations": []
+      },
+      "class_count": 2846,
+      "resource_count": 413,
+      "signature_verification": "not_performed"
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/apks/base.apk"
+    }
+  ],
+  "evidence_links": [
+    "ev_e2ab5073e9c16523e653b6cb4edeb911f1b5c56313253559467199827d1487fa"
+  ]
+}

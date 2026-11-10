@@ -1,0 +1,1282 @@
+{
+  "evidence_id": "ev_b9ee4c2236e2f20edb516473f54987ed5cd14f859e6dfd97c2c3221647c9a731",
+  "subject": {
+    "name": "global-metadata.dat",
+    "digest": {
+      "sha256": "74c297e59adca67550002c43eb95ecc814a8a14e5be97b96f47a3f7286d1a5d0"
+    },
+    "local_path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/base/assets/bin/Data/Managed/Metadata/global-metadata.dat",
+    "format": "file",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-analysis-view",
+    "name": "REA analysis view projection",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis-view",
+  "operation": "inspect_analysis_view",
+  "parameters": {
+    "parent_evidence_id": "ev_0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa",
+    "view": {
+      "kind": "il2cpp-metadata",
+      "indices": [
+        36125,
+        36126,
+        36127,
+        36128,
+        36129,
+        36130,
+        36131,
+        36132,
+        36133,
+        36134,
+        36135,
+        36136,
+        36137,
+        36169,
+        36170,
+        36171,
+        36172,
+        36173,
+        36174,
+        36175,
+        36176,
+        36177,
+        36178,
+        36179,
+        36180,
+        36181,
+        36182,
+        36183,
+        36184,
+        36185,
+        36186,
+        36187,
+        36197,
+        36198,
+        36199,
+        36200,
+        36208,
+        36209,
+        36210,
+        36211,
+        36212,
+        36213,
+        36214,
+        36215,
+        36216,
+        36217,
+        36218,
+        36219,
+        36220,
+        36221,
+        36222,
+        36223,
+        36224,
+        36225,
+        36229,
+        36230,
+        36231,
+        36232,
+        36233,
+        36234,
+        36235,
+        36236,
+        36237,
+        36238,
+        36239,
+        36240,
+        36241,
+        36242,
+        36261,
+        36262,
+        36263,
+        36264,
+        36265,
+        36266,
+        36267,
+        36268,
+        36269,
+        36270,
+        36279,
+        36280,
+        36281,
+        36282,
+        36283,
+        36284,
+        36285,
+        36286,
+        36287,
+        36288,
+        36289,
+        36290,
+        36291,
+        36292,
+        36293,
+        36294,
+        36295,
+        36296,
+        36353,
+        36354,
+        36355,
+        36356,
+        36357,
+        36358,
+        36359,
+        36360,
+        36361,
+        36362,
+        36363,
+        36364,
+        36365,
+        36366,
+        36367,
+        36368,
+        36369,
+        36370,
+        36371,
+        36395,
+        36396,
+        36663,
+        36664,
+        36665,
+        36666,
+        36667,
+        36668,
+        36669,
+        36670,
+        36671,
+        36688,
+        36689,
+        36690,
+        36691,
+        36692,
+        36693,
+        36694,
+        36695,
+        36696,
+        36697,
+        36698,
+        36699,
+        36700,
+        36701,
+        36702,
+        36703,
+        36704,
+        36705,
+        36706,
+        36707,
+        36708,
+        36709,
+        36710,
+        36711,
+        36712,
+        36713,
+        36714,
+        36715,
+        36716,
+        36717,
+        36718,
+        37206,
+        37207,
+        37208,
+        37209,
+        37210,
+        37211,
+        37212,
+        37213
+      ],
+      "offset": 0,
+      "limit": 700,
+      "collection": "field_types"
+    }
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "kind": "il2cpp-metadata",
+    "view": {
+      "kind": "il2cpp-metadata",
+      "indices": [
+        36125,
+        36126,
+        36127,
+        36128,
+        36129,
+        36130,
+        36131,
+        36132,
+        36133,
+        36134,
+        36135,
+        36136,
+        36137,
+        36169,
+        36170,
+        36171,
+        36172,
+        36173,
+        36174,
+        36175,
+        36176,
+        36177,
+        36178,
+        36179,
+        36180,
+        36181,
+        36182,
+        36183,
+        36184,
+        36185,
+        36186,
+        36187,
+        36197,
+        36198,
+        36199,
+        36200,
+        36208,
+        36209,
+        36210,
+        36211,
+        36212,
+        36213,
+        36214,
+        36215,
+        36216,
+        36217,
+        36218,
+        36219,
+        36220,
+        36221,
+        36222,
+        36223,
+        36224,
+        36225,
+        36229,
+        36230,
+        36231,
+        36232,
+        36233,
+        36234,
+        36235,
+        36236,
+        36237,
+        36238,
+        36239,
+        36240,
+        36241,
+        36242,
+        36261,
+        36262,
+        36263,
+        36264,
+        36265,
+        36266,
+        36267,
+        36268,
+        36269,
+        36270,
+        36279,
+        36280,
+        36281,
+        36282,
+        36283,
+        36284,
+        36285,
+        36286,
+        36287,
+        36288,
+        36289,
+        36290,
+        36291,
+        36292,
+        36293,
+        36294,
+        36295,
+        36296,
+        36353,
+        36354,
+        36355,
+        36356,
+        36357,
+        36358,
+        36359,
+        36360,
+        36361,
+        36362,
+        36363,
+        36364,
+        36365,
+        36366,
+        36367,
+        36368,
+        36369,
+        36370,
+        36371,
+        36395,
+        36396,
+        36663,
+        36664,
+        36665,
+        36666,
+        36667,
+        36668,
+        36669,
+        36670,
+        36671,
+        36688,
+        36689,
+        36690,
+        36691,
+        36692,
+        36693,
+        36694,
+        36695,
+        36696,
+        36697,
+        36698,
+        36699,
+        36700,
+        36701,
+        36702,
+        36703,
+        36704,
+        36705,
+        36706,
+        36707,
+        36708,
+        36709,
+        36710,
+        36711,
+        36712,
+        36713,
+        36714,
+        36715,
+        36716,
+        36717,
+        36718,
+        37206,
+        37207,
+        37208,
+        37209,
+        37210,
+        37211,
+        37212,
+        37213
+      ],
+      "offset": 0,
+      "limit": 700,
+      "collection": "field_types"
+    },
+    "items": [
+      {
+        "type": 29152,
+        "name": "int",
+        "index": 36125
+      },
+      {
+        "type": 45976,
+        "name": "f+PaletteTypes",
+        "index": 36126
+      },
+      {
+        "type": 45976,
+        "name": "f+PaletteTypes",
+        "index": 36127
+      },
+      {
+        "type": 45976,
+        "name": "f+PaletteTypes",
+        "index": 36128
+      },
+      {
+        "type": 29152,
+        "name": "int",
+        "index": 36129
+      },
+      {
+        "type": 45973,
+        "name": "f+BrushTypes",
+        "index": 36130
+      },
+      {
+        "type": 45973,
+        "name": "f+BrushTypes",
+        "index": 36131
+      },
+      {
+        "type": 45973,
+        "name": "f+BrushTypes",
+        "index": 36132
+      },
+      {
+        "type": 45973,
+        "name": "f+BrushTypes",
+        "index": 36133
+      },
+      {
+        "type": 45973,
+        "name": "f+BrushTypes",
+        "index": 36134
+      },
+      {
+        "type": 45973,
+        "name": "f+BrushTypes",
+        "index": 36135
+      },
+      {
+        "type": 45973,
+        "name": "f+BrushTypes",
+        "index": 36136
+      },
+      {
+        "type": 45973,
+        "name": "f+BrushTypes",
+        "index": 36137
+      },
+      {
+        "type": 28288,
+        "name": "BimiBoo.Drawing.Services.Music.IMusicService",
+        "index": 36169
+      },
+      {
+        "type": 34983,
+        "name": "string",
+        "index": 36170
+      },
+      {
+        "type": 27011,
+        "name": "UnityEngine.GameObject",
+        "index": 36171
+      },
+      {
+        "type": 36187,
+        "name": "UnityEngine.Transform",
+        "index": 36172
+      },
+      {
+        "type": 36187,
+        "name": "UnityEngine.Transform",
+        "index": 36173
+      },
+      {
+        "type": 29992,
+        "name": "LoadImage",
+        "index": 36174
+      },
+      {
+        "type": 23804,
+        "name": "UnityEngine.UI.Button",
+        "index": 36175
+      },
+      {
+        "type": 23804,
+        "name": "UnityEngine.UI.Button",
+        "index": 36176
+      },
+      {
+        "type": 32238,
+        "name": "PersistantAudioManager",
+        "index": 36177
+      },
+      {
+        "type": 36187,
+        "name": "UnityEngine.Transform",
+        "index": 36178
+      },
+      {
+        "type": 31581,
+        "name": "PaintIn3D.P3dButtonClearAll",
+        "index": 36179
+      },
+      {
+        "type": 34741,
+        "name": "UnityEngine.SpriteRenderer",
+        "index": 36180
+      },
+      {
+        "type": 31784,
+        "name": "PaintablesController",
+        "index": 36181
+      },
+      {
+        "type": 27011,
+        "name": "UnityEngine.GameObject",
+        "index": 36182
+      },
+      {
+        "type": 34439,
+        "name": "float",
+        "index": 36183
+      },
+      {
+        "type": 24829,
+        "name": "UnityEngine.Coroutine",
+        "index": 36184
+      },
+      {
+        "type": 34458,
+        "name": "float",
+        "index": 36185
+      },
+      {
+        "type": 34447,
+        "name": "float",
+        "index": 36186
+      },
+      {
+        "type": 34447,
+        "name": "float",
+        "index": 36187
+      },
+      {
+        "type": 31659,
+        "name": "PaintIn3D.P3dMask",
+        "index": 36197
+      },
+      {
+        "type": 25673,
+        "name": "DisplayParticles",
+        "index": 36198
+      },
+      {
+        "type": 14082,
+        "name": "System.Collections.Generic.List<MaskScaller>",
+        "index": 36199
+      },
+      {
+        "type": 23676,
+        "name": "bool",
+        "index": 36200
+      },
+      {
+        "type": 29154,
+        "name": "int",
+        "index": 36208
+      },
+      {
+        "type": 29154,
+        "name": "int",
+        "index": 36209
+      },
+      {
+        "type": 29154,
+        "name": "int",
+        "index": 36210
+      },
+      {
+        "type": 34458,
+        "name": "float",
+        "index": 36211
+      },
+      {
+        "type": 34458,
+        "name": "float",
+        "index": 36212
+      },
+      {
+        "type": 34458,
+        "name": "float",
+        "index": 36213
+      },
+      {
+        "type": 34458,
+        "name": "float",
+        "index": 36214
+      },
+      {
+        "type": 34458,
+        "name": "float",
+        "index": 36215
+      },
+      {
+        "type": 38736,
+        "name": "k",
+        "index": 36216
+      },
+      {
+        "type": 14507,
+        "name": "System.Collections.Generic.List<k>",
+        "index": 36217
+      },
+      {
+        "type": 23965,
+        "name": "UnityEngine.Camera",
+        "index": 36218
+      },
+      {
+        "type": 35857,
+        "name": "UnityEngine.Texture",
+        "index": 36219
+      },
+      {
+        "type": 31659,
+        "name": "PaintIn3D.P3dMask",
+        "index": 36220
+      },
+      {
+        "type": 37368,
+        "name": "UnityEngine.Vector2Int",
+        "index": 36221
+      },
+      {
+        "type": 37378,
+        "name": "UnityEngine.Vector3",
+        "index": 36222
+      },
+      {
+        "type": 37368,
+        "name": "UnityEngine.Vector2Int",
+        "index": 36223
+      },
+      {
+        "type": 29132,
+        "name": "int",
+        "index": 36224
+      },
+      {
+        "type": 29132,
+        "name": "int",
+        "index": 36225
+      },
+      {
+        "type": 45970,
+        "name": "f+BrushTypes",
+        "index": 36229
+      },
+      {
+        "type": 45975,
+        "name": "f+PaletteTypes",
+        "index": 36230
+      },
+      {
+        "type": 28911,
+        "name": "UnityEngine.UI.Image",
+        "index": 36231
+      },
+      {
+        "type": 14015,
+        "name": "System.Collections.Generic.List<UnityEngine.UI.Image>",
+        "index": 36232
+      },
+      {
+        "type": 30301,
+        "name": "ManageBrushes",
+        "index": 36233
+      },
+      {
+        "type": 27011,
+        "name": "UnityEngine.GameObject",
+        "index": 36234
+      },
+      {
+        "type": 30310,
+        "name": "ManageTools",
+        "index": 36235
+      },
+      {
+        "type": 32238,
+        "name": "PersistantAudioManager",
+        "index": 36236
+      },
+      {
+        "type": 31890,
+        "name": "ParticleEffectManager",
+        "index": 36237
+      },
+      {
+        "type": 29132,
+        "name": "int",
+        "index": 36238
+      },
+      {
+        "type": 34439,
+        "name": "float",
+        "index": 36239
+      },
+      {
+        "type": 34439,
+        "name": "float",
+        "index": 36240
+      },
+      {
+        "type": 23733,
+        "name": "Brush",
+        "index": 36241
+      },
+      {
+        "type": 23676,
+        "name": "bool",
+        "index": 36242
+      },
+      {
+        "type": 38690,
+        "name": "cg",
+        "index": 36261
+      },
+      {
+        "type": 28426,
+        "name": "BimiBoo.Drawing.MainMenu.Paywall.IPaywallService",
+        "index": 36262
+      },
+      {
+        "type": 32065,
+        "name": "App.Pass.PassPaywallService",
+        "index": 36263
+      },
+      {
+        "type": 13939,
+        "name": "System.Collections.Generic.List<UnityEngine.GameObject>",
+        "index": 36264
+      },
+      {
+        "type": 27011,
+        "name": "UnityEngine.GameObject",
+        "index": 36265
+      },
+      {
+        "type": 27011,
+        "name": "UnityEngine.GameObject",
+        "index": 36266
+      },
+      {
+        "type": 32238,
+        "name": "PersistantAudioManager",
+        "index": 36267
+      },
+      {
+        "type": 27011,
+        "name": "UnityEngine.GameObject",
+        "index": 36268
+      },
+      {
+        "type": 27011,
+        "name": "UnityEngine.GameObject",
+        "index": 36269
+      },
+      {
+        "type": 27011,
+        "name": "UnityEngine.GameObject",
+        "index": 36270
+      },
+      {
+        "type": 13855,
+        "name": "System.Collections.Generic.List<UnityEngine.Color>",
+        "index": 36279
+      },
+      {
+        "type": 13855,
+        "name": "System.Collections.Generic.List<UnityEngine.Color>",
+        "index": 36280
+      },
+      {
+        "type": 13855,
+        "name": "System.Collections.Generic.List<UnityEngine.Color>",
+        "index": 36281
+      },
+      {
+        "type": 13855,
+        "name": "System.Collections.Generic.List<UnityEngine.Color>",
+        "index": 36282
+      },
+      {
+        "type": 30301,
+        "name": "ManageBrushes",
+        "index": 36283
+      },
+      {
+        "type": 27011,
+        "name": "UnityEngine.GameObject",
+        "index": 36284
+      },
+      {
+        "type": 30299,
+        "name": "ManageBigButtons",
+        "index": 36285
+      },
+      {
+        "type": 36127,
+        "name": "ToolColors",
+        "index": 36286
+      },
+      {
+        "type": 14405,
+        "name": "System.Collections.Generic.List<ToolBrushes>",
+        "index": 36287
+      },
+      {
+        "type": 32238,
+        "name": "PersistantAudioManager",
+        "index": 36288
+      },
+      {
+        "type": 30307,
+        "name": "ManagePhysicalBrushes",
+        "index": 36289
+      },
+      {
+        "type": 45970,
+        "name": "f+BrushTypes",
+        "index": 36290
+      },
+      {
+        "type": 23671,
+        "name": "bool",
+        "index": 36291
+      },
+      {
+        "type": 23671,
+        "name": "bool",
+        "index": 36292
+      },
+      {
+        "type": 29132,
+        "name": "int",
+        "index": 36293
+      },
+      {
+        "type": 34705,
+        "name": "UnityEngine.Sprite",
+        "index": 36294
+      },
+      {
+        "type": 34705,
+        "name": "UnityEngine.Sprite",
+        "index": 36295
+      },
+      {
+        "type": 45970,
+        "name": "f+BrushTypes",
+        "index": 36296
+      },
+      {
+        "type": 33152,
+        "name": "UnityEngine.RectTransform",
+        "index": 36353
+      },
+      {
+        "type": 14162,
+        "name": "System.Collections.Generic.List<PacksList>",
+        "index": 36354
+      },
+      {
+        "type": 38707,
+        "name": "da",
+        "index": 36355
+      },
+      {
+        "type": 29154,
+        "name": "int",
+        "index": 36356
+      },
+      {
+        "type": 23671,
+        "name": "bool",
+        "index": 36357
+      },
+      {
+        "type": 13782,
+        "name": "System.Collections.Generic.List<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>",
+        "index": 36358
+      },
+      {
+        "type": 28288,
+        "name": "BimiBoo.Drawing.Services.Music.IMusicService",
+        "index": 36359
+      },
+      {
+        "type": 27011,
+        "name": "UnityEngine.GameObject",
+        "index": 36360
+      },
+      {
+        "type": 27011,
+        "name": "UnityEngine.GameObject",
+        "index": 36361
+      },
+      {
+        "type": 14312,
+        "name": "System.Collections.Generic.List<string>",
+        "index": 36362
+      },
+      {
+        "type": 13939,
+        "name": "System.Collections.Generic.List<UnityEngine.GameObject>",
+        "index": 36363
+      },
+      {
+        "type": 38707,
+        "name": "da",
+        "index": 36364
+      },
+      {
+        "type": 13856,
+        "name": "System.Collections.Generic.List<UnityEngine.Color>",
+        "index": 36365
+      },
+      {
+        "type": 28911,
+        "name": "UnityEngine.UI.Image",
+        "index": 36366
+      },
+      {
+        "type": 28911,
+        "name": "UnityEngine.UI.Image",
+        "index": 36367
+      },
+      {
+        "type": 32238,
+        "name": "PersistantAudioManager",
+        "index": 36368
+      },
+      {
+        "type": 14312,
+        "name": "System.Collections.Generic.List<string>",
+        "index": 36369
+      },
+      {
+        "type": 14031,
+        "name": "System.Collections.Generic.List<int>",
+        "index": 36370
+      },
+      {
+        "type": 13691,
+        "name": "System.Collections.Generic.List<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<UnityEngine.GameObject>>",
+        "index": 36371
+      },
+      {
+        "type": 45961,
+        "name": "e+ProductTypes",
+        "index": 36395
+      },
+      {
+        "type": 13939,
+        "name": "System.Collections.Generic.List<UnityEngine.GameObject>",
+        "index": 36396
+      },
+      {
+        "type": 29990,
+        "name": "LoadIcons",
+        "index": 36663
+      },
+      {
+        "type": 14312,
+        "name": "System.Collections.Generic.List<string>",
+        "index": 36664
+      },
+      {
+        "type": 34983,
+        "name": "string",
+        "index": 36665
+      },
+      {
+        "type": 34983,
+        "name": "string",
+        "index": 36666
+      },
+      {
+        "type": 34983,
+        "name": "string",
+        "index": 36667
+      },
+      {
+        "type": 14014,
+        "name": "System.Collections.Generic.List<IconTag>",
+        "index": 36668
+      },
+      {
+        "type": 34983,
+        "name": "string",
+        "index": 36669
+      },
+      {
+        "type": 16298,
+        "name": "System.Collections.Generic.Queue<Gallery.Item>",
+        "index": 36670
+      },
+      {
+        "type": 14396,
+        "name": "System.Collections.Generic.List<UnityEngine.Texture2D>",
+        "index": 36671
+      },
+      {
+        "type": 23965,
+        "name": "UnityEngine.Camera",
+        "index": 36688
+      },
+      {
+        "type": 31688,
+        "name": "PaintIn3D.P3dPaintableTexture",
+        "index": 36689
+      },
+      {
+        "type": 35863,
+        "name": "UnityEngine.Texture2D",
+        "index": 36690
+      },
+      {
+        "type": 34741,
+        "name": "UnityEngine.SpriteRenderer",
+        "index": 36691
+      },
+      {
+        "type": 36187,
+        "name": "UnityEngine.Transform",
+        "index": 36692
+      },
+      {
+        "type": 34458,
+        "name": "float",
+        "index": 36693
+      },
+      {
+        "type": 14395,
+        "name": "System.Collections.Generic.List<UnityEngine.Texture2D>",
+        "index": 36694
+      },
+      {
+        "type": 35004,
+        "name": "string",
+        "index": 36695
+      },
+      {
+        "type": 34458,
+        "name": "float",
+        "index": 36696
+      },
+      {
+        "type": 23671,
+        "name": "bool",
+        "index": 36697
+      },
+      {
+        "type": 35863,
+        "name": "UnityEngine.Texture2D",
+        "index": 36698
+      },
+      {
+        "type": 35863,
+        "name": "UnityEngine.Texture2D",
+        "index": 36699
+      },
+      {
+        "type": 35863,
+        "name": "UnityEngine.Texture2D",
+        "index": 36700
+      },
+      {
+        "type": 35863,
+        "name": "UnityEngine.Texture2D",
+        "index": 36701
+      },
+      {
+        "type": 32238,
+        "name": "PersistantAudioManager",
+        "index": 36702
+      },
+      {
+        "type": 23965,
+        "name": "UnityEngine.Camera",
+        "index": 36703
+      },
+      {
+        "type": 23965,
+        "name": "UnityEngine.Camera",
+        "index": 36704
+      },
+      {
+        "type": 26241,
+        "name": "UnityEngine.EventSystems.EventSystem",
+        "index": 36705
+      },
+      {
+        "type": 23804,
+        "name": "UnityEngine.UI.Button",
+        "index": 36706
+      },
+      {
+        "type": 23804,
+        "name": "UnityEngine.UI.Button",
+        "index": 36707
+      },
+      {
+        "type": 33986,
+        "name": "ScreenShotLayer",
+        "index": 36708
+      },
+      {
+        "type": 36187,
+        "name": "UnityEngine.Transform",
+        "index": 36709
+      },
+      {
+        "type": 36187,
+        "name": "UnityEngine.Transform",
+        "index": 36710
+      },
+      {
+        "type": 31688,
+        "name": "PaintIn3D.P3dPaintableTexture",
+        "index": 36711
+      },
+      {
+        "type": 36187,
+        "name": "UnityEngine.Transform",
+        "index": 36712
+      },
+      {
+        "type": 27011,
+        "name": "UnityEngine.GameObject",
+        "index": 36713
+      },
+      {
+        "type": 33796,
+        "name": "UIHelper.SafeAreaCanvasHelper",
+        "index": 36714
+      },
+      {
+        "type": 27575,
+        "name": "IAPTools",
+        "index": 36715
+      },
+      {
+        "type": 28426,
+        "name": "BimiBoo.Drawing.MainMenu.Paywall.IPaywallService",
+        "index": 36716
+      },
+      {
+        "type": 14239,
+        "name": "System.Collections.Generic.List<UnityEngine.RenderTexture>",
+        "index": 36717
+      },
+      {
+        "type": 36844,
+        "name": "UnityEngine.Events.UnityAction",
+        "index": 36718
+      },
+      {
+        "type": 35004,
+        "name": "string",
+        "index": 37206
+      },
+      {
+        "type": 35004,
+        "name": "string",
+        "index": 37207
+      },
+      {
+        "type": 23671,
+        "name": "bool",
+        "index": 37208
+      },
+      {
+        "type": 28352,
+        "name": "App.Onboarding.Scripts.Service.IOnboardingService",
+        "index": 37209
+      },
+      {
+        "type": 33912,
+        "name": "BimiBoo.SceneTransitionSystem.SceneTransitionService",
+        "index": 37210
+      },
+      {
+        "type": 30031,
+        "name": "BimiBoo.SceneTransitionSystem.LoadingScreenLoader",
+        "index": 37211
+      },
+      {
+        "type": 32704,
+        "name": "BimiBoo.SceneTransitionSystem.ProjectSceneTransitionSettings",
+        "index": 37212
+      },
+      {
+        "type": 28336,
+        "name": "VContainer.IObjectResolver",
+        "index": 37213
+      }
+    ],
+    "parent_evidence_id": "ev_0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa",
+    "parent_operation": "inspect_il2cpp_metadata",
+    "parent_digest": "0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa",
+    "view_digest": "63cd0f18d1201d637815e6e4258b9cfd3acf7d27b826c9c7519a700313e72bd6",
+    "artifact": {
+      "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/base/assets/bin/Data/Managed/Metadata/global-metadata.dat",
+      "sha256": "74c297e59adca67550002c43eb95ecc814a8a14e5be97b96f47a3f7286d1a5d0"
+    },
+    "coverage": {
+      "status": "page",
+      "examined": 165,
+      "total": 165,
+      "next_offset": null,
+      "exhausted": true
+    },
+    "limitations": [
+      "Only unencrypted global-metadata.dat versions 24, 27, 29, 31 and 39 are decoded; names, counts and string literals are observed file content, not runtime behavior.",
+      "Method addresses come from the binary's code-generation module methodPointers, matched by module name, method count and metadata token; generic method instances (see generic_instances), adjustor thunks and invokers are not linked, no-body means an observed zero slot, and unknown means no module claimed the method or its slot has an unresolved relocation.",
+      "Field, parameter and return type names are rendered from the binary's Il2CppType table in a C#-like form (keywords for primitives, Namespace.Outer+Inner, generic parameters by metadata name); nested generic arguments stay with the type component that declares them. An unresolved type-table slot retains its type index with a null name; a loader-unresolved value inside the type graph is refused rather than rendered from stored placeholder bytes. Custom modifiers, array bounds and attributes are not reported.",
+      "The binary/metadata pair is caller-selected. Module name/count/token agreement is structural evidence, not a cryptographic proof that both files come from the same build.",
+      "declaring_type for types is derived from the nestedTypes section, and member and parameter owners from the owners' index ranges; row positions are the metadata indices."
+    ],
+    "unknowns": [
+      "Generic method instances were not requested; their count is unknown.",
+      "Addresses come from static binary tables; runtime behavior and generic instance code remain unknown."
+    ],
+    "metadata_version": 39,
+    "counts": {
+      "sections": 31,
+      "images": 211,
+      "types": 15941,
+      "methods": 109875,
+      "nested_types": 5633,
+      "fields": 64120,
+      "properties": 20014,
+      "events": 679,
+      "parameters": 115801,
+      "string_literals": 19681,
+      "code_gen_modules": 211,
+      "method_addresses": 109875,
+      "method_address_states": {
+        "code": 97250,
+        "no_body": 12625,
+        "unknown": 0
+      },
+      "return_types": 109875,
+      "field_types": 64120,
+      "parameter_types": 115801,
+      "generic_method_instances": null,
+      "generic_method_instance_states": null,
+      "generic_method_issues": null
+    },
+    "binary_source": {
+      "artifact": {
+        "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/libil2cpp.so",
+        "sha256": "bd0f03471d09990aa35abd10ce590dbd315cf8854044f5ceee9ba120bbfe5261",
+        "bytes": 50469616
+      },
+      "format": "elf",
+      "architecture": "arm64",
+      "image_base": "0x0"
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Only unencrypted global-metadata.dat versions 24, 27, 29, 31 and 39 are decoded; names, counts and string literals are observed file content, not runtime behavior.",
+    "Method addresses come from the binary's code-generation module methodPointers, matched by module name, method count and metadata token; generic method instances (see generic_instances), adjustor thunks and invokers are not linked, no-body means an observed zero slot, and unknown means no module claimed the method or its slot has an unresolved relocation.",
+    "Field, parameter and return type names are rendered from the binary's Il2CppType table in a C#-like form (keywords for primitives, Namespace.Outer+Inner, generic parameters by metadata name); nested generic arguments stay with the type component that declares them. An unresolved type-table slot retains its type index with a null name; a loader-unresolved value inside the type graph is refused rather than rendered from stored placeholder bytes. Custom modifiers, array bounds and attributes are not reported.",
+    "The binary/metadata pair is caller-selected. Module name/count/token agreement is structural evidence, not a cryptographic proof that both files come from the same build.",
+    "declaring_type for types is derived from the nestedTypes section, and member and parameter owners from the owners' index ranges; row positions are the metadata indices."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "/home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/extracted/v3.141/base/assets/bin/Data/Managed/Metadata/global-metadata.dat"
+    }
+  ],
+  "evidence_links": [
+    "ev_0b2cf7be32dc22f37176a13b4b38706b0f39dad4f6d7f57e4d6d0441124bd5fa"
+  ]
+}

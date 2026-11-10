@@ -1,0 +1,29 @@
+Using Python 3.12.3 environment at: extracted/v3.141/unity-venv
+Resolved 13 packages in 720ms
+   Building tpk-ar==0.2.4
+Downloading lz4 (1.3MiB)
+Downloading astc-encoder-py (4.5MiB)
+Downloading unitypy (1.3MiB)
+Downloading brotli (1.4MiB)
+Downloading etcpak (2.5MiB)
+ Downloaded unitypy
+ Downloaded lz4
+ Downloaded brotli
+      Built tpk-ar==0.2.4
+ Downloaded etcpak
+ Downloaded astc-encoder-py
+Prepared 11 packages in 5.96s
+Installed 13 packages in 44ms
+ + archspec==0.2.7
+ + astc-encoder-py==0.1.12
+ + attrs==26.1.0
+ + brotli==1.2.1
+ + etcpak==0.9.15
+ + fmod-toolkit==0.1.3
+ + fsspec==2026.9.0
+ + lz4==4.4.5
+ + pillow==13.0.0
+ + pyfmodex==0.7.2
+ + texture2ddecoder==1.0.6
+ + tpk-ar==0.2.4
+ + unitypy==1.25.4

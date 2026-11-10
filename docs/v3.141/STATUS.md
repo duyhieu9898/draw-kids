@@ -1,5 +1,7 @@
 # Migration reference 3.141
 
+> **Tiến trình & Kế hoạch chi tiết hiện tại:** Xem tại [docs/v3.141/PROGRESS.md](PROGRESS.md).
+
 ## Scope and checkpoint
 
 - Active reference: user-supplied `Kids-Color-Games-Baby-Drawing_3.141_apkcube.apks`.

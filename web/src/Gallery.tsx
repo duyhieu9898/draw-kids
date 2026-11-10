@@ -89,7 +89,7 @@ export default function Gallery({ packId, onBack, onSelectPicture }: GalleryProp
         </div>
       </header>
 
-      <main className="gallery-grid-viewport" role="region" aria-label={`${pack.name} pictures list`}>
+      <main className="gallery-grid-viewport" aria-label={`${pack.name} pictures list`}>
         <div className="gallery-grid-track">
           {Array.from({ length: pack.pictureCount }, (_, index) => {
             const pictureNumber = index + 1

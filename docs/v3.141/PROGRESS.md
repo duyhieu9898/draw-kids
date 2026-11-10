@@ -25,7 +25,7 @@
 | **Giai đoạn 1** | **Bóc tách & Kiểm kê APK 3.141** | ✅ Hoàn thành | 3.675 sprite, 3.353 PNG, 267 WAV audio, 14 Spine payloads. Commit `53a7ea6`. |
 | **Giai đoạn 2** | **Intro Animation (Spine 3.8)** | ✅ Hoàn thành | Chạy tốt trên Spine 3.8 WebGL runtime, preview tỉ lệ mobile ngang 844×390. |
 | **Giai đoạn 3** | **Main Menu (12 bộ tranh)** | ✅ Hoàn thành | Đưa thành công 12 bộ tranh và Spine 3.8 WebGL runtime vào `web/src/MainMenu.tsx`. Verified trên Chrome DevTools mobile landscape 844×390 DPR 3. |
-| **Giai đoạn 4** | **Gallery (Chọn tranh theo pack)** | ⏳ Chờ làm | Ánh xạ ID tranh từ catalog v3.141 sang từng pack trong 12 bộ. |
+| **Giai đoạn 4** | **Gallery (Chọn tranh theo pack)** | ✅ Hoàn thành | Đưa 160 tranh và preview icons gốc vào Gallery. Căn chỉnh hiển thị chuẩn iPhone 12 Pro, giữ text tiếng Anh, điều hướng 2 chiều mượt mà. |
 | **Giai đoạn 5** | **Drawing Scene (Luồng tô màu)** | ⏳ Chờ làm | Đồng bộ công cụ vẽ, bảng màu và clipping mask cho tập tranh 3.141. |
 | **Giai đoạn 6** | **Audio & Voice System** | ⏳ Chờ làm | Tích hợp 267 file WAV đã decode vào `audio.ts`. |
 | **Giai đoạn 7** | **PWA, Cache Service Worker & Lưu trữ** | ⏳ Chờ làm | IndexedDB lưu tranh đã tô, service worker precache offline. |
@@ -54,9 +54,17 @@
 - [x] Đảm bảo cuộn ngang mượt mà trên cảm ứng mobile.
 - [x] Kết nối sự kiện chọn bộ tranh chuyển hướng sang Gallery tương ứng.
 
+## 4. Checklist chi tiết Giai đoạn 4 (Gallery Selection)
+
+- [x] Ánh xạ danh mục 160 tranh từ `art-candidates.json` vào 12 packs.
+- [x] Xuất đủ 32 preview icon mới cho pack 9 (Christmas) và pack 10 (Dinosaurs) vào thư mục web.
+- [x] Giữ nguyên toàn bộ text tiếng Anh (`Pictures`, `Colored`, `Back`).
+- [x] Tối ưu giao diện cuộn ngang 2 hàng thẻ tranh chuẩn iPhone 12 Pro landscape (844×390 pt).
+- [x] Kiểm thử điều hướng 2 chiều: Main Menu ↔ Gallery ↔ Drawing Scene trơn tru.
+
 ---
 
-## 4. Nhật ký công việc (Worklog)
+## 5. Nhật ký công việc (Worklog)
 
 - **2026-11-10 17:30:** Tạo commit `53a7ea6` hoàn thành trích xuất asset, decode 267 audio và test Intro Spine 3.8.
 - **2026-11-10 17:41:** Codex hoàn thành phân tích scene menu gốc (12 pack) trước khi chạm hạn mức OpenAI.
@@ -67,3 +75,7 @@
   - Giữ nguyên toàn bộ text tiếng Anh gốc (`Animals`, `Music`, `Food`, `Insects`, `Dolls`, `Magic`, `Dinosaurs`, `School`, `Ocean`, `Halloween`, `Christmas`, `Vehicles`, `For parents`).
   - Lấy chuẩn hiển thị iPhone 12 Pro landscape (844×390 pt, DPR 3, virtual factor 390/1080).
   - Kiểm thử Chrome DevTools MCP: 0 console error, touch scroll và click chuyển màn Gallery hoạt động mượt mà.
+- **2026-11-10 18:13:** Hoàn thành Giai đoạn 4 (Gallery Scene):
+  - Đồng bộ 160 preview tranh gốc, bổ sung icons pack 9 & 10.
+  - Chuẩn hóa layout Gallery theo iPhone 12 Pro landscape.
+  - Kiểm thử chuyển tiếp 2 chiều Menu ↔ Gallery ↔ Drawing thành công.

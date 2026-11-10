@@ -61,7 +61,7 @@ export default function Gallery({ packId, onBack, onSelectPicture }: GalleryProp
         backgroundColor: pack.bgColor,
         backgroundImage: 'url("/game-assets/ui/gallery_pattern.png")',
       }}
-      aria-label={`Bộ tranh ${pack.name}`}
+      aria-label={`${pack.name} Gallery`}
     >
       <header className="gallery-header">
         <button
@@ -71,7 +71,7 @@ export default function Gallery({ packId, onBack, onSelectPicture }: GalleryProp
             sound.playEffect('click')
             onBack()
           }}
-          aria-label="Quay lại chọn bộ tranh"
+          aria-label="Back to main menu"
         >
           <img
             src="/game-assets/ui/gallery-back-button.png"
@@ -84,17 +84,18 @@ export default function Gallery({ packId, onBack, onSelectPicture }: GalleryProp
         <div className="gallery-header-info">
           <h2>{pack.name}</h2>
           <span className="gallery-counter">
-            {coloredCount > 0 ? `Đã tô ${coloredCount}/${pack.pictureCount} hình` : `${pack.pictureCount} hình`}
+            {coloredCount > 0 ? `${coloredCount}/${pack.pictureCount} Colored` : `${pack.pictureCount} Pictures`}
           </span>
         </div>
       </header>
 
-      <main className="gallery-grid-viewport" role="region" aria-label="Danh sách các tranh cần tô">
+      <main className="gallery-grid-viewport" role="region" aria-label={`${pack.name} pictures list`}>
         <div className="gallery-grid-track">
           {Array.from({ length: pack.pictureCount }, (_, index) => {
             const pictureNumber = index + 1
             const customThumb = savedThumbnails[pictureNumber]
-            const defaultThumb = `/game-assets/ui/sprites/gallery_icons/img-preview-${pack.id}-${pictureNumber}.png`
+            const mappedPackId = ((pack.id - 1) % 10) + 1
+            const defaultThumb = `/game-assets/ui/sprites/gallery_icons/img-preview-${mappedPackId}-${pictureNumber}.png`
 
             return (
               <button
@@ -105,7 +106,7 @@ export default function Gallery({ packId, onBack, onSelectPicture }: GalleryProp
                   sound.playEffect('click')
                   onSelectPicture(pictureNumber)
                 }}
-                aria-label={`Tranh ${pack.name} số ${pictureNumber}${customThumb ? ' đã tô' : ''}`}
+                aria-label={`${pack.name} picture ${pictureNumber}${customThumb ? ' (Colored)' : ''}`}
               >
                 <div className="gallery-frame-wrapper">
                   <img
@@ -124,6 +125,13 @@ export default function Gallery({ packId, onBack, onSelectPicture }: GalleryProp
                       width="264"
                       height="264"
                       loading="lazy"
+                      onError={(e) => {
+                        // Fallback to pack 1 if preview icon not found
+                        const target = e.currentTarget
+                        if (!target.src.includes('img-preview-1-')) {
+                          target.src = `/game-assets/ui/sprites/gallery_icons/img-preview-1-${pictureNumber}.png`
+                        }
+                      }}
                     />
                   </div>
                 </div>

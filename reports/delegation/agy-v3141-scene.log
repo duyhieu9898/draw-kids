@@ -1,0 +1,42 @@
+The scene structure from `reports/v3.141/scene-structure.json` has been parsed and indexed. Only [`docs/v3.141/SCENE_INDEX.md`](file:///home/hieund/Documents/MY_PROJECT/DEVELOP_MAINTAIN/draw-kids-v2/docs/v3.141/SCENE_INDEX.md) was written, with no modifications to web assets or scripts.
+
+### Key Index Findings
+
+1. **Scene Mapping (BuildSettings)**:
+   - **`level2`** (`Assets/Scenes/DrawingMainMenu.unity`): 370 GameObjects, 370 Transforms/RectTransforms, 13 root hierarchies.
+   - **`level4`** (`Assets/Scenes/DrawingPages.unity`): 522 GameObjects, 522 Transforms/RectTransforms, 15 root hierarchies.
+   - **`level6`** (`Assets/Scenes/Gallery.unity`): 54 GameObjects, 54 Transforms/RectTransforms, 7 root hierarchies.
+
+2. **Menu Pack Roots (`level2`)**:
+   - **Parent Ancestry**: `[NewScroll]` (GO 17 / RT 735) → `SafeAreaRoot` (GO 6 / RT 724) → `ScrollRect` (GO 46 / RT 763) → `Viewport` (GO 14 / RT 732) → `Content` (GO 40 / RT 757).
+   - **`Content` (GO 40)**: Serialized `m_AnchoredPosition: (-0.0017, 0.0)`, `m_SizeDelta: (2436.0, 0.0)`. Contains `UnityEngine.UI.GridLayoutGroup` (ID 1195) and `BimiBoo.Drawing.MainMenu.HorizontalGridSizer` (ID 1196).
+   - **Serialized Pack Order in `Content.m_Children`**:
+     1. `animals` (GO 202, RT 796)
+     2. `music` (GO 210, RT 805)
+     3. `food` (GO 211, RT 806)
+     4. `insects` (GO 208, RT 803)
+     5. `dolls` (GO 204, RT 798)
+     6. `magic` (GO 207, RT 802)
+     7. `dinosaurs` (GO 213, RT 800)
+     8. `school` (GO 209, RT 804)
+     9. `ocean` (GO 206, RT 797)
+     10. `halloween` (GO 214, RT 801)
+     11. `christmas` (GO 212, RT 807)
+     12. `vehicles` (GO 205, RT 799)
+   - **Pack Children Subtree Structure**:
+     - `[0] ButtonImage` (`UnityEngine.UI.Image`): Serialized `(0, 0)`, size `(0, 0)`.
+     - `[1] Spine Pivot` (`RectTransform`): Serialized anchored position differs per pack; holds `Spine` containing inactive `BG`, inactive decorative `Objects`, and active `Spine.Unity.SkeletonGraphic`.
+     - `[2] Text (TMP)` (`TMPTextSizeAdjuster`, `TextMeshProUGUI`, `Localize`): Serialized `(1.0, -120.7)`, size `(263.55, 73.0)`.
+     - `[3] LockRoot` (`UnityEngine.UI.Image`): Serialized `(91.0, 133.0)`, size `(70.0, 70.0)`, **`m_IsActive: False` across all 12 packs**.
+
+3. **Drawing Action Buttons (`level4`)**:
+   - Container hierarchy: `Tools and Palettes` (GO 75 / RT 1105) → `ManageTools` (GO 68 / RT 1099).
+   - **`Save`** (GO 90, RT 1118 in `TopContainer` GO 11): `UnityEngine.UI.Button` (1677), `UnityEngine.UI.Image` (1678). Child `pressed` (GO 61, inactive).
+   - **`ScreenShot`** (GO 8, RT 1060 in `TopContainer` GO 11): `UnityEngine.UI.Button` (1563), `UnityEngine.UI.Image` (1564). Child `pressed` (GO 38, inactive).
+   - **`Undo`** (GO 100, RT 1126 in `BottomContainer` GO 52): `UnityEngine.UI.Button` (1689), `UnityEngine.UI.Image` (1690), and MonoBehaviour (1688) referencing `PaintIn3D.P3dButtonUndoAll` (MonoScript ID 2478). Child `pressed` (GO 89, inactive).
+   - **`Trash`** (GO 3, RT 1056 in `BottomContainer` GO 52): `UnityEngine.UI.Button` (1554), `UnityEngine.UI.Image` (1555), child `pressed` (GO 105, inactive), and child `clearAll` (GO 14, RT 1065) with `PaintIn3D.P3dButtonClearAll` (1572).
+   - **Persistence / Logic Roots**: `[Save Load]` (GO 33, Transform 533) carries `SaveImage` (1597) and `LoadImage` (1596); `[Drawing Page]` (GO 48, Transform 535) carries `DrawingPage` (1614); `PaintablesController` (GO 60, Transform 541) carries `PaintablesController` (1629).
+
+4. **Serialized vs. Runtime Discrepancies**:
+   - All 12 menu packs serialize at identical local/anchored positions `(0, 0, 0)` with size delta `(0, 0)`. Positioning is delegated to runtime `GridLayoutGroup` and `HorizontalGridSizer`.
+   - All 12 `LockRoot` objects serialize as inactive (`m_IsActive: False`). Lock status is not baked into serialized scene hierarchy and is determined strictly at runtime.

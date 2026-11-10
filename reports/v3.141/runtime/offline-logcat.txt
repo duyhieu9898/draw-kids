@@ -1,0 +1,1186 @@
+--------- beginning of main
+11-10 15:17:57.370  1458  5817 I GmscoreIpa: Starting mediastore instant index
+11-10 15:17:57.382   524   605 I WifiService: setWifiEnabled package=com.android.shell uid=2000 enable=false
+11-10 15:17:57.382   524   660 D WifiActiveModeWarden: Switching all client mode managers
+11-10 15:17:57.383  5820  5823 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+11-10 15:17:57.387   524   524 D WifiP2pService: Wifi enabled=false, P2P Interface availability=true
+11-10 15:17:57.393   524   660 D WifiClientModeManager: IMS not registered over IWLAN for subId: 1
+11-10 15:17:57.393   524   660 D WifiClientModeManager: The target role 5
+11-10 15:17:57.395   524   524 D WifiP2pService: Wifi enabled=false, P2P Interface availability=true
+11-10 15:17:57.432   524   660 I android_os_HwBinder: HwBinder: Starting thread pool for getting: android.hardware.wifi.supplicant@1.0::ISupplicant/default
+11-10 15:17:57.462  1639  5830 I PresencePolling: [PresencePublication] onMobileDataChanged, mDataEnabled=true value=false
+11-10 15:17:57.462  1639  5830 I PresencePolling: [PresencePublication] PRES_PUBLISH_TRIGGER_DATA_CHANGED
+11-10 15:17:57.462  1639  5830 I PresencePolling: [PresencePublication] Didn't get trigger from stack yet, discard framework trigger.
+--------- beginning of system
+11-10 15:17:57.466   524   563 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10095; state: DISABLED
+11-10 15:17:57.466   524   564 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10095; state: ENABLED
+11-10 15:17:57.478   286   286 D Zygote  : Forked child process 5833
+11-10 15:17:57.485   524   564 I ActivityManager: Start proc 5833:com.android.carrierdefaultapp/u0a95 for broadcast {com.android.carrierdefaultapp/com.android.carrierdefaultapp.CarrierDefaultBroadcastReceiver}
+11-10 15:17:57.495  5833  5833 W rrierdefaultap: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 15:17:57.497   379   424 I adbd    : jdwp connection from 5833
+11-10 15:17:57.503  1046  1046 D MultiSimSettingController: onUserDataEnabled
+11-10 15:17:57.503  1046  1046 D MultiSimSettingController: setUserDataEnabledForGroup subId 1 enable false
+11-10 15:17:57.539   524   664 D ConnectivityService: [101 CELLULAR] EVENT_NETWORK_INFO_CHANGED, going from CONNECTED to DISCONNECTED
+11-10 15:17:57.540  1046  1301 D DcNetworkAgent: NetworkAgent: NetworkAgent channel lost
+11-10 15:17:57.543   524   664 D ConnectivityService: [101 CELLULAR] disconnected, was satisfying 8
+11-10 15:17:57.543   524  1697 I ActivityManager: Force stopping com.bimiboo.drawing appid=10167 user=0: clear data
+11-10 15:17:57.546  5833  5833 I rrierdefaultap: The ClassLoaderContext is a special shared library.
+11-10 15:17:57.549   704   704 I wpa_supplicant: nl80211: deinit ifname=p2p-dev-wlan0 disabled_11b_rates=0
+11-10 15:17:57.553   524   563 I ActivityManager: Force stopping com.bimiboo.drawing appid=10167 user=-1: clearApplicationUserData
+11-10 15:17:57.560  5833  5833 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 15:17:57.560  5833  5833 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 15:17:57.562  5833  5833 D CarrierDefaultBroadcastReceiver: onReceive intent: com.android.internal.telephony.CARRIER_SIGNAL_RESET
+11-10 15:17:57.570   524   554 I GnssNetworkConnectivityHandler: Network connection lost. Available networks count: 1
+11-10 15:17:57.570   524   554 I GnssNetworkConnectivityHandler: updateNetworkState, state=CLOSED, connected=false, network=101, capabilities=[ Transports: CELLULAR Capabilities: MMS&SUPL&DUN&FOTA&IMS&CBS&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=15000Kbps LinkDnBandwidth>=30000Kbps Specifier: <TelephonyNetworkSpecifier [mSubId = 1]> AdministratorUids: [] RequestorUid: -1 RequestorPackageName: null], apn: epc.tmobile.com, availableNetworkCount: 1
+11-10 15:17:57.573   524   664 D ConnectivityService: NetReassign [no changes]
+11-10 15:17:57.575  5833  5833 D CarrierDefaultBroadcastReceiver: apply carrier action idx: 6
+11-10 15:17:57.575  5833  5833 D CarrierActionUtils: onCancelAllNotifications
+11-10 15:17:57.577  5833  5833 D CarrierDefaultBroadcastReceiver: apply carrier action idx: 8
+11-10 15:17:57.577  5833  5833 D CarrierActionUtils: onDisableDefaultURLHandler
+11-10 15:17:57.579   524  1661 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-10 15:17:57.579   524  1661 D PackageManager: Clear ephemeral installer activity
+11-10 15:17:57.581   524  1661 I ActivityManager: Killing 5027:com.google.android.gms.ui/u0a119 (adj 985): empty #17
+11-10 15:17:57.587   405   405 I keystore: clear_uid 10167
+11-10 15:17:57.613   286   286 I Zygote  : Process 5027 exited due to signal 9 (Killed)
+11-10 15:17:57.615   704   704 I wpa_supplicant: wlan0: CTRL-EVENT-DISCONNECTED bssid=02:15:b2:00:00:01 reason=3 locally_generated=1
+--------- beginning of kernel
+11-10 15:17:57.786     0     0 I wlan0   : deauthenticating from 02:15:b2:00:00:01 by local choice (Reason: 3=DEAUTH_LEAVING)
+11-10 15:17:57.623   410   410 I wificond: Regulatory domain changed
+11-10 15:17:57.624   524   565 I libprocessgroup: Successfully killed process cgroup uid 10119 pid 5027 in 42ms
+11-10 15:17:57.624   410   410 I wificond: 2.4Ghz frequencies: 2412 2417 2422 2427 2432 2437 2442 2447 2452 2457 2462 2467 2472 2484
+11-10 15:17:57.624   410   410 I wificond: 5Ghz non-DFS frequencies:
+11-10 15:17:57.624   410   410 I wificond: 5Ghz DFS frequencies: 5180 5200 5220 5240 5260 5280 5300 5320 5500 5520 5540 5560 5580 5600 5620 5640 5660 5680 5700 5745 5765 5785 5805 5825
+11-10 15:17:57.624   410   410 I wificond: 6Ghz frequencies: 5180 5200 5220 5240 5260 5280 5300 5320 5500 5520 5540 5560 5580 5600 5620 5640 5660 5680 5700 5745 5765 5785 5805 5825
+11-10 15:17:57.627   706   706 V AvrcpMediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_DATA_CLEARED
+11-10 15:17:57.627   524   563 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10131; state: DISABLED
+11-10 15:17:57.627   524   564 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10131; state: ENABLED
+11-10 15:17:57.628  1160  1160 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bimiboo.drawing]
+11-10 15:17:57.631  1046  1046 D CarrierSvcBindHelper: No carrier app for: 0
+11-10 15:17:57.634  5839  5849 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+11-10 15:17:57.645  2546  2546 I CarrierServices: [2] RcsAutoStartReceiver.a: enableRcs changed from true to true
+11-10 15:17:57.648   704   704 I wpa_supplicant: nl80211: deinit ifname=wlan0 disabled_11b_rates=0
+11-10 15:17:57.656   287   287 D Zygote  : Forked child process 5860
+11-10 15:17:57.662   524   660 I SupplicantStaIfaceHal: Terminating supplicant using HIDL
+11-10 15:17:57.664   524   660 I android_os_HwBinder: HwBinder: Starting thread pool for getting: android.hardware.wifi.supplicant@1.0::ISupplicant/default
+11-10 15:17:57.664   704   704 I wpa_supplicant: Terminating...
+11-10 15:17:57.665   524   564 I ActivityManager: Start proc 5860:com.android.chrome/u0a131 for broadcast {com.android.chrome/org.chromium.chrome.browser.browserservices.ClientAppBroadcastReceiver}
+11-10 15:17:57.673   524  1697 I ActivityManager: Force stopping com.bimiboo.drawing appid=10167 user=0: from pid 5861
+11-10 15:17:57.845     0     0 I init    : Service 'wpa_supplicant' (pid 704) exited with status 0 oneshot service took 147.404007 seconds in background
+11-10 15:17:57.677  1046  1046 D CarrierSvcBindHelper: No carrier app for: 0
+11-10 15:17:57.852     0     0 I init    : Sending signal 9 to service 'wpa_supplicant' (pid 704) process group...
+11-10 15:17:57.855     0     0 I libprocessgroup: Successfully killed process cgroup uid 0 pid 704 in 1ms
+11-10 15:17:57.685   524   570 D SupplicantStaIfaceHal: ISupplicant died: cookie=-1486702397427002270
+11-10 15:17:57.686   524   660 E SupplicantStaIfaceHal: Can't call getKeyMgmtCapabilities_1_3, ISupplicantStaIface is null
+11-10 15:17:57.724   524   660 E SupplicantStaIfaceHal: Can't call getWpaDriverFeatureSet, ISupplicantStaIface is null
+11-10 15:17:57.724   524   660 I WifiNative: Successfully switched to scan mode on iface=Iface:{Name=wlan0,Id=0,Type=STA_SCAN}
+11-10 15:17:57.724   524   660 W LastMileLogger: Failed to stop event tracing: /sys/kernel/debug/tracing/instances/wifi/tracing_on: open failed: ENOENT (No such file or directory)
+11-10 15:17:57.724   524   660 W LastMileLogger: Failed to read event trace: /sys/kernel/debug/tracing/instances/wifi/trace
+11-10 15:17:57.725   524   524 E SupplicantStaIfaceHal: Can't call setMboCellularDataStatus, ISupplicantStaIface is null
+11-10 15:17:57.725   524   524 W Looper  : Slow dispatch took 136ms main h=android.os.Handler c=android.telephony.-$$Lambda$PhoneStateListener$IPhoneStateListenerStub$2XBMUIj05jt4Xm08XAsE57q5gCc@d913ea1 m=0
+11-10 15:17:57.727   524   660 W SupplicantStaIfaceHal: ISupplicant died: cookie=1
+11-10 15:17:57.740   524   660 E WifiVendorHal: stopRssiMonitoring(l.2078) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+11-10 15:17:57.740   524   660 E SupplicantStaIfaceHal: Can't call setPowerSave, ISupplicantStaIface is null
+11-10 15:17:57.740   524   660 E SupplicantStaIfaceHal: Can't call setBtCoexistenceMode, ISupplicantStaIface is null
+11-10 15:17:57.740   524   660 V WifiClientModeImpl: stopIpClient IpClientWithPreConnection: false
+11-10 15:17:57.740   524   660 V WifiClientModeImpl: java.lang.Throwable
+11-10 15:17:57.740   524   660 V WifiClientModeImpl: 	at com.android.server.wifi.ClientModeImpl.stopIpClient(ClientModeImpl.java:1070)
+11-10 15:17:57.740   524   660 V WifiClientModeImpl: 	at com.android.server.wifi.ClientModeImpl.stopDhcpSetup(ClientModeImpl.java:1085)
+11-10 15:17:57.740   524   660 V WifiClientModeImpl: 	at com.android.server.wifi.ClientModeImpl.handleNetworkDisconnect(ClientModeImpl.java:2760)
+11-10 15:17:57.740   524   660 V WifiClientModeImpl: 	at com.android.server.wifi.ClientModeImpl.access$5400(ClientModeImpl.java:163)
+11-10 15:17:57.740   524   660 V WifiClientModeImpl: 	at com.android.server.wifi.ClientModeImpl$ConnectModeState.processMessage(ClientModeImpl.java:3974)
+11-10 15:17:57.740   524   660 V WifiClientModeImpl: 	at com.android.wifi.x.com.android.internal.util.StateMachine$SmHandler.processMsg(StateMachine.java:992)
+11-10 15:17:57.740   524   660 V WifiClientModeImpl: 	at com.android.wifi.x.com.android.internal.util.StateMachine$SmHandler.handleMessage(StateMachine.java:809)
+11-10 15:17:57.740   524   660 V WifiClientModeImpl: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-10 15:17:57.740   524   660 V WifiClientModeImpl: 	at android.os.Looper.loop(Looper.java:223)
+11-10 15:17:57.740   524   660 V WifiClientModeImpl: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-10 15:17:57.741   934  1233 D DhcpClient: doQuit
+11-10 15:17:57.742  1160  1160 I GeofencerStateMachine: sendWifiConnectivityChanged: connectivity=false
+11-10 15:17:57.743   524   664 D ConnectivityService: [100 WIFI] EVENT_NETWORK_INFO_CHANGED, going from CONNECTED to DISCONNECTED
+11-10 15:17:57.743   524   664 D ConnectivityService: [100 WIFI] disconnected, was satisfying 22
+11-10 15:17:57.755   524   660 D WifiClientModeImpl: ClientModeImpl: Leaving Connected state
+11-10 15:17:57.756   524   660 D WifiCountryCode: updateCountryCode to US
+11-10 15:17:57.756   524   660 E SupplicantStaIfaceHal: Can't call setCountryCode, ISupplicantStaIface is null
+11-10 15:17:57.756   524   660 D WifiCountryCode: Failed to set country code to: US
+11-10 15:17:57.756   524   660 I WifiClientModeImpl: disconnectedstate enter
+11-10 15:17:57.758  2546  2646 I CarrierServices: [50] dji.a: FiST: Wifi connectivity status true
+11-10 15:17:57.762   524   554 I GnssNetworkConnectivityHandler: Network connection lost. Available networks count: 0
+11-10 15:17:57.762   524   554 I GnssNetworkConnectivityHandler: updateNetworkState, state=CLOSED, connected=false, network=100, capabilities=[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=37000Kbps LinkDnBandwidth>=37000Kbps SignalStrength: -50 OwnerUid: 1000 AdministratorUids: [] SSID: "AndroidWifi" RequestorUid: -1 RequestorPackageName: null], apn: , availableNetworkCount: 0
+11-10 15:17:57.779  2546  2932 I CarrierServices: [79] drv.a: (PEv2-SM): DisabledState: event Connectivity event
+11-10 15:17:57.781  2546  2646 I CarrierServices: [50] djm.d: Connected state: [1], networkType: [null]
+11-10 15:17:57.781   524   664 D ConnectivityService: Sending DISCONNECTED broadcast for type 1 [100 WIFI] isDefaultNetwork=true
+11-10 15:17:57.781   524   664 D ConnectivityService: NetReassign [no changes]
+11-10 15:17:57.782   524   660 E WifiScoringParams: Invalid frequency(-1), using 5G as default rssi array
+11-10 15:17:57.782  1338  1338 I DeviceStatusMonitor: DeviceStatusMonitor$1.onReceive():51 onReceive() : Action = android.net.conn.CONNECTIVITY_CHANGE
+11-10 15:17:57.786  1338  1338 I DeviceStatusMonitor: DeviceStatusMonitor.getCurrentNetworkState():163 getCurrentNetworkState(): no networks
+11-10 15:17:57.787  1338  1338 I DeviceStatusMonitor: DeviceStatusMonitor.notifyIfNetworkChanged():148 notifyIfNetworkChanged: newState = NO_CONNECTION, airplaneModeOn = false, notifyAnyway = false
+11-10 15:17:57.787  1338  1338 I NetworkInfoNotification: NetworkInfoNotification$Listener.onReceive():89 onNetworkLost: networkState = NO_CONNECTION, isAirplaneModeOn = false
+11-10 15:17:57.787  1338  2000 I NetworkInfoNotification: NetworkInfoNotification$Listener.onReceive():89 onNetworkLost: networkState = NO_CONNECTION, isAirplaneModeOn = false
+11-10 15:17:57.788   524   660 D WifiClientModeManager: entering ScanOnlyModeState
+11-10 15:17:57.788   524   660 D WifiScanRequestProxy: Sending scan available broadcast: true
+11-10 15:17:57.789   524   660 I WifiScanRequestProxy: Scanning is enabled
+11-10 15:17:57.789   524   660 I WifiScanRequestProxy: Scanning for hidden networks is disabled
+11-10 15:17:57.789   524   660 D WakeupController: start()
+11-10 15:17:57.789   524   524 D WifiP2pService: Wifi enabled=false, P2P Interface availability=true
+11-10 15:17:57.791   524   660 D WakeupController: Setting active to true
+11-10 15:17:57.796   524   660 D WakeupOnboarding: Showing onboarding notification.
+11-10 15:17:57.799  1160  5875 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+11-10 15:17:57.799  1160  5875 W WakeLock: GCM_HB_ALARM counter does not exist
+11-10 15:17:57.800   524   663 I WifiScanningService: Received a request to enable scanning, UID = 1000
+11-10 15:17:57.800   524   663 I WifiScanningService: scanner impls already exists
+11-10 15:17:57.800   524   663 E WifiScanningService: wifi driver loaded received while already loaded
+11-10 15:17:57.806  2546  2646 I CarrierServices: [50] dji.a: FiST: Wifi connectivity status false
+11-10 15:17:57.809  2546  2646 I CarrierServices: [50] djm.d: Connected state: [2], networkType: [null]
+11-10 15:17:57.809  1160  5875 W WakeLock: GCM_CONN_ALARM counter does not exist
+11-10 15:17:57.817  1160  2376 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-10 15:17:57.824   934  1233 D DhcpClient: DHCP Packet Handler stopped
+11-10 15:17:57.824   934  1233 D DhcpClient: onQuitting
+11-10 15:17:57.827  1458  2699 V NativeCrypto: Read error: ssl=0x70f1d4b1d618: I/O error during system call, Software caused connection abort
+11-10 15:17:57.835   524   660 D WakeupLock: Lock set. Number of networks: 1
+11-10 15:17:57.837  2718  3543 V NativeCrypto: Read error: ssl=0xf2fcaf98: I/O error during system call, Software caused connection abort
+11-10 15:17:57.843  2718  5878 V NativeCrypto: Write error: ssl=0xf2fcaf98: I/O error during system call, Broken pipe
+11-10 15:17:57.844  2718  5878 V NativeCrypto: SSL shutdown failed: ssl=0xf2fcaf98: I/O error during system call, Success
+11-10 15:17:57.858  1458  5819 V NativeCrypto: Write error: ssl=0x70f1d4b1d618: I/O error during system call, Broken pipe
+11-10 15:17:57.858  1458  5819 V NativeCrypto: SSL shutdown failed: ssl=0x70f1d4b1d618: I/O error during system call, Success
+11-10 15:17:57.868  2718  5877 W anbh    : [{0}] Failed to resolve name. status={1}
+11-10 15:17:57.871   524   660 E SupplicantStaIfaceHal: Can't call listNetworks, ISupplicantStaIface is null
+11-10 15:17:57.871   524   660 E SupplicantStaIfaceHal: removeAllNetworks failed, got null networks
+11-10 15:17:57.871   524   660 E WifiClientModeImpl: Failed to remove networks on exiting connect mode
+11-10 15:17:57.873   524   605 D WifiMemoryStoreImpl: Set cluster Gc2ba3bbe138fd2d9 for W32ff381c86c5032d: SUCCESS
+11-10 15:17:57.877   524   660 E WifiVendorHal: stopRssiMonitoring(l.2078) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+11-10 15:17:57.877   524   660 E SupplicantStaIfaceHal: Can't call setPowerSave, ISupplicantStaIface is null
+11-10 15:17:57.878   524   660 E SupplicantStaIfaceHal: Can't call setBtCoexistenceMode, ISupplicantStaIface is null
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: stopIpClient IpClientWithPreConnection: false
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: java.lang.Throwable
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: 	at com.android.server.wifi.ClientModeImpl.stopIpClient(ClientModeImpl.java:1070)
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: 	at com.android.server.wifi.ClientModeImpl.stopDhcpSetup(ClientModeImpl.java:1085)
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: 	at com.android.server.wifi.ClientModeImpl.handleNetworkDisconnect(ClientModeImpl.java:2760)
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: 	at com.android.server.wifi.ClientModeImpl.stopClientMode(ClientModeImpl.java:3670)
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: 	at com.android.server.wifi.ClientModeImpl.access$4100(ClientModeImpl.java:163)
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: 	at com.android.server.wifi.ClientModeImpl$ConnectModeState.exit(ClientModeImpl.java:3828)
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: 	at com.android.wifi.x.com.android.internal.util.StateMachine$SmHandler.invokeExitMethods(StateMachine.java:1021)
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: 	at com.android.wifi.x.com.android.internal.util.StateMachine$SmHandler.performTransitions(StateMachine.java:877)
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: 	at com.android.wifi.x.com.android.internal.util.StateMachine$SmHandler.handleMessage(StateMachine.java:819)
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: 	at android.os.Looper.loop(Looper.java:223)
+11-10 15:17:57.878   524   660 V WifiClientModeImpl: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-10 15:17:57.879   524   605 D WifiMemoryStoreImpl: Set cluster Gc2ba3bbe138fd2d9 for Wc2ba3bbe138fd2d9: SUCCESS
+11-10 15:17:57.881   524   660 D WifiDiags: stopLogging() iface list is {} after removing wlan0
+11-10 15:17:57.882   524   660 E WifiVendorHal: resetLogHandler(l.1530) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+11-10 15:17:57.882   524   660 W WifiDiags: Fail to reset log handler
+11-10 15:17:57.889   524   660 D WifiNetworkAgent: NetworkAgent: NetworkAgent channel lost
+11-10 15:17:57.890   524   660 E WifiNative: Could not get Iface object for interface null
+11-10 15:17:57.913  5860  5860 W .android.chrom: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 15:17:57.923  1458  5880 W ciiu    : [{0}] Failed to resolve name. status={1}
+11-10 15:17:57.923   524   660 E WifiNative: Could not get Iface object for interface null
+11-10 15:17:57.962   379   424 I adbd    : jdwp connection from 5860
+11-10 15:17:57.995  5860  5860 I .android.chrom: The ClassLoaderContext is a special shared library.
+11-10 15:17:57.998  5860  5860 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/app/Chrome/lib/x86:/product/app/Chrome/Chrome.apk!/lib/x86:/product/app/TrichromeLibrary/TrichromeLibrary.apk!/lib/x86:/product/lib:/system/product/lib
+11-10 15:17:58.005  5860  5860 I .android.chrom: The ClassLoaderContext is a special shared library.
+11-10 15:17:58.011  5860  5860 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/app/Chrome/lib/x86:/product/app/Chrome/Chrome.apk!/lib/x86:/product/app/TrichromeLibrary/TrichromeLibrary.apk!/lib/x86:/product/lib:/system/product/lib
+11-10 15:17:58.020   524   524 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+11-10 15:17:58.029   723   723 D InterruptionStateProvider: No bubble up: not allowed to bubble: 0|android|43|null|1000
+11-10 15:17:58.030   723   723 D InterruptionStateProvider: No heads up: unimportant notification: 0|android|43|null|1000
+11-10 15:17:58.032  5860  5860 I LoadedApk: No resource references to update in package com.android.chrome.autofill_assistant
+11-10 15:17:58.032  5860  5860 I LoadedApk: No resource references to update in package com.android.chrome.chime
+11-10 15:17:58.032  5860  5860 I LoadedApk: No resource references to update in package com.android.chrome.test_dummy
+11-10 15:17:58.033  5860  5860 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+11-10 15:17:58.041  5860  5860 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+11-10 15:17:58.066  5871  5871 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-10 15:17:58.075  5871  5871 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-10 15:17:58.081  5871  5871 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-10 15:17:58.081  5871  5871 I AndroidRuntime: Using default boot image
+11-10 15:17:58.081  5871  5871 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-10 15:17:58.081  5871  5871 I AndroidRuntime: Leaving lock profiling enabled
+11-10 15:17:58.081  5871  5871 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-10 15:17:58.072  5871  5871 W app_process: type=1400 audit(0.0:73): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7138 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-10 15:17:58.072  5871  5871 I chatty  : uid=2000(shell) app_process identical 1 line
+11-10 15:17:58.080  5871  5871 W app_process: type=1400 audit(0.0:75): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7138 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-10 15:17:58.096  5871  5871 I app_process: Core platform API reporting enabled, enforcing=false
+11-10 15:17:58.080  5871  5871 W app_process: type=1400 audit(0.0:76): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7138 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-10 15:17:58.127   524   605 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10092; state: DISABLED
+11-10 15:17:58.127   524   564 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10092; state: ENABLED
+11-10 15:17:58.132   524   605 I ActivityManager: Killing 2718:com.google.android.apps.messaging/u0a146 (adj 985): empty #17
+11-10 15:17:58.137   286   286 D Zygote  : Forked child process 5903
+11-10 15:17:58.139   524   564 I ActivityManager: Start proc 5903:com.google.android.documentsui/u0a92 for broadcast {com.google.android.documentsui/com.android.documentsui.PackageReceiver}
+11-10 15:17:58.147  5903  5903 W oid.documentsu: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 15:17:58.158   379   424 I adbd    : jdwp connection from 5903
+11-10 15:17:58.160   524   605 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10146 AdministratorUids: [] RequestorUid: 10146 RequestorPackageName: com.google.android.apps.messaging] ], android.os.BinderProxy@888a9cf)
+11-10 15:17:58.160   524  1664 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ LISTEN id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10146 AdministratorUids: [] RequestorUid: 10146 RequestorPackageName: com.google.android.apps.messaging] ], android.os.BinderProxy@b078f5c)
+11-10 15:17:58.160   524   664 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10146 AdministratorUids: [] RequestorUid: 10146 RequestorPackageName: com.google.android.apps.messaging] ] (release request)
+11-10 15:17:58.175   287   287 I Zygote  : Process 2718 exited due to signal 9 (Killed)
+11-10 15:17:58.181   524   565 I libprocessgroup: Successfully killed process cgroup uid 10146 pid 2718 in 44ms
+11-10 15:17:58.189  1046  1046 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+11-10 15:17:58.189  1046  1046 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+11-10 15:17:58.190   723   723 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+11-10 15:17:58.192   723   723 V KeyguardUpdateMonitor: SubInfo:{id=1 iccId=89014103211118510720 simSlotIndex=0 carrierId=1 displayName=T-Mobile carrierName=T-Mobile nameSource=3 iconTint=-16746133 number=+15555215554 dataRoaming=0 iconBitmap=android.graphics.Bitmap@3c31e42 mcc=310 mnc=260 countryIso=us isEmbedded=false nativeAccessRules=null cardString=89014103211118510720 cardId=-1 isOpportunistic=false groupUUID=null isGroupDisabled=false profileClass=-1 ehplmns=null hplmns=null subscriptionType=0 groupOwner=null carrierConfigAccessRules=null areUiccApplicationsEnabled=true}
+11-10 15:17:58.201  5903  5903 I oid.documentsu: The ClassLoaderContext is a special shared library.
+11-10 15:17:58.233  5903  5903 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 15:17:58.403   524  1697 I ActivityManager: Killing 5008:com.google.android.youtube/u0a147 (adj 985): empty #17
+11-10 15:17:58.236  5903  5903 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 15:17:58.429  5903  5903 D DocumentsApplication: OverlayManager.setEnabled() result: true
+11-10 15:17:58.454  1458  5819 I Icing   : doRemovePackageData com.bimiboo.drawing [CONTEXT service_id=21 ]
+11-10 15:17:58.466   524  1672 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ LISTEN id=38, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Uid: 10147 AdministratorUids: [] RequestorUid: 10147 RequestorPackageName: com.google.android.youtube] ], android.os.BinderProxy@f49c38d)
+11-10 15:17:58.466   524  1672 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=37, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10147 AdministratorUids: [] RequestorUid: 10147 RequestorPackageName: com.google.android.youtube] ], android.os.BinderProxy@80b6942)
+11-10 15:17:58.474   524   565 I libprocessgroup: Successfully killed process cgroup uid 10147 pid 5008 in 46ms
+11-10 15:17:58.507   524   664 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=37, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10147 AdministratorUids: [] RequestorUid: 10147 RequestorPackageName: com.google.android.youtube] ] (release request)
+11-10 15:17:58.507   286   286 I Zygote  : Process 5008 exited due to signal 9 (Killed)
+11-10 15:17:58.519   723   723 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+11-10 15:17:58.520   723   723 V KeyguardUpdateMonitor: SubInfo:{id=1 iccId=89014103211118510720 simSlotIndex=0 carrierId=1 displayName=T-Mobile carrierName=T-Mobile nameSource=3 iconTint=-16746133 number=+15555215554 dataRoaming=0 iconBitmap=android.graphics.Bitmap@6582e53 mcc=310 mnc=260 countryIso=us isEmbedded=false nativeAccessRules=null cardString=89014103211118510720 cardId=-1 isOpportunistic=false groupUUID=null isGroupDisabled=false profileClass=-1 ehplmns=null hplmns=null subscriptionType=0 groupOwner=null carrierConfigAccessRules=null areUiccApplicationsEnabled=true}
+11-10 15:17:58.521  1046  1046 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+11-10 15:17:58.521  1046  1046 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+11-10 15:17:58.544  1705  3309 I MediaProvider: Begin Intent { act=android.intent.action.PACKAGE_DATA_CLEARED dat=package:com.bimiboo.drawing flg=0x1000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+11-10 15:17:58.545  1705  3309 I MediaProvider: End Intent { act=android.intent.action.PACKAGE_DATA_CLEARED dat=package:com.bimiboo.drawing flg=0x1000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+11-10 15:17:58.546  5903  5924 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-10 15:17:58.563  1160  5938 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_DATA_CLEARED [CONTEXT service_id=17 ]
+11-10 15:17:58.583  5871  5871 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-10 15:17:58.583  5871  5871 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-10 15:17:58.610  5871  5871 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 15:17:58.613  5871  5871 I app_process: The ClassLoaderContext is a special shared library.
+11-10 15:17:58.623   524   554 I RoleManagerService: Granting default roles...
+11-10 15:17:58.625   524   612 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS | 
+11-10 15:17:58.625   706   706 V AvrcpMediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-10 15:17:58.625   706   706 D AvrcpMediaPlayerList: Name of package changed: com.android.carrierdefaultapp
+11-10 15:17:58.636   524   524 I Telecom : DefaultDialerCache: Refreshing default dialer for user 0: now com.android.dialer: DDC.oR@ALg
+11-10 15:17:58.653  1458  4090 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36 [CONTEXT service_id=21 ]
+11-10 15:17:58.664  1046  1046 D CarrierSvcBindHelper: No carrier app for: 0
+11-10 15:17:58.671  5871  5871 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-10 15:17:58.683  1160  5938 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.android.carrierdefaultapp flg=0x45000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+11-10 15:17:58.690  5871  5871 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+11-10 15:17:58.690  5871  5871 W Monkey  : args: [-p, com.bimiboo.drawing, 1]
+11-10 15:17:58.691  5871  5871 W Monkey  :  arg: "-p"
+11-10 15:17:58.691  5871  5871 W Monkey  :  arg: "com.bimiboo.drawing"
+11-10 15:17:58.691  5871  5871 W Monkey  :  arg: "1"
+11-10 15:17:58.691  5871  5871 W Monkey  : data="com.bimiboo.drawing"
+11-10 15:17:58.692  1160  5938 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-10 15:17:58.706  1458  5768 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+11-10 15:17:58.719  3976  3992 I PermissionControllerServiceImpl: Updating user sensitive for uid 10095
+11-10 15:17:58.741  1458  5768 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+11-10 15:17:58.754   524   563 W BroadcastQueue: Skipping deliver [background] BroadcastRecord{f294d8c u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{7edcd5 5871 (unknown name)/2000/u-1 remote:766d0de}: process gone or crashing
+11-10 15:17:58.754  5903  5924 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-10 15:17:58.762   524   557 D EventSequenceValidator: Transition from ACTIVITY_FINISHED to INTENT_STARTED
+11-10 15:17:58.762   524   605 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.bimiboo.drawing/com.unity3d.player.UnityPlayerActivity} from uid 2000
+11-10 15:17:58.764  1458  2334 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30 [CONTEXT service_id=21 ]
+11-10 15:17:58.775  1458  5819 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+11-10 15:17:58.782  5871  5871 I Monkey  : Events injected: 1
+11-10 15:17:58.783   524   557 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10167; state: DISABLED
+11-10 15:17:58.783   524   564 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10167; state: ENABLED
+11-10 15:17:58.795  1458  5819 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+11-10 15:17:58.795   524   557 D EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+11-10 15:17:58.817  5871  5871 I Monkey  : ## Network stats: elapsed time=48ms (0ms mobile, 0ms wifi, 48ms not connected)
+11-10 15:17:58.826   286   286 D Zygote  : Forked child process 5953
+11-10 15:17:58.827   524   564 I ActivityManager: Start proc 5953:com.bimiboo.drawing/u0a167 for pre-top-activity {com.bimiboo.drawing/com.unity3d.player.UnityPlayerActivity}
+11-10 15:17:58.837  5871  5871 I app_process: System.exit called, status: 0
+11-10 15:17:58.837  5871  5871 I AndroidRuntime: VM exiting with result code 0.
+11-10 15:17:58.854  5953  5953 W bimiboo.drawin: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 15:17:58.856   524   564 W ActivityManager: Slow operation: 73ms so far, now at startProcess: done updating pids map
+11-10 15:17:58.892  1458  5880 W ciiu    : [{0}] Failed to resolve name. status={1}
+11-10 15:17:58.893   391   391 I perfetto: ing_service_impl.cc:758 Configured tracing session 5, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+11-10 15:17:58.895   386   386 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=5)
+11-10 15:17:58.969  5953  5953 I ndk_translation: Initialized NDK translation (aarch64), version 0.2.2
+11-10 15:17:59.161     0     0 W perfetto: enabled ftrace
+11-10 15:17:58.987   386   386 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+11-10 15:17:59.318   379   424 I adbd    : jdwp connection from 5953
+11-10 15:17:59.357  5953  5953 W bimiboo.drawin: JIT profile information will not be recorded: profile file does not exist.
+11-10 15:17:59.372  5953  5953 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+11-10 15:17:59.378  5953  5953 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+11-10 15:17:59.410  5953  5953 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+11-10 15:17:59.425  5953  5953 I FirebaseInitProvider: FirebaseApp initialization successful
+11-10 15:17:59.502  5953  5983 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:141 and remote module com.google.android.gms.measurement.dynamite:13
+11-10 15:17:59.503  5953  5983 I DynamiteModule: Selected local version of com.google.android.gms.measurement.dynamite
+11-10 15:17:59.549  5953  5989 I FA      : App measurement disabled via the manifest
+11-10 15:17:59.549  5953  5989 I FA      : App measurement initialized, version: 119002
+11-10 15:17:59.549  5953  5989 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+11-10 15:17:59.549  5953  5989 I FA      : To enable faster debug mode event logging run:
+11-10 15:17:59.549  5953  5989 I FA      :   adb shell setprop debug.firebase.analytics.app com.bimiboo.drawing
+11-10 15:17:59.608  5953  5992 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+11-10 15:17:59.610  5953  5992 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-10 15:17:59.613  5953  5992 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-10 15:17:59.638   524   605 D CompatibilityChangeReporter: Compat change id reported: 136274596; UID 10167; state: ENABLED
+11-10 15:17:59.720   524   557 W ActivityTaskManager: Current config: {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h659dp 420dpi nrml port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1794) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.75} unchanged for IME proc com.google.android.inputmethod.latin
+11-10 15:17:59.721   524   557 I ActivityTaskManager: Config changes=20000480 {1.0 310mcc260mnc [en_US] ldltr sw411dp w683dp h387dp 420dpi nrml land finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1920, 1080) mAppBounds=Rect(0, 0 - 1794, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.122}
+11-10 15:17:59.763  1458  5819 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+11-10 15:17:59.763   524   557 W ActivityTaskManager: Current config: {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h659dp 420dpi nrml port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1794) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.75} unchanged for IME proc com.google.android.inputmethod.latin
+11-10 15:17:59.763   524   557 I WindowManager: Override config changes=20000480 {1.0 310mcc260mnc [en_US] ldltr sw411dp w683dp h387dp 420dpi nrml land finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1920, 1080) mAppBounds=Rect(0, 0 - 1794, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.122} for displayId=0
+11-10 15:17:59.787   524   557 V ActivityTaskManager: Sending to IME proc com.google.android.inputmethod.latin new config {1.0 310mcc260mnc [en_US] ldltr sw411dp w683dp h387dp 420dpi nrml land finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1920, 1080) mAppBounds=Rect(0, 0 - 1794, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.122}
+11-10 15:17:59.787   524   557 W ActivityTaskManager: Current config: {1.0 310mcc260mnc [en_US] ldltr sw411dp w683dp h387dp 420dpi nrml land finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1920, 1080) mAppBounds=Rect(0, 0 - 1794, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.122} unchanged for IME proc com.google.android.inputmethod.latin
+11-10 15:17:59.789   524   557 V WindowManager: Orientation start waiting for draw, mDrawState=DRAW_PENDING in Window{5ef7119 u0 com.android.systemui.ImageWallpaper}, surfaceController Surface(name=com.android.systemui.ImageWallpaper)/@0x55e6f3a
+11-10 15:17:59.815   723   723 D StatusBar: disable<e i a s b h r c s > disable2<q i n >
+11-10 15:17:59.904   524   557 I InputManager-JNI: Viewport [0] to add: local:8141241408256768, isActive: true
+11-10 15:17:59.914   524   612 I InputReader: Reconfiguring input devices, changes=DISPLAY_INFO | 
+11-10 15:17:59.914   524   612 I InputReader: Touch device 'virtio_input_multi_touch_10' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+11-10 15:17:59.914   524   612 I InputReader: Touch device 'virtio_input_multi_touch_7' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+11-10 15:17:59.914   524   612 I InputReader: Touch device 'virtio_input_multi_touch_11' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+11-10 15:17:59.914   524   612 I InputReader: Touch device 'virtio_input_multi_touch_5' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+11-10 15:17:59.914   524   612 I InputReader: Touch device 'virtio_input_multi_touch_2' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+11-10 15:17:59.914   524   612 I InputReader: Device reconfigured: id=7, name='virtio_input_multi_touch_1', size 1080x1920, orientation 1, mode 1, display id 0
+11-10 15:17:59.914   524   612 I InputReader: Touch device 'virtio_input_multi_touch_6' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+11-10 15:17:59.914   524   612 I InputReader: Touch device 'virtio_input_multi_touch_8' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+11-10 15:17:59.914   524   612 I InputReader: Touch device 'virtio_input_multi_touch_9' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+11-10 15:17:59.914   524   612 I InputReader: Touch device 'virtio_input_multi_touch_3' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+11-10 15:17:59.914   524   612 I InputReader: Touch device 'virtio_input_multi_touch_4' could not query the properties of its associated display.  The device will be inoperable until the display size becomes available.
+11-10 15:17:59.963  1338  1338 W GoogleInputMethodService: GoogleInputMethodService.onConfigurationChanged():1401 onConfigurationChanged() : NewConfig = {1.0 310mcc260mnc [en_US] ldltr sw411dp w683dp h387dp 420dpi nrml land finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1920, 1080) mAppBounds=Rect(0, 0 - 1794, 1080) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_90} s.143}
+11-10 15:17:59.964  1338  1338 W KeyboardModeManager: KeyboardModeManager.reloadOrientationAwareData():457 reloadOrientationAwareData() : orientation = 2
+11-10 15:17:59.965  1338  1338 W KeyboardModeManager: KeyboardModeManager.setInputView():302 setInputView() : inputView = null
+11-10 15:17:59.966  1338  1338 I GoogleInputMethodService: GoogleInputMethodService.initializeKeyboardTheme():1171 Apply keyboard theme: theme_border_stylesheet_googleblue_materiallight_assets:theme_package_metadata_google_blue_light.binarypb_land
+11-10 15:17:59.985  1458  5819 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+11-10 15:18:00.007   723   885 D EglHelper: createEglContext start
+11-10 15:18:00.022   723   885 D EGL_emulation: eglCreateContext: 0x70f1c4b54020: maj 3 min 0 rcv 3
+11-10 15:18:00.022   723   885 D EglHelper: createEglContext done
+11-10 15:18:00.022   723   885 D EglHelper: createEglSurface start
+11-10 15:18:00.024  1338  1338 I Environment: Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:411
+11-10 15:18:00.024  1338  1338 I chatty  : uid=10132(com.google.android.inputmethod.latin) identical 4 lines
+11-10 15:18:00.024  1338  1338 I Environment: Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:411
+11-10 15:18:00.028  1338  1338 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():128 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+11-10 15:18:00.033   723   885 D EglHelper: createEglSurface done
+11-10 15:18:00.045  1338  1338 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+11-10 15:18:00.052   723   723 D StatusBar: disable<e i a s b h r c s > disable2<q i n >
+11-10 15:18:00.071  1338  1338 I Environment: Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:411
+11-10 15:18:00.071  1338  1338 I Environment: Environment.getDeviceMode():694 Get device mode by ui mode:1 and smallestScreenWidthDp:411
+11-10 15:18:00.184   723  1549 D HostConnection: HostConnection::get() New Host Connection established 0x70f1d4b27450, tid 1549
+11-10 15:18:00.192   723  1549 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 15:18:00.193   723  1549 D EGL_emulation: eglCreateContext: 0x70f1c4b3e2e0: maj 3 min 0 rcv 3
+11-10 15:18:00.194   723  1549 D EGL_emulation: eglMakeCurrent: 0x70f1c4b3e2e0: ver 3 0 (tinfo 0x70f164b90ca0) (first time)
+11-10 15:18:00.275  1458  5880 W ciiu    : [{0}] Failed to resolve name. status={1}
+11-10 15:18:00.529   723   723 I OpaEnabledReceiver: Dispatching OPA eligble = false; AGSA = true; OPA enabled = false
+11-10 15:18:00.529   723   723 I OpaLayout: Setting opa enabled to false
+11-10 15:18:00.529   723   723 I OpaLayout: Setting opa enabled to false
+11-10 15:18:00.529   723   723 I Choreographer: Skipped 30 frames!  The application may be doing too much work on its main thread.
+11-10 15:18:00.748   723  1245 I OpenGLRenderer: Davey! duration=714ms; Flags=1, IntendedVsync=247421029809, Vsync=247921029789, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=247921501888, AnimationStart=247921503023, PerformTraversalsStart=247921512394, DrawStart=248086954252, SyncQueued=248087360614, SyncStart=248092118866, IssueDrawCommandsStart=248092225176, SwapBuffers=248107813800, FrameCompleted=248140272405, DequeueBufferDuration=7785258, QueueBufferDuration=205351, GpuCompleted=0, 
+11-10 15:18:00.784   723   723 D KeyguardClockSwitch: Updating clock: 318
+11-10 15:18:01.002  1458  5476 W ChimeraConfigurator: Error syncing flags: qiy: COMMIT_TIMEOUT
+11-10 15:18:01.002  1458  5476 I ChmraDebugLogger: [79] COMMIT_TIMEOUT
+11-10 15:18:01.031  1458  5476 I ChmraDebugLogger: [52] null
+11-10 15:18:01.045  5953  5953 I IL2CPP  : JNI_OnLoad
+11-10 15:18:01.048  1458  5476 I ChimeraConfigService: Scheduling checkin for one-off execution between [3300,43200] seconds from now (1794298681048)
+11-10 15:18:01.049  5953  5953 V Unity   : Context Type: ActivityOrService
+11-10 15:18:01.057  1458  5767 W gle.android.gm: Long monitor contention with owner [com.google.android.gms.chimera.GmsIntentOperationService$ChimeraService-Executor] processing qgf for action com.google.android.chimera.container.REQUESTED_FEATURES_CHANGED (5476) at boolean qgt.a(int, qgo, java.util.List)(:com.google.android.gms@201817023@20.18.17 (040800-311416286):91) waiters=0 in boolean qgt.a(int, qgo, java.util.List) for 15.520s
+11-10 15:18:01.082  1458  5767 I ChmraDebugLogger: [52] null
+11-10 15:18:01.087  1458  5767 W ChimeraConfigService: Retry attempt was throttled.
+11-10 15:18:01.092  1458  5767 I ChimeraConfigService: Scheduling checkin every 43200 seconds, with flex of 1800 seconds
+11-10 15:18:01.109  5953  5986 D HostConnection: HostConnection::get() New Host Connection established 0x70f1d4b1b2d0, tid 5986
+11-10 15:18:01.120  5953  5986 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 15:18:01.123   162   162 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+11-10 15:18:01.125  5953  5986 D EGL_emulation: eglCreateContext: 0x70f1c4b3f360: maj 3 min 0 rcv 3
+11-10 15:18:01.128  5953  5986 D EGL_emulation: eglMakeCurrent: 0x70f1c4b3f360: ver 3 0 (tinfo 0x70f164b73120) (first time)
+11-10 15:18:01.175   162   162 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-10 15:18:01.177  5953  5986 I Gralloc4: mapper 4.x is not supported
+11-10 15:18:01.179  5953  5986 D HostConnection: createUnique: call
+11-10 15:18:01.179  5953  5986 D HostConnection: HostConnection::get() New Host Connection established 0x70f1d4b1c290, tid 5986
+11-10 15:18:01.260  5953  5986 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 15:18:01.390   524   557 D EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+11-10 15:18:01.391   524   562 W system_server: Failed to determine oat file name for dex location /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/base.apk: Dalvik cache directory does not exist
+11-10 15:18:01.421   524   562 D ArtManagerInternalImpl: /data/misc/iorapd/com.bimiboo.drawing/1369/com.unity3d.player.UnityPlayerActivity/compiled_traces/compiled_trace.pb doesn't exist
+11-10 15:18:01.452   524   562 I ActivityTaskManager: Displayed com.bimiboo.drawing/com.unity3d.player.UnityPlayerActivity: +2s626ms
+11-10 15:18:01.602  3153  3239 I PBSessionCacheImpl: Deleted sessionId[13868834948094385] from persistence.
+11-10 15:18:01.661  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:01.689  5953  5993 I Unity   : MemoryManager: Using 'Dynamic Heap' Allocator.
+11-10 15:18:01.764   524  1043 D WifiNl80211Manager: Scan result ready event
+11-10 15:18:01.764   524  1043 D WifiNative: Scan result ready event
+11-10 15:18:02.005  5953  5993 I Unity   : SystemInfo CPU = x86-64, Cores = 1, Memory = 1981mb
+11-10 15:18:02.006  5953  5993 I Unity   : SystemInfo ARM big.LITTLE configuration: 1 big (mask: 0x2), 0 little (mask: 0x0)
+11-10 15:18:02.009  5953  5993 I Unity   : ApplicationInfo 'com.bimiboo.drawing', Version '3.141', Min API Level '29', Target API Level '36'
+11-10 15:18:02.009  5953  5993 I Unity   : Built from '6000.3/staging' branch, Version '6000.3.24f1 (4e7b9b5b6244)', Build type 'Release', Scripting Backend 'il2cpp', CPU 'arm64-v8a', Stripping 'Disabled'
+11-10 15:18:02.013  5953  5993 I Unity   : Device Model 'Google sdk_gphone_x86_64', OS 'Android OS 11 (API 30)'
+11-10 15:18:02.093   524  1043 I ActivityManager: Killing 5528:com.google.android.apps.pixelmigrate/u0a112 (adj 985): empty #17
+11-10 15:18:02.106   286   286 I Zygote  : Process 5528 exited due to signal 9 (Killed)
+11-10 15:18:02.137   524   565 I libprocessgroup: Successfully killed process cgroup uid 10112 pid 5528 in 40ms
+11-10 15:18:02.652  1458  5880 W ciiu    : [{0}] Failed to resolve name. status={1}
+11-10 15:18:02.751  5953  5993 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+11-10 15:18:02.761  5953  5993 I chatty  : uid=10167(com.bimiboo.drawing) identical 14 lines
+11-10 15:18:02.761  5953  5993 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+11-10 15:18:03.056  5953  5993 I Unity   : Company Name: BimiBoo
+11-10 15:18:03.056  5953  5993 I Unity   : Product Name: Drawing
+11-10 15:18:03.086  5953  5993 D HostConnection: HostConnection::get() New Host Connection established 0x70f1d4b1d550, tid 5993
+11-10 15:18:03.091  5953  5993 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 15:18:03.092  5953  5993 E EGL_emulation: eglCreateContext: EGL_BAD_CONFIG: no ES 3.2 support
+11-10 15:18:03.092  5953  5993 E EGL_emulation: tid 5993: eglCreateContext(1696): error 0x3005 (EGL_BAD_CONFIG)
+11-10 15:18:03.093  5953  5993 E EGL_emulation: eglCreateContext: EGL_BAD_CONFIG: no ES 3.1 support
+11-10 15:18:03.093  5953  5993 E EGL_emulation: tid 5993: eglCreateContext(1690): error 0x3005 (EGL_BAD_CONFIG)
+11-10 15:18:03.094  5953  5993 E EGL_emulation: [getAttribValue] Bad attribute idx
+11-10 15:18:03.094  5953  5993 D EGL_emulation: eglGetConfigAttrib: bad attrib 0x1
+11-10 15:18:03.094  5953  5993 E EGL_emulation: tid 5993: eglGetConfigAttrib(1140): error 0x3004 (EGL_BAD_ATTRIBUTE)
+11-10 15:18:03.096  5953  5993 D EGL_emulation: eglCreateContext: 0x70f1c4b42010: maj 3 min 0 rcv 3
+11-10 15:18:03.099  5953  5993 I chatty  : uid=10167(com.bimiboo.drawing) identical 1 line
+11-10 15:18:03.115  5953  5993 D EGL_emulation: eglCreateContext: 0x70f1c4b42010: maj 3 min 0 rcv 3
+11-10 15:18:03.116  5953  5993 D EGL_emulation: eglMakeCurrent: 0x70f1c4b42010: ver 3 0 (tinfo 0x70f164b73330) (first time)
+11-10 15:18:03.199   524   563 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10151; state: DISABLED
+11-10 15:18:03.199   524   564 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10151; state: DISABLED
+11-10 15:18:03.211  3153  3153 I BgTaskExecutorImpl: Starting EXCLUSIVE background task INTERNAL_PERIODIC_TASK_SYNC.
+11-10 15:18:03.226   286   286 D Zygote  : Forked child process 6025
+11-10 15:18:03.228   524   564 I ActivityManager: Start proc 6025:com.google.android.apps.wallpaper/u0a151 for broadcast {com.google.android.apps.wallpaper/com.android.wallpaper.module.DailyLoggingAlarmReceiver}
+11-10 15:18:03.232  6025  6025 W .apps.wallpape: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 15:18:03.240   379   424 I adbd    : jdwp connection from 6025
+11-10 15:18:03.245  3153  3153 I BgTaskExecutorImpl: Starting PERIODIC background task ACTIVITY_LEVEL_TASK.
+11-10 15:18:03.250  3153  3153 I BgTaskExecutorImpl: Starting PERIODIC background task AWARE_TIP_WORKER_PROCESS_TIPS.
+11-10 15:18:03.263  3153  3153 I BgTaskExecutorImpl: Starting PERIODIC background task BACKGROUNDRETRY_CACHE_SWEEP.
+11-10 15:18:03.274  6025  6025 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+11-10 15:18:03.276  6025  6025 I .apps.wallpape: The ClassLoaderContext is a special shared library.
+11-10 15:18:03.279  6025  6025 I .apps.wallpape: The ClassLoaderContext is a special shared library.
+11-10 15:18:03.299  6025  6025 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 15:18:03.305  6025  6025 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 15:18:03.331  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.342  3153  3205 I chatty  : uid=10123(com.google.android.googlequicksearchbox) EventBus0 identical 3 lines
+11-10 15:18:03.342  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.346  3153  3153 I BgTaskExecutorImpl: Starting PERIODIC background task CLEAR_DATA_DETECTOR.
+11-10 15:18:03.361  3153  3153 I BgTaskExecutorImpl: Starting PERIODIC background task CONTACT_AFFINITY_MODEL_CONTACTS_CHANGE_REFRESH.
+11-10 15:18:03.380  6025  6055 W DiskBasedLogger: Disk-based log buffer doesn't exist, so there's nothing to clean up.
+11-10 15:18:03.389  1458  5476 I Vision  : Requesting optional module download of ocr.
+11-10 15:18:03.389  1458  5476 I Vision  : Checking for download completion for 260781 -- ocr
+11-10 15:18:03.399  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.399  3153  3205 I chatty  : uid=10123(com.google.android.googlequicksearchbox) EventBus0 identical 1 line
+11-10 15:18:03.399  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.402  3153  3190 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/growthtracking/shared/GrowthTrackingData.pb.tmp
+11-10 15:18:03.406  3153  3153 I BgTaskExecutorImpl: Starting PERIODIC background task CONTACT_AFFINITY_MODEL_PERIODIC_REFRESH.
+11-10 15:18:03.432  3153  3232 I FirstRunClassifier: First run of com.google.android.googlequicksearchbox on this device detected
+11-10 15:18:03.435   524  1043 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-10 15:18:03.435   524  1043 D PackageManager: Clear ephemeral installer activity
+11-10 15:18:03.447  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.464  3153  3205 I chatty  : uid=10123(com.google.android.googlequicksearchbox) EventBus0 identical 3 lines
+11-10 15:18:03.464  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.468  3153  3153 I BgTaskExecutorImpl: Starting PERIODIC background task FETCH_ADVERTISING_INFO.
+11-10 15:18:03.481  3153  3153 I BgTaskExecutorImpl: Starting PERIODIC background task MDD_CHARGING_TASK.
+11-10 15:18:03.543  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.543  3153  3205 I chatty  : uid=10123(com.google.android.googlequicksearchbox) EventBus0 identical 1 line
+11-10 15:18:03.543  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.548  3153  3153 I BgTaskExecutorImpl: Starting PERIODIC background task MDD_MAINTENANCE_TASK.
+11-10 15:18:03.569   524   589 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-10 15:18:03.569   524   589 I chatty  : uid=1000(system) Binder:524_5 identical 2 lines
+11-10 15:18:03.569   524   589 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-10 15:18:03.585  1160  6067 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+11-10 15:18:03.585  1160  6067 W WakeLock: GCM_HB_ALARM counter does not exist
+11-10 15:18:03.598  5953  5993 I AAudio  : AAudioStreamBuilder_openStream() called ----------------------------------------
+11-10 15:18:03.598  5953  5993 I AudioStreamBuilder: rate   =  24000, channels  = 2, format   = 5, sharing = SH, dir = OUTPUT
+11-10 15:18:03.598  5953  5993 I AudioStreamBuilder: device =      0, sessionId = 0, perfMode = 12, callback: ON with frames = 512
+11-10 15:18:03.598  5953  5993 I AudioStreamBuilder: usage  =      0, contentType = 0, inputPreset = 0, allowedCapturePolicy = 0
+11-10 15:18:03.598  5953  5993 I AudioStreamBuilder: privacy sensitive = false
+11-10 15:18:03.598  5953  5993 D AudioStreamBuilder: build() MMAP not used because sessionId specified.
+11-10 15:18:03.598  5953  5993 D bimiboo.drawin: PlayerBase::PlayerBase()
+11-10 15:18:03.600  5953  5993 D AudioStreamTrack: open(), request notificationFrames = 512, frameCount = 8192
+11-10 15:18:03.605   392   471 W AudioFlinger: createTrack_l(): mismatch between requested flags (00000004) and output flags (00000002)
+11-10 15:18:03.605   392   471 W AudioFlinger: Client adjusted notificationFrames from 512 to 480 for frameCount 8192
+11-10 15:18:03.614   392   471 D AF::TrackHandle: OpPlayAudio: track:56 usage:1 not muted
+11-10 15:18:03.615  5953  5993 D AudioTrack: createTrack_l(28913): AUDIO_OUTPUT_FLAG_FAST denied by server; frameCount 8192 -> 8192
+11-10 15:18:03.615  5953  5993 D AAudioStream: setState(s#1) from 0 to 2
+11-10 15:18:03.615  5953  5993 W AudioStreamTrack: open() flags changed from 0x00000004 to 0x00000000
+11-10 15:18:03.616  5953  5993 W AudioStreamTrack: open() perfMode changed from 12 to 10
+11-10 15:18:03.623  5953  5993 I AAudio  : AAudioStreamBuilder_openStream() returns 0 = AAUDIO_OK for s#1 ----------------
+11-10 15:18:03.654  5953  5993 D AAudio  : AAudioStream_requestStart(s#1) called --------------
+11-10 15:18:03.654  5953  5993 D AAudioStream: setState(s#1) from 2 to 3
+11-10 15:18:03.655   392   471 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+11-10 15:18:03.655   392   471 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+11-10 15:18:03.655  5953  5993 D bimiboo.drawin: PlayerBase::start() from IPlayer
+11-10 15:18:03.655  5953  5993 D AAudio  : AAudioStream_requestStart(s#1) returned 0 ---------
+11-10 15:18:03.657   524  1697 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-10 15:18:03.659  5953  5978 D AudioStreamLegacy: onAudioDeviceUpdate() devId 2 => 2
+11-10 15:18:03.659  5953  5993 D AAudioStream: setState(s#1) from 3 to 4
+11-10 15:18:03.724  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.724  3153  3205 I chatty  : uid=10123(com.google.android.googlequicksearchbox) EventBus0 identical 1 line
+11-10 15:18:03.724  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.727  3153  3153 I BgTaskExecutorImpl: Starting PERIODIC background task MDH_WIPEOUT.
+11-10 15:18:03.743  3153  6047 I LogsBasedTopContactLook: We received a null logged in account name.
+11-10 15:18:03.745  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.745  3153  3205 I chatty  : uid=10123(com.google.android.googlequicksearchbox) EventBus0 identical 1 line
+11-10 15:18:03.745  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.747   392   474 D AudioFlinger: mixer(0x78b36345f040) throttle end: throttle time(34)
+11-10 15:18:03.749  3153  3153 I BgTaskExecutorImpl: Starting PERIODIC background task UPDATE_GSERVICES_CONFIG.
+11-10 15:18:03.750  3153  3221 I GservicesUpdateTask: Updating Gservices keys
+11-10 15:18:03.772  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.772  3153  3205 I chatty  : uid=10123(com.google.android.googlequicksearchbox) EventBus0 identical 1 line
+11-10 15:18:03.772  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.776  3153  3153 I BgTaskExecutorImpl: Starting PERIODIC background task UPDATE_LAUNCHER_SHORTCUT.
+11-10 15:18:03.827  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.827  3153  3205 I chatty  : uid=10123(com.google.android.googlequicksearchbox) EventBus0 identical 1 line
+11-10 15:18:03.827  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.874  3153  6061 D PhFileGroupPop: Failed to add file group 
+11-10 15:18:03.876  3153  6061 I chatty  : uid=10123(com.google.android.googlequicksearchbox) Blocking Thread identical 1 line
+11-10 15:18:03.877  3153  6061 D PhFileGroupPop: Failed to add file group 
+11-10 15:18:03.878  3153  6080 I MDH     : [Storage] Creating database v2
+11-10 15:18:03.878  3153  6080 I MDH     : Creating MDH subscription table.
+11-10 15:18:03.878  3153  6080 I MDH     : Creating MDH wipeout table.
+11-10 15:18:03.879  3153  3209 E MDD     : MDDManager Failed to init shared file metadata.
+11-10 15:18:03.879  3153  6061 D PhFileGroupPop: Failed to add file group 
+11-10 15:18:03.879  3153  6061 I chatty  : uid=10123(com.google.android.googlequicksearchbox) Blocking Thread identical 1 line
+11-10 15:18:03.880  3153  6061 D PhFileGroupPop: Failed to add file group 
+11-10 15:18:03.881  3153  6080 V MDH     : Opening MDH wipeout table.
+11-10 15:18:03.883  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.883  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:03.887  3153  6061 D PhFileGroupPop: Failed to add file group 
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: RuntimeException while executing runnable bq{com.google.android.libraries.mdi.download.i.ax@dc82e10} with executor MoreExecutors.directExecutor()
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.s.b' on a null object reference
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.i.ax.a(SourceFile:3)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.bq.run(SourceFile:7)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.aw.execute(SourceFile:3)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.d.b(SourceFile:73)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.d.a(SourceFile:25)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.bu.a(SourceFile:2)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.i.az.a(SourceFile:29)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.dy.a(SourceFile:128)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.dy.b(SourceFile:93)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.android.apps.gsa.staticplugins.cb.c.a(SourceFile:1)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.android.apps.gsa.tasks.b.c.a(SourceFile:20)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.android.apps.gsa.tasks.b.a.a(Unknown Source:4)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.gsa.l.a.n.a(Unknown Source:2)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.dm.b(SourceFile:7)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.cg.run(SourceFile:11)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.do.run(SourceFile:8)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+11-10 15:18:03.891  3153  6061 E com.google.common.v.a.d: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:03.891  3153  6061 D PhFileGroupPop: Failed to add file group 
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: RuntimeException while executing runnable bq{com.google.android.libraries.mdi.download.i.ax@ccc9b0e} with executor MoreExecutors.directExecutor()
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.s.b' on a null object reference
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.i.ax.a(SourceFile:3)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.bq.run(SourceFile:7)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.aw.execute(SourceFile:3)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.d.b(SourceFile:73)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.d.a(SourceFile:25)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.bu.a(SourceFile:2)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.i.az.a(SourceFile:29)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.dy.a(SourceFile:128)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.dy.b(SourceFile:93)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.android.apps.gsa.staticplugins.cb.c.a(SourceFile:1)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.android.apps.gsa.tasks.b.c.a(SourceFile:20)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.android.apps.gsa.tasks.b.a.a(Unknown Source:4)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.gsa.l.a.n.a(Unknown Source:2)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.dm.b(SourceFile:7)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.cg.run(SourceFile:11)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.do.run(SourceFile:8)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+11-10 15:18:03.893  3153  6061 E com.google.common.v.a.d: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:03.894   386   386 I perfetto: probes_producer.cc:329  Producer stop (id=5)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: RuntimeException while executing runnable bq{com.google.android.libraries.mdi.download.i.ax@3ea1b3c} with executor MoreExecutors.directExecutor()
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.s.b' on a null object reference
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.i.ax.a(SourceFile:3)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.bq.run(SourceFile:7)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.aw.execute(SourceFile:3)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.d.b(SourceFile:73)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.d.a(SourceFile:25)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.bu.a(SourceFile:2)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.i.az.a(SourceFile:29)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.dy.a(SourceFile:128)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.dy.b(SourceFile:93)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.android.apps.gsa.staticplugins.cb.c.a(SourceFile:1)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.android.apps.gsa.tasks.b.c.a(SourceFile:20)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.android.apps.gsa.tasks.b.a.a(Unknown Source:4)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.gsa.l.a.n.a(Unknown Source:2)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.dm.b(SourceFile:7)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.cg.run(SourceFile:11)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.do.run(SourceFile:8)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+11-10 15:18:03.894  3153  6061 E com.google.common.v.a.d: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:03.895   386   386 I perfetto: ftrace_procfs.cc:183    disabled ftrace
+11-10 15:18:03.896   391   391 E libc    : The property "ro.build.fingerprint" has a value with length 92 that is too large for __system_property_get()/__system_property_read(); use __system_property_read_callback() instead.
+11-10 15:18:04.069     0     0 W perfetto: disabled ftrace
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: RuntimeException while executing runnable bq{com.google.android.libraries.mdi.download.i.ax@73b5a1a} with executor MoreExecutors.directExecutor()
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.s.b' on a null object reference
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.i.ax.a(SourceFile:3)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.bq.run(SourceFile:7)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.aw.execute(SourceFile:3)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.d.b(SourceFile:73)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.d.a(SourceFile:25)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.bu.a(SourceFile:2)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.i.az.a(SourceFile:29)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.dy.a(SourceFile:128)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.mdi.download.dy.b(SourceFile:93)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.android.apps.gsa.staticplugins.cb.c.a(SourceFile:1)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.android.apps.gsa.tasks.b.c.a(SourceFile:20)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.android.apps.gsa.tasks.b.a.a(Unknown Source:4)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.android.libraries.gsa.l.a.n.a(Unknown Source:2)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.dm.b(SourceFile:7)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.cg.run(SourceFile:11)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.common.v.a.do.run(SourceFile:8)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+11-10 15:18:03.896  3153  6061 E com.google.common.v.a.d: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:03.900   391   391 I perfetto: ng_service_impl.cc:1948 Tracing session 5 ended, total sessions:0
+11-10 15:18:03.984  3153  3184 I PolicyConfigSyncManager: Refresh account policy.
+11-10 15:18:03.987  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:04.004  3153  3192 I PolicyConfigSyncManager: Refresh account policy.
+11-10 15:18:04.016   404  5961 I iorapd  : Perfetto TraceBuffer saved to file: /data/misc/iorapd/com.bimiboo.drawing/1369/com.unity3d.player.UnityPlayerActivity/raw_traces/1794298684014929739.perfetto_trace.pb
+11-10 15:18:04.410   524  3152 I ActivityManager: Killing 4803:com.google.android.projection.gearhead:shared/u0a118 (adj 985): empty #17
+11-10 15:18:04.431   286   286 I Zygote  : Process 4803 exited due to signal 9 (Killed)
+11-10 15:18:04.604     0     0 I binder  : 524:1697 transaction failed 29189/-22, size 304-0 line 3053
+11-10 15:18:04.441   524  1697 W ActivityManager: Failure disconnecting service com.google.android.projection.gearhead/com.google.android.gearhead.service.SharedService to connection android.os.BinderProxy@8ccc6fb (in com.google.android.projection.gearhead:shared)
+11-10 15:18:04.441   524  1697 W ActivityManager: android.os.DeadObjectException
+11-10 15:18:04.441   524  1697 W ActivityManager: 	at android.os.BinderProxy.transactNative(Native Method)
+11-10 15:18:04.441   524  1697 W ActivityManager: 	at android.os.BinderProxy.transact(BinderProxy.java:540)
+11-10 15:18:04.441   524  1697 W ActivityManager: 	at android.app.IServiceConnection$Stub$Proxy.connected(IServiceConnection.java:129)
+11-10 15:18:04.441   524  1697 W ActivityManager: 	at com.android.server.am.ActiveServices.bringDownServiceLocked(ActiveServices.java:3289)
+11-10 15:18:04.441   524  1697 W ActivityManager: 	at com.android.server.am.ActiveServices.bringDownServiceIfNeededLocked(ActiveServices.java:3270)
+11-10 15:18:04.441   524  1697 W ActivityManager: 	at com.android.server.am.ActiveServices.removeConnectionLocked(ActiveServices.java:3566)
+11-10 15:18:04.441   524  1697 W ActivityManager: 	at com.android.server.am.ActiveServices.killServicesLocked(ActiveServices.java:3947)
+11-10 15:18:04.441   524  1697 W ActivityManager: 	at com.android.server.am.ActivityManagerService.cleanUpApplicationRecordLocked(ActivityManagerService.java:14771)
+11-10 15:18:04.441   524  1697 W ActivityManager: 	at com.android.server.am.ActivityManagerService.handleAppDiedLocked(ActivityManagerService.java:3772)
+11-10 15:18:04.441   524  1697 W ActivityManager: 	at com.android.server.am.ActivityManagerService.appDiedLocked(ActivityManagerService.java:3926)
+11-10 15:18:04.441   524  1697 W ActivityManager: 	at com.android.server.am.ActivityManagerService$AppDeathRecipient.binderDied(ActivityManagerService.java:1601)
+11-10 15:18:04.441   524  1697 W ActivityManager: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:305)
+11-10 15:18:04.441   524  1697 W ActivityManager: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:654)
+11-10 15:18:04.443  4839  4839 I GH.CAR  : onDestroy
+11-10 15:18:04.443  4839  4839 I GH.CAR  : tearDown()
+11-10 15:18:04.443  4839  4839 I GH.DelegateMngCarSvc: tearDown()
+11-10 15:18:04.444  4839  5644 I GH.DelegateICarSupplier: Calling release callback on delegate com.google.android.gms.car.DelegatingCarServiceBinder@56a6fe4
+11-10 15:18:04.444  4839  4839 E ActivityThread: Service com.google.android.apps.auto.carservice.service.impl.GearheadCarStartupService has leaked ServiceConnection bdx@8748cfa that was originally bound here
+11-10 15:18:04.444  4839  4839 E ActivityThread: android.app.ServiceConnectionLeaked: Service com.google.android.apps.auto.carservice.service.impl.GearheadCarStartupService has leaked ServiceConnection bdx@8748cfa that was originally bound here
+11-10 15:18:04.444  4839  4839 E ActivityThread: 	at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:1811)
+11-10 15:18:04.444  4839  4839 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcherCommon(LoadedApk.java:1683)
+11-10 15:18:04.444  4839  4839 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:1662)
+11-10 15:18:04.444  4839  4839 E ActivityThread: 	at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1819)
+11-10 15:18:04.444  4839  4839 E ActivityThread: 	at android.app.ContextImpl.bindService(ContextImpl.java:1749)
+11-10 15:18:04.444  4839  4839 E ActivityThread: 	at android.content.ContextWrapper.bindService(ContextWrapper.java:756)
+11-10 15:18:04.444  4839  4839 E ActivityThread: 	at bdu.run(Unknown Source:1)
+11-10 15:18:04.444  4839  4839 E ActivityThread: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-10 15:18:04.444  4839  4839 E ActivityThread: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-10 15:18:04.444  4839  4839 E ActivityThread: 	at android.os.Looper.loop(Looper.java:223)
+11-10 15:18:04.444  4839  4839 E ActivityThread: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-10 15:18:04.445  4839  5644 I GH.DelegateICarSupplier: Releasing delegate ICar.
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: ICar release task failed.
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: java.lang.IllegalArgumentException: Service not registered: bdx@8748cfa
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at bdv.a(Unknown Source:1)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at kwk.a(SourceFile:3)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at kwl.run(SourceFile:23)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at kwz.execute(SourceFile:3)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at kwh.b(SourceFile:77)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at kwh.a(SourceFile:29)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at kxd.a(SourceFile:3)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at kwl.a(SourceFile:7)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at bdt.a(Unknown Source:3)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at beg.a(SourceFile:29)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at bea.a(Unknown Source:4)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at khf.a(SourceFile:3)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at bed.a(SourceFile:8)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at kxh.run(SourceFile:8)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:04.449  4839  5644 W GH.DelegateICarSupplier: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:04.449  4839  5644 I GH.DelegateICarSupplier: Logging successful delegate lifespan (44250 ms). Acquisition (80 ms). [Generation: 1]
+11-10 15:18:04.456   524   565 I libprocessgroup: Successfully killed process cgroup uid 10118 pid 4803 in 42ms
+11-10 15:18:04.482   524   612 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS | 
+11-10 15:18:04.483   524   554 I RoleManagerService: Granting default roles...
+11-10 15:18:04.486   706   706 V AvrcpMediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-10 15:18:04.487   706   706 D AvrcpMediaPlayerList: Name of package changed: com.google.android.googlequicksearchbox
+11-10 15:18:04.548  3153  3205 W CPDataMediator: Failed to get primary cards from work profile
+11-10 15:18:04.548  3153  3205 W CPDataMediator: com.google.android.enterprise.profileaware.b.c: No profile available
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.g(SourceFile:63)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.e(SourceFile:53)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.c(SourceFile:12)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.a(SourceFile:26)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.aa.a(SourceFile:6)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.f.a(SourceFile:26)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.m.c(SourceFile:17)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.ae.b(SourceFile:4)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.smartspace.ab.a(SourceFile:984)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.smartspace.ab.a(SourceFile:289)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.aq.dp.a.b.a(SourceFile:2)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.service.f.a.j.a(SourceFile:64)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.service.f.a.j.a(SourceFile:39)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.service.f.a.g.run(Unknown Source:1)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.service.f.a.j.a(SourceFile:26)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.service.f.a.h.a(SourceFile:20)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.common.v.a.bq.run(SourceFile:7)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.common.v.a.aw.execute(SourceFile:3)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.common.v.a.d.b(SourceFile:73)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.common.v.a.d.a(SourceFile:25)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.common.v.a.bu.a(SourceFile:2)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.service.f.a.e.run(Unknown Source:12)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.service.f.a.j.a(SourceFile:26)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.service.f.a.j.b(SourceFile:32)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.service.f.a.j.a(SourceFile:23)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.aq.dp.a.k.a(SourceFile:2)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.x.b.b.a(SourceFile:19)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.service.q.a(SourceFile:126)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.service.q.c(SourceFile:95)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.search.core.service.b.run(Unknown Source:1)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.libraries.gsa.l.a.k.run(Unknown Source:2)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.shared.util.c.a.bx.a(SourceFile:2)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.shared.util.c.a.ca.run(SourceFile:1)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.shared.util.c.a.aa.run(Unknown Source:2)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.shared.util.c.a.aj.a(SourceFile:3)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.shared.util.c.a.ag.run(Unknown Source:2)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.shared.util.c.a.e.run(Unknown Source:2)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:04.548  3153  3205 W CPDataMediator: 	at com.google.android.apps.gsa.shared.util.c.a.g.run(SourceFile:8)
+11-10 15:18:04.550  3976  5004 I PermissionControllerServiceImpl: Updating user sensitive for uid 10123
+11-10 15:18:04.561  1160  5938 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.google.android.googlequicksearchbox flg=0x45000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+11-10 15:18:04.575  1160  5938 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-10 15:18:04.583  3153  3205 W SearchServiceCore: Abort, client detached.
+11-10 15:18:04.593  1046  1046 D CarrierSvcBindHelper: No carrier app for: 0
+11-10 15:18:04.597  1160  1177 I .gms.persisten: Background young concurrent copying GC freed 16159(1137KB) AllocSpace objects, 17(728KB) LOS objects, 9% free, 19MB/21MB, paused 13us total 124.802ms
+11-10 15:18:04.623  5903  5924 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-10 15:18:04.624   524   524 I Telecom : DefaultDialerCache: Refreshing default dialer for user 0: now com.android.dialer: DDC.oR@ALs
+11-10 15:18:04.644   964  2495 W QsbUiManager: Doodle is not valid.
+11-10 15:18:04.644   964  2495 W QsbUiManager: Doodle bitmap is not valid.
+11-10 15:18:04.646   524  1159 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10084; state: DISABLED
+11-10 15:18:04.646   524   564 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10084; state: ENABLED
+11-10 15:18:04.651   286   286 D Zygote  : Forked child process 6090
+11-10 15:18:04.651   524   564 I ActivityManager: Start proc 6090:com.android.providers.calendar/u0a84 for content provider {com.android.providers.calendar/com.android.providers.calendar.CalendarProvider2}
+11-10 15:18:04.663  6090  6090 W viders.calenda: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 15:18:04.665   379   424 I adbd    : jdwp connection from 6090
+11-10 15:18:04.681  3153  3205 I NetworkRecognitionRnr: Using pair HTTP connection
+11-10 15:18:04.683  3153  3292 I PairHttpConnection: [Upload] Connected
+11-10 15:18:04.722   964  2605 E NewCardInfo: retrieving bitmap uri=https://www.gstatic.com/weather/conditions/v1/png/drizzle_light_192dp.png gsaRes=
+11-10 15:18:04.724   723   723 E NewCardInfo: retrieving bitmap uri=https://www.gstatic.com/weather/conditions/v1/png/drizzle_light_192dp.png gsaRes=
+11-10 15:18:04.732   723   723 D skia    : --- Failed to create image decoder with message 'unimplemented'
+11-10 15:18:04.733   964  2605 D skia    : --- Failed to create image decoder with message 'unimplemented'
+11-10 15:18:04.733   964  2605 D ProtoStore: no cached data
+11-10 15:18:04.734  3153  3189 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1596)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.database.sqlite.SQLiteConnection.applyBlockGuardPolicy(SQLiteConnection.java:1197)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.database.sqlite.SQLiteConnection.executeForCursorWindow(SQLiteConnection.java:998)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.database.sqlite.SQLiteSession.executeForCursorWindow(SQLiteSession.java:838)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.database.sqlite.SQLiteQuery.fillWindow(SQLiteQuery.java:62)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.database.sqlite.SQLiteCursor.fillWindow(SQLiteCursor.java:153)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.database.sqlite.SQLiteCursor.getCount(SQLiteCursor.java:140)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.database.CursorToBulkCursorAdaptor.getBulkCursorDescriptor(CursorToBulkCursorAdaptor.java:161)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:116)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.os.Binder.execTransactInternal(Binder.java:1154)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.os.Binder.execTransact(Binder.java:1123)
+11-10 15:18:04.734  3153  3189 D StrictMode: # via Binder call with stack:
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.os.StrictMode.readAndHandleBinderCallViolations(StrictMode.java:2358)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:2318)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.content.ContentProviderProxy.query(ContentProviderNative.java:472)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1183)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1115)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1071)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at com.google.android.h.b.a(SourceFile:1)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at com.google.android.apps.gsa.search.core.google.az.a(SourceFile:6)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at com.google.android.apps.gsa.search.core.google.az.d(SourceFile:2)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at com.google.android.apps.gsa.search.core.google.bj.a(SourceFile:6)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at com.google.android.apps.gsa.search.core.google.cb.a(SourceFile:215)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at com.google.android.apps.gsa.search.core.google.cb.a(SourceFile:199)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at com.google.android.apps.gsa.search.core.google.cb.c(SourceFile:192)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at com.google.android.apps.gsa.staticplugins.i.e.a(SourceFile:23)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at com.google.android.apps.gsa.staticplugins.i.b.b.a(Unknown Source:1)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at com.google.android.libraries.gsa.l.a.m.call(Unknown Source:2)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+11-10 15:18:04.734  3153  3189 D StrictMode: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:04.738  6090  6090 I viders.calenda: The ClassLoaderContext is a special shared library.
+11-10 15:18:04.757   524  1882 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10116; state: DISABLED
+11-10 15:18:04.757   524   564 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10116; state: ENABLED
+11-10 15:18:04.763   286   286 D Zygote  : Forked child process 6109
+11-10 15:18:04.765  6090  6090 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 15:18:04.766   524   564 I ActivityManager: Start proc 6109:com.google.android.partnersetup/u0a116 for content provider {com.google.android.partnersetup/com.google.android.partnersetup.RlzAppProvider}
+11-10 15:18:04.765  6090  6090 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 15:18:04.783  6109  6109 W id.partnersetu: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 15:18:04.790   379   424 I adbd    : jdwp connection from 6109
+11-10 15:18:04.796  6090  6090 I CalendarProvider2: Created com.android.providers.calendar.CalendarAlarmManager@f24f156(com.android.providers.calendar.CalendarProvider2@2c725d7)
+11-10 15:18:04.811  6109  6109 I id.partnersetu: The ClassLoaderContext is a special shared library.
+11-10 15:18:04.814  6109  6109 I id.partnersetu: The ClassLoaderContext is a special shared library.
+11-10 15:18:04.815  6109  6109 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/priv-app/PartnerSetupPrebuilt/lib/x86_64:/product/lib64:/system/product/lib64
+11-10 15:18:04.821  6109  6109 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 15:18:04.822  6109  6109 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 15:18:04.957   524   524 W system_server: Long monitor contention with owner android.bg (562) at boolean com.android.server.usage.AppStandbyController.isCarrierApp(java.lang.String)(AppStandbyController.java:1571) waiters=0 in int com.android.server.usage.AppStandbyController.getAppStandbyBucket(java.lang.String, int, long, boolean) for 157ms
+11-10 15:18:04.957   524   524 W Looper  : Slow dispatch took 158ms main h=com.android.server.job.controllers.QuotaController$QcHandler c=null m=3
+11-10 15:18:04.957   524   554 W Looper  : Slow dispatch took 158ms android.fg h=com.android.server.AppStateTracker$MyHandler c=null m=0
+11-10 15:18:05.003  3153  3192 W CPDataMediator: Failed to get primary cards from work profile
+11-10 15:18:05.003  3153  3192 W CPDataMediator: com.google.android.enterprise.profileaware.b.c: No profile available
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.g(SourceFile:63)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.e(SourceFile:53)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.c(SourceFile:12)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.a(SourceFile:26)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.aa.a(SourceFile:6)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.f.a(SourceFile:26)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.m.a(SourceFile:26)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.ae.c(SourceFile:6)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.p.a(SourceFile:5)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.k.n.a(Unknown Source:1)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.android.libraries.gsa.l.a.p.a(Unknown Source:2)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.common.v.a.f.a(SourceFile:3)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.common.v.a.h.run(SourceFile:21)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.common.v.a.co.run(SourceFile:1)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+11-10 15:18:05.003  3153  3192 W CPDataMediator: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:05.035   964  2605 D ProtoStore: deleting smartspace_current
+11-10 15:18:05.036   964  2605 D skia    : --- Failed to create image decoder with message 'unimplemented'
+11-10 15:18:05.036   964  2605 D ProtoStore: no cached data
+11-10 15:18:05.832  1458  5767 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+11-10 15:18:05.855  1458  5767 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+11-10 15:18:05.876  1458  5767 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms [CONTEXT service_id=21 ]
+11-10 15:18:05.882  1458  5767 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication [CONTEXT service_id=21 ]
+11-10 15:18:06.158  5953  5993 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+11-10 15:18:06.159  1458  5880 W ciiu    : [{0}] Failed to resolve name. status={1}
+11-10 15:18:06.459  3153  3153 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task DOODLE_SCHEDULE_SYNC_TASK.
+11-10 15:18:06.568   524  1882 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-10 15:18:06.587  1338  1397 I PeriodicStatsRunner: PeriodicStatsRunner.call():180 call()
+11-10 15:18:06.587  1338  1397 I PeriodicStatsRunner: PeriodicStatsRunner.call():184 No submit PeriodicStats since input started.
+11-10 15:18:06.619  5953  5993 I IL2CPP  : Locale en-US
+11-10 15:18:06.723  5953  5993 I Unity   : [AspectRatioLock] on, supported aspect range 1.333..2.170
+11-10 15:18:06.723  5953  5993 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-10 15:18:06.723  5953  5993 I Unity   : BimiBoo.Structure.AspectRatioLock:LoadSettings(Boolean)
+11-10 15:18:06.723  5953  5993 I Unity   : BimiBoo.Structure.ScreenMetrics:InitializeData()
+11-10 15:18:06.723  5953  5993 I Unity   : 
+11-10 15:18:06.754  5953  5993 I Unity   : [ScreenMetrics] initial 1920x1080 ratio=1.778 layout=Phone
+11-10 15:18:06.754  5953  5993 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-10 15:18:06.754  5953  5993 I Unity   : BimiBoo.Structure.ScreenMetrics:InitializeData()
+11-10 15:18:06.754  5953  5993 I Unity   : 
+11-10 15:18:06.761  5953  5993 I Unity   : [SAFE AREA] INITIALIZED True (x:0.00, y:0.00, width:1920.00, height:1080.00)
+11-10 15:18:06.761  5953  5993 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-10 15:18:06.761  5953  5993 I Unity   : BimiBoo.SafeArea.SafeAreaService:CacheSafeArea()
+11-10 15:18:06.761  5953  5993 I Unity   : 
+11-10 15:18:07.063  5953  5993 I Unity   : [Region] detecting the region for real
+11-10 15:18:07.063  5953  5993 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-10 15:18:07.063  5953  5993 I Unity   : BimiBoo.UserRegions.MonoUserRegionService:CreateService()
+11-10 15:18:07.063  5953  5993 I Unity   : BimiBoo.UserRegions.MonoUserRegionService:GetOrCreateInstance()
+11-10 15:18:07.063  5953  5993 I Unity   : BimiBoo.MonoSingletone.MonoBehaviourSingleton`1:Awake()
+11-10 15:18:07.063  5953  5993 I Unity   : UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+11-10 15:18:07.063  5953  5993 I Unity   : UnityEngine.GameObject:AddComponent()
+11-10 15:18:07.063  5953  5993 I Unity   : BimiBoo.MonoSingletone.MonoBehaviourSingleton`1:get_Instance()
+11-10 15:18:07.063  5953  5993 I Unity   : BimiBoo.Utils.<IsRussiaAsync>d__4:MoveNext()
+11-10 15:18:07.063  5953  5993 I Unity   : cj:.ctor()
+11-10 15:18:07.063  5953  5993 I Unity   : BimiBoo.Utils.CloudDiagnosticsRegionGate:IsRussiaAsync()
+11-10 15:18:07.063  5953  5993 I Unity   : BimiBoo.Utils.<ApplyAsync>d__3:MoveNext()
+11-10 15:18:07.063  5953  5993 I Unity   : Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder:Start(TStateMachine&)
+11-10 15:18:07.063  5953  5993 I Unity   : BimiBoo.Utils.CloudDiagnosticsRegionGate:ApplyAsync()
+11-10 15:18:07.063  5953  5993 I Unity   : BimiBoo.Utils.CloudDiagnosticsRegionGate:Bootstrap()
+11-10 15:18:07.063  5953  5993 I Unity   : 
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: Could not get EndOfData, throwing '65545'
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: com.google.android.apps.gsa.shared.o.d: Error code: 262219
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.android.libraries.gsa.e.a.c.r.a(SourceFile:47)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.android.libraries.gsa.e.a.c.r.a(SourceFile:52)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.android.libraries.gsa.e.a.c.n.a(Unknown Source:1)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.f.a(SourceFile:3)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.h.run(SourceFile:21)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.aw.execute(SourceFile:3)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.d.b(SourceFile:73)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.d.a(SourceFile:72)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.d.a(SourceFile:175)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.bt.run(SourceFile:2)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.aw.execute(SourceFile:3)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.d.b(SourceFile:73)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.d.a(SourceFile:72)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.d.b(SourceFile:167)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.c.run(SourceFile:25)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.aw.execute(SourceFile:3)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.d.b(SourceFile:73)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.d.a(SourceFile:72)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.d.a(SourceFile:175)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.android.apps.gsa.shared.util.c.y.run(Unknown Source:1)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.aw.execute(SourceFile:3)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.az.b(SourceFile:13)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.az.a(SourceFile:11)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.common.v.a.ci.done(SourceFile:6)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at java.util.concurrent.FutureTask.set(FutureTask.java:234)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at java.util.concurrent.FutureTask.run(FutureTask.java:274)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+11-10 15:18:07.064  3153  3292 W PairHttpConnection: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: #onNonFatalError: com.google.android.apps.gsa.shared.speech.b.j: errorCode: 65572, engine: 2
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: com.google.android.apps.gsa.shared.util.b.e: ACS.ResponseHandler: #onNonFatalError: com.google.android.apps.gsa.shared.speech.b.j: errorCode: 65572, engine: 2
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.b.f.a(SourceFile:17)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.b.f.f(SourceFile:11)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.staticplugins.g.ak.a(SourceFile:3)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.staticplugins.do.a.f.a(SourceFile:9)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.s3.s.d(SourceFile:40)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.s3.r.run(SourceFile:8)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.e.run(Unknown Source:2)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(SourceFile:1)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(SourceFile:1)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:07.065  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.g.run(SourceFile:8)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: #onNonFatalError: com.google.android.apps.gsa.shared.speech.b.n: errorCode: 65561, engine: 2
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: com.google.android.apps.gsa.shared.util.b.e: ACS.ResponseHandler: #onNonFatalError: com.google.android.apps.gsa.shared.speech.b.n: errorCode: 65561, engine: 2
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.b.f.a(SourceFile:17)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.b.f.f(SourceFile:11)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.staticplugins.g.ak.a(SourceFile:3)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.staticplugins.do.a.f.b(SourceFile:4)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.s3.p.a(SourceFile:20)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.bw.g.a.f.a(SourceFile:10)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.speech.l.a.g.a(SourceFile:12)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.speech.l.a.g.a(SourceFile:33)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.speech.l.a.g.a(SourceFile:45)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.s3.q.d(SourceFile:35)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.s3.r.run(SourceFile:8)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.e.run(Unknown Source:2)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(SourceFile:1)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(SourceFile:1)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:07.065  3153  3292 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.g.run(SourceFile:8)
+11-10 15:18:07.065  3153  3292 I NetworkRecognitionRnr: Using pair HTTP connection
+11-10 15:18:07.066  3153  3210 I PairHttpConnection: [Upload] Connected
+11-10 15:18:07.099  5953  5993 I TetheringManager: registerTetheringEventCallback:com.bimiboo.drawing
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: #onNonFatalError: com.google.android.apps.gsa.shared.speech.b.j: errorCode: 65572, engine: 2
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: com.google.android.apps.gsa.shared.util.b.e: ACS.ResponseHandler: #onNonFatalError: com.google.android.apps.gsa.shared.speech.b.j: errorCode: 65572, engine: 2
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.b.f.a(SourceFile:17)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.b.f.f(SourceFile:11)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.staticplugins.g.ak.a(SourceFile:3)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.staticplugins.do.a.f.a(SourceFile:9)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.s3.s.d(SourceFile:40)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.s3.r.run(SourceFile:8)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.e.run(Unknown Source:2)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(SourceFile:1)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(SourceFile:1)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:07.104  3153  3239 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.g.run(SourceFile:8)
+11-10 15:18:07.106  3153  3193 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1596)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.database.sqlite.SQLiteConnection.applyBlockGuardPolicy(SQLiteConnection.java:1197)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.database.sqlite.SQLiteConnection.executeForCursorWindow(SQLiteConnection.java:998)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.database.sqlite.SQLiteSession.executeForCursorWindow(SQLiteSession.java:838)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.database.sqlite.SQLiteQuery.fillWindow(SQLiteQuery.java:62)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.database.sqlite.SQLiteCursor.fillWindow(SQLiteCursor.java:153)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.database.sqlite.SQLiteCursor.getCount(SQLiteCursor.java:140)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.database.CursorToBulkCursorAdaptor.getBulkCursorDescriptor(CursorToBulkCursorAdaptor.java:161)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:116)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.os.Binder.execTransactInternal(Binder.java:1154)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.os.Binder.execTransact(Binder.java:1123)
+11-10 15:18:07.106  3153  3193 D StrictMode: # via Binder call with stack:
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.os.StrictMode.readAndHandleBinderCallViolations(StrictMode.java:2358)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:2318)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.content.ContentProviderProxy.query(ContentProviderNative.java:472)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1183)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1115)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1071)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at com.google.android.h.b.a(SourceFile:1)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at com.google.android.apps.gsa.search.core.google.az.a(SourceFile:6)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at com.google.android.apps.gsa.search.core.google.az.d(SourceFile:2)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at com.google.android.apps.gsa.search.core.google.bj.a(SourceFile:6)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at com.google.android.apps.gsa.search.core.google.cb.a(SourceFile:215)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at com.google.android.apps.gsa.search.core.google.cb.a(SourceFile:199)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at com.google.android.apps.gsa.search.core.google.cb.c(SourceFile:192)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at com.google.android.apps.gsa.staticplugins.i.e.a(SourceFile:23)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at com.google.android.apps.gsa.staticplugins.i.b.b.a(Unknown Source:1)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at com.google.android.libraries.gsa.l.a.m.call(Unknown Source:2)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+11-10 15:18:07.106  3153  3193 D StrictMode: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:07.112   524  1882 D ConnectivityService: requestNetwork for uid/pid:10167/5953 NetworkRequest [ TRACK_DEFAULT id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10167 AdministratorUids: [] RequestorUid: 10167 RequestorPackageName: com.bimiboo.drawing] ]
+11-10 15:18:07.113   524   664 D ConnectivityService: NetReassign [no changes]
+11-10 15:18:07.114   524   660 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10167 AdministratorUids: [] RequestorUid: 10167 RequestorPackageName: com.bimiboo.drawing] ] with score 0 and providerId 0
+11-10 15:18:07.114   524   660 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10167 AdministratorUids: [] RequestorUid: 10167 RequestorPackageName: com.bimiboo.drawing] ] with score 0 and providerId 0
+11-10 15:18:07.114  1046  1046 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10167 AdministratorUids: [] RequestorUid: 10167 RequestorPackageName: com.bimiboo.drawing] ] with score 0 and providerId 0
+11-10 15:18:07.122  5953  5993 W Unity   : [Region] the device has no network - nothing can be asked this run
+11-10 15:18:07.122  5953  5993 W Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-10 15:18:07.122  5953  5993 W Unity   : BimiBoo.UserRegions.<EvaluateAsync>d__30:MoveNext()
+11-10 15:18:07.122  5953  5993 W Unity   : cj:.ctor()
+11-10 15:18:07.122  5953  5993 W Unity   : BimiBoo.UserRegions.UserRegionService:EvaluateAsync(CancellationToken)
+11-10 15:18:07.122  5953  5993 W Unity   : BimiBoo.UserRegions.<RunEvaluationAsync>d__25:MoveNext()
+11-10 15:18:07.122  5953  5993 W Unity   : Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder:Start(TStateMachine&)
+11-10 15:18:07.122  5953  5993 W Unity   : BimiBoo.UserRegions.UserRegionService:RunEvaluationAsync(UniTaskCompletionSource`1)
+11-10 15:18:07.122  5953  5993 W Unity   : BimiBoo.UserRegions.UserRegionService:ShareEvaluationAsync(CancellationToken)
+11-10 15:18:07.122  5953  5993 W Unity   : BimiBoo.UserRegions.<EnsureDetectedAsync>d__28:MoveNext()
+11-10 15:18:07.122  5953  5993 W Unity   : cj:.ctor()
+11-10 15:18:07.122  5953  5993 W Unity   : BimiBoo.UserRegions.UserRegionService:EnsureDetectedAsync(CancellationToken)
+11-10 15:18:07.122  5953  5993 W Unity   : BimiBoo.Utils.<IsRussiaAsync>d__4:MoveNext()
+11-10 15:18:07.122  5953  5993 W Unity   : cj:.ctor()
+11-10 15:18:07.122  5953  5993 W Unity   : BimiBoo.Utils.CloudDiagnosticsRegionGate:IsRussiaAsync()
+11-10 15:18:07.122  5953  5993 W Unity   : BimiBoo.Utils.<ApplyAsync>d__3:MoveNext()
+11-10 15:18:07.122  5953  5993 W Unity   : Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder:Start(TStateMachine&)
+11-10 15:18:07.122  5953  5993 W Unity   : BimiBoo.Utils.CloudDiagnosticsRegionGat
+11-10 15:18:07.123  1046  1046 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+11-10 15:18:07.124  1046  1046 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+11-10 15:18:07.125   723   723 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+11-10 15:18:07.127   723   723 V KeyguardUpdateMonitor: SubInfo:{id=1 iccId=89014103211118510720 simSlotIndex=0 carrierId=1 displayName=T-Mobile carrierName=T-Mobile nameSource=3 iconTint=-16746133 number=+15555215554 dataRoaming=0 iconBitmap=android.graphics.Bitmap@8398984 mcc=310 mnc=260 countryIso=us isEmbedded=false nativeAccessRules=null cardString=89014103211118510720 cardId=-1 isOpportunistic=false groupUUID=null isGroupDisabled=false profileClass=-1 ehplmns=null hplmns=null subscriptionType=0 groupOwner=null carrierConfigAccessRules=null areUiccApplicationsEnabled=true}
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: Could not get EndOfData, throwing '65545'
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: com.google.android.apps.gsa.shared.o.d: Error code: 262219
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.android.libraries.gsa.e.a.c.r.a(SourceFile:47)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.android.libraries.gsa.e.a.c.r.a(SourceFile:52)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.android.libraries.gsa.e.a.c.k.a(Unknown Source:1)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.f.a(SourceFile:3)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.h.run(SourceFile:21)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.aw.execute(SourceFile:3)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.d.b(SourceFile:73)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.d.a(SourceFile:72)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.d.a(SourceFile:175)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.bt.run(SourceFile:2)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.aw.execute(SourceFile:3)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.d.b(SourceFile:73)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.d.a(SourceFile:72)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.d.b(SourceFile:167)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.c.run(SourceFile:25)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.aw.execute(SourceFile:3)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.d.b(SourceFile:73)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.d.a(SourceFile:72)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.d.a(SourceFile:175)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.android.apps.gsa.shared.util.c.y.run(Unknown Source:1)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.aw.execute(SourceFile:3)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.az.b(SourceFile:13)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.az.a(SourceFile:11)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.common.v.a.ci.done(SourceFile:6)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at java.util.concurrent.FutureTask.set(FutureTask.java:234)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at java.util.concurrent.FutureTask.run(FutureTask.java:274)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+11-10 15:18:07.176  3153  3210 W PairHttpConnection: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: #onFatalError: com.google.android.apps.gsa.shared.speech.b.p: errorCode: 65545, engine: 2
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: com.google.android.apps.gsa.shared.util.b.e: ACS.ResponseHandler: #onFatalError: com.google.android.apps.gsa.shared.speech.b.p: errorCode: 65545, engine: 2
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.b.f.a(SourceFile:17)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.b.f.f(SourceFile:11)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.staticplugins.g.ak.b(SourceFile:1)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.staticplugins.do.a.f.b(SourceFile:7)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.s3.p.a(SourceFile:20)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.bw.g.a.f.a(SourceFile:10)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.speech.l.a.g.a(SourceFile:12)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.speech.l.a.g.a(SourceFile:33)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.speech.l.a.g.a(SourceFile:45)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.s3.q.d(SourceFile:35)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.s3.r.run(SourceFile:8)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.e.run(Unknown Source:2)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(SourceFile:1)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(SourceFile:1)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at java.lang.Thread.run(Thread.java:923)
+11-10 15:18:07.176  3153  3210 E ACS.ResponseHandler: 	at com.google.android.apps.gsa.shared.util.c.a.g.run(SourceFile:8)
+11-10 15:18:07.606  5953  5993 E ndk_translation: Undefined instruction 0xd50320bf at 0x000070ece85bddf0
+11-10 15:18:07.632   524   556 I DropBoxManagerService: add tag=system_server_strictmode isTagEnabled=true flags=0x2
+11-10 15:18:07.641  5953  5993 E CRASH   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-10 15:18:07.641  5953  5993 E CRASH   : Version '6000.3.24f1 (4e7b9b5b6244)', Build type 'Release', Scripting Backend 'il2cpp', CPU 'arm64-v8a', Stripping 'Disabled'
+11-10 15:18:07.641  5953  5993 E libc    : The property "ro.build.fingerprint" has a value with length 92 that is too large for __system_property_get()/__system_property_read(); use __system_property_read_callback() instead.
+11-10 15:18:07.642  5953  5993 E CRASH   : Build fingerprint: 'Must use __system_property_read_callback() to read'
+11-10 15:18:07.642  5953  5993 E CRASH   : Revision: '0'
+11-10 15:18:07.642  5953  5993 E CRASH   : ABI: 'arm64'
+11-10 15:18:07.655  5953  5993 E CRASH   : Timestamp: 2026-11-10 15:18:07.643054520+0700
+11-10 15:18:07.656  5953  5993 E CRASH   : pid: 5953, tid: 5993, name: UnityMain  >>> com.bimiboo.drawing <<<
+11-10 15:18:07.656  5953  5993 E CRASH   : uid: 10167
+11-10 15:18:07.656  5953  5993 E CRASH   : signal 4 (SIGILL), code -6 (SI_TKILL from pid -396632592, uid 28908), fault addr --------
+11-10 15:18:07.659  5953  5993 E CRASH   :     x0  0000000000000001  x1  000070ec900107c8  x2  000000000006da27  x3  000070ec503e6660
+11-10 15:18:07.659  5953  5993 E CRASH   :     x4  000070ece3ac7e68  x5  000070ec503e6660  x6  000000000000009c  x7  00000000000000a3
+11-10 15:18:07.659  5953  5993 E CRASH   :     x8  00000000ffffff39  x9  0000000000000000  x10 0000000000000001  x11 000000000000000f
+11-10 15:18:07.659  5953  5993 E CRASH   :     x12 0000000000000001  x13 000070f2b4b5e0f0  x14 0000000000004b14  x15 0000000000000000
+11-10 15:18:07.660  5953  5993 E CRASH   :     x16 000070ece99bf808  x17 000070ecebea4aa4  x18 0000000000000008  x19 000070ec900107c8
+11-10 15:18:07.660  5953  5993 E CRASH   :     x20 000070ece9cc6cf0  x21 00000000000000c8  x22 000070ec9000fde0  x23 0000000000c139a2
+11-10 15:18:07.660  5953  5993 E CRASH   :     x24 0000000000c139a2  x25 000000000006da27  x26 00000000000001b3  x27 000070ecc00c68c0
+11-10 15:18:07.660  5953  5993 E CRASH   :     x28 0000000000000000  x29 0000000000000000
+11-10 15:18:07.660  5953  5993 E CRASH   :     lr  000070ece85bdda8  sp  000070ece3ac7de0  pc  000070ece85bddf0  pst 0000000000000000
+11-10 15:18:07.661  5953  5993 E CRASH   : 
+11-10 15:18:07.661  5953  5993 E CRASH   : backtrace:
+11-10 15:18:07.662  5953  5993 E CRASH   :       #00 pc 000000000073cdf0  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.662  5953  5993 E CRASH   :       #01 pc 00000000009b8b58  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.662  5953  5993 E CRASH   :       #02 pc 00000000009b7f8c  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.662  5953  5993 E CRASH   :       #03 pc 00000000009b8a08  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.662  5953  5993 E CRASH   :       #04 pc 00000000009b8434  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.662  5953  5993 E CRASH   :       #05 pc 00000000009b79c0  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.662  5953  5993 E CRASH   :       #06 pc 00000000009b26ac  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.662  5953  5993 E CRASH   :       #07 pc 00000000009b24a4  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.663  5953  5993 E CRASH   :       #08 pc 00000000009b1498  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.663  5953  5993 E CRASH   :       #09 pc 00000000009be4e4  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.663  5953  5993 E CRASH   :       #10 pc 00000000009aec90  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.663  5953  5993 E CRASH   :       #11 pc 0000000000806c3c  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.663  5953  5993 E CRASH   :       #12 pc 00000000009387e4  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.663  5953  5993 E CRASH   :       #13 pc 0000000000937c24  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.663  5953  5993 E CRASH   :       #14 pc 0000000000a99764  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.663  5953  5993 E CRASH   :       #15 pc 000000000088d258  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.663  5953  5993 E CRASH   :       #16 pc 0000000000a8eb58  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.663  5953  5993 E CRASH   :       #17 pc 0000000000a84674  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.664  5953  5993 E CRASH   :       #18 pc 0000000000a83b1c  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.664  5953  5993 E CRASH   :       #19 pc 0000000000a83914  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.664  5953  5993 E CRASH   :       #20 pc 0000000000a83e20  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.664  5953  5993 E CRASH   :       #21 pc 00000000008241d8  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.664  5953  5993 E CRASH   :       #22 pc 0000000000a07fa4  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.664  5953  5993 E CRASH   :       #23 pc 000000000070ee8c  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.664  5953  5993 E CRASH   :       #24 pc 0000000002708bfc  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libil2cpp.so (BuildId: db9ce31c58dc2cdc520ad47306fba22562ec8b4c)
+11-10 15:18:07.664  5953  5993 E CRASH   :       #25 pc 00000000019fa43c  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libil2cpp.so (BuildId: db9ce31c58dc2cdc520ad47306fba22562ec8b4c)
+11-10 15:18:07.664  5953  5993 E CRASH   :       #26 pc 0000000001caa678  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libil2cpp.so (BuildId: db9ce31c58dc2cdc520ad47306fba22562ec8b4c)
+11-10 15:18:07.664  5953  5993 E CRASH   :       #27 pc 0000000001ca6ddc  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libil2cpp.so (BuildId: db9ce31c58dc2cdc520ad47306fba22562ec8b4c)
+11-10 15:18:07.665  5953  5993 E CRASH   :       #28 pc 0000000001456764  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libil2cpp.so (BuildId: db9ce31c58dc2cdc520ad47306fba22562ec8b4c)
+11-10 15:18:07.665  5953  5993 E CRASH   :       #29 pc 00000000014566b0  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libil2cpp.so (BuildId: db9ce31c58dc2cdc520ad47306fba22562ec8b4c)
+11-10 15:18:07.665  5953  5993 E CRASH   :       #30 pc 0000000000a2aa78  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.665  5953  5993 E CRASH   :       #31 pc 0000000000a3ddec  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.665  5953  5993 E CRASH   :       #32 pc 0000000000924bd8  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.665  5953  5993 E CRASH   :       #33 pc 0000000000924b2c  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.665  5953  5993 E CRASH   :       #34 pc 0000000000924498  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.665  5953  5993 E CRASH   :       #35 pc 000000000092a61c  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.665  5953  5993 E CRASH   :       #36 pc 000000000092a558  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.665  5953  5993 E CRASH   :       #37 pc 000000000092a30c  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.666  5953  5993 E CRASH   :       #38 pc 000000000092a324  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.666  5953  5993 E CRASH   :       #39 pc 000000000092a238  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.666  5953  5993 E CRASH   :       #40 pc 000000000092adb4  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.666  5953  5993 E CRASH   :       #41 pc 000000000092b68c  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.666  5953  5993 E CRASH   :       #42 pc 00000000009346e4  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.666  5953  5993 E CRASH   :       #43 pc 000000000091d27c  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.666  5953  5993 E CRASH   :       #44 pc 000000000091d3e0  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.666  5953  5993 E CRASH   :       #45 pc 0000000000acd808  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.666  5953  5993 E CRASH   :       #46 pc 0000000000acea64  /data/app/~~UR0X8RWiZoiu9fA-WxB-gQ==/com.bimiboo.drawing-T1m9NEGSxOs5yQvisdRyNQ==/lib/arm64/libunity.so (BuildId: 3038fe1a67818bf2161acffb57c852e83e8e3404)
+11-10 15:18:07.667  5953  5993 E CRASH   :       #47 pc 0000000000001018  /system/lib64/arm64/libnative_bridge_vdso.so (BuildId: 597ccc47299371402eb0987d3e9569e5)
+11-10 15:18:08.658  5953  5993 E CRASH   : Tombstone written to: /storage/emulated/0/Android/data/com.bimiboo.drawing/files/tombstone_00
+11-10 15:18:08.659  5953  5993 E CRASH   : Forwarding signal 4
+--------- beginning of crash
+11-10 15:18:08.659  5953  5993 F libc    : Fatal signal 4 (SIGILL), code -6 (SI_TKILL from pid -396632592, uid 28908) in tid 5993 (UnityMain), pid 5953 (bimiboo.drawing)
+11-10 15:18:08.710  6140  6140 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdTombstone
+11-10 15:18:08.711   279   279 I tombstoned: received crash request for pid 5993
+11-10 15:18:08.711  6140  6140 I crash_dump64: performing dump of process 5953 (target tid = 5993)
+11-10 15:18:08.718  6140  6140 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-10 15:18:08.718  6140  6140 F DEBUG   : Build fingerprint: 'google/sdk_gphone_x86_64/generic_x86_64_arm64:11/RSR1.240422.006/12134477:userdebug/dev-keys'
+11-10 15:18:08.718  6140  6140 F DEBUG   : Revision: '0'
+11-10 15:18:08.718  6140  6140 F DEBUG   : ABI: 'x86_64'
+11-10 15:18:08.718  6140  6140 F DEBUG   : Timestamp: 2026-11-10 15:18:08+0700
+11-10 15:18:08.718  6140  6140 F DEBUG   : pid: 5953, tid: 5993, name: UnityMain  >>> com.bimiboo.drawing <<<
+11-10 15:18:08.718  6140  6140 F DEBUG   : uid: 10167
+11-10 15:18:08.718  6140  6140 F DEBUG   : signal 4 (SIGILL), code -6 (SI_TKILL from pid -396632592, uid 28908), fault addr --------
+11-10 15:18:08.718  6140  6140 F DEBUG   :     rax 0000000000000000  rbx 0000000000000000  rcx 0000000000000000  rdx 0000000000000000
+11-10 15:18:08.718  6140  6140 F DEBUG   :     r8  0000000000000000  r9  0000000000000000  r10 0000000000000000  r11 0000000000000000
+11-10 15:18:08.718  6140  6140 F DEBUG   :     r12 0000000000000000  r13 0000000000000000  r14 0000000000000000  r15 0000000000000000
+11-10 15:18:08.719  6140  6140 F DEBUG   :     rdi 0000000000000000  rsi 0000000000000000
+11-10 15:18:08.719  6140  6140 F DEBUG   :     rbp 0000000000000000  rsp 0000000000000000  rip 0000000000000000
+11-10 15:18:08.719  6140  6140 F DEBUG   : backtrace:
+11-10 15:18:08.719  6140  6140 F DEBUG   :       #00 pc 0000000000000000  <unknown>
+11-10 15:18:08.728  6140  6140 W crash_dump64: type=1400 audit(0.0:77): avc: denied { search } for name="0" dev="tmpfs" ino=7930 scontext=u:r:crash_dump:s0:c167,c256,c512,c768 tcontext=u:object_r:mnt_user_file:s0 tclass=dir permissive=0 app=com.bimiboo.drawing
+11-10 15:18:09.022     0     0 D logd    : logdr: UID=10167 GID=10167 PID=6140 n tail=50 logMask=8 pid=5953 start=0ns timeout=0ns
+11-10 15:18:09.025     0     0 D logd    : logdr: UID=10167 GID=10167 PID=6140 n tail=50 logMask=1 pid=5953 start=0ns timeout=0ns
+11-10 15:18:08.728  6140  6140 W crash_dump64: type=1400 audit(0.0:78): avc: denied { search } for name="0" dev="tmpfs" ino=7930 scontext=u:r:crash_dump:s0:c167,c256,c512,c768 tcontext=u:object_r:mnt_user_file:s0 tclass=dir permissive=0 app=com.bimiboo.drawing
+11-10 15:18:09.213   162   162 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-10 15:18:09.213  6150  6150 I Gralloc4: mapper 4.x is not supported
+11-10 15:18:09.231  6150  6150 D HostConnection: createUnique: call
+11-10 15:18:09.232  6150  6150 D HostConnection: HostConnection::get() New Host Connection established 0x7aeab79ffed0, tid 6150
+11-10 15:18:09.272  6150  6150 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 15:18:09.302   392   474 D AudioFlinger: mixer(0x78b36345f040) throttle end: throttle time(16)
+11-10 15:18:09.556     0     0 D logd    : logdr: UID=10167 GID=10167 PID=6140 n tail=0 logMask=8 pid=5953 start=0ns timeout=0ns
+11-10 15:18:09.561     0     0 D logd    : logdr: UID=10167 GID=10167 PID=6140 n tail=0 logMask=1 pid=5953 start=0ns timeout=0ns
+11-10 15:18:09.394   279   279 E tombstoned: Tombstone written to: /data/tombstones/tombstone_01
+11-10 15:18:07.638   524   556 I chatty  : uid=1000(system) android.io identical 5 lines
+11-10 15:18:07.638   524   556 I DropBoxManagerService: add tag=system_server_strictmode isTagEnabled=true flags=0x2
+11-10 15:18:09.411   524   571 I BootReceiver: Copying /data/tombstones/tombstone_01 to DropBox (SYSTEM_TOMBSTONE)
+11-10 15:18:09.413   524  6154 W ActivityTaskManager:   Force finishing activity com.bimiboo.drawing/com.unity3d.player.UnityPlayerActivity
+11-10 15:18:09.414   524   571 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x2
+11-10 15:18:09.422   524   571 I system_server: IncrementDisableThreadFlip blocked for 5.377ms
+11-10 15:18:09.424   524  6155 I DropBoxManagerService: add tag=data_app_native_crash isTagEnabled=true flags=0x2
+11-10 15:18:09.632     0     0 D logd    : logdr: UID=2000 GID=2000 PID=6156 n tail=2000 logMask=99 pid=0 start=0ns timeout=0ns

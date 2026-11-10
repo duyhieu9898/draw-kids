@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3.141 original menu scene</title>
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:white}
+*{box-sizing:border-box}#scroll{position:absolute;inset:0;overflow-x:auto;overflow-y:hidden;touch-action:pan-x;scrollbar-width:none}#scroll::-webkit-scrollbar{display:none}
+#world{position:relative;transform-origin:0 0}.pack{position:absolute;border:0;padding:0;background:transparent;cursor:pointer;touch-action:pan-x}.node{position:absolute;pointer-events:none;transform-origin:0 0}.sprite{position:absolute;inset:0;width:100%;height:100%;object-fit:fill}.label{display:flex;align-items:center;justify-content:center;color:#fff;font:bold 31px Arial,sans-serif;text-shadow:0 2px 0 #966b65;text-align:center;white-space:nowrap}
+#spines{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}.fixed-layer{position:absolute;inset:0;pointer-events:none;transform-origin:0 0}#failure{position:fixed;bottom:0;color:#b00;background:white;font:14px sans-serif}
+</style>
+<div id="background" class="fixed-layer"></div><div id="scroll" aria-label="Original category layout"><div id="world"></div></div><canvas id="spines" aria-hidden="true"></canvas><div id="controls" class="fixed-layer"></div><output id="failure"></output>
+<script src="spine-webgl.js"></script><script>
+(async()=>{
+ const spec=await fetch('menu.json').then(r=>{if(!r.ok)throw Error(r.status);return r.json()});
+ const world=document.getElementById('world'),scroll=document.getElementById('scroll'),canvas=document.getElementById('spines');
+ const ctx=new spine.webgl.ManagedWebGLRenderingContext(canvas),renderer=new spine.webgl.SceneRenderer(canvas,ctx),assets=new spine.webgl.AssetManager(ctx);
+ const slots=[];let factor=1;
+ function createNode(n,parentSize,parent){
+  if(!n.active||!n.transform.m_AnchorMin)return;
+  const t=n.transform,min=t.m_AnchorMin,max=t.m_AnchorMax,p=t.m_Pivot,size=t.m_SizeDelta,pos=t.m_AnchoredPosition,s=t.m_LocalScale;
+  const w=parentSize[0]*(max.x-min.x)+size.x,h=parentSize[1]*(max.y-min.y)+size.y;
+  const ax=parentSize[0]*(min.x+(max.x-min.x)*p.x)+pos.x,ay=parentSize[1]*(min.y+(max.y-min.y)*p.y)+pos.y;
+  const el=document.createElement('div');el.className='node';el.dataset.node=n.id;
+  Object.assign(el.style,{width:w+'px',height:h+'px',left:(ax-w*p.x*s.x)+'px',top:(parentSize[1]-ay-h*(1-p.y)*s.y)+'px',transform:`scale(${s.x},${s.y})`});parent.append(el);
+  for(const c of n.components){
+   if(c.class==='Image'&&c.sprite){const im=document.createElement('img');im.src=c.sprite.url;im.alt='';im.className='sprite';im.style.opacity=c.color[3];el.append(im);}
+   if(c.class==='TextMeshProUGUI'){el.classList.add('label');el.textContent=c.text;}
+   if(c.class==='SkeletonGraphic')slots.push({element:el,component:c,pivot:p});
+  }
+  for(const child of n.children)createNode(child,[w,h],el);
+ }
+ const [cw,ch]=spec.grid.cell,[sx,sy]=spec.grid.spacing,[pl,pr,pt,pb]=spec.grid.padding;
+ const rows=spec.grid.constraint_count,cols=Math.ceil(spec.packs.length/rows);
+ const height=1080,width=pl+pr+cols*cw+(cols-1)*sx;
+ world.style.width=width+'px';world.style.height=height+'px';
+ for(let i=0;i<spec.packs.length;i++){
+  const pack=spec.packs[i],button=document.createElement('button');button.className='pack';button.dataset.product=pack.product;button.setAttribute('aria-label',pack.label);
+  Object.assign(button.style,{width:cw+'px',height:ch+'px',left:(pl+Math.floor(i/rows)*(cw+sx))+'px',top:(pt+(i%rows)*(ch+sy))+'px'});world.append(button);
+  for(const n of pack.node.children)createNode(n,[cw,ch],button);
+  button.addEventListener('pointerenter',()=>{if(pack.player)pack.player.state.setAnimation(0,'action',false)});
+  button.addEventListener('click',()=>{window.menuPreview.selectedProduct=pack.product;if(pack.player)pack.player.state.setAnimation(0,'action',false);window.dispatchEvent(new CustomEvent('original-pack-selected',{detail:{product:pack.product,name:pack.name}}));});
+  const player=slots.find(x=>x.component.skeleton_data.name===pack.name+'_SkeletonData'||x.component.skeleton_data.name===(pack.name==='dinosaurs'?'dino':'')+'_SkeletonData');
+  if(!player)throw Error('Missing skeleton binding: '+pack.name);
+  player.pack=pack;assets.loadText(pack.spine+'skeleton.json');assets.loadTextureAtlas(pack.spine+'skeleton.atlas');
+ }
+ function resize(){factor=innerHeight/height;world.style.transform=`scale(${factor})`;world.style.marginRight=(width*(factor-1))+'px';canvas.width=Math.round(innerWidth*devicePixelRatio);canvas.height=Math.round(innerHeight*devicePixelRatio);
+  for(const [id,nodes] of [['background',[spec.background]],['controls',spec.controls]]){const layer=document.getElementById(id);layer.replaceChildren();Object.assign(layer.style,{width:innerWidth/factor+'px',height:height+'px',transform:`scale(${factor})`});for(const n of nodes)createNode(n,[innerWidth/factor,height],layer)}
+ }
+ resize();addEventListener('resize',resize);
+ window.menuPreview={spec,slots,selectedProduct:null,ready:false,errors:[]};let loaded=false;
+ function frame(now){try{
+  if(!loaded){if(!assets.isLoadingComplete())return requestAnimationFrame(frame);if(assets.hasErrors())throw Error(JSON.stringify(assets.getErrors()));
+   for(const slot of slots){const pack=slot.pack;if(!pack)continue;const loader=new spine.SkeletonJson(new spine.AtlasAttachmentLoader(assets.get(pack.spine+'skeleton.atlas')));const data=loader.readSkeletonData(JSON.parse(assets.get(pack.spine+'skeleton.json')));slot.skeleton=new spine.Skeleton(data);slot.state=new spine.AnimationState(new spine.AnimationStateData(data));slot.state.setAnimation(0,'action',false);slot.state.update(pack.static_frame);slot.state.apply(slot.skeleton);pack.player=slot;}
+   loaded=true;window.menuPreview.ready=true;
+  }
+  ctx.gl.viewport(0,0,canvas.width,canvas.height);ctx.gl.clearColor(0,0,0,0);ctx.gl.clear(ctx.gl.COLOR_BUFFER_BIT);
+  renderer.camera.viewportWidth=innerWidth/factor;renderer.camera.viewportHeight=height;renderer.camera.position.set(innerWidth/factor/2,height/2,0);renderer.begin();
+  for(const slot of slots){if(!slot.skeleton)continue;const rect=slot.element.getBoundingClientRect();if(rect.right<0||rect.left>innerWidth)continue;
+   // RectTransform pivot is the skeleton origin, not the visual bounds centre.
+   slot.skeleton.x=(rect.left+rect.width*slot.pivot.x)/factor;slot.skeleton.y=height-(rect.top+rect.height*(1-slot.pivot.y))/factor;
+   slot.state.tracks[0].trackTime=slot.pack.time;
+   slot.state.apply(slot.skeleton);slot.skeleton.updateWorldTransform();renderer.drawSkeleton(slot.skeleton,false);
+  }
+  renderer.end();requestAnimationFrame(frame);
+ }catch(e){document.getElementById('failure').textContent=String(e);window.menuPreview.errors.push(String(e));}}
+ // Hold the serialized static action frame until a pointer triggers an action.
+ for(const pack of spec.packs){let start=0;const button=world.querySelector(`[data-product="${pack.product}"]`);for(const event of ['pointerenter','click'])button.addEventListener(event,()=>{start=performance.now()});Object.defineProperty(pack,'time',{get(){return start?Math.min((performance.now()-start)/1000,pack.player?.skeleton.data.animations.find(a=>a.name==='action').duration||0):pack.static_frame}})}
+ requestAnimationFrame(frame);
+})().catch(e=>{document.getElementById('failure').textContent=String(e);window.menuError=String(e)});
+</script></html>

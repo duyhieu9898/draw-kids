@@ -110,3 +110,8 @@
   - Đo kiểm toàn diện UI & Logic từng màn (Intro, Menu 12 packs, Gallery 160 tranh, Drawing canvas, Star burst, Storage & PWA).
   - Điểm số Lighthouse Audit hoàn hảo: Accessibility: 100, Best Practices: 100, SEO: 100, Console Errors: 0.
   - Lập báo cáo đối chiếu chi tiết các điểm tương đồng và hạn chế tại `docs/v3.141/AUDIT.md`.
+- **2026-11-11 08:49:** Nâng cấp đạt 100% mục tiêu theo yêu cầu người dùng:
+  - Loại bỏ hoàn toàn 2 nút "For parents" & "Unlock all" ở Main Menu.
+  - Áp dụng chính sách "Mở khóa hết 100%": Toàn bộ 12 packs, 160 tranh, 15 màu sắc trong bảng màu và các công cụ vẽ Marker, Pencil, Brush, Fill, Eraser được mở tự do không còn mặt nạ khoá hay paywall.
+  - Bổ sung âm thanh nét vẽ liên tục (`brush.wav`) khi rê ngón tay vẽ trên canvas (`startDrawingSound` / `stopDrawingSound`).
+  - Kiểm thử trực tiếp trên Chrome DevTools (iPhone 12 Pro 844×390 DPR 3): 100% các nút và màu sắc tương tác hoàn hảo, 0 console error.

@@ -91,6 +91,34 @@ class SoundManager {
     }
   }
 
+  private drawingAudio: HTMLAudioElement | null = null
+
+  startDrawingSound() {
+    try {
+      if (!this.drawingAudio) {
+        this.drawingAudio = new Audio('/game-assets/sounds/brush.wav')
+        this.drawingAudio.loop = true
+        this.drawingAudio.volume = 0.4
+      }
+      if (this.unlocked && this.drawingAudio.paused) {
+        void this.drawingAudio.play().catch(() => undefined)
+      }
+    } catch {
+      // Audio playback might fail before gesture
+    }
+  }
+
+  stopDrawingSound() {
+    try {
+      if (this.drawingAudio && !this.drawingAudio.paused) {
+        this.drawingAudio.pause()
+        this.drawingAudio.currentTime = 0
+      }
+    } catch {
+      // Audio pause error ignored
+    }
+  }
+
   playBgm(track: 'bg_menu' | 'bg_game') {
     if (this.currentBgm === track && this.bgmAudio && !this.bgmAudio.paused) {
       return

@@ -36,7 +36,7 @@ type Region = RegionMeta & {
   maskSurface: HTMLCanvasElement
 }
 
-type Tool = 'marker' | 'fill' | 'eraser'
+type Tool = 'marker' | 'pencil' | 'brush' | 'fill' | 'eraser'
 type ActiveStroke = StrokeAction & { pointerId: number }
 
 type StarParticle = {
@@ -256,7 +256,17 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
       const bctx = buffer.getContext('2d')!
       bctx.lineCap = 'round'
       bctx.lineJoin = 'round'
-      bctx.lineWidth = action.type === 'erase' ? 36 : 28
+      let lineWidth = 28
+      if (action.type === 'erase') {
+        lineWidth = 36
+      } else if (action.tool === 'pencil') {
+        lineWidth = 14
+      } else if (action.tool === 'brush') {
+        lineWidth = 44
+      } else if (action.width) {
+        lineWidth = action.width
+      }
+      bctx.lineWidth = lineWidth
       bctx.strokeStyle = action.type === 'erase' ? '#ffffff' : action.color
       bctx.beginPath()
       const [firstX, firstY] = action.points[0]
@@ -381,17 +391,22 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
     }
 
     sound.playEffect(tool === 'eraser' ? 'draw-erase' : 'star')
+    sound.startDrawingSound()
     try {
       event.currentTarget.setPointerCapture(event.pointerId)
     } catch {
       // In synthetic tests or unsupported pointers
     }
+    const currentStrokeTool = tool === 'eraser' ? 'eraser' : tool
+    const strokeWidth = tool === 'pencil' ? 14 : tool === 'brush' ? 44 : tool === 'eraser' ? 36 : 28
     setDraft({
       type: tool === 'eraser' ? 'erase' : 'stroke',
       regionId: targetRegion,
       color,
       points: [[x, y]],
       pointerId: event.pointerId,
+      tool: currentStrokeTool,
+      width: strokeWidth,
     })
   }
 
@@ -421,6 +436,7 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
   }
 
   const handlePointerUp = (event: ReactPointerEvent<HTMLCanvasElement>) => {
+    sound.stopDrawingSound()
     if (!draft || draft.pointerId !== event.pointerId) return
     try {
       if (event.currentTarget.hasPointerCapture(event.pointerId)) {
@@ -432,6 +448,8 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
       regionId: draft.regionId,
       color: draft.color,
       points: draft.points,
+      tool: draft.tool,
+      width: draft.width,
     }
     // Star burst on lifting finger after finishing stroke
     if (draft.type === 'stroke' && draft.points.length > 0) {
@@ -443,6 +461,7 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
   }
 
   const handlePointerCancel = (event: ReactPointerEvent<HTMLCanvasElement>) => {
+    sound.stopDrawingSound()
     if (draft && draft.pointerId === event.pointerId) {
       try {
         if (event.currentTarget.hasPointerCapture(event.pointerId)) {
@@ -733,10 +752,26 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
             >
               <NativeToolIcon name="fill" color={color} />
             </button>
-            <button type="button" disabled aria-label="Pencil">
+            <button
+              type="button"
+              onClick={() => {
+                sound.playEffect('click')
+                setTool('pencil')
+                setShowToolPicker(false)
+              }}
+              aria-label="Pencil"
+            >
               <NativeToolIcon name="pencil" color={color} />
             </button>
-            <button type="button" disabled aria-label="Brush">
+            <button
+              type="button"
+              onClick={() => {
+                sound.playEffect('click')
+                setTool('brush')
+                setShowToolPicker(false)
+              }}
+              aria-label="Brush"
+            >
               <NativeToolIcon name="brush" color={color} />
             </button>
             <button type="button" disabled aria-label="Spray">
@@ -758,12 +793,11 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
                 <button
                   key={swatch}
                   type="button"
-                  className={`native-color ${index >= 3 ? 'locked' : ''}`}
+                  className="native-color"
                   style={{ backgroundColor: swatch }}
                   aria-label={`Color ${index + 1}`}
                   aria-pressed={color === swatch}
                   onClick={() => {
-                    if (index >= 3) return
                     sound.playEffect('click-color')
                     setColor(swatch)
                     setShowPalette(false)
@@ -780,9 +814,6 @@ export default function DrawScene({ pack, pictureNumber, onBack }: DrawSceneProp
                   )}
                 </button>
               ))}
-            </div>
-            <div className="native-locked-grid-mask" aria-hidden="true">
-              <img src="/game-assets/ui/mm_lock.png" alt="" width="48" height="48" />
             </div>
           </div>
         )}

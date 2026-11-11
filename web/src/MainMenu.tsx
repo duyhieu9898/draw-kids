@@ -3,7 +3,7 @@ import { sound } from './audio'
 
 interface MainMenuProps {
   onSelectPack: (packId: number) => void
-  onReplayIntro: () => void
+  onReplayIntro?: () => void
 }
 
 export default function MainMenu({ onSelectPack, onReplayIntro }: MainMenuProps) {
@@ -202,27 +202,8 @@ export default function MainMenu({ onSelectPack, onReplayIntro }: MainMenuProps)
           })
           createNode(spec.background, [window.innerWidth / factor, height], bgLayer)
 
-          // Controls (For parents, Replay intro)
+          // Controls layer (For parents & Unlock all intentionally removed per user directive)
           controlsLayer.replaceChildren()
-          Object.assign(controlsLayer.style, {
-            width: `${window.innerWidth / factor}px`,
-            height: `${height}px`,
-            transform: `scale(${factor})`,
-          })
-          for (const n of spec.controls) {
-            createNode(n, [window.innerWidth / factor, height], controlsLayer)
-          }
-
-          // Add click listener to "For Parents" to replay intro
-          const forParentsBtn = controlsLayer.querySelector('[data-node="44"]') as HTMLElement
-          if (forParentsBtn) {
-            forParentsBtn.style.pointerEvents = 'auto'
-            forParentsBtn.style.cursor = 'pointer'
-            forParentsBtn.addEventListener('click', () => {
-              sound.playEffect('click')
-              onReplayIntro()
-            })
-          }
         }
 
         resize()

@@ -164,6 +164,8 @@ export type StrokeAction = {
   regionId: number
   color: string
   points: Array<[number, number]>
+  width?: number
+  tool?: 'marker' | 'pencil' | 'brush' | 'eraser'
 }
 export type Action = FillAction | StrokeAction
 

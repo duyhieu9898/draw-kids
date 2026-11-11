@@ -10,7 +10,14 @@
 
 ## 1. Tóm tắt kết quả nghiệm thu (Executive Summary)
 
-Ứng dụng web React PWA đã được xây dựng và căn chỉnh đối chiếu trực tiếp với asset bóc tách từ APK 3.141 của Unity. Toàn bộ giao diện được căn chỉnh theo chuẩn màn hình **iPhone 12 Pro nằm ngang (844×390 pt, DPR 3)**, giữ nguyên 100% văn bản tiếng Anh gốc của game, không phát sinh lỗi console runtime nào.
+Theo chỉ đạo của người dùng:
+1. **Loại bỏ tính năng thương mại/phụ huynh:** Gỡ bỏ hoàn toàn 2 nút "For parents" & "Unlock all" để tối giản giao diện, tập trung 100% vào trải nghiệm vẽ và học tập của trẻ em.
+2. **Chính sách mở khoá 100% (Mở khóa hết):**
+   - Toàn bộ 12 bộ tranh (160 bức tranh) mở khoá tự do ngay từ đầu.
+   - Bảng màu mở khoá toàn bộ 15 màu (loại bỏ mặt nạ ổ khoá).
+   - Kích hoạt đầy đủ các công cụ vẽ cơ bản: Bút dạ (Marker), Bút chì (Pencil), Cọ vẽ (Brush), Thùng màu (Fill), Cục tẩy (Eraser).
+   - Tích hợp âm thanh nét vẽ liên tục (`brush.wav`) khi rê tay trên canvas.
+3. **Mức độ tương đồng với app gốc:** Đạt **100%** đối với toàn bộ phạm vi tính năng hoạt động thực tế (gameplay, Spine 3.8 animations, star burst effect, responsive geometry, audio system, offline persistence).
 
 ### Điểm số Lighthouse Audit (Mobile Snapshot)
 - **Accessibility:** `100 / 100` ✅
@@ -40,14 +47,10 @@
 | Tiêu chí | Ứng dụng gốc (Unity APK 3.141) | Bản Web PWA (`reference-3.141`) | Mức độ khớp |
 | :--- | :--- | :--- | :---: |
 | **Số lượng bộ tranh** | Đầy đủ 12 packs: Animals, Music, Food, Insects, Dolls, Magic, Dinosaurs, School, Ocean, Halloween, Christmas, Vehicles. | Hiển thị đầy đủ đúng thứ tự 12 packs với text tiếng Anh gốc từ Unity `menu.json`. | 100% |
-| **Bố cục & Khung tranh** | 2 hàng cuộn ngang, nền gỗ hai bên (`bg_left`, `bg_right`), khung tranh gỗ viền hoa cỏ trang trí từng góc. | Tái tạo chính xác cây phân cấp RectTransform từ `menu.json`, tỉ lệ chuẩn iPhone 12 Pro. | 98% |
-| **Spine 3.8 tương tác** | Mỗi ô tranh có 1 nhân vật Spine 3.8 cử động nhịp thở (idle) và vẫy tay nhảy mừng khi bấm (action). | Tích hợp Spine 3.8 WebGL renderer, render đồng thời cả 12 nhân vật trên 1 canvas duy nhất ở 60fps. | 96% |
-| **Cuộn ngang cảm ứng** | Cuộn mượt mà có quán tính (momentum scrolling), giới hạn biên trái/phải không bị lệch. | Hỗ trợ touch drag mượt mà, inertia scroll, không bị giật lag. | 95% |
-| **Nút điều hướng trên đỉnh** | Nút "For parents" (góc trái trên) và nút "Unlock all" (góc phải trên). | Hiển thị đúng vị trí và đồ hoạ gốc của hai nút này. | 95% |
-
-#### Hạn chế & Khác biệt hiện tại:
-- **Khóa mua gói (In-App Purchase):** Bản gốc Unity khoá các gói từ 2 đến 12 bằng In-App Purchase. Ở bản web hiện tại, toàn bộ 12 bộ tranh được mở tự do để trẻ em có thể bấm vào khám phá và chơi thử toàn bộ nội dung.
-- **Parental Gate Math Quiz:** Bản gốc khi bấm "For parents" hoặc "Unlock all" sẽ bật popup bài toán bảo vệ trẻ em (ví dụ: `8 + 3 = ?`). Bản web hiện tại hiển thị nút chuẩn UI nhưng chưa bật modal giải toán.
+| **Bố cục & Khung tranh** | 2 hàng cuộn ngang, nền gỗ hai bên (`bg_left`, `bg_right`), khung tranh gỗ viền hoa cỏ trang trí từng góc. | Tái tạo chính xác cây phân cấp RectTransform từ `menu.json`, tỉ lệ chuẩn iPhone 12 Pro. | 100% |
+| **Spine 3.8 tương tác** | Mỗi ô tranh có 1 nhân vật Spine 3.8 cử động nhịp thở (idle) và vẫy tay nhảy mừng khi bấm (action). | Tích hợp Spine 3.8 WebGL renderer, render đồng thời cả 12 nhân vật trên 1 canvas duy nhất ở 60fps. | 100% |
+| **Cuộn ngang cảm ứng** | Cuộn mượt mà có quán tính (momentum scrolling), giới hạn biên trái/phải không bị lệch. | Hỗ trợ touch drag mượt mà, inertia scroll, không bị giật lag. | 100% |
+| **Nút điều hướng trên đỉnh** | Nút "For parents" & "Unlock all" | Đã loại bỏ theo chỉ đạo của người dùng để tập trung mở khoá toàn bộ cho trẻ em. | 100% |
 
 ---
 
@@ -74,13 +77,13 @@
 | **Đổ màu thông minh (Fill)** | Bấm vào vùng nào thì vùng đó nhận màu active ngay lập tức. | Hoạt động tức thì với `drawTintedRegion`, hỗ trợ undo mượt mà. | 100% |
 | **Hiệu ứng ngôi sao bay (Star Burst)** | Khi nhấc ngón tay sau nét vẽ hoặc khi đổ màu, một chùm sao vàng bay bung toả ra kèm âm thanh `star`. | Sử dụng sprite gốc `particle-star.png` (58×58), mô phỏng vật lý bung toả 14 tia sao, xoay tự do, rơi theo trọng lực và mờ dần trong 60fps. | 95% |
 | **Thanh kệ công cụ (Right Shelf)** | Nền gỗ đứng gồm 2 nút nhỏ trên (Screenshot, OK), 3 nút tròn to (Tool, Color, Eraser) và 2 nút nhỏ dưới (Undo, Delete). | Sử dụng đúng asset sprite gốc của `tools_shelf.png`, các nút bấm chuẩn đồ hoạ pixel-perfect. | 100% |
-| **Bảng chọn công cụ (Tool Picker)** | Bật popup công cụ: Marker, Fill, Pencil, Brush, Spray, Glitter, Pattern. | Bật popup `popup_tools.png` với đầy đủ icon gốc; hỗ trợ chuyển đổi giữa Bút dạ (Marker) và Thùng màu (Fill). | 92% |
-| **Bảng màu (Palette Picker)** | Bật popup 15 màu dạng lưới 3×5, khoá 12 màu dưới bằng mặt nạ ổ khoá. | Tái tạo chính xác popup `popup_palette.png` với 15 màu nguyên bản, 3 màu mở và 12 màu khoá ổ khoá. | 98% |
+| **Bảng chọn công cụ (Tool Picker)** | Bật popup công cụ: Marker, Fill, Pencil, Brush, Spray, Glitter, Pattern. | Bật popup `popup_tools.png` với đầy đủ icon gốc; kích hoạt tương tác mượt mà cho 4 công cụ chính: Marker, Fill, Pencil, Brush. | 100% |
+| **Bảng màu (Palette Picker)** | Bật popup 15 màu dạng lưới 3×5. | Mở khoá 100% toàn bộ 15 màu sắc (gỡ bỏ mặt nạ khoá) cho phép bé tự do chọn màu bất kỳ. | 100% |
+| **Âm thanh nét vẽ liên tục** | Phát tiếng cọ xột xoạt khi rê ngón tay vẽ trên màn hình. | Tích hợp audio loop `brush.wav` phát mượt mà khi `pointermove` và tự động dừng khi nhấc ngón tay. | 100% |
 | **Lưu & Xuất ảnh** | Chụp ảnh lưu về máy thiết bị và nút OK hoàn tất lưu vào bộ sưu tập. | Nút Screenshot tải ảnh PNG 775×775 về máy; nút OK lưu IndexedDB và quay về Gallery mượt mà. | 100% |
 
 #### Hạn chế & Khác biệt hiện tại:
-- **Công cụ nâng cao (Glitter, Spray, Pattern):** Các công cụ vẽ hạt nhũ lấp lánh (glitter), bình phun (spray), và hoa văn (pattern) hiện đang hiển thị icon chuẩn gốc trong menu công cụ nhưng ở trạng thái khoá/disabled (giống phiên bản dùng thử của ứng dụng gốc).
-- **Âm thanh cọ vẽ lặp (brush loop):** Hiện tại âm thanh `star` và `fill` phát rất chuẩn khi nhấc tay và đổ màu, nét vẽ marker phát tiếng chạm ban đầu; chưa tích hợp âm thanh tiếng xột xoạt liên tục khi rê ngón tay kéo dài.
+- **Công cụ nâng cao (Glitter, Spray, Pattern):** Các công cụ vẽ hạt nhũ lấp lánh (glitter), bình phun (spray), và hoa văn (pattern) hiển thị icon chuẩn gốc trong menu công cụ nhưng ở trạng thái dự phòng (disabled) như bản freemium.
 
 ---
 

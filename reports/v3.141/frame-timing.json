@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-11-12T11:48:44.222Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+  "url": "http://127.0.0.1:4173/topics/1/pictures/1",
+  "viewport": {
+    "width": 844,
+    "height": 390,
+    "dpr": 3
+  },
+  "canvas": {
+    "rect": {
+      "left": 171.953125,
+      "top": 0,
+      "width": 390,
+      "height": 390
+    },
+    "pixels": [
+      1170,
+      1170
+    ]
+  },
+  "strokes": 6,
+  "pointsPerStroke": 48,
+  "hasActions": true,
+  "trace": {
+    "events": 115262,
+    "measurementWindowMs": 5616,
+    "appFrames": 337,
+    "clockSyncMarker": false,
+    "categories": [
+      "toplevel",
+      "devtools.timeline",
+      "disabled-by-default-devtools.timeline.frame",
+      "blink",
+      "cc"
+    ],
+    "note": "Headless Chrome on software compositing; absolute numbers are indicative, real device numbers must come from Safari Web Inspector."
+  },
+  "signals": {
+    "FireAnimationFrame": {
+      "samples": 336,
+      "p50Ms": 16.7,
+      "p95Ms": 16.8,
+      "maxMs": 32.9,
+      "over20ms": 2,
+      "over33ms": 0,
+      "over50ms": 0,
+      "fpsFromP50": 60
+    },
+    "DrawFrame": {
+      "samples": 166,
+      "p50Ms": 16.7,
+      "p95Ms": 17.6,
+      "maxMs": 21.2,
+      "over20ms": 1,
+      "over33ms": 0,
+      "over50ms": 0,
+      "fpsFromP50": 60
+    },
+    "BeginFrame": {
+      "samples": 338,
+      "p50Ms": 16.7,
+      "p95Ms": 16.7,
+      "maxMs": 16.7,
+      "over20ms": 0,
+      "over33ms": 0,
+      "over50ms": 0,
+      "fpsFromP50": 60
+    },
+    "ActivateLayerTree": {
+      "samples": 290,
+      "p50Ms": 16.7,
+      "p95Ms": 17.3,
+      "maxMs": 21.2,
+      "over20ms": 1,
+      "over33ms": 0,
+      "over50ms": 0,
+      "fpsFromP50": 60
+    }
+  },
+  "pageRaf": {
+    "samples": 336,
+    "p50Ms": 16.7,
+    "p95Ms": 16.8,
+    "maxMs": 32.9,
+    "over20ms": 2,
+    "over33ms": 0,
+    "over50ms": 0,
+    "fpsFromP50": 59.9
+  },
+  "mainThread": {
+    "tasks": 13840,
+    "totalTaskMs": 1764.5,
+    "averageTaskPerFrameMs": 5.2,
+    "longTasksOver50ms": 0,
+    "canvasFinalizePerFrameMs": 5.5,
+    "functionCallPerFrameMs": 0.4,
+    "topEvents": [
+      {
+        "name": "CanvasRenderingContext2D::FinalizeFrame",
+        "totalMs": 1858.5
+      },
+      {
+        "name": "ThreadControllerImpl::RunTask",
+        "totalMs": 1764.5
+      },
+      {
+        "name": "ProxyMain::BeginMainFrame",
+        "totalMs": 407.4
+      },
+      {
+        "name": "Canvas2DResourceProvider::ProduceCanvasResource",
+        "totalMs": 245.5
+      },
+      {
+        "name": "SimpleWatcher::OnHandleReady",
+        "totalMs": 171.5
+      },
+      {
+        "name": "EpollEvent",
+        "totalMs": 149.3
+      },
+      {
+        "name": "FunctionCall",
+        "totalMs": 119.5
+      },
+      {
+        "name": "Receive mojo message",
+        "totalMs": 80.4
+      }
+    ]
+  },
+  "verdict": "smooth",
+  "consoleErrors": []
+}

@@ -153,6 +153,35 @@ Chi tiết kỹ thuật:
 
 Làm Phase 1 + 2 + 4.1 là đã giải quyết ~90% cảm giác lag. Phase 3 và WebP/audio là tối ưu pin, dung lượng và lần mở đầu.
 
+## Trạng thái thực hiện (2026-11-12)
+
+Đã xong và đã kiểm chứng bằng build production + smoke test Chrome headless:
+
+| Hạng mục | Trước | Sau |
+|---|---|---|
+| Precache PWA | 5.171 file / 62,4 MB | **222 file / 4,8 MB** |
+| Thumbnail gallery | outline 775px (~100 KB, decode 2,4 MB) | WebP 264px (~12 KB, decode 0,28 MB), 128 file |
+| `<img>` trong gallery | 1.152 | 577 (khung vẽ bằng pseudo-element) |
+| `maskSurface` mỗi vùng | 775×775 (2,4 MB) | đúng `bounds` (vài chục–trăm KB) |
+| Vẽ mỗi `pointermove` | full redraw + cấp phát canvas tint | 3–5 `drawImage` từ layer cache, 0 cấp phát |
+| Hit-test | `getImageData` mỗi chạm | `Uint8Array` alpha, không đọc canvas |
+| Ghi `scrollLeft` khi quán tính | mỗi event scroll | chỉ ở `scrollend`/debounce 140 ms |
+| Menu khi tĩnh | 60fps WebGL liên tục | không có frame nào (chỉ render khi animate/scroll/resize) |
+| Thumbnail đã tô | dataURL base64 | Blob + object URL |
+
+Dọn phần trang trí dư (không đổi giao diện/nghiệp vụ): particle vẽ trên overlay canvas DPR tối đa 2 (không recomposite lớp tranh), giảm còn 8 particle mỗi nét và 10 mỗi lần tô, bỏ tiếng star khi nhấc bút; 2 vòng nhân bản gallery chỉ giữ chỗ cho chủ đề chưa có dữ liệu (bớt 128 button + 128 ảnh); kéo bảng màu chỉ cập nhật DOM, không re-render 56 swatch, chỉ `setColor` khi nhấc tay; xoá 34 MB sound không được tham chiếu; loại `art/v3141-*` khỏi `dist` bằng plugin build (23 MB). Giữ nguyên intro mỗi lần mở theo yêu cầu.
+
+Đã thêm: `scripts/build_gallery_thumbs.py` (npm run art:thumbs), `src/regionGeometry.ts` + test, `tests/smoke.mjs` (16 kiểm tra: DPR, nét vẽ trong mask, undo, overlay particle, fill, preview palette, Blob, gallery, recenter, menu, console sạch).
+
+Kết quả smoke trên build production: nét marker tô đúng trong mask (7.251 px đỏ), fill phủ vùng (74.680 px), lưu 2 action + thumbnail Blob 25 KB, gallery 576 card/577 ảnh, recenter nhảy đúng 1 cycle, không có console error.
+
+Còn lại (chưa làm trong lượt này):
+
+- Phase 4.2: convert toàn bộ art PNG → WebP. Hiện art đã không còn trong precache và mỗi pack chỉ tải 1,5–2,4 MB khi mở, nên lợi ích chỉ còn ở băng thông lần đầu mỗi pack; đổi 4.037 file cần kiểm tra parity alpha nên tách thành bước riêng.
+- Phase 3.3: lazy-load skeleton theo viewport (hiện vẫn nạp 3,8 MB menu một lần, chỉ bỏ vòng lặp render vô ích).
+- Bóng `drop-shadow` của khung gallery: giữ nguyên thay vì bake vào PNG vì bake sẽ đổi khung hình học của artwork; `content-visibility` đã loại phần ngoài viewport.
+- Đo lại trên iPhone 12 Pro thật bằng Safari Web Inspector để đối chiếu ngân sách frame time.
+
 ## Không làm (đã cân nhắc và loại)
 
 - Chuyển màn vẽ sang WebGL/regl: bài toán là 2D mask + nét, WebGL không nhanh hơn đáng kể nhưng tăng độ phức tạp và khó giữ pixel parity.

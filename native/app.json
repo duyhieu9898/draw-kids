@@ -9,7 +9,9 @@
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
-      "requireFullScreen": true
+      "requireFullScreen": true,
+      "bundleIdentifier": "com.duyhieu9898.betomau",
+      "buildNumber": "1"
     },
     "android": {
       "adaptiveIcon": {

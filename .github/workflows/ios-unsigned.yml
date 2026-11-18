@@ -1,0 +1,85 @@
+name: iOS unsigned IPA
+
+# Builds an unsigned .ipa on a macOS runner. Sign it with a free Apple ID
+# (for example with iLoader) to install it on a device for 7 days.
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "ios-*"
+
+concurrency:
+  group: ios-unsigned-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 90
+    defaults:
+      run:
+        working-directory: native
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: native/package-lock.json
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Install JavaScript dependencies
+        run: npm ci
+
+      - name: Generate the Xcode project
+        run: npx expo prebuild --platform ios --no-install
+
+      - name: Install CocoaPods
+        working-directory: native/ios
+        run: pod install
+
+      - name: Build without code signing
+        working-directory: native/ios
+        run: |
+          set -euo pipefail
+          workspace=$(ls -d ./*.xcworkspace | head -n1)
+          scheme=$(xcodebuild -list -json -workspace "$workspace" |
+            python3 -c 'import json, sys; data = json.load(sys.stdin); print((data.get("workspace") or data.get("project"))["schemes"][0])')
+          echo "Building $scheme from $workspace"
+          xcodebuild \
+            -workspace "$workspace" \
+            -scheme "$scheme" \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath "$PWD/build" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build
+
+      - name: Package the unsigned IPA
+        working-directory: native/ios
+        run: |
+          set -euo pipefail
+          app=$(find build/Build/Products/Release-iphoneos -maxdepth 1 -name '*.app' | head -n1)
+          test -n "$app"
+          echo "Packaging $app"
+          rm -rf Payload
+          mkdir -p Payload
+          cp -R "$app" Payload/
+          ditto -c -k --sequesterRsrc --keepParent Payload unsigned.ipa
+          ls -lh unsigned.ipa
+
+      - name: Upload the unsigned IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-unsigned-ipa
+          path: native/ios/unsigned.ipa
+          if-no-files-found: error
+          retention-days: 14

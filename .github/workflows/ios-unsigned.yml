@@ -40,16 +40,29 @@ jobs:
       - name: Install JavaScript dependencies
         run: npm ci
 
-      - name: Patch expo-modules-jsi for Swift 5 mode
+      - name: Patch expo-modules-jsi for Swift concurrency compatibility
         run: |
           python3 - <<'PY'
           import pathlib
-          p = pathlib.Path("node_modules/expo-modules-jsi/apple/Package.swift")
-          s = p.read_text()
-          if "swiftLanguageVersions" not in s:
-              s = s.replace("      swiftSettings: [", "      swiftLanguageVersions: [.v5],\n      swiftSettings: [", 1)
-          p.write_text(s)
-          print("patched" if "swiftLanguageVersions" in p.read_text() else "FAILED")
+          
+          # 1. Set Package swiftLanguageModes to .v5
+          pkg_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Package.swift")
+          if pkg_file.exists():
+              s = pkg_file.read_text()
+              s = s.replace("swiftLanguageModes: [.v6]", "swiftLanguageModes: [.v5]")
+              pkg_file.write_text(s)
+              print("Package.swift patched:", "swiftLanguageModes: [.v5]" in s)
+              
+          # 2. Fix the data race closure capture in JavaScriptObject.swift for Swift 6 compiler
+          swift_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Sources/ExpoModulesJSI/Runtime/Values/JavaScriptObject.swift")
+          if swift_file.exists():
+              s = swift_file.read_text()
+              target_code = "try JavaScriptActor.assumeIsolated {"
+              replacement_code = "try JavaScriptActor.assumeIsolated { [slot] in"
+              if target_code in s:
+                  s = s.replace(target_code, replacement_code, 1)
+                  swift_file.write_text(s)
+                  print("JavaScriptObject.swift patched:", replacement_code in s)
           PY
 
       - name: Generate the Xcode project

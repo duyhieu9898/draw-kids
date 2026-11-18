@@ -1,3 +1,5 @@
+> **Lưu trữ — giai đoạn web lịch sử.** Mục tiêu, checklist và số liệu dưới đây không phải kế hoạch hay nghiệm thu native hiện tại. Các tuyên bố parity/hoàn thành cần được kiểm chứng độc lập; gameplay APK 3.141 chưa được quan sát trong lần chạy ghi tại [STATUS.md](STATUS.md). Xem [kế hoạch chuyển đổi native](../REACT_NATIVE_MIGRATION_PLAN.md).
+
 # Kế hoạch đối chiếu ba nút màn hình vẽ
 
 Phạm vi: giữ menu ba công cụ theo chủ ý và bảng 56 màu. Đối chiếu với APK 3.141 bằng dữ liệu Unity và code IL2CPP; người dùng kiểm tra hình ảnh.

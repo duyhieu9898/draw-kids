@@ -16,6 +16,8 @@ const colors: Record<string, string> = {
 }
 const COLUMNS_PER_TOPIC = 8
 const COLUMNS_PER_CYCLE = COLUMNS_PER_TOPIC * PACK_ORDER.length
+// gallery_icon_frame.png is 276 px wide: 8 px black border, 4 px inner corner radius.
+const FRAME_INNER_RADIUS_RATIO = 4 / 276
 
 type Column = { pack: string; pictures: typeof PICTURES; key: string }
 
@@ -32,7 +34,14 @@ function GalleryContent({ initialPack }: { initialPack: string }) {
   const recenterTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const { width, height } = useWindowDimensions()
   const insets = useSafeAreaInsets()
-  const cardSize = Math.max(1, Math.min(148, height * .34, (height - insets.top - insets.bottom - 90) / 2))
+  // 5% larger cards; the two-row fit term scales with it so the grid still fits.
+  // Whole pixels so the frame and the paper share exactly the same edges.
+  const cardSize = Math.max(1, Math.round(Math.min(148, height * .34, (height - insets.top - insets.bottom - 90) / 2) * 1.05))
+  // The frame's 8 px border scales with the card. Keep the paper 1 px under it so it can
+  // neither leave a background gap nor show outside the black line.
+  const frameBorder = Math.max(2, Math.round(cardSize * 8 / 276))
+  const paperInset = frameBorder - 1
+  const paperSize = cardSize - paperInset * 2
   const columnWidth = cardSize + 18
   const startIndex = COLUMNS_PER_CYCLE + Math.max(0, PACK_ORDER.indexOf(initialPack)) * COLUMNS_PER_TOPIC
   const data = useMemo(() => Array.from({ length: 3 }, (_, cycle) => PACK_ORDER.flatMap((pack) => {
@@ -83,7 +92,7 @@ function GalleryContent({ initialPack }: { initialPack: string }) {
         onMomentumScrollEnd={(event) => recenter(event.nativeEvent.contentOffset.x)}
         renderItem={({ item }) => <View style={[styles.column, { width: columnWidth }]}>
           {item.pictures.map((picture) => <Pressable key={picture.key} accessibilityLabel={`${item.pack} picture ${picture.picture}`} onPress={() => { sound.playEffect('click'); fadeThenNavigate(() => router.push({ pathname: '/draw/[pack]/[picture]', params: { pack: item.pack, picture: String(picture.picture) } })) }} style={{ width: cardSize, height: cardSize }}>
-            <View style={styles.thumb}><Image source={saved[picture.key]?.thumbnailUri ? { uri: saved[picture.key].thumbnailUri ?? undefined } : picture.outline} resizeMode="contain" style={{ width: '92%', height: '92%' }} /></View>
+            <View style={[styles.thumb, { top: paperInset, left: paperInset, width: paperSize, height: paperSize, borderRadius: Math.round(cardSize * FRAME_INNER_RADIUS_RATIO) }]}><Image source={saved[picture.key]?.thumbnailUri ? { uri: saved[picture.key].thumbnailUri ?? undefined } : picture.outline} resizeMode="contain" style={styles.full} /></View>
             <Image source={UI.galleryFrame} resizeMode="stretch" style={styles.frame} />
           </Pressable>)}
         </View>}
@@ -170,7 +179,9 @@ const styles = StyleSheet.create({
   screen: { flex: 1 }, full: { width: '100%', height: '100%' },
   back: { position: 'absolute', width: 72, height: 44, zIndex: 2 },
   track: { alignItems: 'center' }, column: { gap: 14 },
-  thumb: { position: 'absolute', top: '6.5%', left: '6.5%', width: '87%', height: '87%', backgroundColor: 'white', borderRadius: 10, overflow: 'hidden', alignItems: 'center', justifyContent: 'center' },
+  // Position/size are set inline in whole pixels (1 px under the black border) so no
+  // background can show between the picture and the frame.
+  thumb: { position: 'absolute', backgroundColor: 'white', overflow: 'hidden', alignItems: 'center', justifyContent: 'center' },
   frame: { position: 'absolute', left: 0, top: 0, width: '100%', height: '100%' },
   error: { color: '#8a1717', backgroundColor: '#fff', padding: 8, position: 'absolute', top: 60, zIndex: 3 },
 })

@@ -1,0 +1,193 @@
+{
+  "id": "candidate-7-3",
+  "assetGroup": 7,
+  "pictureNumber": 3,
+  "source": "com.bimiboo.drawing 3.141",
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 2,
+      "frameIndex": 2,
+      "frame": "img-7-3-2",
+      "bounds": [
+        410,
+        392,
+        191,
+        193
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 3,
+      "frame": "img-7-3-3",
+      "bounds": [
+        212,
+        390,
+        166,
+        195
+      ],
+      "mask": "region-3.png"
+    },
+    {
+      "regionId": 4,
+      "frameIndex": 4,
+      "frame": "img-7-3-4",
+      "bounds": [
+        335,
+        567,
+        120,
+        119
+      ],
+      "mask": "region-4.png"
+    },
+    {
+      "regionId": 5,
+      "frameIndex": 5,
+      "frame": "img-7-3-5",
+      "bounds": [
+        292,
+        264,
+        199,
+        131
+      ],
+      "mask": "region-5.png"
+    },
+    {
+      "regionId": 6,
+      "frameIndex": 6,
+      "frame": "img-7-3-6",
+      "bounds": [
+        335,
+        530,
+        118,
+        79
+      ],
+      "mask": "region-6.png"
+    },
+    {
+      "regionId": 7,
+      "frameIndex": 7,
+      "frame": "img-7-3-7",
+      "bounds": [
+        211,
+        174,
+        355,
+        86
+      ],
+      "mask": "region-7.png"
+    },
+    {
+      "regionId": 8,
+      "frameIndex": 8,
+      "frame": "img-7-3-8",
+      "bounds": [
+        187,
+        127,
+        397,
+        101
+      ],
+      "mask": "region-8.png"
+    },
+    {
+      "regionId": 9,
+      "frameIndex": 9,
+      "frame": "img-7-3-9",
+      "bounds": [
+        137,
+        242,
+        501,
+        299
+      ],
+      "mask": "region-9.png"
+    },
+    {
+      "regionId": 10,
+      "frameIndex": 10,
+      "frame": "img-7-3-10",
+      "bounds": [
+        89,
+        514,
+        106,
+        115
+      ],
+      "mask": "region-10.png"
+    },
+    {
+      "regionId": 11,
+      "frameIndex": 11,
+      "frame": "img-7-3-11",
+      "bounds": [
+        124,
+        477,
+        107,
+        121
+      ],
+      "mask": "region-11.png"
+    },
+    {
+      "regionId": 12,
+      "frameIndex": 12,
+      "frame": "img-7-3-12",
+      "bounds": [
+        32,
+        400,
+        158,
+        131
+      ],
+      "mask": "region-12.png"
+    },
+    {
+      "regionId": 13,
+      "frameIndex": 13,
+      "frame": "img-7-3-13",
+      "bounds": [
+        602,
+        514,
+        106,
+        115
+      ],
+      "mask": "region-13.png"
+    },
+    {
+      "regionId": 14,
+      "frameIndex": 14,
+      "frame": "img-7-3-14",
+      "bounds": [
+        565,
+        469,
+        107,
+        129
+      ],
+      "mask": "region-14.png"
+    },
+    {
+      "regionId": 15,
+      "frameIndex": 15,
+      "frame": "img-7-3-15",
+      "bounds": [
+        592,
+        392,
+        149,
+        128
+      ],
+      "mask": "region-15.png"
+    },
+    {
+      "regionId": 16,
+      "frameIndex": 16,
+      "frame": "img-7-3-16",
+      "bounds": [
+        179,
+        186,
+        412,
+        120
+      ],
+      "mask": "region-16.png"
+    }
+  ]
+}

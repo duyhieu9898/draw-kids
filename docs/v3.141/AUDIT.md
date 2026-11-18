@@ -1,3 +1,5 @@
+> **Lưu trữ — giai đoạn web lịch sử.** Mục tiêu, checklist và số liệu dưới đây không phải kế hoạch hay nghiệm thu native hiện tại. **Đính chính:** PWA còn nhiều hành vi sai; mọi phần trăm tương đồng và kết luận parity trong báo cáo này không đáng tin cậy; gameplay APK 3.141 chưa được quan sát trong lần chạy ghi tại [STATUS.md](STATUS.md). Xem [kế hoạch chuyển đổi native](../REACT_NATIVE_MIGRATION_PLAN.md).
+
 # Báo cáo Audit Chi tiết: UI & Logic So với App Gốc (Unity Bimi Boo v3.141)
 
 > **Nhánh thực hiện:** `reference-3.141`  
@@ -17,7 +19,7 @@ Theo chỉ đạo của người dùng:
    - Bảng màu mở khoá toàn bộ 15 màu (loại bỏ mặt nạ ổ khoá).
    - Kích hoạt đầy đủ các công cụ vẽ cơ bản: Bút dạ (Marker), Bút chì (Pencil), Cọ vẽ (Brush), Thùng màu (Fill), Cục tẩy (Eraser).
    - Tích hợp âm thanh nét vẽ liên tục (`brush.wav`) khi rê tay trên canvas.
-3. **Mức độ tương đồng với app gốc:** Đạt **100%** đối với toàn bộ phạm vi tính năng hoạt động thực tế (gameplay, Spine 3.8 animations, star burst effect, responsive geometry, audio system, offline persistence).
+3. **Mức độ tương đồng với app gốc:** Chưa xác định. PWA còn nhiều hành vi sai và chưa có cơ sở để tính tỷ lệ tương đồng.
 
 ### Điểm số Lighthouse Audit (Mobile Snapshot)
 - **Accessibility:** `100 / 100` ✅
@@ -33,9 +35,9 @@ Theo chỉ đạo của người dùng:
 
 | Tiêu chí | Ứng dụng gốc (Unity APK 3.141) | Bản Web PWA (`reference-3.141`) | Mức độ khớp |
 | :--- | :--- | :--- | :---: |
-| **Nhân vật & Animation** | Spine animation Bimi Boo cầm cọ vẽ và bảng màu nhảy nhót vui nhộn trên nền trắng. | Chạy Spine 3.8 WebGL runtime, nhân vật chuyển động nhịp nhàng đúng setup pose. | 98% |
-| **Âm thanh** | Đồng bộ các clip: `appear`, `bimiboo`, `brush`, `palette`, `hat`, `end`. | Tự động phát âm thanh theo các mốc keyframe sự kiện của Spine widget. | 95% |
-| **Thời lượng & Chuyển màn** | Tự động kết thúc sau ~8.2 giây hoặc chạm vào màn hình để bỏ qua sang Main Menu. | Tự động kết thúc sau 8.2s hoặc tap/click để chuyển ngay sang Main Menu. | 100% |
+| **Nhân vật & Animation** | Spine animation Bimi Boo cầm cọ vẽ và bảng màu nhảy nhót vui nhộn trên nền trắng. | Chạy Spine 3.8 WebGL runtime, nhân vật chuyển động nhịp nhàng đúng setup pose. | Chưa xác minh |
+| **Âm thanh** | Đồng bộ các clip: `appear`, `bimiboo`, `brush`, `palette`, `hat`, `end`. | Tự động phát âm thanh theo các mốc keyframe sự kiện của Spine widget. | Chưa xác minh |
+| **Thời lượng & Chuyển màn** | Tự động kết thúc sau ~8.2 giây hoặc chạm vào màn hình để bỏ qua sang Main Menu. | Tự động kết thúc sau 8.2s hoặc tap/click để chuyển ngay sang Main Menu. | Chưa xác minh |
 
 #### Hạn chế & Khác biệt hiện tại:
 - **Chính sách Autoplay của trình duyệt:** Trình duyệt web trên mobile (Safari/Chrome) yêu cầu ít nhất một tương tác chạm (`pointerdown`) của người dùng trước khi phát âm thanh tự động. Nếu người dùng không chạm vào màn hình trong 1–2 giây đầu, âm thanh intro chỉ bắt đầu khi có chạm đầu tiên.
@@ -46,11 +48,11 @@ Theo chỉ đạo của người dùng:
 
 | Tiêu chí | Ứng dụng gốc (Unity APK 3.141) | Bản Web PWA (`reference-3.141`) | Mức độ khớp |
 | :--- | :--- | :--- | :---: |
-| **Số lượng bộ tranh** | Đầy đủ 12 packs: Animals, Music, Food, Insects, Dolls, Magic, Dinosaurs, School, Ocean, Halloween, Christmas, Vehicles. | Hiển thị đầy đủ đúng thứ tự 12 packs với text tiếng Anh gốc từ Unity `menu.json`. | 100% |
-| **Bố cục & Khung tranh** | 2 hàng cuộn ngang, nền gỗ hai bên (`bg_left`, `bg_right`), khung tranh gỗ viền hoa cỏ trang trí từng góc. | Tái tạo chính xác cây phân cấp RectTransform từ `menu.json`, tỉ lệ chuẩn iPhone 12 Pro. | 100% |
-| **Spine 3.8 tương tác** | Mỗi ô tranh có 1 nhân vật Spine 3.8 cử động nhịp thở (idle) và vẫy tay nhảy mừng khi bấm (action). | Tích hợp Spine 3.8 WebGL renderer, render đồng thời cả 12 nhân vật trên 1 canvas duy nhất ở 60fps. | 100% |
-| **Cuộn ngang cảm ứng** | Cuộn mượt mà có quán tính (momentum scrolling), giới hạn biên trái/phải không bị lệch. | Hỗ trợ touch drag mượt mà, inertia scroll, không bị giật lag. | 100% |
-| **Nút điều hướng trên đỉnh** | Nút "For parents" & "Unlock all" | Đã loại bỏ theo chỉ đạo của người dùng để tập trung mở khoá toàn bộ cho trẻ em. | 100% |
+| **Số lượng bộ tranh** | Đầy đủ 12 packs: Animals, Music, Food, Insects, Dolls, Magic, Dinosaurs, School, Ocean, Halloween, Christmas, Vehicles. | Hiển thị đầy đủ đúng thứ tự 12 packs với text tiếng Anh gốc từ Unity `menu.json`. | Chưa xác minh |
+| **Bố cục & Khung tranh** | 2 hàng cuộn ngang, nền gỗ hai bên (`bg_left`, `bg_right`), khung tranh gỗ viền hoa cỏ trang trí từng góc. | Tái tạo chính xác cây phân cấp RectTransform từ `menu.json`, tỉ lệ chuẩn iPhone 12 Pro. | Chưa xác minh |
+| **Spine 3.8 tương tác** | Mỗi ô tranh có 1 nhân vật Spine 3.8 cử động nhịp thở (idle) và vẫy tay nhảy mừng khi bấm (action). | Tích hợp Spine 3.8 WebGL renderer, render đồng thời cả 12 nhân vật trên 1 canvas duy nhất ở 60fps. | Chưa xác minh |
+| **Cuộn ngang cảm ứng** | Cuộn mượt mà có quán tính (momentum scrolling), giới hạn biên trái/phải không bị lệch. | Hỗ trợ touch drag mượt mà, inertia scroll, không bị giật lag. | Chưa xác minh |
+| **Nút điều hướng trên đỉnh** | Nút "For parents" & "Unlock all" | Đã loại bỏ theo chỉ đạo của người dùng để tập trung mở khoá toàn bộ cho trẻ em. | Chưa xác minh |
 
 ---
 
@@ -58,10 +60,10 @@ Theo chỉ đạo của người dùng:
 
 | Tiêu chí | Ứng dụng gốc (Unity APK 3.141) | Bản Web PWA (`reference-3.141`) | Mức độ khớp |
 | :--- | :--- | :--- | :---: |
-| **Số tranh mỗi gói** | 16 tranh mỗi gói (tổng cộng 192 vị trí tranh). | Hiển thị lưới 16 tranh cuộn ngang 2 hàng (8 cột × 2 hàng). | 100% |
-| **Biểu tượng xem trước** | Icon vẽ màu thu nhỏ của từng hình tranh trong khung thẻ bo tròn. | Trích xuất đầy đủ preview icons gốc từ APK 3.141 (bao gồm cả pack 9 Christmas & pack 10 Dinosaurs). | 95% |
-| **Thanh tiêu đề** | Nút Back màu vàng uốn lượn, tên bộ tranh (e.g. `Animals`), chỉ số tranh (`16 Pictures` hoặc `{x}/16 Colored`). | Đúng đồ hoạ nút back gốc, tên pack và nhãn đếm trạng thái tiếng Anh cập nhật theo thời gian thực. | 100% |
-| **Trạng thái tranh đã tô** | Thẻ tranh hiển thị hình thu nhỏ thực tế bé đã tô kèm viền/dấu nhận biết tranh hoàn thành. | Tự động tạo ảnh thumbnail 264×264 từ canvas vẽ và lưu vào IndexedDB; hiển thị thumbnail bé đã tô kèm viền xanh. | 98% |
+| **Số tranh mỗi gói** | 16 tranh mỗi gói (tổng cộng 192 vị trí tranh). | Hiển thị lưới 16 tranh cuộn ngang 2 hàng (8 cột × 2 hàng). | Chưa xác minh |
+| **Biểu tượng xem trước** | Icon vẽ màu thu nhỏ của từng hình tranh trong khung thẻ bo tròn. | Trích xuất đầy đủ preview icons gốc từ APK 3.141 (bao gồm cả pack 9 Christmas & pack 10 Dinosaurs). | Chưa xác minh |
+| **Thanh tiêu đề** | Nút Back màu vàng uốn lượn, tên bộ tranh (e.g. `Animals`), chỉ số tranh (`16 Pictures` hoặc `{x}/16 Colored`). | Đúng đồ hoạ nút back gốc, tên pack và nhãn đếm trạng thái tiếng Anh cập nhật theo thời gian thực. | Chưa xác minh |
+| **Trạng thái tranh đã tô** | Thẻ tranh hiển thị hình thu nhỏ thực tế bé đã tô kèm viền/dấu nhận biết tranh hoàn thành. | Tự động tạo ảnh thumbnail 264×264 từ canvas vẽ và lưu vào IndexedDB; hiển thị thumbnail bé đã tô kèm viền xanh. | Chưa xác minh |
 
 #### Hạn chế & Khác biệt hiện tại:
 - **Mask vector của Pack 9–12:** Pack 1 đến 8 có đầy đủ bộ mask SVG chất lượng cao trích xuất từ tài nguyên gốc. Pack 9 đến 12 (Christmas, Dinosaurs, Ocean, Magic) hiển thị đúng 32 preview icon mới trích xuất từ APK, nhưng khi mở vào bàn vẽ thì khung hình và mask vector tạm thời ánh xạ xoay vòng theo tập mẫu của Pack 1–8 do Unity 3.141 đóng gói các tranh mới dạng Addressables nhị phân.
@@ -72,15 +74,15 @@ Theo chỉ đạo của người dùng:
 
 | Tiêu chí | Ứng dụng gốc (Unity APK 3.141) | Bản Web PWA (`reference-3.141`) | Mức độ khớp |
 | :--- | :--- | :--- | :---: |
-| **Khu vực khung vẽ** | Hình vuông tỉ lệ chuẩn (775×775), viền đen sắc nét đè lên trên lớp màu. | Canvas 2 lớp với scale co giãn thông minh khớp khung nhìn mobile landscape không bị méo hay vỡ hạt. | 100% |
-| **Tô viền không tràn (Clipping)** | Nét cọ vẽ chỉ xuất hiện bên trong vùng chạm ban đầu (clipping mask theo từng bộ phận). | Sử dụng Canvas 2D `destination-in` cắt nét vẽ chính xác theo mask của vùng được chạm, không bao giờ tràn ra ngoài. | 100% |
-| **Đổ màu thông minh (Fill)** | Bấm vào vùng nào thì vùng đó nhận màu active ngay lập tức. | Hoạt động tức thì với `drawTintedRegion`, hỗ trợ undo mượt mà. | 100% |
-| **Hiệu ứng ngôi sao bay (Star Burst)** | Khi nhấc ngón tay sau nét vẽ hoặc khi đổ màu, một chùm sao vàng bay bung toả ra kèm âm thanh `star`. | Sử dụng sprite gốc `particle-star.png` (58×58), mô phỏng vật lý bung toả 14 tia sao, xoay tự do, rơi theo trọng lực và mờ dần trong 60fps. | 95% |
-| **Thanh kệ công cụ (Right Shelf)** | Nền gỗ đứng gồm 2 nút nhỏ trên (Screenshot, OK), 3 nút tròn to (Tool, Color, Eraser) và 2 nút nhỏ dưới (Undo, Delete). | Sử dụng đúng asset sprite gốc của `tools_shelf.png`, các nút bấm chuẩn đồ hoạ pixel-perfect. | 100% |
-| **Bảng chọn công cụ (Tool Picker)** | Bật popup công cụ: Marker, Fill, Pencil, Brush, Spray, Glitter, Pattern. | Bật popup `popup_tools.png` với đầy đủ icon gốc; kích hoạt tương tác mượt mà cho 4 công cụ chính: Marker, Fill, Pencil, Brush. | 100% |
-| **Bảng màu (Palette Picker)** | Bật popup 15 màu dạng lưới 3×5. | Mở khoá 100% toàn bộ 15 màu sắc (gỡ bỏ mặt nạ khoá) cho phép bé tự do chọn màu bất kỳ. | 100% |
-| **Âm thanh nét vẽ liên tục** | Phát tiếng cọ xột xoạt khi rê ngón tay vẽ trên màn hình. | Tích hợp audio loop `brush.wav` phát mượt mà khi `pointermove` và tự động dừng khi nhấc ngón tay. | 100% |
-| **Lưu & Xuất ảnh** | Chụp ảnh lưu về máy thiết bị và nút OK hoàn tất lưu vào bộ sưu tập. | Nút Screenshot tải ảnh PNG 775×775 về máy; nút OK lưu IndexedDB và quay về Gallery mượt mà. | 100% |
+| **Khu vực khung vẽ** | Hình vuông tỉ lệ chuẩn (775×775), viền đen sắc nét đè lên trên lớp màu. | Canvas 2 lớp với scale co giãn thông minh khớp khung nhìn mobile landscape không bị méo hay vỡ hạt. | Chưa xác minh |
+| **Tô viền không tràn (Clipping)** | Nét cọ vẽ chỉ xuất hiện bên trong vùng chạm ban đầu (clipping mask theo từng bộ phận). | Sử dụng Canvas 2D `destination-in` cắt nét vẽ chính xác theo mask của vùng được chạm, không bao giờ tràn ra ngoài. | Chưa xác minh |
+| **Đổ màu thông minh (Fill)** | Bấm vào vùng nào thì vùng đó nhận màu active ngay lập tức. | Hoạt động tức thì với `drawTintedRegion`, hỗ trợ undo mượt mà. | Chưa xác minh |
+| **Hiệu ứng ngôi sao bay (Star Burst)** | Khi nhấc ngón tay sau nét vẽ hoặc khi đổ màu, một chùm sao vàng bay bung toả ra kèm âm thanh `star`. | Sử dụng sprite gốc `particle-star.png` (58×58), mô phỏng vật lý bung toả 14 tia sao, xoay tự do, rơi theo trọng lực và mờ dần trong 60fps. | Chưa xác minh |
+| **Thanh kệ công cụ (Right Shelf)** | Nền gỗ đứng gồm 2 nút nhỏ trên (Screenshot, OK), 3 nút tròn to (Tool, Color, Eraser) và 2 nút nhỏ dưới (Undo, Delete). | Sử dụng đúng asset sprite gốc của `tools_shelf.png`, các nút bấm chuẩn đồ hoạ pixel-perfect. | Chưa xác minh |
+| **Bảng chọn công cụ (Tool Picker)** | Bật popup công cụ: Marker, Fill, Pencil, Brush, Spray, Glitter, Pattern. | Bật popup `popup_tools.png` với đầy đủ icon gốc; kích hoạt tương tác mượt mà cho 4 công cụ chính: Marker, Fill, Pencil, Brush. | Chưa xác minh |
+| **Bảng màu (Palette Picker)** | Bật popup 15 màu dạng lưới 3×5. | Mở khoá 100% toàn bộ 15 màu sắc (gỡ bỏ mặt nạ khoá) cho phép bé tự do chọn màu bất kỳ. | Chưa xác minh |
+| **Âm thanh nét vẽ liên tục** | Phát tiếng cọ xột xoạt khi rê ngón tay vẽ trên màn hình. | Tích hợp audio loop `brush.wav` phát mượt mà khi `pointermove` và tự động dừng khi nhấc ngón tay. | Chưa xác minh |
+| **Lưu & Xuất ảnh** | Chụp ảnh lưu về máy thiết bị và nút OK hoàn tất lưu vào bộ sưu tập. | Nút Screenshot tải ảnh PNG 775×775 về máy; nút OK lưu IndexedDB và quay về Gallery mượt mà. | Chưa xác minh |
 
 #### Hạn chế & Khác biệt hiện tại:
 - **Công cụ nâng cao (Glitter, Spray, Pattern):** Các công cụ vẽ hạt nhũ lấp lánh (glitter), bình phun (spray), và hoa văn (pattern) hiển thị icon chuẩn gốc trong menu công cụ nhưng ở trạng thái dự phòng (disabled) như bản freemium.
@@ -91,10 +93,10 @@ Theo chỉ đạo của người dùng:
 
 | Tiêu chí | Ứng dụng gốc (Unity APK 3.141) | Bản Web PWA (`reference-3.141`) | Mức độ khớp |
 | :--- | :--- | :--- | :---: |
-| **Lưu trữ tiến trình** | Lưu các nét vẽ và trạng thái hoàn thành vào persistent data path của máy. | Sử dụng IndexedDB chuẩn (`drawing-rebuild-poc`) lưu trữ danh sách hành động vẽ (actions), thumbnail base64 và thời gian cập nhật. | 100% |
-| **Hệ thống âm thanh** | Hơn 40 hiệu ứng âm thanh và nhạc nền (WAV/OGG). | Tích hợp 43 unique audio clips gốc (WAV/MP3) vào thư mục sounds, `SoundManager` hỗ trợ phát đa luồng không giật lag. | 95% |
-| **Khả năng chơi Offline (PWA)** | Cài đặt APK chơi offline không cần mạng. | Cấu hình ServiceWorker qua Vite PWA precache toàn bộ asset, chơi hoàn toàn offline trong chế độ Airplane/Không mạng. | 100% |
-| **Khóa xoay màn hình ngang** | Tự động khoá ngang trên Android/iOS. | Hiển thị màn hình thông báo trực quan yêu cầu xoay ngang thiết bị (`Please rotate your device to landscape mode`) nếu người dùng cầm dọc máy. | 95% |
+| **Lưu trữ tiến trình** | Lưu các nét vẽ và trạng thái hoàn thành vào persistent data path của máy. | Sử dụng IndexedDB chuẩn (`drawing-rebuild-poc`) lưu trữ danh sách hành động vẽ (actions), thumbnail base64 và thời gian cập nhật. | Chưa xác minh |
+| **Hệ thống âm thanh** | Hơn 40 hiệu ứng âm thanh và nhạc nền (WAV/OGG). | Tích hợp 43 unique audio clips gốc (WAV/MP3) vào thư mục sounds, `SoundManager` hỗ trợ phát đa luồng không giật lag. | Chưa xác minh |
+| **Khả năng chơi Offline (PWA)** | Cài đặt APK chơi offline không cần mạng. | Cấu hình ServiceWorker qua Vite PWA precache toàn bộ asset, chơi hoàn toàn offline trong chế độ Airplane/Không mạng. | Chưa xác minh |
+| **Khóa xoay màn hình ngang** | Tự động khoá ngang trên Android/iOS. | Hiển thị màn hình thông báo trực quan yêu cầu xoay ngang thiết bị (`Please rotate your device to landscape mode`) nếu người dùng cầm dọc máy. | Chưa xác minh |
 
 #### Hạn chế & Khác biệt hiện tại:
 - **Cài đặt màn hình chính iOS (Home Screen):** Trên iOS Safari, để ẩn hoàn toàn thanh điều hướng của trình duyệt, người dùng cần bấm "Thêm vào màn hình chính" (Add to Home Screen) để mở dưới dạng PWA độc lập toàn màn hình.

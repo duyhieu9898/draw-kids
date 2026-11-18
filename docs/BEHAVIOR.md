@@ -1,3 +1,5 @@
+> **Lưu trữ — bản web/PWA lịch sử.** Tài liệu này mô tả mục tiêu hoặc kết quả của một giai đoạn trước, không phải kế hoạch hiện hành hay bằng chứng nghiệm thu native. Xem [kế hoạch chuyển đổi React Native](REACT_NATIVE_MIGRATION_PLAN.md). Các tuyên bố hoàn tất/parity trong báo cáo cũ cần đối chiếu phạm vi và bằng chứng gốc.
+
 # Quan sát hành vi Android
 
 ## Môi trường và phạm vi
@@ -8,7 +10,7 @@ Ubuntu, Android Emulator API 29, AVD rea-drawing-api29, serial emulator-5580. Ga
 
 | ID | Thao tác và kết quả quan sát | Bằng chứng |
 | --- | --- | --- |
-| B01 | drawing.apk mở trình tải Uptodown hướng tới Kids coloring & drawing games; tải và cài app Drawing | 01-launch.png, 05-download-state.png |
+| B01 | Uptodown installer mở trang tải Kids coloring & drawing games (67.94 MB); tải và cài app Drawing (file gốc `drawing.apk` đã xóa — đây là Uptodown App Store, không phải game) | 01-launch.png, 05-download-state.png |
 | B02 | Home có Animals; chạm mở thư viện tranh; chọn mèo mở canvas ngang | 07-game-home.png, 08-gallery.png, 09-cat-before.png |
 | B03 | Marker đỏ mặc định; kéo (710,250) → (950,250) tạo nét dày trên trán và hiệu ứng sao | 10-stroke.png |
 | B04 | Chạm Undo (1678,957) xóa toàn bộ nét vừa vẽ | 11-undo.png |

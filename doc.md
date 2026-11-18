@@ -1,3 +1,7 @@
+> **Tài liệu lịch sử:** Đề xuất PWA bên dưới không còn là hướng triển khai. Kế hoạch hiện hành là [chuyển sang React Native, Expo và Skia](docs/REACT_NATIVE_MIGRATION_PLAN.md). Các ghi chép phân tích APK được giữ để tham khảo.
+>
+> **Lưu ý về APK:** `drawing.apk` được nhắc dưới đây là Uptodown App Store installer (đã xóa khỏi workspace). App game duy nhất là `Kids-Color-Games-Baby-Drawing_3.141_apkcube.apks`. Xem [docs/INVENTORY.md](docs/INVENTORY.md).
+
 Với `drawing.apk` (15,8 MB), mục tiêu viết lại game tô màu cho trẻ 3–4 tuổi để chơi trên iPhone 12 Pro, mình đề xuất quy trình 10 bước, từ APK đến một PWA có thể chơi offline.
 
 Nguyên tắc quan trọng nhất: không đưa APK cho AI rồi yêu cầu viết lại toàn bộ ngay lập tức. Phải có giai đoạn phân tích, xác minh hành vi và tạo đặc tả trước khi lập trình.

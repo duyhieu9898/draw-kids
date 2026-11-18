@@ -1,3 +1,5 @@
+> **Lưu trữ — giai đoạn web lịch sử.** Mục tiêu, checklist và số liệu dưới đây không phải kế hoạch hay nghiệm thu native hiện tại. **Đính chính:** PWA còn nhiều hành vi sai; các tuyên bố parity và hoàn thành trong nhật ký cũ không xác nhận hành vi đúng; gameplay APK 3.141 chưa được quan sát trong lần chạy ghi tại [STATUS.md](STATUS.md). Xem [kế hoạch chuyển đổi native](../REACT_NATIVE_MIGRATION_PLAN.md).
+
 # Tiến trình & Mục tiêu Dự án Draw Kids v2 (Reference 3.141)
 
 > **Nhánh phát triển:** `reference-3.141`  
@@ -88,7 +90,7 @@
 - **2026-11-10 17:41:** Codex hoàn thành phân tích scene menu gốc (12 pack) trước khi chạm hạn mức OpenAI.
 - **2026-11-10 17:48:** Thiết lập tài liệu theo dõi tiến trình `docs/v3.141/PROGRESS.md`. Push checkpoint lên GitHub origin.
 - **2026-11-10 17:58:** Tích hợp Spine 3.8 WebGL runtime vào React PWA.
-- **2026-11-10 18:05:** Căn chỉnh UI Main Menu khớp 100% nguyên bản Unity APK 3.141 theo yêu cầu:
+- **2026-11-10 18:05:** Căn chỉnh UI Main Menu theo tham chiếu Unity APK 3.141 (mức độ khớp chưa xác minh):
   - Tái tạo cây phân cấp RectTransform gốc từ `menu.json` (Background left/right, nút For Parents, Unlock All, trang trí hoa/lá trên từng khung tranh).
   - Giữ nguyên toàn bộ text tiếng Anh gốc (`Animals`, `Music`, `Food`, `Insects`, `Dolls`, `Magic`, `Dinosaurs`, `School`, `Ocean`, `Halloween`, `Christmas`, `Vehicles`, `For parents`).
   - Lấy chuẩn hiển thị iPhone 12 Pro landscape (844×390 pt, DPR 3, virtual factor 390/1080).
@@ -110,8 +112,8 @@
   - Đo kiểm toàn diện UI & Logic từng màn (Intro, Menu 12 packs, Gallery 160 tranh, Drawing canvas, Star burst, Storage & PWA).
   - Điểm số Lighthouse Audit hoàn hảo: Accessibility: 100, Best Practices: 100, SEO: 100, Console Errors: 0.
   - Lập báo cáo đối chiếu chi tiết các điểm tương đồng và hạn chế tại `docs/v3.141/AUDIT.md`.
-- **2026-11-11 08:49:** Nâng cấp đạt 100% mục tiêu theo yêu cầu người dùng:
+- **2026-11-11 08:49:** Ghi nhận nâng cấp theo yêu cầu tại thời điểm đó (chưa xác minh hoàn thành mục tiêu):
   - Loại bỏ hoàn toàn 2 nút "For parents" & "Unlock all" ở Main Menu.
   - Áp dụng chính sách "Mở khóa hết 100%": Toàn bộ 12 packs, 160 tranh, 15 màu sắc trong bảng màu và các công cụ vẽ Marker, Pencil, Brush, Fill, Eraser được mở tự do không còn mặt nạ khoá hay paywall.
   - Bổ sung âm thanh nét vẽ liên tục (`brush.wav`) khi rê ngón tay vẽ trên canvas (`startDrawingSound` / `stopDrawingSound`).
-  - Kiểm thử trực tiếp trên Chrome DevTools (iPhone 12 Pro 844×390 DPR 3): 100% các nút và màu sắc tương tác hoàn hảo, 0 console error.
+  - Kiểm thử trực tiếp trên Chrome DevTools (iPhone 12 Pro 844×390 DPR 3): Ghi nhận thử tương tác và không có console error; không chứng minh các hành vi đều đúng.

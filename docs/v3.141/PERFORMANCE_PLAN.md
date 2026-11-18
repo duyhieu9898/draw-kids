@@ -1,3 +1,5 @@
+> **Lưu trữ — giai đoạn web lịch sử.** Mục tiêu, checklist và số liệu dưới đây không phải kế hoạch hay nghiệm thu native hiện tại. Các tuyên bố parity/hoàn thành cần được kiểm chứng độc lập; gameplay APK 3.141 chưa được quan sát trong lần chạy ghi tại [STATUS.md](STATUS.md). Xem [kế hoạch chuyển đổi native](../REACT_NATIVE_MIGRATION_PLAN.md).
+
 # Plan tối ưu hiệu năng web 3.141 (mục tiêu: mượt trên iPhone 12 Pro)
 
 Tài liệu này là checklist thực thi. Số liệu "đo" lấy từ `npm run build` và file trên đĩa ngày 2026-11-12; các ngân sách còn lại là mục tiêu cần đo lại trên máy thật.
@@ -89,7 +91,7 @@ Chi tiết kỹ thuật:
 9. **Lưu trữ:** đóng gói `actions` với toạ độ làm tròn 1 chữ số thập phân; thumbnail lưu Blob; `updatedAt` giữ nguyên schema.
 
 ### Nghiệm thu
-- Vẽ 60 giây liên tục trên `pack2/1` (41 vùng): không frame nào > 24 ms; không có GC spike do cấp phát canvas.
+- Vẽ 60 giây liên tục trên `dolls/1` (41 vùng): không frame nào > 24 ms; không có GC spike do cấp phát canvas.
 - Sau 50 nét + 20 fill: frame time không tăng theo số action (đo trước/sau bằng cùng thao tác).
 - Mở tranh: `performance.measure` từ route change tới frame đầu < 400 ms ở cache nóng.
 - Bộ nhớ canvas của tranh: đo bằng `performance.memory`/Safari memory < 20 MB.

@@ -1,3 +1,5 @@
+> **Lưu trữ — bản web/PWA lịch sử.** Tài liệu này mô tả mục tiêu hoặc kết quả của một giai đoạn trước, không phải kế hoạch hiện hành hay bằng chứng nghiệm thu native. Xem [kế hoạch chuyển đổi React Native](REACT_NATIVE_MIGRATION_PLAN.md). **Đính chính:** PWA còn nhiều hành vi sai; các nhãn PASS và kết luận parity cũ không xác nhận tính đúng đắn của toàn bộ hành vi.
+
 # Báo cáo Kiểm thử Parity & Audit Chrome DevTools MCP
 
 Báo cáo chi tiết quá trình kiểm thử hành vi đối soát với bản Android gốc `com.bimiboo.drawing 3.101` trên trình duyệt Chrome Mobile Emulation (844×390 @3x - iPhone landscape) và kết quả kiểm toán Lighthouse tự động.
@@ -51,5 +53,5 @@ Báo cáo chi tiết quá trình kiểm thử hành vi đối soát với bản 
 ---
 
 ## 3. Kết luận
-Toàn bộ hành vi cốt lõi của game gốc Cocos2d-x `com.bimiboo.drawing` đã được tái lập đầy đủ, hoạt động mượt mà và kiểm toán đạt 100% điểm chất lượng kỹ thuật trên Web/PWA.
+**Đính chính:** Không có cơ sở để kết luận đã tái lập đầy đủ hành vi. PWA còn nhiều hành vi sai; điểm Lighthouse và kết quả trình duyệt không chứng minh parity.
 

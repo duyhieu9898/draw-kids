@@ -1,0 +1,58 @@
+{
+  "id": "candidate-ocean-11",
+  "pictureNumber": 11,
+  "source": "com.bimiboo.drawing 3.141 resources.assets",
+  "rootTransformPathId": 12777,
+  "outlineSpritePathId": 6031,
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 1,
+      "frameIndex": 0,
+      "frame": "image-1",
+      "spritePathId": 6165,
+      "gameObjectPathId": 10231,
+      "bounds": [
+        0,
+        0,
+        775,
+        775
+      ],
+      "mask": "region-0.png"
+    },
+    {
+      "regionId": 2,
+      "frameIndex": 1,
+      "frame": "image-2",
+      "spritePathId": 6483,
+      "gameObjectPathId": 12200,
+      "bounds": [
+        522,
+        444,
+        142,
+        295
+      ],
+      "mask": "region-1.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 2,
+      "frame": "image-3",
+      "spritePathId": 6294,
+      "gameObjectPathId": 12351,
+      "bounds": [
+        111,
+        36,
+        503,
+        535
+      ],
+      "mask": "region-2.png"
+    }
+  ],
+  "emptySourceRegions": [],
+  "inactiveSourceRegions": []
+}

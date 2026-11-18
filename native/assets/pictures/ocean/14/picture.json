@@ -1,0 +1,114 @@
+{
+  "id": "candidate-ocean-14",
+  "pictureNumber": 14,
+  "source": "com.bimiboo.drawing 3.141 resources.assets",
+  "rootTransformPathId": 12770,
+  "outlineSpritePathId": 6672,
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 1,
+      "frameIndex": 0,
+      "frame": "image-1",
+      "spritePathId": 3754,
+      "gameObjectPathId": 8819,
+      "bounds": [
+        0,
+        0,
+        775,
+        775
+      ],
+      "mask": "region-0.png"
+    },
+    {
+      "regionId": 2,
+      "frameIndex": 1,
+      "frame": "image-2",
+      "spritePathId": 6299,
+      "gameObjectPathId": 9124,
+      "bounds": [
+        36,
+        51,
+        702,
+        673
+      ],
+      "mask": "region-1.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 2,
+      "frame": "image-3",
+      "spritePathId": 6240,
+      "gameObjectPathId": 9863,
+      "bounds": [
+        241,
+        582,
+        294,
+        129
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 4,
+      "frameIndex": 3,
+      "frame": "image-4",
+      "spritePathId": 5869,
+      "gameObjectPathId": 12129,
+      "bounds": [
+        547,
+        364,
+        165,
+        279
+      ],
+      "mask": "region-3.png"
+    },
+    {
+      "regionId": 5,
+      "frameIndex": 4,
+      "frame": "image-5",
+      "spritePathId": 4138,
+      "gameObjectPathId": 7583,
+      "bounds": [
+        439,
+        99,
+        237,
+        196
+      ],
+      "mask": "region-4.png"
+    },
+    {
+      "regionId": 6,
+      "frameIndex": 5,
+      "frame": "image-6",
+      "spritePathId": 4527,
+      "gameObjectPathId": 7897,
+      "bounds": [
+        101,
+        97,
+        235,
+        193
+      ],
+      "mask": "region-5.png"
+    },
+    {
+      "regionId": 7,
+      "frameIndex": 6,
+      "frame": "image-7",
+      "spritePathId": 4149,
+      "gameObjectPathId": 7266,
+      "bounds": [
+        62,
+        364,
+        156,
+        275
+      ],
+      "mask": "region-6.png"
+    }
+  ],
+  "emptySourceRegions": [],
+  "inactiveSourceRegions": []
+}

@@ -1,0 +1,265 @@
+{
+  "id": "candidate-2-8",
+  "assetGroup": 2,
+  "pictureNumber": 8,
+  "source": "com.bimiboo.drawing 3.141",
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 2,
+      "frameIndex": 2,
+      "frame": "img-2-8-2",
+      "bounds": [
+        287,
+        447,
+        89,
+        89
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 3,
+      "frame": "img-2-8-3",
+      "bounds": [
+        102,
+        334,
+        211,
+        159
+      ],
+      "mask": "region-3.png"
+    },
+    {
+      "regionId": 4,
+      "frameIndex": 4,
+      "frame": "img-2-8-4",
+      "bounds": [
+        435,
+        36,
+        164,
+        142
+      ],
+      "mask": "region-4.png"
+    },
+    {
+      "regionId": 5,
+      "frameIndex": 5,
+      "frame": "img-2-8-5",
+      "bounds": [
+        442,
+        332,
+        98,
+        128
+      ],
+      "mask": "region-5.png"
+    },
+    {
+      "regionId": 6,
+      "frameIndex": 6,
+      "frame": "img-2-8-6",
+      "bounds": [
+        417,
+        410,
+        84,
+        130
+      ],
+      "mask": "region-6.png"
+    },
+    {
+      "regionId": 7,
+      "frameIndex": 7,
+      "frame": "img-2-8-7",
+      "bounds": [
+        479,
+        112,
+        147,
+        403
+      ],
+      "mask": "region-7.png"
+    },
+    {
+      "regionId": 8,
+      "frameIndex": 8,
+      "frame": "img-2-8-8",
+      "bounds": [
+        317,
+        34,
+        204,
+        121
+      ],
+      "mask": "region-8.png"
+    },
+    {
+      "regionId": 9,
+      "frameIndex": 9,
+      "frame": "img-2-8-9",
+      "bounds": [
+        214,
+        320,
+        272,
+        149
+      ],
+      "mask": "region-9.png"
+    },
+    {
+      "regionId": 11,
+      "frameIndex": 11,
+      "frame": "img-2-8-11",
+      "bounds": [
+        339,
+        287,
+        99,
+        76
+      ],
+      "mask": "region-11.png"
+    },
+    {
+      "regionId": 12,
+      "frameIndex": 12,
+      "frame": "img-2-8-12",
+      "bounds": [
+        245,
+        467,
+        313,
+        182
+      ],
+      "mask": "region-12.png"
+    },
+    {
+      "regionId": 13,
+      "frameIndex": 13,
+      "frame": "img-2-8-13",
+      "bounds": [
+        254,
+        590,
+        262,
+        89
+      ],
+      "mask": "region-13.png"
+    },
+    {
+      "regionId": 14,
+      "frameIndex": 14,
+      "frame": "img-2-8-14",
+      "bounds": [
+        172,
+        349,
+        96,
+        56
+      ],
+      "mask": "region-14.png"
+    },
+    {
+      "regionId": 15,
+      "frameIndex": 15,
+      "frame": "img-2-8-15",
+      "bounds": [
+        312,
+        623,
+        89,
+        123
+      ],
+      "mask": "region-15.png"
+    },
+    {
+      "regionId": 16,
+      "frameIndex": 16,
+      "frame": "img-2-8-16",
+      "bounds": [
+        212,
+        86,
+        116,
+        255
+      ],
+      "mask": "region-16.png"
+    },
+    {
+      "regionId": 17,
+      "frameIndex": 17,
+      "frame": "img-2-8-17",
+      "bounds": [
+        502,
+        582,
+        122,
+        99
+      ],
+      "mask": "region-17.png"
+    },
+    {
+      "regionId": 18,
+      "frameIndex": 18,
+      "frame": "img-2-8-18",
+      "bounds": [
+        325,
+        617,
+        63,
+        101
+      ],
+      "mask": "region-18.png"
+    },
+    {
+      "regionId": 19,
+      "frameIndex": 19,
+      "frame": "img-2-8-19",
+      "bounds": [
+        489,
+        554,
+        111,
+        104
+      ],
+      "mask": "region-19.png"
+    },
+    {
+      "regionId": 20,
+      "frameIndex": 20,
+      "frame": "img-2-8-20",
+      "bounds": [
+        414,
+        244,
+        95,
+        109
+      ],
+      "mask": "region-20.png"
+    },
+    {
+      "regionId": 21,
+      "frameIndex": 21,
+      "frame": "img-2-8-21",
+      "bounds": [
+        244,
+        162,
+        119,
+        181
+      ],
+      "mask": "region-21.png"
+    },
+    {
+      "regionId": 22,
+      "frameIndex": 22,
+      "frame": "img-2-8-22",
+      "bounds": [
+        279,
+        89,
+        232,
+        217
+      ],
+      "mask": "region-22.png"
+    },
+    {
+      "regionId": 24,
+      "frameIndex": 24,
+      "frame": "img-2-8-24",
+      "bounds": [
+        244,
+        412,
+        234,
+        202
+      ],
+      "mask": "region-24.png"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "candidate-dinosaurs-14",
+  "pictureNumber": 14,
+  "source": "com.bimiboo.drawing 3.141 resources.assets",
+  "rootTransformPathId": 14781,
+  "outlineSpritePathId": 5077,
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 1,
+      "frameIndex": 0,
+      "frame": "bg",
+      "spritePathId": 6603,
+      "gameObjectPathId": 11124,
+      "bounds": [
+        0,
+        0,
+        775,
+        775
+      ],
+      "mask": "region-0.png"
+    },
+    {
+      "regionId": 2,
+      "frameIndex": 1,
+      "frame": "img-9-14-2",
+      "spritePathId": 5087,
+      "gameObjectPathId": 11121,
+      "bounds": [
+        147,
+        91,
+        364,
+        257
+      ],
+      "mask": "region-1.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 2,
+      "frame": "img-9-14-3",
+      "spritePathId": 3875,
+      "gameObjectPathId": 11122,
+      "bounds": [
+        324,
+        419,
+        167,
+        207
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 4,
+      "frameIndex": 3,
+      "frame": "img-9-14-4",
+      "spritePathId": 6794,
+      "gameObjectPathId": 11120,
+      "bounds": [
+        535,
+        306,
+        106,
+        119
+      ],
+      "mask": "region-3.png"
+    },
+    {
+      "regionId": 5,
+      "frameIndex": 4,
+      "frame": "img-9-14-5",
+      "spritePathId": 5316,
+      "gameObjectPathId": 11123,
+      "bounds": [
+        21,
+        77,
+        733,
+        619
+      ],
+      "mask": "region-4.png"
+    }
+  ],
+  "emptySourceRegions": [],
+  "inactiveSourceRegions": []
+}

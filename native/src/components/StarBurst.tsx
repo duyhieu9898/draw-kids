@@ -9,9 +9,9 @@ export function StarBurst({ x, y, color, scale, onDone }: Props) {
   useEffect(() => { done.current = onDone }, [onDone])
   const [stars] = useState(() => Array.from({ length: 8 }, (_, i) => {
     const angle = 2 * Math.PI * i / 8 + (Math.random() - .5) * .4
-    // User request: double both the star size and how far it flies from the stroke end.
+    // Travel radius stays as requested; the star size is 30% smaller (84–130 -> 59–91).
     const distance = (Math.random() * 4 + 3.5) * 30 * scale
-    return { x: Math.cos(angle) * distance, y: (Math.sin(angle) * distance - 20 * scale), size: (Math.random() * 46 + 84) * scale, rotation: Math.random() * 360 }
+    return { x: Math.cos(angle) * distance, y: (Math.sin(angle) * distance - 20 * scale), size: (Math.random() * 32 + 59) * scale, rotation: Math.random() * 360 }
   }))
   useEffect(() => {
     const animation = Animated.timing(progress, { toValue: 1, duration: 480, easing: Easing.out(Easing.quad), useNativeDriver: true })

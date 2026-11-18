@@ -1,13 +1,14 @@
 # Migration reference 3.141
 
-> **Tiến trình & Kế hoạch chi tiết hiện tại:** Xem tại [docs/v3.141/PROGRESS.md](PROGRESS.md).
+> **Trạng thái lịch sử của công việc tham chiếu 3.141.** Kế hoạch hiện hành: [chuyển đổi React Native](../REACT_NATIVE_MIGRATION_PLAN.md). [PROGRESS.md](PROGRESS.md) là nhật ký web lịch sử, không phải trạng thái native.
+> Native hiện có dữ liệu 12 chủ đề trong catalog; chi tiết nguồn và giới hạn xác minh nằm tại [THEME_DATA_GAP.md](../THEME_DATA_GAP.md).
 
 ## Scope and checkpoint
 
 - Active reference: user-supplied `Kids-Color-Games-Baby-Drawing_3.141_apkcube.apks`.
 - Recovery point: Git tag `version-1`, commit `a26e2fc`.
 - Work branch: `reference-3.141`.
-- Target remains React/Vite PWA, landscape; Chrome MCP mobile responsive verification as requested.
+- Historical target was a landscape React/Vite PWA. The current target is the native Expo/React Native/Skia application; web is retained as reference.
 - This phase inventories and extracts the reference. Existing web assets/logic are not yet migrated.
 
 ## Verified package facts
@@ -39,7 +40,7 @@ Output: `reports/v3.141/package-inventory.json` and `PACKAGE_INVENTORY.md`.
 Parent agent reviews hashes/counts before relying on results. Gameplay conclusions,
 renderer decisions and acceptance remain with the parent/user.
 
-## Steps and acceptance
+## Historical steps and acceptance (web phase)
 
 1. Package identity and split inventory: manifest verified; delegated inventory hashes/counts reviewed.
 2. New Android runtime: installed/launched, but SIGILL in UnityMain prevents behavior capture; old behavior is historical only.

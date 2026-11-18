@@ -1,0 +1,114 @@
+{
+  "id": "candidate-dinosaurs-12",
+  "pictureNumber": 12,
+  "source": "com.bimiboo.drawing 3.141 resources.assets",
+  "rootTransformPathId": 15388,
+  "outlineSpritePathId": 5222,
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 1,
+      "frameIndex": 0,
+      "frame": "bg",
+      "spritePathId": 4668,
+      "gameObjectPathId": 12355,
+      "bounds": [
+        0,
+        0,
+        775,
+        775
+      ],
+      "mask": "region-0.png"
+    },
+    {
+      "regionId": 2,
+      "frameIndex": 1,
+      "frame": "img-9-12-2",
+      "spritePathId": 3627,
+      "gameObjectPathId": 12354,
+      "bounds": [
+        339,
+        284,
+        137,
+        119
+      ],
+      "mask": "region-1.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 2,
+      "frame": "img-9-12-3",
+      "spritePathId": 5155,
+      "gameObjectPathId": 12361,
+      "bounds": [
+        102,
+        297,
+        103,
+        136
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 4,
+      "frameIndex": 3,
+      "frame": "img-9-12-4",
+      "spritePathId": 6626,
+      "gameObjectPathId": 12358,
+      "bounds": [
+        260,
+        533,
+        173,
+        205
+      ],
+      "mask": "region-3.png"
+    },
+    {
+      "regionId": 5,
+      "frameIndex": 4,
+      "frame": "img-9-12-5",
+      "spritePathId": 6528,
+      "gameObjectPathId": 12356,
+      "bounds": [
+        69,
+        14,
+        637,
+        749
+      ],
+      "mask": "region-4.png"
+    },
+    {
+      "regionId": 6,
+      "frameIndex": 5,
+      "frame": "img-9-12-6",
+      "spritePathId": 6653,
+      "gameObjectPathId": 12360,
+      "bounds": [
+        404,
+        384,
+        127,
+        99
+      ],
+      "mask": "region-5.png"
+    },
+    {
+      "regionId": 7,
+      "frameIndex": 6,
+      "frame": "img-9-12-7",
+      "spritePathId": 4981,
+      "gameObjectPathId": 12359,
+      "bounds": [
+        289,
+        222,
+        92,
+        83
+      ],
+      "mask": "region-6.png"
+    }
+  ],
+  "emptySourceRegions": [],
+  "inactiveSourceRegions": []
+}

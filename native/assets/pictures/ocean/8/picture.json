@@ -1,0 +1,124 @@
+{
+  "id": "candidate-ocean-8",
+  "pictureNumber": 8,
+  "source": "com.bimiboo.drawing 3.141 resources.assets",
+  "rootTransformPathId": 12745,
+  "outlineSpritePathId": 6131,
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 1,
+      "frameIndex": 0,
+      "frame": "image-1",
+      "spritePathId": 5737,
+      "gameObjectPathId": 11487,
+      "bounds": [
+        0,
+        0,
+        775,
+        775
+      ],
+      "mask": "region-0.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 2,
+      "frame": "image-3",
+      "spritePathId": 5431,
+      "gameObjectPathId": 7260,
+      "bounds": [
+        134,
+        36,
+        231,
+        134
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 4,
+      "frameIndex": 3,
+      "frame": "image-4",
+      "spritePathId": 4417,
+      "gameObjectPathId": 7622,
+      "bounds": [
+        86,
+        99,
+        603,
+        639
+      ],
+      "mask": "region-3.png"
+    },
+    {
+      "regionId": 5,
+      "frameIndex": 4,
+      "frame": "image-5",
+      "spritePathId": 6540,
+      "gameObjectPathId": 8898,
+      "bounds": [
+        472,
+        260,
+        56,
+        53
+      ],
+      "mask": "region-4.png"
+    },
+    {
+      "regionId": 6,
+      "frameIndex": 5,
+      "frame": "image-6",
+      "spritePathId": 6585,
+      "gameObjectPathId": 9204,
+      "bounds": [
+        389,
+        151,
+        292,
+        202
+      ],
+      "mask": "region-5.png"
+    },
+    {
+      "regionId": 7,
+      "frameIndex": 6,
+      "frame": "image-7",
+      "spritePathId": 4617,
+      "gameObjectPathId": 7211,
+      "bounds": [
+        425,
+        320,
+        103,
+        113
+      ],
+      "mask": "region-6.png"
+    },
+    {
+      "regionId": 8,
+      "frameIndex": 7,
+      "frame": "image-8",
+      "spritePathId": 6646,
+      "gameObjectPathId": 7637,
+      "bounds": [
+        144,
+        277,
+        174,
+        277
+      ],
+      "mask": "region-7.png"
+    }
+  ],
+  "emptySourceRegions": [],
+  "inactiveSourceRegions": [
+    {
+      "spritePathId": 5149,
+      "name": "image-2",
+      "gameObjectPathId": 12201,
+      "sourceAlphaExtrema": [
+        0,
+        0
+      ]
+    }
+  ]
+}

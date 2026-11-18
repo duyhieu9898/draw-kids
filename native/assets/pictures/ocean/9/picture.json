@@ -1,0 +1,100 @@
+{
+  "id": "candidate-ocean-9",
+  "pictureNumber": 9,
+  "source": "com.bimiboo.drawing 3.141 resources.assets",
+  "rootTransformPathId": 12774,
+  "outlineSpritePathId": 4497,
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 1,
+      "frameIndex": 0,
+      "frame": "image-1",
+      "spritePathId": 3738,
+      "gameObjectPathId": 12381,
+      "bounds": [
+        0,
+        0,
+        775,
+        775
+      ],
+      "mask": "region-0.png"
+    },
+    {
+      "regionId": 2,
+      "frameIndex": 1,
+      "frame": "image-2",
+      "spritePathId": 4500,
+      "gameObjectPathId": 9474,
+      "bounds": [
+        69,
+        166,
+        625,
+        450
+      ],
+      "mask": "region-1.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 2,
+      "frame": "image-3",
+      "spritePathId": 4494,
+      "gameObjectPathId": 9970,
+      "bounds": [
+        352,
+        36,
+        354,
+        380
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 4,
+      "frameIndex": 3,
+      "frame": "image-4",
+      "spritePathId": 6675,
+      "gameObjectPathId": 10088,
+      "bounds": [
+        274,
+        509,
+        210,
+        230
+      ],
+      "mask": "region-3.png"
+    },
+    {
+      "regionId": 5,
+      "frameIndex": 4,
+      "frame": "image-5",
+      "spritePathId": 5329,
+      "gameObjectPathId": 11926,
+      "bounds": [
+        470,
+        510,
+        63,
+        45
+      ],
+      "mask": "region-4.png"
+    },
+    {
+      "regionId": 6,
+      "frameIndex": 5,
+      "frame": "image-6",
+      "spritePathId": 3628,
+      "gameObjectPathId": 11526,
+      "bounds": [
+        364,
+        347,
+        121,
+        119
+      ],
+      "mask": "region-5.png"
+    }
+  ],
+  "emptySourceRegions": [],
+  "inactiveSourceRegions": []
+}

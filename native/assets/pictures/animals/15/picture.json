@@ -1,0 +1,109 @@
+{
+  "id": "candidate-1-15",
+  "assetGroup": 1,
+  "pictureNumber": 15,
+  "source": "com.bimiboo.drawing 3.141",
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 2,
+      "frameIndex": 2,
+      "frame": "img-1-15-2",
+      "bounds": [
+        176,
+        402,
+        114,
+        151
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 3,
+      "frame": "img-1-15-3",
+      "bounds": [
+        182,
+        565,
+        166,
+        101
+      ],
+      "mask": "region-3.png"
+    },
+    {
+      "regionId": 4,
+      "frameIndex": 4,
+      "frame": "img-1-15-4",
+      "bounds": [
+        49,
+        499,
+        129,
+        147
+      ],
+      "mask": "region-4.png"
+    },
+    {
+      "regionId": 5,
+      "frameIndex": 5,
+      "frame": "img-1-15-5",
+      "bounds": [
+        269,
+        179,
+        360,
+        437
+      ],
+      "mask": "region-5.png"
+    },
+    {
+      "regionId": 6,
+      "frameIndex": 6,
+      "frame": "img-1-15-6",
+      "bounds": [
+        547,
+        304,
+        209,
+        284
+      ],
+      "mask": "region-6.png"
+    },
+    {
+      "regionId": 7,
+      "frameIndex": 7,
+      "frame": "img-1-15-7",
+      "bounds": [
+        440,
+        167,
+        297,
+        246
+      ],
+      "mask": "region-7.png"
+    },
+    {
+      "regionId": 8,
+      "frameIndex": 8,
+      "frame": "img-1-15-8",
+      "bounds": [
+        384,
+        357,
+        252,
+        243
+      ],
+      "mask": "region-8.png"
+    },
+    {
+      "regionId": 9,
+      "frameIndex": 9,
+      "frame": "img-1-15-9",
+      "bounds": [
+        19,
+        146,
+        739,
+        538
+      ],
+      "mask": "region-9.png"
+    }
+  ]
+}

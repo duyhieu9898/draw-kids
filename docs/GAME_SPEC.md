@@ -1,6 +1,6 @@
 # Đặc tả game tô màu — bản dựa trên bằng chứng
 
-Phạm vi: game Android `com.bimiboo.drawing` 3.101, quan sát trên emulator API 29. Mục tiêu viết lại cá nhân trên iPhone 12 Pro bằng PWA. Mỗi mục ghi VERIFIED (quan sát trực tiếp), INFERRED (suy luận), UNKNOWN (chưa rõ).
+Phạm vi: game Android `com.bimiboo.drawing` 3.101, quan sát trên emulator API 29. Đây là đặc tả lịch sử của bản web; mục tiêu hiện tại là ứng dụng native theo [kế hoạch chuyển đổi](REACT_NATIVE_MIGRATION_PLAN.md). Mỗi mục ghi VERIFIED (quan sát trực tiếp), INFERRED (suy luận), UNKNOWN (chưa rõ).
 
 ## Luồng
 

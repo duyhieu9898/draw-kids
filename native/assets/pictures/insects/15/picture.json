@@ -1,0 +1,72 @@
+{
+  "id": "candidate-insects-15",
+  "pictureNumber": 15,
+  "source": "com.bimiboo.drawing 3.141 resources.assets",
+  "rootTransformPathId": 12997,
+  "outlineSpritePathId": 6363,
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 1,
+      "frameIndex": 0,
+      "frame": "image-1",
+      "spritePathId": 4297,
+      "gameObjectPathId": 8321,
+      "bounds": [
+        0,
+        0,
+        775,
+        775
+      ],
+      "mask": "region-0.png"
+    },
+    {
+      "regionId": 2,
+      "frameIndex": 1,
+      "frame": "image-2",
+      "spritePathId": 6086,
+      "gameObjectPathId": 7764,
+      "bounds": [
+        335,
+        26,
+        106,
+        387
+      ],
+      "mask": "region-1.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 2,
+      "frame": "image-3",
+      "spritePathId": 3806,
+      "gameObjectPathId": 7493,
+      "bounds": [
+        340,
+        394,
+        96,
+        182
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 4,
+      "frameIndex": 3,
+      "frame": "image-4",
+      "spritePathId": 6869,
+      "gameObjectPathId": 7201,
+      "bounds": [
+        309,
+        562,
+        157,
+        189
+      ],
+      "mask": "region-3.png"
+    }
+  ],
+  "emptySourceRegions": [],
+  "inactiveSourceRegions": []
+}

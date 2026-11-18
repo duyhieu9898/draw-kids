@@ -1,6 +1,6 @@
 # Câu hỏi còn mở
 
-Đã giải quyết: đúng game được tải từ drawing.apk; chạy được trên Ubuntu; vừa vẽ nét vừa fill; có tẩy và Undo; dấu tích lưu và khôi phục được offline. Xem BEHAVIOR.md.
+Đã giải quyết: game (`Kids-Color-Games-Baby-Drawing_3.141_apkcube.apks`) là file duy nhất; chạy được trên Ubuntu; vừa vẽ nét vừa fill; có tẩy và Undo; dấu tích lưu và khôi phục được offline. Xem BEHAVIOR.md.
 
 ## Mapping logic còn tiếp tục
 
@@ -15,6 +15,6 @@
 
 - Quyền sử dụng bộ tranh/âm thanh nào cho bản cá nhân; chưa đưa assets trích xuất lên hosting.
 - Camera/export sau parental gate, âm thanh và công cụ nâng cao.
-- POC thực tế trên Safari iPhone 12 Pro: tọa độ, mượt, standalone, offline và khôi phục dữ liệu. User đã chốt Chrome responsive mobile là đủ cho vòng POC hiện tại; mục iPhone chỉ còn cho phát hành cuối nếu vẫn nhắm thiết bị đó.
+- Kiểm thử bản React Native trên iPhone và Android thật: tọa độ, hiệu năng, landscape, safe area, offline và khôi phục dữ liệu. Xem [kế hoạch chuyển đổi](REACT_NATIVE_MIGRATION_PLAN.md).
 
 Nét clip theo vùng bắt đầu đã được xác minh (B15) và POC Chrome tái hiện được; mask mesh/outline đã được trích và catalog đủ 128 tranh. Chưa tuyên bố hoàn thành mapping gameplay hoặc parity toàn bộ app; tiếp tục giải các mục trên trước khi mở rộng sản phẩm.

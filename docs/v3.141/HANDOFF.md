@@ -1,6 +1,9 @@
 # Bàn giao: danh sách tranh và dữ liệu 3.141
 
-## Yêu cầu và phạm vi
+> **Bàn giao lịch sử của bản web.** Các thông tin asset bên dưới còn hữu ích; bàn giao native hiện hành nằm tại [NATIVE_HANDOFF.md](../NATIVE_HANDOFF.md) và [kế hoạch React Native](../REACT_NATIVE_MIGRATION_PLAN.md).
+> **Cập nhật native:** Đã tìm đủ artwork và vùng tô cho bốn chủ đề còn thiếu, và đưa vào catalog 12 chủ đề; kiểm tra thiết bị còn chờ người dùng. Các nhận định bên dưới về dữ liệu thiếu là lịch sử và đã được thay thế bởi [báo cáo mới](MISSING_TOPIC_ART_INVESTIGATION.md).
+
+## Yêu cầu và phạm vi tại thời điểm bàn giao
 
 Người dùng muốn web bám logic app gốc 3.141. Menu công cụ được cố ý tinh giản còn bút dạ, bút chì và đổ màu; bảng có 56 màu. Không cần cơ chế "Please rotate your device to landscape mode" vì web chỉ chạy 1 mode duy nhất. Người dùng tự kiểm tra trực quan và sẽ chỉ ra vị trí cần đối chiếu sâu. Không tự khẳng định giống 100% khi chưa có bằng chứng.
 
@@ -30,8 +33,6 @@ Người dùng muốn web bám logic app gốc 3.141. Menu công cụ được c
   - Group 9: 15 tranh, 126 regions (đang ở staging)
 - Nhóm 10 (Dinosaurs) và các nhóm mở rộng còn lại chưa có đủ cặp outline/region được đặt tên theo quy tắc quét tự động.
 
-## Việc tiếp theo
+## Việc tiếp theo trong ứng dụng native
 
-1. Chuyển mạch mapping trong `web/src/types.ts` để nạp dữ liệu từ `v3141-pack*`, cập nhật thumbnail mặc định của gallery sang outline mới.
-2. Kiểm tra trực quan thao tác vẽ, tô màu và tẩy trên bộ tranh mới bằng browser.
-3. Giải quyết khóa lưu trữ IndexedDB khi chuyển sang dữ liệu tranh 3.141 để tránh hiển thị sai vị trí nét vẽ của dữ liệu cũ.
+Xem [bàn giao native hiện hành](../NATIVE_HANDOFF.md) để biết thứ tự kiểm tra, các quyết định của người dùng và các phần chưa xác minh. Các ghi chú thiếu dữ liệu phía trên là lịch sử; catalog native hiện có 12 chủ đề.

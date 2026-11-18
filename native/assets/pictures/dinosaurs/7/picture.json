@@ -1,0 +1,142 @@
+{
+  "id": "candidate-dinosaurs-7",
+  "pictureNumber": 7,
+  "source": "com.bimiboo.drawing 3.141 resources.assets",
+  "rootTransformPathId": 14607,
+  "outlineSpritePathId": 3947,
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 1,
+      "frameIndex": 0,
+      "frame": "bg",
+      "spritePathId": 4130,
+      "gameObjectPathId": 10718,
+      "bounds": [
+        0,
+        0,
+        775,
+        775
+      ],
+      "mask": "region-0.png"
+    },
+    {
+      "regionId": 2,
+      "frameIndex": 1,
+      "frame": "img-9-7-2",
+      "spritePathId": 4595,
+      "gameObjectPathId": 10717,
+      "bounds": [
+        435,
+        334,
+        123,
+        177
+      ],
+      "mask": "region-1.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 2,
+      "frame": "img-9-7-3",
+      "spritePathId": 6955,
+      "gameObjectPathId": 10716,
+      "bounds": [
+        261,
+        524,
+        177,
+        214
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 4,
+      "frameIndex": 3,
+      "frame": "img-9-7-4",
+      "spritePathId": 6022,
+      "gameObjectPathId": 10714,
+      "bounds": [
+        94,
+        297,
+        94,
+        126
+      ],
+      "mask": "region-3.png"
+    },
+    {
+      "regionId": 5,
+      "frameIndex": 4,
+      "frame": "img-9-7-5",
+      "spritePathId": 4207,
+      "gameObjectPathId": 10721,
+      "bounds": [
+        81,
+        19,
+        613,
+        740
+      ],
+      "mask": "region-4.png"
+    },
+    {
+      "regionId": 6,
+      "frameIndex": 5,
+      "frame": "img-9-7-6",
+      "spritePathId": 4132,
+      "gameObjectPathId": 10713,
+      "bounds": [
+        192,
+        364,
+        196,
+        224
+      ],
+      "mask": "region-5.png"
+    },
+    {
+      "regionId": 7,
+      "frameIndex": 6,
+      "frame": "img-9-7-7",
+      "spritePathId": 6389,
+      "gameObjectPathId": 10715,
+      "bounds": [
+        587,
+        369,
+        82,
+        109
+      ],
+      "mask": "region-6.png"
+    },
+    {
+      "regionId": 8,
+      "frameIndex": 7,
+      "frame": "img-9-7-8",
+      "spritePathId": 4711,
+      "gameObjectPathId": 10719,
+      "bounds": [
+        324,
+        237,
+        115,
+        136
+      ],
+      "mask": "region-7.png"
+    },
+    {
+      "regionId": 9,
+      "frameIndex": 8,
+      "frame": "img-9-7-9",
+      "spritePathId": 5967,
+      "gameObjectPathId": 10720,
+      "bounds": [
+        177,
+        206,
+        76,
+        147
+      ],
+      "mask": "region-8.png"
+    }
+  ],
+  "emptySourceRegions": [],
+  "inactiveSourceRegions": []
+}

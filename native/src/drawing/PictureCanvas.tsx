@@ -58,18 +58,24 @@ type RenderStroke = {
   dot: [number, number] | null
 }
 
-function buildFill(actions: Action[], regionId: number): string | null {
+/** Paper regions (full-square masks) count as the background for old saved actions. */
+function matchesRegion(action: Action, regionId: number, paperRegionIds: readonly number[]): boolean {
+  if (action.regionId === regionId) return true
+  return regionId === BACKGROUND_REGION_ID && paperRegionIds.includes(action.regionId)
+}
+
+function buildFill(actions: Action[], regionId: number, paperRegionIds: readonly number[]): string | null {
   let color: string | null = null
   for (const action of actions) {
-    if (action.regionId === regionId && action.type === 'fill') color = action.color
+    if (matchesRegion(action, regionId, paperRegionIds) && action.type === 'fill') color = action.color
   }
   return color
 }
 
-function buildStrokes(actions: Action[], regionId: number): RenderStroke[] {
+function buildStrokes(actions: Action[], regionId: number, paperRegionIds: readonly number[]): RenderStroke[] {
   const strokes: RenderStroke[] = []
   for (const action of actions) {
-    if (action.regionId !== regionId || action.type === 'fill') continue
+    if (!matchesRegion(action, regionId, paperRegionIds) || action.type === 'fill') continue
     if (action.points.length === 0) continue
     strokes.push({
       path: strokePathData(action.points),
@@ -183,17 +189,23 @@ export const PictureCanvas = forwardRef<PictureCanvasHandle, Props>(function Pic
     () =>
       picture.regions.map((region) => ({
         region,
-        fill: buildFill(actions, region.regionId),
-        strokes: buildStrokes(actions, region.regionId),
+        fill: buildFill(actions, region.regionId, picture.paperRegionIds),
+        strokes: buildStrokes(actions, region.regionId, picture.paperRegionIds),
       })),
     [picture, actions],
   )
 
-  const paperFill = useMemo(() => buildFill(actions, BACKGROUND_REGION_ID), [actions])
-  const paperStrokes = useMemo(() => buildStrokes(actions, BACKGROUND_REGION_ID), [actions])
+  const paperFill = useMemo(
+    () => buildFill(actions, BACKGROUND_REGION_ID, picture.paperRegionIds),
+    [actions, picture.paperRegionIds],
+  )
+  const paperStrokes = useMemo(
+    () => buildStrokes(actions, BACKGROUND_REGION_ID, picture.paperRegionIds),
+    [actions, picture.paperRegionIds],
+  )
   const draftStrokes = useMemo(
-    () => (draft ? buildStrokes([draft], draft.regionId) : []),
-    [draft],
+    () => (draft ? buildStrokes([draft], draft.regionId, picture.paperRegionIds) : []),
+    [draft, picture.paperRegionIds],
   )
 
   useImperativeHandle(

@@ -1,0 +1,212 @@
+{
+  "id": "candidate-insects-11",
+  "pictureNumber": 11,
+  "source": "com.bimiboo.drawing 3.141 resources.assets",
+  "rootTransformPathId": 13006,
+  "outlineSpritePathId": 5645,
+  "outline": "outline.png",
+  "logicalSize": [
+    775,
+    775
+  ],
+  "regions": [
+    {
+      "regionId": 1,
+      "frameIndex": 0,
+      "frame": "image-1",
+      "spritePathId": 6818,
+      "gameObjectPathId": 8804,
+      "bounds": [
+        0,
+        0,
+        775,
+        775
+      ],
+      "mask": "region-0.png"
+    },
+    {
+      "regionId": 2,
+      "frameIndex": 1,
+      "frame": "image-2",
+      "spritePathId": 4145,
+      "gameObjectPathId": 12400,
+      "bounds": [
+        457,
+        379,
+        302,
+        304
+      ],
+      "mask": "region-1.png"
+    },
+    {
+      "regionId": 3,
+      "frameIndex": 2,
+      "frame": "image-3",
+      "spritePathId": 5069,
+      "gameObjectPathId": 9917,
+      "bounds": [
+        249,
+        156,
+        279,
+        217
+      ],
+      "mask": "region-2.png"
+    },
+    {
+      "regionId": 4,
+      "frameIndex": 3,
+      "frame": "image-4",
+      "spritePathId": 6567,
+      "gameObjectPathId": 12028,
+      "bounds": [
+        272,
+        344,
+        231,
+        177
+      ],
+      "mask": "region-3.png"
+    },
+    {
+      "regionId": 5,
+      "frameIndex": 4,
+      "frame": "image-5",
+      "spritePathId": 3593,
+      "gameObjectPathId": 12251,
+      "bounds": [
+        310,
+        460,
+        156,
+        271
+      ],
+      "mask": "region-4.png"
+    },
+    {
+      "regionId": 6,
+      "frameIndex": 5,
+      "frame": "image-6",
+      "spritePathId": 6313,
+      "gameObjectPathId": 7290,
+      "bounds": [
+        445,
+        44,
+        173,
+        181
+      ],
+      "mask": "region-5.png"
+    },
+    {
+      "regionId": 7,
+      "frameIndex": 6,
+      "frame": "image-7",
+      "spritePathId": 4075,
+      "gameObjectPathId": 9476,
+      "bounds": [
+        109,
+        447,
+        152,
+        157
+      ],
+      "mask": "region-6.png"
+    },
+    {
+      "regionId": 8,
+      "frameIndex": 7,
+      "frame": "image-8",
+      "spritePathId": 5306,
+      "gameObjectPathId": 11975,
+      "bounds": [
+        239,
+        505,
+        94,
+        141
+      ],
+      "mask": "region-7.png"
+    },
+    {
+      "regionId": 9,
+      "frameIndex": 8,
+      "frame": "image-9",
+      "spritePathId": 3785,
+      "gameObjectPathId": 9498,
+      "bounds": [
+        196,
+        589,
+        154,
+        142
+      ],
+      "mask": "region-8.png"
+    },
+    {
+      "regionId": 10,
+      "frameIndex": 9,
+      "frame": "image-10",
+      "spritePathId": 3676,
+      "gameObjectPathId": 11928,
+      "bounds": [
+        16,
+        379,
+        302,
+        304
+      ],
+      "mask": "region-9.png"
+    },
+    {
+      "regionId": 11,
+      "frameIndex": 10,
+      "frame": "image-11",
+      "spritePathId": 6280,
+      "gameObjectPathId": 9384,
+      "bounds": [
+        157,
+        44,
+        174,
+        181
+      ],
+      "mask": "region-10.png"
+    },
+    {
+      "regionId": 12,
+      "frameIndex": 11,
+      "frame": "image-12",
+      "spritePathId": 3976,
+      "gameObjectPathId": 10900,
+      "bounds": [
+        514,
+        447,
+        152,
+        157
+      ],
+      "mask": "region-11.png"
+    },
+    {
+      "regionId": 13,
+      "frameIndex": 12,
+      "frame": "image-13",
+      "spritePathId": 5876,
+      "gameObjectPathId": 11324,
+      "bounds": [
+        444,
+        505,
+        94,
+        141
+      ],
+      "mask": "region-12.png"
+    },
+    {
+      "regionId": 14,
+      "frameIndex": 13,
+      "frame": "image-14",
+      "spritePathId": 4118,
+      "gameObjectPathId": 10036,
+      "bounds": [
+        427,
+        589,
+        152,
+        142
+      ],
+      "mask": "region-13.png"
+    }
+  ],
+  "emptySourceRegions": [],
+  "inactiveSourceRegions": []
+}

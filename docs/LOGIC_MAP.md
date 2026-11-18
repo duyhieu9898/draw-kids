@@ -1,3 +1,5 @@
+> **Lưu trữ — bản web/PWA lịch sử.** Tài liệu này mô tả mục tiêu hoặc kết quả của một giai đoạn trước, không phải kế hoạch hiện hành hay bằng chứng nghiệm thu native. Xem [kế hoạch chuyển đổi React Native](REACT_NATIVE_MIGRATION_PLAN.md). Các tuyên bố hoàn tất/parity trong báo cáo cũ cần đối chiếu phạm vi và bằng chứng gốc.
+
 # Bản đồ logic gameplay từ APK
 
 ## Màn mở đầu

@@ -22,3 +22,13 @@ __pycache__/
 
 # Local static ffmpeg build used for audio re-encoding
 .tools/
+
+# Large local analysis artifacts (regenerable, kept out of history)
+reports/runtime/
+reports/audio-3.141/
+reports/v3.141/unity-objects.json
+reports/v3.141/unity-asset-catalog.json
+reports/v3.141/scene-structure.json
+reports/v3.141/sprite-exports.json
+reports/v3.141/art-candidates.json
+reports/v3.141/texture-exports.json

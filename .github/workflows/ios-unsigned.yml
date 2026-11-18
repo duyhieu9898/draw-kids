@@ -45,15 +45,28 @@ jobs:
           python3 - <<'PY'
           import pathlib
           
-          # 1. Set Package swiftLanguageModes to .v5
+          # 1. Enable BareSlashRegexLiterals in Package.swift so /regex/ literals parse in Swift 5 mode
           pkg_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Package.swift")
           if pkg_file.exists():
               s = pkg_file.read_text()
               s = s.replace("swiftLanguageModes: [.v6]", "swiftLanguageModes: [.v5]")
+              if '.enableUpcomingFeature("BareSlashRegexLiterals")' not in s:
+                  s = s.replace('.enableUpcomingFeature("InferIsolatedConformances"),', '.enableUpcomingFeature("InferIsolatedConformances"),\n        .enableUpcomingFeature("BareSlashRegexLiterals"),')
               pkg_file.write_text(s)
               print("Package.swift patched:", "swiftLanguageModes: [.v5]" in s)
               
-          # 2. Fix the data race closure capture in JavaScriptObject.swift for Swift 6 compiler
+          # 2. Fix the regex in JavaScriptRuntime.swift directly (fallback to NSRegularExpression if regex literal fails)
+          runtime_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Sources/ExpoModulesJSI/Runtime/JavaScriptRuntime.swift")
+          if runtime_file.exists():
+              s = runtime_file.read_text()
+              target_regex = "if name.wholeMatch(of: /^[a-zA-Z_$][a-zA-Z0-9_$]*$/) == nil {"
+              replacement_regex = 'if (try? NSRegularExpression(pattern: "^[a-zA-Z_$][a-zA-Z0-9_$]*$").firstMatch(in: name, range: NSRange(location: 0, length: name.utf16.count))) == nil {'
+              if target_regex in s:
+                  s = s.replace(target_regex, replacement_regex, 1)
+                  runtime_file.write_text(s)
+                  print("JavaScriptRuntime.swift regex patched:", replacement_regex in s)
+
+          # 3. Fix the data race closure capture in JavaScriptObject.swift for Swift 6 compiler
           swift_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Sources/ExpoModulesJSI/Runtime/Values/JavaScriptObject.swift")
           if swift_file.exists():
               s = swift_file.read_text()

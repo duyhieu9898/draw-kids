@@ -1,10 +1,38 @@
 # Draw Kids
 
-Dự án đang chuyển game tô màu sang ứng dụng iOS và Android bằng React Native, Expo và React Native Skia. Mục tiêu và các bước nghiệm thu nằm trong [kế hoạch chuyển đổi](docs/REACT_NATIVE_MIGRATION_PLAN.md).
+Ứng dụng tô màu cho trẻ em trên iOS và Android, viết bằng React Native (Expo Router + Skia), tái hiện game gốc phiên bản 3.141.
 
-- [native/](native/README.md): ứng dụng native đang phát triển, đã có luồng chơi và 12 chủ đề.
-- [web/](web/README.md): PWA cũ, giữ làm tham khảo trong quá trình chuyển đổi.
-- [Bàn giao native](docs/NATIVE_HANDOFF.md): trạng thái hiện hành, giới hạn xác minh và việc tiếp theo.
-- [Trạng thái tư liệu 3.141](docs/v3.141/STATUS.md): nguồn tài nguyên và giới hạn bằng chứng phiên bản gốc.
+## Trong repo
 
-Các báo cáo web, kể cả điểm Lighthouse hoặc tuyên bố parity lịch sử, không phải kết quả kiểm thử của ứng dụng native.
+- `native/` — toàn bộ ứng dụng: menu 12 chủ đề, thư viện tranh, màn tô màu, intro, âm thanh và lưu bài vẽ.
+- `docs/` — kế hoạch, trạng thái và ghi chú đối soát với bản gốc.
+
+## Chạy
+
+```sh
+cd native
+npm ci
+npm start
+```
+
+Kiểm tra: `npm run typecheck`, `npm run lint`, `npm test`.
+
+Kiến trúc, dữ liệu tranh và cách thêm tranh mới: [native/README.md](native/README.md).
+
+## Cài trên iPhone
+
+Workflow `iOS unsigned IPA` build bản `.ipa` chưa ký trên macOS runner của GitHub Actions. Đẩy một tag `ios-*` để chạy:
+
+```sh
+git tag ios-1.0.0
+git push origin ios-1.0.0
+```
+
+Tải artifact `ios-unsigned-ipa`, rồi ký bằng Apple ID free (iLoader, SideStore, Sideloadly) để cài lên máy. Bản ký free hết hạn sau 7 ngày và cần cài lại; TestFlight/App Store cần Apple Developer Program.
+
+## Tài liệu
+
+- [Bàn giao native](docs/NATIVE_HANDOFF.md)
+- [Kế hoạch chuyển đổi](docs/REACT_NATIVE_MIGRATION_PLAN.md)
+- [Đối soát hành vi](docs/NATIVE_BEHAVIOR_TRACKER.md)
+- [Dữ liệu 12 chủ đề](docs/THEME_DATA_GAP.md)

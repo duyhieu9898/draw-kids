@@ -14,7 +14,8 @@ concurrency:
 
 jobs:
   build:
-    runs-on: macos-15
+    # Intel image: the arm64 macOS pool is frequently capacity-constrained.
+    runs-on: macos-15-intel
     timeout-minutes: 90
     defaults:
       run:

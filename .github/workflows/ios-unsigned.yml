@@ -45,15 +45,20 @@ jobs:
           python3 - <<'PY'
           import pathlib
           
-          # 1. Enable BareSlashRegexLiterals in Package.swift so /regex/ literals parse in Swift 5 mode
+          # 1. Patch Package.swift:
+          # - Set swiftLanguageModes to [.v5]
+          # - Enable BareSlashRegexLiterals
+          # - Remove -Werror ImplicitStrongCapture and NoUsage which cause unknown warning group warnings/errors on Xcode 26
           pkg_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Package.swift")
           if pkg_file.exists():
               s = pkg_file.read_text()
               s = s.replace("swiftLanguageModes: [.v6]", "swiftLanguageModes: [.v5]")
               if '.enableUpcomingFeature("BareSlashRegexLiterals")' not in s:
                   s = s.replace('.enableUpcomingFeature("InferIsolatedConformances"),', '.enableUpcomingFeature("InferIsolatedConformances"),\n        .enableUpcomingFeature("BareSlashRegexLiterals"),')
+              s = s.replace('"-Werror", "ImplicitStrongCapture",', '// "-Werror", "ImplicitStrongCapture",')
+              s = s.replace('"-Werror", "NoUsage",', '// "-Werror", "NoUsage",')
               pkg_file.write_text(s)
-              print("Package.swift patched:", "swiftLanguageModes: [.v5]" in s)
+              print("Package.swift patched successfully")
               
           # 2. Fix the regex in JavaScriptRuntime.swift directly (fallback to NSRegularExpression if regex literal fails)
           runtime_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Sources/ExpoModulesJSI/Runtime/JavaScriptRuntime.swift")
@@ -64,7 +69,7 @@ jobs:
               if target_regex in s:
                   s = s.replace(target_regex, replacement_regex, 1)
                   runtime_file.write_text(s)
-                  print("JavaScriptRuntime.swift regex patched:", replacement_regex in s)
+                  print("JavaScriptRuntime.swift regex patched")
 
           # 3. Fix the data race closure capture in JavaScriptObject.swift for Swift 6 compiler
           swift_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Sources/ExpoModulesJSI/Runtime/Values/JavaScriptObject.swift")
@@ -75,7 +80,26 @@ jobs:
               if target_code in s:
                   s = s.replace(target_code, replacement_code, 1)
                   swift_file.write_text(s)
-                  print("JavaScriptObject.swift patched:", replacement_code in s)
+                  print("JavaScriptObject.swift patched")
+
+          # 4. Fix nonisolated init of LongLivedState in JavaScriptPromise.swift
+          promise_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Sources/ExpoModulesJSI/Runtime/Values/JavaScriptPromise.swift")
+          if promise_file.exists():
+              s = promise_file.read_text()
+              target_state = "  private final class LongLivedState: LongLivedObject {"
+              replacement_state = "  private final class LongLivedState: LongLivedObject {\n    nonisolated init() {}"
+              if target_state in s:
+                  s = s.replace(target_state, replacement_state, 1)
+                  promise_file.write_text(s)
+                  print("JavaScriptPromise.swift patched")
+
+          # 5. Remove -quiet from build-xcframework.sh so errors are logged
+          sh_file = pathlib.Path("node_modules/expo-modules-jsi/apple/scripts/build-xcframework.sh")
+          if sh_file.exists():
+              s = sh_file.read_text()
+              s = s.replace("-quiet \\", "\\")
+              sh_file.write_text(s)
+              print("build-xcframework.sh patched")
           PY
 
       - name: Generate the Xcode project

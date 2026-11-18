@@ -46,11 +46,10 @@ jobs:
           import pathlib
           p = pathlib.Path("node_modules/expo-modules-jsi/apple/Package.swift")
           s = p.read_text()
-          s = s.replace("swiftLanguageModes: [.v6]", "swiftLanguageModes: [.v5]")
           if "swiftLanguageVersions" not in s:
               s = s.replace("      swiftSettings: [", "      swiftLanguageVersions: [.v5],\n      swiftSettings: [", 1)
           p.write_text(s)
-          print("patched" if ".v5" in p.read_text() else "FAILED")
+          print("patched" if "swiftLanguageVersions" in p.read_text() else "FAILED")
           PY
 
       - name: Generate the Xcode project
@@ -82,8 +81,6 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
             SWIFT_STRICT_CONCURRENCY=off \
-            SWIFT_TREAT_WARNINGS_AS_ERRORS=NO \
-            GCC_TREAT_WARNINGS_AS_ERRORS=NO \
             build
 
       - name: Package the unsigned IPA

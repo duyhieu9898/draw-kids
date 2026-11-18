@@ -19,7 +19,7 @@ import {
   Rect,
   Skia,
   useCanvasRef,
-} from '@shopify/react-native-skia'
+} from 'react-native-skia'
 import {
   ART_SIZE,
   BACKGROUND_REGION_ID,
@@ -214,12 +214,9 @@ export const PictureCanvas = forwardRef<PictureCanvasHandle, Props>(function Pic
       snapshotArt: async () => {
         const canvas = canvasRef.current
         if (!canvas || fit.scale <= 0) return null
-        const image = await canvas.makeImageSnapshotAsync({
-          x: fit.x,
-          y: fit.y,
-          width: ART_SIZE * fit.scale,
-          height: ART_SIZE * fit.scale,
-        })
+        const image = canvas.makeImageSnapshot(
+          Skia.XYWHRect(fit.x, fit.y, ART_SIZE * fit.scale, ART_SIZE * fit.scale),
+        )
         // The art snapshot is square, so a square downscale keeps the aspect.
         const surface = Skia.Surface.MakeOffscreen(THUMBNAIL_SIZE, THUMBNAIL_SIZE)
         if (!surface) return image.encodeToBase64(ImageFormat.PNG, 100)
@@ -256,7 +253,7 @@ export const PictureCanvas = forwardRef<PictureCanvasHandle, Props>(function Pic
         setDraft(null)
       }}
     >
-      <Canvas ref={canvasRef} style={StyleSheet.absoluteFill} opaque>
+      <Canvas ref={canvasRef} style={StyleSheet.absoluteFill}>
         <Fill color={PAPER} />
         {/* The paper is the whole stage, not just the art square: fills and strokes
             used to stop at the square and leave two white letterbox bands. */}

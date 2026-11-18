@@ -1,5 +1,5 @@
 import { Image as RNImage } from 'react-native'
-import { AlphaType, ColorType, Skia, type SkImage } from '@shopify/react-native-skia'
+import { AlphaType, ColorType, Skia, type SkImage } from 'react-native-skia'
 import type { CatalogPicture } from '../assets/catalog'
 import { ART_SIZE, alphaIndex } from '../domain/geometry'
 import type { Bounds } from '../domain/types'
@@ -33,7 +33,7 @@ async function loadSkiaImage(source: number): Promise<SkImage> {
   // Web reachability is untested: react-native-web does not expose
   // resolveAssetSource, and CanvasKit needs LoadSkiaWeb first (see README).
   const data = await Skia.Data.fromURI(resolved.uri)
-  const image = Skia.Image.MakeImageFromEncoded(data)
+  const image = Skia.Image.MakeFromEncoded(data)
   if (!image) throw new Error(`Could not decode image: ${resolved.uri}`)
   return image
 }

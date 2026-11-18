@@ -51,7 +51,8 @@ jobs:
           workspace=$(ls -d ./*.xcworkspace | head -n1)
           project=$(ls -d ./*.xcodeproj | head -n1)
           project_name="${project##*/}"; project_name="${project_name%.xcodeproj}"
-          scheme=$(PROJECT_NAME="$project_name" xcodebuild -list -json -workspace "$workspace" |
+          export PROJECT_NAME="$project_name"
+          scheme=$(xcodebuild -list -json -workspace "$workspace" |
             python3 -c 'import json, os, sys; data = json.load(sys.stdin); schemes = (data.get("workspace") or data.get("project"))["schemes"]; target = os.environ["PROJECT_NAME"]; print(next((s for s in schemes if s == target), next((s for s in schemes if "Pods" not in s), schemes[0])))')
           echo "Building $scheme from $workspace"
           xcodebuild \

@@ -73,8 +73,20 @@ function buildFill(actions: Action[], regionId: number, paperRegionIds: readonly
 }
 
 function buildStrokes(actions: Action[], regionId: number, paperRegionIds: readonly number[]): RenderStroke[] {
+  // Find the index of the latest fill action for this region.
+  // Any strokes drawn prior to this fill are covered up by the new paint.
+  let lastFillIndex = -1
+  for (let i = 0; i < actions.length; i++) {
+    const action = actions[i]
+    if (matchesRegion(action, regionId, paperRegionIds) && action.type === 'fill') {
+      lastFillIndex = i
+    }
+  }
+
   const strokes: RenderStroke[] = []
-  for (const action of actions) {
+  // Only render strokes that were drawn AFTER the latest fill for this region
+  for (let i = lastFillIndex + 1; i < actions.length; i++) {
+    const action = actions[i]
     if (!matchesRegion(action, regionId, paperRegionIds) || action.type === 'fill') continue
     if (action.points.length === 0) continue
     strokes.push({

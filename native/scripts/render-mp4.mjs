@@ -126,8 +126,8 @@ const outputMp4 = asset('intro.mp4');
 const audioWav = asset('Drawing_intro.wav');
 
 const fps = 60;
-// Total duration: 8.0s to allow the audio chime/reverb and logo to conclude gracefully
-const duration = 8.0;
+// Total duration: 7.5s (8.0s - 0.5s)
+const duration = 7.5;
 const animDuration = 6.8;
 const totalFrames = Math.ceil(duration * fps);
 const delta = 1 / fps;

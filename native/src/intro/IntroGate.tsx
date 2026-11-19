@@ -65,7 +65,7 @@ function IntroScreen({ onFinish }: { onFinish: () => void }) {
         player={player}
         style={styles.video}
         nativeControls={false}
-        contentFit="cover"
+        contentFit="contain"
       />
     </View>
   )

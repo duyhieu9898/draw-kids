@@ -126,8 +126,8 @@ const outputMp4 = asset('intro.mp4');
 const audioWav = asset('Drawing_intro.wav');
 
 const fps = 60;
-// Total duration: 7.0s (7.5s - 0.5s)
-const duration = 7.0;
+// Total duration: 7.3s (7.0s + 0.3s)
+const duration = 7.3;
 const animDuration = 6.8;
 const totalFrames = Math.ceil(duration * fps);
 const delta = 1 / fps;

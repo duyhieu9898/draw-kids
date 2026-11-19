@@ -56,16 +56,30 @@ jobs:
               pkg_file.write_text(s)
               print("Package.swift patched successfully")
 
-          # 2. Fix the data race closure capture in JavaScriptObject.swift for Swift 6 compiler
+          # 2. Fix the closure isolation capture in JavaScriptObject.swift for Swift 6 compiler
           swift_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Sources/ExpoModulesJSI/Runtime/Values/JavaScriptObject.swift")
           if swift_file.exists():
               s = swift_file.read_text()
-              target_code = "try JavaScriptActor.assumeIsolated {"
-              replacement_code = "try JavaScriptActor.assumeIsolated { [slot] in"
-              if target_code in s:
-                  s = s.replace(target_code, replacement_code, 1)
+              old_block = """    try runtime._withUnsafeGuaranteedRef { runtime in
+      try JavaScriptActor.assumeIsolated {
+        try encode(JavaScriptValue.Slot(slot), runtime)
+      }
+    }"""
+              new_block = """    let rawPtr = UInt(bitPattern: slot)
+    try runtime._withUnsafeGuaranteedRef { runtime in
+      try JavaScriptActor.assumeIsolated {
+        let reconstructedSlot = UnsafeMutablePointer<facebook.jsi.Value>(bitPattern: rawPtr)!
+        try encode(JavaScriptValue.Slot(reconstructedSlot), runtime)
+      }
+    }"""
+              if old_block in s:
+                  s = s.replace(old_block, new_block, 1)
                   swift_file.write_text(s)
-                  print("JavaScriptObject.swift patched")
+                  print("JavaScriptObject.swift isolation capture patched")
+              elif "try JavaScriptActor.assumeIsolated {" in s:
+                  s = s.replace("try JavaScriptActor.assumeIsolated {", "try JavaScriptActor.assumeIsolated { [slot] in", 1)
+                  swift_file.write_text(s)
+                  print("JavaScriptObject.swift fallback patched")
 
           # 3. Fix nonisolated init of LongLivedState in JavaScriptPromise.swift
           promise_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Sources/ExpoModulesJSI/Runtime/Values/JavaScriptPromise.swift")

@@ -46,32 +46,17 @@ jobs:
           import pathlib
           
           # 1. Patch Package.swift:
-          # - Set swiftLanguageModes to [.v5]
-          # - Enable BareSlashRegexLiterals
-          # - Remove -Werror ImplicitStrongCapture and NoUsage which cause unknown warning group warnings/errors on Xcode 26
+          # Keep Swift 6 mode (swiftLanguageModes: [.v6]) so ABI and symbol mangling match prebuilt frameworks (ExpoFileSystem, etc.).
+          # Remove invalid -Werror flags on Xcode 26.
           pkg_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Package.swift")
           if pkg_file.exists():
               s = pkg_file.read_text()
-              s = s.replace("swiftLanguageModes: [.v6]", "swiftLanguageModes: [.v5]")
-              if '.enableUpcomingFeature("BareSlashRegexLiterals")' not in s:
-                  s = s.replace('.enableUpcomingFeature("InferIsolatedConformances"),', '.enableUpcomingFeature("InferIsolatedConformances"),\n        .enableUpcomingFeature("BareSlashRegexLiterals"),')
               s = s.replace('"-Werror", "ImplicitStrongCapture",', '// "-Werror", "ImplicitStrongCapture",')
               s = s.replace('"-Werror", "NoUsage",', '// "-Werror", "NoUsage",')
               pkg_file.write_text(s)
               print("Package.swift patched successfully")
-              
-          # 2. Fix the regex in JavaScriptRuntime.swift directly (fallback to NSRegularExpression if regex literal fails)
-          runtime_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Sources/ExpoModulesJSI/Runtime/JavaScriptRuntime.swift")
-          if runtime_file.exists():
-              s = runtime_file.read_text()
-              target_regex = "if name.wholeMatch(of: /^[a-zA-Z_$][a-zA-Z0-9_$]*$/) == nil {"
-              replacement_regex = 'if (try? NSRegularExpression(pattern: "^[a-zA-Z_$][a-zA-Z0-9_$]*$").firstMatch(in: name, range: NSRange(location: 0, length: name.utf16.count))) == nil {'
-              if target_regex in s:
-                  s = s.replace(target_regex, replacement_regex, 1)
-                  runtime_file.write_text(s)
-                  print("JavaScriptRuntime.swift regex patched")
 
-          # 3. Fix the data race closure capture in JavaScriptObject.swift for Swift 6 compiler
+          # 2. Fix the data race closure capture in JavaScriptObject.swift for Swift 6 compiler
           swift_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Sources/ExpoModulesJSI/Runtime/Values/JavaScriptObject.swift")
           if swift_file.exists():
               s = swift_file.read_text()
@@ -82,7 +67,7 @@ jobs:
                   swift_file.write_text(s)
                   print("JavaScriptObject.swift patched")
 
-          # 4. Fix nonisolated init of LongLivedState in JavaScriptPromise.swift
+          # 3. Fix nonisolated init of LongLivedState in JavaScriptPromise.swift
           promise_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Sources/ExpoModulesJSI/Runtime/Values/JavaScriptPromise.swift")
           if promise_file.exists():
               s = promise_file.read_text()
@@ -92,6 +77,27 @@ jobs:
                   s = s.replace(target_state, replacement_state, 1)
                   promise_file.write_text(s)
                   print("JavaScriptPromise.swift patched")
+
+          # 4. Fix non-Sendable stored properties warnings-as-errors in Swift 6 mode
+          hf_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Sources/ExpoModulesJSI/Contexts/HostFunctionContext.swift")
+          if hf_file.exists():
+              s = hf_file.read_text()
+              target = "internal final class HostFunctionContext: HostCallbackContext, Sendable {"
+              replacement = "internal final class HostFunctionContext: HostCallbackContext, @unchecked Sendable {"
+              if target in s:
+                  s = s.replace(target, replacement, 1)
+                  hf_file.write_text(s)
+                  print("HostFunctionContext.swift patched")
+
+          ho_file = pathlib.Path("node_modules/expo-modules-jsi/apple/Sources/ExpoModulesJSI/Contexts/HostObjectContext.swift")
+          if ho_file.exists():
+              s = ho_file.read_text()
+              target = "internal final class HostObjectContext: HostCallbackContext, Sendable {"
+              replacement = "internal final class HostObjectContext: HostCallbackContext, @unchecked Sendable {"
+              if target in s:
+                  s = s.replace(target, replacement, 1)
+                  ho_file.write_text(s)
+                  print("HostObjectContext.swift patched")
 
           # 5. Remove -quiet from build-xcframework.sh so errors are logged
           sh_file = pathlib.Path("node_modules/expo-modules-jsi/apple/scripts/build-xcframework.sh")

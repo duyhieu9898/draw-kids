@@ -49,8 +49,8 @@ function IntroScreen({ onFinish }: { onFinish: () => void }) {
       finishOnce()
     })
 
-    // Safety fallback: if video doesn't end within 8s, continue
-    const timeout = setTimeout(finishOnce, 8000)
+    // Safety fallback: if video doesn't end within 10s, continue
+    const timeout = setTimeout(finishOnce, 10000)
 
     return () => {
       clearTimeout(timeout)

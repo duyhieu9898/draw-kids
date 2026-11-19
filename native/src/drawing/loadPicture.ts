@@ -38,8 +38,8 @@ async function loadSkiaImage(source: number): Promise<SkImage> {
   return image
 }
 
-function readAlpha(image: SkImage, width: number, height: number): Uint8Array {
-  const pixels = image.readPixels(0, 0, {
+async function readAlpha(image: SkImage, width: number, height: number): Promise<Uint8Array> {
+  const pixels = await image.readPixels(0, 0, {
     width,
     height,
     colorType: ColorType.RGBA_8888,
@@ -65,12 +65,13 @@ export async function loadPictureAssets(catalog: CatalogPicture): Promise<Loaded
     ...catalog.regions.filter((region) => !isPaper(region.bounds)).map(async (region) => {
       const [left, top, width, height] = region.bounds
       const mask = await loadSkiaImage(region.mask)
+      const alpha = await readAlpha(mask, width, height)
       return {
         regionId: region.regionId,
         bounds: [left, top, width, height] as Bounds,
         width,
         height,
-        alpha: readAlpha(mask, width, height),
+        alpha,
         mask,
       }
     }),
